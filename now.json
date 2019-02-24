@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "wiki.chronica",
+  "builds": [
+		{ "src": "*.html", "use": "@now/html-minifier" },
+		{ "src": "styles/*.css", "use": "@now/html-minifier" },
+		{ "src": "data/*.js", "use": "@now/static" },
+		{ "src": "scripts/*.js", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.+)(png|svg|css|ttf|js)", "dest": "/$1$2" },
+    { "src": "/", "dest": "/index.html"},
+    { "src": "/index.html", "dest": "/index.html"},
+    { "src": "^/.+", "dest": "/404.html"}
+  ]
+}

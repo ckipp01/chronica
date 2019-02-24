@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>chronica</title>
+</head>
+<body>
+  <script>
+    const path = window.location.pathname.split("/")
+    const target = path[path.length -1]
+    document.location.href = `/#${target}`
+  </script>
+</body>
+</html>
+

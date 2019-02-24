@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'inter-light';
+    src: url('../fonts/Inter-Light-BETA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inter-regular';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inter-italic';
+    src: url('../fonts/Inter-LightItalic-BETA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --font: 'inter-light';
+  --font-bold: 'inter-regular';
+  --font-italic: 'inter-italic';
+}

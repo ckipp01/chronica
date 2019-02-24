@@ -1,0 +1,135 @@
+body {
+  font-family: var(--font);
+  background-color: #f7f7f7;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+  }
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 2em 2em 1em 2em;
+  font-size: 1.4em;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-bold);
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+a {
+  text-decoration: underline #45503B;
+  text-underline-position: under;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  margin: .5em;
+  cursor: pointer;
+}
+
+.code-logbar {
+  fill: #45503B;
+}
+
+.explore-logbar {
+  fill: #D15B3A;
+}
+
+.study-logbar {
+  fill: #1F2421;
+}
+
+.research-logbar {
+  fill: #323744;
+}
+
+.admin-logbar {
+  fill: #40798C;
+}
+
+.design-logbar {
+  fill: #F3DE8A;
+}
+
+.key-block,
+.keys-container {
+  display: flex;
+  align-items: center;
+  margin: 0 .5em;
+}
+
+.keys-container {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+
+}
+
+.key-color {
+  margin: 0 .5em;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-list > div {
+  margin: 1em;
+  width: 200px;
+}
