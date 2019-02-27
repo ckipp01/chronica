@@ -25,6 +25,7 @@ class Gyul {
       this.template[section]
         .forEach(elem => createElem({ elem: elem, parent: sectionElem }))
     }
+    if (this.tree.template === 'mainTemplate') handleTabUnderline('info')
   }
 }
 
@@ -34,6 +35,7 @@ const createElem = elemObject => {
   if (elemObject.elem.text) { elem.innerHTML = elemObject.elem.text }
 
   if (elemObject.elem.attributes) {
+    console.log(elemObject.elem.attributes)
     elemObject.elem.attributes
       .map(attribute => elem.setAttribute(attribute.type, attribute.value))
   }
@@ -61,8 +63,11 @@ const handleTabUnderline = (id) => {
   const tabs = ['info', 'stats', 'logs', 'tags']
   const toRemove = tabs.filter(_ => _ !== id)
   toRemove.forEach(item => {
-    document.getElementById(item).removeAttribute('style')
+    const targetTab = document.getElementById(item)
+    targetTab.removeAttribute('style')
   })
+  const targetTab = document.getElementById(id)
+  targetTab.setAttribute('style', 'text-decoration:underline#45503B')
 }
 const showInfo = () => {
   handleTabUnderline('info')
@@ -73,6 +78,7 @@ const showInfo = () => {
 }
 
 const showStats = () => {
+  handleTabUnderline('stats')
   const main = document.getElementsByTagName('main')[0]
   const categoryTotal = GYUL.logs.reduce((acc, cur) => acc + cur.time, 0)
   const categories = Object.keys(GYUL.groupedLogs).sort()
@@ -125,6 +131,7 @@ const showStats = () => {
 }
 
 const showLogs = () => {
+  handleTabUnderline('logs')
   const main = document.getElementsByTagName('main')[0]
   const logNotes = GYUL.logs
     .reverse()
@@ -134,6 +141,7 @@ const showLogs = () => {
 }
 
 const showTags = () => {
+  handleTabUnderline('tags')
   const main = document.getElementsByTagName('main')[0]
   const tagCounter = (acc, cur) => {
     (acc[cur] = acc[cur] || 0)
@@ -155,4 +163,19 @@ const groupByType = logs => {
   }, Object.create(null))
 }
 
-window.addEventListener('hashchange', () => window.location.reload(false))
+window.addEventListener('hashchange', (e) => {
+  GYUL.key = window.location.hash.substring(1)
+  GYUL.tree = retrieveTree(GYUL.key)
+  GYUL.logs = LOGS.filter(log => log.project === GYUL.key)
+  GYUL.groupedLogs = groupByType(GYUL.logs)
+  GYUL.tags = GYUL.logs
+    .flatMap(log => log.tags)
+    .filter(log => log !== undefined)
+  GYUL.template = retrieveTemplate(
+    GYUL.tree.template,
+    GYUL.tree.title,
+    GYUL.tree.body
+  )
+  showInfo()
+  console.log(GYUL)
+})

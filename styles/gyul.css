@@ -61,14 +61,19 @@ p {
   margin: 1em 0;
 }
 
-img {
+.main-img {
   display: block;
   margin: auto;
   max-width: 100%;
 }
+
 a {
   text-decoration: underline #45503B;
-  text-underline-position: under;
+}
+
+a:hover,
+.tabs:hover {
+  text-decoration: underline #D15B3A;
 }
 
 .flex-center {
@@ -132,4 +137,14 @@ a {
 .project-list > div {
   margin: 1em;
   width: 200px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact img {
+  width: 32px;
+  height: 32px;
 }

@@ -20,7 +20,7 @@ const TEMPLATES = {
             { type: 'h5',
               text: 'info',
               attributes: [
-                { type: 'class', value: 'tabs info' },
+                { type: 'class', value: 'tabs' },
                 { type: 'id', value: 'info' },
                 { type: 'onclick', value: 'showInfo()' }
               ]
@@ -80,7 +80,19 @@ const TEMPLATES = {
         }
       ],
       main: body,
-      footer: []
+      footer: [
+        { type: 'div',
+          attributes: [{ type: 'class', value: 'contact' }],
+          children: [
+            { type: 'img',
+              attributes: [{ type: 'src', value: 'media/github.png' }]
+            },
+            { type: 'img',
+              attributes: [{ type: 'src', value: 'media/merveilles.svg' }]
+            }
+          ]
+        }
+      ]
     }
     return t
   }

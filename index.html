@@ -4,19 +4,20 @@
   <meta charset="utf-8">
   <meta name="description" content="Simply gyul"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/gyul.css"/>
   <script type="text/javascript" src="data/logs.js"></script>
   <script type="text/javascript" src="data/crate.js"></script>
   <script type="text/javascript" src="scripts/template.js"></script>
   <script type="text/javascript" src="scripts/gyul.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
-  <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
-  <link rel="stylesheet" type="text/css" href="styles/gyul.css"/>
   <title>chronica</title>
 </head>
 <body>
   <script>
     const GYUL = new Gyul(window.location.hash)
     GYUL.package()
+    console.log(GYUL)
   </script>
 </body>
 </html>
