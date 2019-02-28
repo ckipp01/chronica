@@ -1,11 +1,11 @@
 const CRATE = {
   'andaga': {
-    'title': 'andaga',
+    'title': 'ándaga',
     'template': 'mainTemplate',
     'body': [
       {
         'type': 'p',
-        'text': '<a href="index.html#gyul">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis accumsan purus. Pellentesque dui elit, egestas rutrum tempor et, commodo vel urna. Donec ornare dictum gravida. Donec fringilla tortor in eros volutpat pharetra. Vestibulum ornare, tellus non placerat tristique, nulla elit feugiat ligula, at dictum arcu velit ut libero. Integer in diam in felis hendrerit consectetur at sit amet sapien. Cras efficitur leo nec mi bibendum posuere vitae ac ex.'
+        'text': '<a href="#gyul">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis accumsan purus. Pellentesque dui elit, egestas rutrum tempor et, commodo vel urna. Donec ornare dictum gravida. Donec fringilla tortor in eros volutpat pharetra. Vestibulum ornare, tellus non placerat tristique, nulla elit feugiat ligula, at dictum arcu velit ut libero. Integer in diam in felis hendrerit consectetur at sit amet sapien. Cras efficitur leo nec mi bibendum posuere vitae ac ex.'
       },
       {
         'type': 'p',
@@ -14,12 +14,12 @@ const CRATE = {
     ]
   },
   'chronica': {
-    'title': 'andaga',
+    'title': 'chronica',
     'template': 'mainTemplate',
     'body': [
       {
         'type': 'p',
-        'text': '<a href="index.html#gyul">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis accumsan purus. Pellentesque dui elit, egestas rutrum tempor et, commodo vel urna. Donec ornare dictum gravida. Donec fringilla tortor in eros volutpat pharetra. Vestibulum ornare, tellus non placerat tristique, nulla elit feugiat ligula, at dictum arcu velit ut libero. Integer in diam in felis hendrerit consectetur at sit amet sapien. Cras efficitur leo nec mi bibendum posuere vitae ac ex.'
+        'text': '<a href="#gyul">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis accumsan purus. Pellentesque dui elit, egestas rutrum tempor et, commodo vel urna. Donec ornare dictum gravida. Donec fringilla tortor in eros volutpat pharetra. Vestibulum ornare, tellus non placerat tristique, nulla elit feugiat ligula, at dictum arcu velit ut libero. Integer in diam in felis hendrerit consectetur at sit amet sapien. Cras efficitur leo nec mi bibendum posuere vitae ac ex.'
       },
       {
         'type': 'p',
@@ -51,7 +51,7 @@ const CRATE = {
       },
       {
         'type': 'p',
-        'text': `Gyul is an attempt to make a small wiki engine that will seamlessly tie into my timetracker, <a href='index.html#andaga'>ándaga </a>.`
+        'text': `Gyul is an attempt to make a small wiki engine that will seamlessly tie into my timetracker, <a href='#andaga'>ándaga </a>.`
       },
       {
         'type': 'p',
@@ -65,7 +65,7 @@ const CRATE = {
     'body': [
       {
         'type': 'p',
-        'text': `Feel free to explore. This is my collected works and logs. If you don't know here to start, you can get an introduction <a href='index.html#chronica'>here</a> or click on any of the projects below.`
+        'text': `Feel free to explore. This is my collected works and logs. If you don't know here to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
       },
       {
         'type': 'div',
@@ -105,7 +105,7 @@ function test (logs) {
   return projects
     .sort()
     .map(p => `<div>
-                  <p>Project: <a href='index.html#${p}'>${p}</a><br>
+                  <p>Project: <a href='#${p}'>${p}</a><br>
                   Time: ${logsObject[p].time} minutes<br>
                   Entries: ${logsObject[p].entries} logs
                 </div>`)

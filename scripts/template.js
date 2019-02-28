@@ -6,7 +6,7 @@ const TEMPLATES = {
       header: [
         { type: 'a',
           attributes: [
-            { type: 'href', value: 'index.html#home' },
+            { type: 'href', value: '#home' },
             { type: 'class', value: 'logo' }
           ],
           children: [
@@ -62,7 +62,7 @@ const TEMPLATES = {
       header: [
         { type: 'a',
           attributes: [
-            { type: 'href', value: 'index.html#home' },
+            { type: 'href', value: '#home' },
             { type: 'class', value: 'logo' }
           ],
           children: [
@@ -73,7 +73,7 @@ const TEMPLATES = {
         { type: 'div',
           attributes: [{ type: 'class', value: 'flex-center' }],
           children: [
-            { type: 'p',
+            { type: 'h5',
               text: 'welcome to the chronica wiki'
             }
           ]

@@ -154,7 +154,7 @@ const showTags = () => {
   const countedTags = GYUL.tags.reduce(tagCounter, {})
   const tagNames = Object.keys(countedTags).sort()
   const tags = tagNames
-    .map(tagName => `<p>${countedTags[tagName]} - <a href='index.html#${tagName}'>${tagName}</p></a>`)
+    .map(tagName => `<p>${countedTags[tagName]} - <a href='#${tagName}'>${tagName}</p></a>`)
   const tagsWithHeading = [`<h3>Tagged with ${GYUL.tags.length} tags</h3>`, ...tags]
   main.innerHTML = tagsWithHeading.join('')
 }
