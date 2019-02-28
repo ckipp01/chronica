@@ -4,17 +4,9 @@
     font-weight: 1 999;
 }
 
-:root {
-  --font: 'inter';
-  --light: 300;
-  --normal: 400;
-  --bold: 500;
-  --extra-bold 700;
-}
-
 body {
-  font-family: var(--font);
-  font-weight: var(--light);
+  font-family: 'inter';
+  font-weight: 300;
   background-color: #f7f7f7;
 }
 
@@ -65,7 +57,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 1.4em;
-  font-weight: var(--extra-bold);
+  font-weight: 700;
 }
 
 h2 {

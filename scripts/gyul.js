@@ -35,7 +35,6 @@ const createElem = elemObject => {
   if (elemObject.elem.text) { elem.innerHTML = elemObject.elem.text }
 
   if (elemObject.elem.attributes) {
-    console.log(elemObject.elem.attributes)
     elemObject.elem.attributes
       .map(attribute => elem.setAttribute(attribute.type, attribute.value))
   }
@@ -64,10 +63,14 @@ const handleTabUnderline = (id) => {
   const toRemove = tabs.filter(_ => _ !== id)
   toRemove.forEach(item => {
     const targetTab = document.getElementById(item)
-    targetTab.removeAttribute('style')
+    if (targetTab !== null) {
+      targetTab.removeAttribute('style')
+    }
   })
   const targetTab = document.getElementById(id)
-  targetTab.setAttribute('style', 'text-decoration:underline#45503B')
+  if (targetTab !== null) {
+    targetTab.setAttribute('style', 'text-decoration:underline#45503B')
+  }
 }
 const showInfo = () => {
   handleTabUnderline('info')
@@ -163,7 +166,15 @@ const groupByType = logs => {
   }, Object.create(null))
 }
 
+const switchHeader = () => {
+  const header = document.getElementsByTagName('header')[0]
+  header.innerHTML = ''
+  GYUL.template.header
+    .forEach(elem => createElem({ elem: elem, parent: header }))
+}
+
 window.addEventListener('hashchange', (e) => {
+  const previousTemplate = GYUL.tree.template
   GYUL.key = window.location.hash.substring(1)
   GYUL.tree = retrieveTree(GYUL.key)
   GYUL.logs = LOGS.filter(log => log.project === GYUL.key)
@@ -176,6 +187,9 @@ window.addEventListener('hashchange', (e) => {
     GYUL.tree.title,
     GYUL.tree.body
   )
+  const newTemplate = GYUL.tree.template
+  if (previousTemplate !== newTemplate) {
+    switchHeader()
+  }
   showInfo()
-  console.log(GYUL)
 })
