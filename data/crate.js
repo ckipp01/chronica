@@ -3,13 +3,45 @@ const CRATE = {
     'title': 'ándaga',
     'template': 'mainTemplate',
     'body': [
-      {
-        'type': 'p',
-        'text': '<a href="#gyul">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis accumsan purus. Pellentesque dui elit, egestas rutrum tempor et, commodo vel urna. Donec ornare dictum gravida. Donec fringilla tortor in eros volutpat pharetra. Vestibulum ornare, tellus non placerat tristique, nulla elit feugiat ligula, at dictum arcu velit ut libero. Integer in diam in felis hendrerit consectetur at sit amet sapien. Cras efficitur leo nec mi bibendum posuere vitae ac ex.'
+      { 'type': 'img',
+        'attributes': [
+          { 'type': 'src', 'value': 'media/andaga.png' },
+          { 'type': 'class', 'value': 'main-image' }
+        ]
       },
       {
         'type': 'p',
-        'text': 'Etiam vitae maximus velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas euismod interdum condimentum. Nunc aliquet, ante eu pellentesque efficitur, erat nibh consequat lectus, ac cursus sapien mauris in felis. Donec dictum tellus ut nibh lacinia, at lobortis tortor porta. Donec rhoncus aliquet aliquet. Integer tortor lorem, porttitor eu congue vitae, scelerisque vel leo. Vestibulum non laoreet nibh, non commodo tellus. Proin ut semper nisi, et commodo magna. Pellentesque at sapien metus. Donec dictum eros eget lacus iaculis pretium. Ut maximus ligula pellentesque ante molestie, gravida tincidunt velit mollis. In vel cursus mi.'
+        'text': 'On January 1, 2018 I decided to make an effort to log all of my free time for year. I was inspred and intrigued by multiple other time trackers such as <a target="_blank" href="https://wiki.xxiivv.com/#horaire">Horaire by Devine Lu Linvega</a> and <a target="_blank" href="https://hraew.autophagy.io/faereld/">Færeld by Mika Naylor</a>. I originally split my time up into 4 categories: act, learn, rest and social. I logged a toatl of 36,880 minutes spread across 578 logs. The time that I tracked was limited to only time that I had 100% control over, besides time spent with my spouse. I was curious to find trends, get insights, and to simply see if I was able to do the act of logging for an entire year'
+      },
+      {
+        'type': 'p',
+        'text': 'The app was a command line application written in Node. The app had 6 main commands.'
+      },
+      {
+        'type': 'ul',
+        'children': [
+          { type: 'li', text: '<code>andaga log</code> used for logging new entries' },
+          { type: 'li', text: '<code>andaga list</code> used for listing your entries' },
+          { type: 'li', text: '<code>andaga tell</code> used for telling your totals' },
+          { type: 'li', text: '<code>andaga populate</code> used for populating your SQLite database from a JSON file' },
+          { type: 'li', text: '<code>andaga backup</code> used for backing up your entries to a JSON file' },
+          { type: 'li', text: '<code>andaga show</code> used to bring up a dashboard with statistics on your entries' }
+        ]
+      },
+      {
+        'type': 'p',
+        'text': `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself. One that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I impliment this moving forward will continually change. That's where the flixiblity comes into play.  What exactly it tracks is also important to me, and will change in the future. Many of these factors were taken into account as I began work on version 2 of the project.`
+      },
+      {
+        'type': 'p',
+        'text': 'Starting in 2019, I split this project up into 2 parts:'
+      },
+      {
+        'type': 'ul',
+        'children': [
+          { type: 'li', text: '<a href="#andaga-cli">ándaga-cli</a> which is a small command line app written in Node. Instead of storing the entries locally, they send them to a ándaga-core to be stored.' },
+          { type: 'li', text: '<a href="#andaga-core">ándaga-core</a> which is a serverless Node app hosted on <a target="_blank" href="http://zeit.co">Zeit</a>, which will store my entrie in a MongoDB database.' }
+        ]
       }
     ]
   },

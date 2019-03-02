@@ -67,9 +67,18 @@ p {
   margin-bottom: 1em;
 }
 
-.main-img {
-  display: block;
-  margin: auto;
+li {
+  margin: 0 0 1em 1em;
+}
+
+code {
+  padding: .25em;
+  background: #fff;
+  font-family: monospace;
+}
+
+.main-image {
+  margin: auto auto 1em auto;
   max-width: 100%;
 }
 
@@ -130,11 +139,10 @@ a:hover,
   flex-wrap: wrap;
   align-items: center;
   margin: 1em 0;
-
 }
 
 .key-color {
-  margin: 0 .5em;
+  margin: 0 .5em 1em .5em;
 }
 
 .project-list {

@@ -174,7 +174,6 @@ const switchHeader = () => {
 }
 
 window.addEventListener('hashchange', (e) => {
-  const previousTemplate = GYUL.tree.template
   GYUL.key = window.location.hash.substring(1)
   GYUL.tree = retrieveTree(GYUL.key)
   GYUL.logs = LOGS.filter(log => log.project === GYUL.key)
@@ -187,9 +186,6 @@ window.addEventListener('hashchange', (e) => {
     GYUL.tree.title,
     GYUL.tree.body
   )
-  const newTemplate = GYUL.tree.template
-  if (previousTemplate !== newTemplate) {
-    switchHeader()
-  }
+  switchHeader()
   showInfo()
 })
