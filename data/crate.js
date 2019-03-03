@@ -10,8 +10,12 @@ const CRATE = {
         ]
       },
       {
+        'type': 'h5',
+        'text': 'Code for verion 1 : <a target="_blank" href="https://github.com/ckipp01/andaga-cli">ándaga</a>'
+      },
+      {
         'type': 'p',
-        'text': 'On January 1, 2018 I decided to make an effort to log all of my free time for year. I was inspred and intrigued by multiple other time trackers such as <a target="_blank" href="https://wiki.xxiivv.com/#horaire">Horaire by Devine Lu Linvega</a> and <a target="_blank" href="https://hraew.autophagy.io/faereld/">Færeld by Mika Naylor</a>. I originally split my time up into 4 categories: act, learn, rest and social. I logged a toatl of 36,880 minutes spread across 578 logs. The time that I tracked was limited to only time that I had 100% control over, besides time spent with my spouse. I was curious to find trends, get insights, and to simply see if I was able to do the act of logging for an entire year'
+        'text': 'On January 1, 2018 I decided to make an effort to log all of my free time for year. I was inspred and intrigued by multiple other time trackers such as <a target="_blank" href="https://wiki.xxiivv.com/#horaire">Horaire by Devine Lu Linvega</a> and <a target="_blank" href="https://hraew.autophagy.io/faereld/">Færeld by Mika Naylor</a>. I originally split my time up into 4 categories: act, learn, rest and social. I logged a total of 36,880 minutes spread across 578 logs. The time that I tracked was limited to only time that I had 100% control over, besides time spent with my spouse. I was curious to find trends, get insights, and to simply see if I was able to do the act of logging for an entire year'
       },
       {
         'type': 'p',
@@ -30,7 +34,7 @@ const CRATE = {
       },
       {
         'type': 'p',
-        'text': `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself. One that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I impliment this moving forward will continually change. That's where the flixiblity comes into play.  What exactly it tracks is also important to me, and will change in the future. Many of these factors were taken into account as I began work on version 2 of the project.`
+        'text': `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself -- one that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I impliment this moving forward will continually change. That's where the flixiblity comes into play.  What exactly it tracks is also important to me, and will change in the future. Many of these factors were taken into account as I began work on version 2 of the project.`
       },
       {
         'type': 'p',
@@ -44,6 +48,36 @@ const CRATE = {
         ]
       }
     ]
+  },
+  'andaga-cli': {
+    'title': 'ándaga-cli',
+    'template': 'mainTemplate',
+    'body': [
+      {
+        'type': 'h5',
+        'text': 'Code: <a target="_blank" href="https://github.com/ckipp01/andaga-cli/tree/2.0">ándaga-cli</a>'
+      },
+      {
+        'type': 'p',
+        'text': 'ándaga-cli is a small command line application writen in Node to log my personal project entries. This project started out as <a href="#andaga">ándaga</a>. Following a year of tracking my time I determined I wanted easier access to my logs which mean splitting up the project into more of an api and a client. This is the client. The cli program only currently has 2 commands:'
+      },
+      {
+        'type': 'ul',
+        'children': [
+          { type: 'li', text: '<code>andaga log</code> used for logging new entries' },
+          { type: 'li', text: '<code>andaga recall</code> used for recalling the last entry' }
+        ]
+      },
+      {
+        'type': 'p',
+        'text': `The aim for ándaga-cli is to keep the project lean and only have it do the minimal necessary commands that I need from the command line. The bulk of the work will be done in <a href="#andaga-core">ándaga-core</a>. In the future I'd possibly like to build a pomodoro like timer directly into the cli portion of the project, but for now, that's a bit out of scope.`
+      }
+    ]
+  },
+  'andaga-core': {
+    'title': 'ándaga-core',
+    'template': 'mainTemplate',
+    'body': []
   },
   'chronica': {
     'title': 'chronica',
@@ -90,6 +124,46 @@ const CRATE = {
         'text': `For a while I found myself reverting to large frameworks for simple tasks just because I knew the technology. There came a point where I realized the amount of overhead they brought for such simple tasks was not always necessary. I set out to create something small and simple. This is my effort at that endeavor. It doesn't to a ton, but does exactly what I need it to. It's also flexible enough that if needed to be adapted for another project, it can be.`
       }
     ]
+  },
+  'language': {
+    'title': 'language',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'modernheirloomstudio': {
+    'title': 'modern heirloom studio',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'programming': {
+    'title': 'programming',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'scripts': {
+    'title': 'scripts',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'studiosyk': {
+    'title': 'studio syk',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'waka-fetch': {
+    'title': 'waka-fetch',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'waka-machine': {
+    'title': 'waka-machine',
+    'template': 'mainTemplate',
+    'body': []
+  },
+  'workspace': {
+    'title': 'workspace',
+    'template': 'mainTemplate',
+    'body': []
   },
   'home': {
     'title': 'welcome',
