@@ -106,7 +106,7 @@ const LOGS =
     "time": 75,
     "notes": "customized LightDM settings",
     "location": "home",
-    "project": "work station"
+    "project": "workspace"
   },
   {
     "date": "2018-01-07",
@@ -3877,5 +3877,55 @@ const LOGS =
     "notes": "watched multiple videos for week two of the reactive programming course",
     "location": "home",
     "project": "programming"
+  },
+  {
+    "date": "2019-2-26",
+    "category": "code",
+    "time": 35,
+    "notes": "worked some more on the way the page refreshes - I want it to replace the dom elements without a refresh",
+    "location": "home",
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-2-27",
+    "category": "code",
+    "time": 45,
+    "notes": "worked a bunch on fonts and figuring out the best way to do variable fonts",
+    "location": "home",
+    "project": "chronica",
+    "tags": [
+      "css"
+    ]
+  },
+  {
+    "date": "2019-2-28",
+    "category": "code",
+    "time": 30,
+    "notes": "got everything working responsively the way that I wanted it to",
+    "location": "home",
+    "project": "gyul",
+    "tags": [
+      "javascript",
+      "chronica"
+    ]
+  },
+  {
+    "date": "2019-3-2",
+    "category": "write",
+    "time": 45,
+    "notes": "worked on filling in content for andaga and andaga-core",
+    "location": "home",
+    "project": "chronica"
+  },
+  {
+    "date": "2019-3-3",
+    "category": "write",
+    "time": 25,
+    "notes": "work on filling in some more data for wiki.chronica",
+    "location": "home",
+    "project": "chronica"
   }
 ]
