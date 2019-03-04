@@ -3927,5 +3927,13 @@ const LOGS =
     "notes": "work on filling in some more data for wiki.chronica",
     "location": "home",
     "project": "chronica"
+  },
+  {
+    "date": "2019-3-4",
+    "category": "admin",
+    "time": 65,
+    "notes": "work on figuring out a way for my logs to be nighly pulled, pushed, and deployed automatically",
+    "location": "home",
+    "project": "chronica"
   }
 ]
