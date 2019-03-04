@@ -77,7 +77,28 @@ const CRATE = {
   'andaga-core': {
     'title': 'ándaga-core',
     'template': 'mainTemplate',
-    'body': []
+    'body': [
+      {
+        'type': 'h5',
+        'text': 'Code: <a target="_blank" href="https://github.com/ckipp01/andaga-core">ándaga-core</a>'
+      },
+      {
+        'type': 'p',
+        'text': `ándaga-core is the main engine and api for my ándaga time-tracking system. After the first initial year of tracking with <a href="#andaga">ándaga</a>, I realized I wanted a better way to store my logs. I didn't want to only be stored locally, and I wanted multiple programs to be able to interact them. I then created a small serverless api with Node hosted on <a target="_blank" href="https://zeit.co">Zeit</a>`
+      },
+      {
+        'type': 'p',
+        'text': 'There are currently only 3 routes built into the api:'
+      },
+      {
+        'type': 'ul',
+        'children': [
+          { type: 'li', text: '<code>/category</code> used for receiving a list of categories that have been used' },
+          { type: 'li', text: '<code>/log</code> used for storing logs' },
+          { type: 'li', text: '<code>/recall</code> used for recalling the last entry' }
+        ]
+      }
+    ]
   },
   'chronica': {
     'title': 'chronica',

@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "wiki.chronica",
+  "alias": ["wiki.chronica.xyz", "www.wiki.chronica.xyz"],
   "builds": [
 		{ "src": "*.html", "use": "@now/html-minifier" },
 		{ "src": "styles/*.css", "use": "@now/html-minifier" },
