@@ -3935,5 +3935,13 @@ const LOGS =
     "notes": "work on figuring out a way for my logs to be nighly pulled, pushed, and deployed automatically",
     "location": "home",
     "project": "chronica"
+  },
+  {
+    "date": "2019-3-6",
+    "category": "write",
+    "time": 115,
+    "notes": "Add in a bunch on info about various projects. Ready to go live soon",
+    "location": "Filtro",
+    "project": "chronica"
   }
 ]
