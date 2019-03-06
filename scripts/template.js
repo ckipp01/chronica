@@ -57,11 +57,27 @@ const TEMPLATES = {
         { type: 'div',
           attributes: [{ type: 'class', value: 'contact' }],
           children: [
-            { type: 'img',
-              attributes: [{ type: 'src', value: 'media/github.png' }]
+            { type: 'a',
+              attributes: [
+                { type: 'href', value: 'https://github.com/ckipp01' },
+                { type: 'target', value: '_blank' }
+              ],
+              children: [
+                { type: 'img',
+                  attributes: [{ type: 'src', value: 'media/github.png' }]
+                }
+              ]
             },
-            { type: 'img',
-              attributes: [{ type: 'src', value: 'media/merveilles.svg' }]
+            { type: 'a',
+              attributes: [
+                { type: 'href', value: 'https://merveilles.town/@ckipp' },
+                { type: 'target', value: '_blank' }
+              ],
+              children: [
+                { type: 'img',
+                  attributes: [{ type: 'src', value: 'media/merveilles.svg' }]
+                }
+              ]
             }
           ]
         }
@@ -96,11 +112,27 @@ const TEMPLATES = {
         { type: 'div',
           attributes: [{ type: 'class', value: 'contact' }],
           children: [
-            { type: 'img',
-              attributes: [{ type: 'src', value: 'media/github.png' }]
+            { type: 'a',
+              attributes: [
+                { type: 'href', value: 'https://github.com/ckipp01' },
+                { type: 'target', value: '_blank' }
+              ],
+              children: [
+                { type: 'img',
+                  attributes: [{ type: 'src', value: 'media/github.png' }]
+                }
+              ]
             },
-            { type: 'img',
-              attributes: [{ type: 'src', value: 'media/merveilles.svg' }]
+            { type: 'a',
+              attributes: [
+                { type: 'href', value: 'https://merveilles.town/@ckipp' },
+                { type: 'target', value: '_blank' }
+              ],
+              children: [
+                { type: 'img',
+                  attributes: [{ type: 'src', value: 'media/merveilles.svg' }]
+                }
+              ]
             }
           ]
         }
