@@ -23,6 +23,10 @@ header {
   text-align: center;
 }
 
+i {
+    font-style: italic;
+}
+
 .logo {
   text-decoration: none;
 }
@@ -77,9 +81,24 @@ code {
   font-family: monospace;
 }
 
+code-block {
+  background: #fff;
+}
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-image {
   margin: auto auto 1em auto;
   max-width: 100%;
+}
+
+.gyul-logo {
+  font-size: 5em;
+  margin: 0;
 }
 
 a {
