@@ -191,6 +191,10 @@ a:hover,
   height: 32px;
 }
 
+.quote {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   body {
     max-width: 800px;

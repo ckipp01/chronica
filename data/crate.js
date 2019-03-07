@@ -26,7 +26,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: 'The app was a command line application written in Node. The app had 6 main commands.'
+        text: 'The app was a command line application written in Node and had 6 main commands.'
       },
       {
         type: 'ul',
@@ -41,7 +41,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself -- one that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I impliment this moving forward will continually change. That's where the flixiblity comes into play.  What exactly it tracks is also important to me, and will change in the future. Many of these factors were taken into account as I began work on version 2 of the project.`
+        text: `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself -- one that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I implement this moving forward will continually change. That's where the flexibility comes into play.  What exactly it tracks is also continually changing. Many of these factors were taken into account as I began work on version 2 of the project.`
       },
       {
         type: 'p',
@@ -51,7 +51,7 @@ const CRATE = {
         type: 'ul',
         children: [
           { type: 'li', text: '<a href="#andaga-cli">ándaga-cli</a> which is a small command line app written in Node. Instead of storing the entries locally, they send them to a ándaga-core to be stored.' },
-          { type: 'li', text: '<a href="#andaga-core">ándaga-core</a> which is a serverless Node app hosted on <a target="_blank" href="http://zeit.co">Zeit</a>, which will store my entrie in a MongoDB database.' }
+          { type: 'li', text: '<a href="#andaga-core">ándaga-core</a> which is a serverless Node app hosted on <a target="_blank" href="http://zeit.co">Zeit</a>, which will store my entries in a MongoDB database.' }
         ]
       }
     ]
@@ -60,26 +60,13 @@ const CRATE = {
     title: 'ándaga-cli',
     template: 'mainTemplate',
     body: [
-      { type: 'div',
-        attributes: [
-          { type: 'class', 'value': 'media-container' }
-        ],
-        children: [
-          { type: 'img',
-            attributes: [
-              { type: 'src', 'value': 'media/andaga-help.png' },
-              { type: 'class', 'value': 'main-image' }
-            ]
-          }
-        ]
-      },
       {
         type: 'h5',
         text: 'Code: <a target="_blank" href="https://github.com/ckipp01/andaga-cli/tree/2.0">ándaga-cli</a>'
       },
       {
         type: 'p',
-        text: 'ándaga-cli is a small command line application writen in Node to log my personal project entries. This project started out as <a href="#andaga">ándaga</a>. Following a year of tracking my time I determined I wanted easier access to my logs which mean splitting up the project into more of an api and a client. This is the client. The cli program only currently has 2 commands:'
+        text: 'ándaga-cli is a small command line application written in Node to log my personal project entries. This project is the command line portion of the <a href="#andaga">ándaga</a> system. Following a year of tracking my time I determined I wanted easier access to my logs in various ways which meant splitting up the project into more of an api and a client. This is the client. The cli program only currently has 2 commands:'
       },
       {
         type: 'ul',
@@ -121,7 +108,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `ándaga-core is the main engine and api for my ándaga time-tracking system. After the first initial year of tracking with <a href="#andaga">ándaga</a>, I realized I wanted a better way to store my logs. I didn't want them to only be stored locally, and I wanted multiple programs to be able to interact them. I then created a small serverless api with Node hosted on <a target="_blank" href="https://zeit.co">Zeit</a>`
+        text: `ándaga-core is the main engine and api for my <a href="#andaga">ándaga</a> time-tracking system. After the first initial year of tracking with <a href="#andaga">ándaga</a>, I realized I wanted a better way to store my logs. I didn't want them to only be stored locally, and I wanted multiple programs to be able to interact them. I then created a small serverless api with Node hosted on <a target="_blank" href="https://zeit.co">Zeit</a>`
       },
       {
         type: 'p',
@@ -147,11 +134,11 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        text: `This is chronica. It's hard to fully explain what it is or what it will become because it is a playground of sorts for me. I wanted a place do display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment. A place for me to both work and display my work in a raw unpolished way that will hopefully provide a glimpse into where I'm at with the state of development, and also what I'm currently working and focusing on.`
+        text: `This is chronica. I wanted a place do display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment or playground of sorts. A place for me to both work and display my work in a raw unpolished way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
       },
       {
         type: 'p',
-        text: `To provide a bit of context, wiki.chronica is build using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:`
+        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:`
       },
       {
         type: 'div',
@@ -166,7 +153,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `This script exports my logs in a json array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the _id field since it won't be used in chronica. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the json array into a js array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
+        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
       },
       {
         type: 'p',
@@ -179,6 +166,22 @@ const CRATE = {
           { type: 'li', text: '<b>stats:</b> shows a small graph of the breakdown of how much time was spent on each category for that project' },
           { type: 'li', text: '<b>logs:</b> a copy of the logs that are tied to that project' },
           { type: 'li', text: '<b>tags:</b> associated topics or projects that the current project was tagged with' }
+        ]
+      },
+      {
+        type: 'p',
+        text: `There is already plenty I would change about the way I've done this and even more that I'd like to add. This space will continually grow. There will also be a longer form blog portion of the chronica ecosystem that has not yet been created.`
+      },
+      {
+        type: 'p',
+        text: 'I also must give credit where credit is due. Below are a few sites that I recommend and that have highly influenced chronica.'
+      },
+      {
+        type: 'ul',
+        children: [
+          { type: 'li', text: `<a target="_blank" href="https://wiki.xxiivv.com/#home">wiki.xxivv.com</a> Devine has radically changed the way I think about development. His philosophy and approach to development has taught me that it's ok to go against he grain and to simply create. His ecosystem of tools are a testimony of productivity and creativity that in my opinion flies in the face of many modern day trends.` },
+          { type: 'li', text: `<a target="_blank" href="https://joshavanier.github.io">joshavanier.github.io</a> Josh's pursuit of functional minimalism (my interpretation of his work) inspires me to ignore the noise and focus on what matters.` },
+          { type: 'li', text: `<a target="_blank" href="https://macwright.org">macwright.org</a> Tom's site is a reminder that I don't have to settle for giant sites full of trackers and adds to find quality content.` }
         ]
       }
     ]
@@ -214,7 +217,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: 'gyul works by reading the hash of the url and then creating a class from that hash. The hast serves as akey to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom.'
+        text: 'gyul works by reading the hash of the url and then creating a class from that hash. The hast serves as a key to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom.'
       }
     ]
   },
@@ -231,7 +234,7 @@ const CRATE = {
         attributes: [
           { type: 'class', value: 'project-list' }
         ],
-        text: test(LOGS).join('')
+        text: createProjects(LOGS).join('')
       }
     ]
   },
@@ -287,8 +290,13 @@ const CRATE = {
     template: 'mainTemplate',
     body: [
       {
+        type: 'h5',
+        attributes: [{ type: 'class', value: 'quote' }],
+        text: 'Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.” <br> ~Eric Elliot'
+      },
+      {
         type: 'p',
-        text: `I'm a self-taught programmer that started programming out of a curiousity. It didn't take long for me to completely fall in love with the idea of being able to create what I could invision. I consider myself a developer that enjoys working both with front and back end technologies. I dabble in everything that I can get my hands on. I enjoy writing scripts, improving development process, and helping lower the barriers to tech. Professionally I work primarily in JavaScript and Scala, but you can get a picutre of language and focuses by peaking at the tags tab.`
+        text: `I'm a self-taught programmer that started programming out of a curiosity. It didn't take long for me to completely fall in love with the idea of being able to create what I could invision. I consider myself a developer that enjoys working both with front and back end technologies. I dabble in everything that I can get my hands on. I enjoy writing scripts, improving development process, and helping lower the barriers to tech. Professionally I work primarily in JavaScript and Scala, but you can get a picture of the languages and focuses by peaking at the tags tab.`
       }
     ]
   },
@@ -423,7 +431,7 @@ function createProjectObject (acc, cur) {
   return acc
 }
 
-function test (logs) {
+function createProjects (logs) {
   const logsObject = logs
     .filter(_ => _.project !== undefined)
     .reduce(createProjectObject, Object.create(null))
