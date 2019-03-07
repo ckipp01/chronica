@@ -3943,5 +3943,13 @@ const LOGS =
     "notes": "Add in a bunch on info about various projects. Ready to go live soon",
     "location": "Filtro",
     "project": "chronica"
+  },
+  {
+    "date": "2019-3-7",
+    "category": "write",
+    "time": 75,
+    "notes": "finish up the last of the entries before putting the wiki live",
+    "location": "home",
+    "project": "chronica"
   }
 ]
