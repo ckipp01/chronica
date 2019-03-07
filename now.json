@@ -11,7 +11,7 @@
 		{ "src": "scripts/*.js", "use": "@now/static" }
   ],
   "routes": [
-    { "src": "/(.+)(png|svg|css|ico|ttf|js)", "dest": "/$1$2" },
+    { "src": "/(.+)(png|svg|css|ico|jpg|ttf|js)", "dest": "/$1$2" },
     { "src": "/", "dest": "/index.html"},
     { "src": "/index.html", "dest": "/index.html"},
     { "src": "^/.+", "dest": "/404.html"}
