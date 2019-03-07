@@ -151,14 +151,35 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `To provide a bit of context, wiki.chronica is build using <a href="#gyul">gyul</a>. There is not build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server run the script placed below:`
+        text: `To provide a bit of context, wiki.chronica is build using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:`
       },
       {
-        type: 'code',
+        type: 'div',
         attributes: [
           { type: 'class', value: 'code-block' }
         ],
-        text: "#!/bin/bash <br> mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br> cat <i>logs file</i> | jq 'map(del(._id))' > </i>log dir</i> && sed -i '1 \\const LOGS =' <i>log file</i> && <br> cd <i>wiki directory</i> && <br> git add . && <br> git commit -m 'nightly auto-commit and push of logs' && <br> git push"
+        children: [
+          { type: 'code',
+            text: "#!/bin/bash <br> mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br> cat <i>logs file</i> | jq 'map(del(._id))' > </i>log dir</i> && sed -i '1 \\const LOGS =' <i>log file</i> && <br> cd <i>wiki directory</i> && <br> git add . && <br> git commit -m 'nightly auto-commit and push of logs' && <br> git push"
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: `This script exports my logs in a json array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the _id field since it won't be used in chronica. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the json array into a js array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
+      },
+      {
+        type: 'p',
+        text: `On just about every page you'll see the following four tabs:`
+      },
+      {
+        type: 'ul',
+        children: [
+          { type: 'li', text: '<b>info:</b> tells some basic info about the project' },
+          { type: 'li', text: '<b>stats:</b> shows a small graph of the breakdown of how much time was spent on each category for that project' },
+          { type: 'li', text: '<b>logs:</b> a copy of the logs that are tied to that project' },
+          { type: 'li', text: '<b>tags:</b> associated topics or projects that the current project was tagged with' }
+        ]
       }
     ]
   },
@@ -185,11 +206,15 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `Gyul is an attempt to make a small wiki engine that will seamlessly tie into my timetracker, <a href='#andaga'>ándaga</a>.`
+        text: `gyul is an attempt to make a small wiki engine that will seamlessly tie into my timetracker, <a href='#andaga'>ándaga</a>.`
       },
       {
         type: 'p',
         text: `For a while I found myself reverting to large frameworks for simple tasks just because I knew the technology. There came a point where I realized the amount of overhead they brought for such simple tasks was not always necessary. I set out to create something small and simple. This is my effort at that endeavor. It doesn't do a ton, but does exactly what I need it to. It's also flexible enough that if needed to be adapted for another project, it can be. This was my first attempt at creating something like this, and it was a huge learning experience. Expect to see this change and grow and I adjust to fix some of the trouble pointst that I know exist.`
+      },
+      {
+        type: 'p',
+        text: 'gyul works by reading the hash of the url and then creating a class from that hash. The hast serves as akey to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom.'
       }
     ]
   },
@@ -377,12 +402,12 @@ const CRATE = {
       {
         type: 'ul',
         children: [
-          { type: 'li', text: 'OS: Ubuntu 18.04' },
-          { type: 'li', text: 'Terminal: Termite' },
-          { type: 'li', text: 'Primary text editor for anything but Scala: Vim' },
-          { type: 'li', text: 'Primary text editor for Scala: IntelliJ' },
-          { type: 'li', text: 'Browser: Vivaldi or Firefox' },
-          { type: 'li', text: 'Other daily software: Keybase, Slack, Spotify' }
+          { type: 'li', text: '<b>OS:</b> Ubuntu 18.04' },
+          { type: 'li', text: '<b>Terminal:</b> Termite' },
+          { type: 'li', text: '<b>Primary text editor for anything but Scala:</b> Vim' },
+          { type: 'li', text: '<b>Primary text editor for Scala:</b> IntelliJ' },
+          { type: 'li', text: '<b>Browser:</b> Vivaldi or Firefox' },
+          { type: 'li', text: '<b>Other daily software:</b> Keybase, Slack, Spotify' }
         ]
       }
     ]

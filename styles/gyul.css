@@ -24,7 +24,11 @@ header {
 }
 
 i {
-    font-style: italic;
+  font-style: italic;
+}
+
+b {
+  font-weight: 400;
 }
 
 .logo {
@@ -81,8 +85,10 @@ code {
   font-family: monospace;
 }
 
-code-block {
+.code-block {
   background: #fff;
+  padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 .media-container {
