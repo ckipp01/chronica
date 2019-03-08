@@ -10,7 +10,7 @@ class Gyul {
     this.logs = LOGS.filter(log => log.project === this.key)
     this.groupedLogs = groupByType(this.logs)
     this.tags = this.logs
-      .flatMap(log => log.tags)
+      .map(log => log.tags)
       .filter(log => log !== undefined)
     this.template = retrieveTemplate(
       this.tree.template,
@@ -151,7 +151,8 @@ const showTags = () => {
     acc[cur] = acc[cur] += 1
     return acc
   }
-  const countedTags = GYUL.tags.reduce(tagCounter, {})
+  const flattened = [].concat.apply([], GYUL.tags)
+  const countedTags = flattened.reduce(tagCounter, {})
   const tagNames = Object.keys(countedTags).sort()
   const tags = tagNames
     .map(tagName => `<p>${countedTags[tagName]} - <a href='#${tagName}'>${tagName}</p></a>`)
@@ -179,7 +180,7 @@ window.addEventListener('hashchange', (e) => {
   GYUL.logs = LOGS.filter(log => log.project === GYUL.key)
   GYUL.groupedLogs = groupByType(GYUL.logs)
   GYUL.tags = GYUL.logs
-    .flatMap(log => log.tags)
+    .map(log => log.tags)
     .filter(log => log !== undefined)
   GYUL.template = retrieveTemplate(
     GYUL.tree.template,
