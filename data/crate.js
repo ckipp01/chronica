@@ -227,7 +227,7 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        text: `Feel free to explore. This is my collected works and logs. If you don't know here to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
+        text: `Feel free to explore. This is my collected works and logs. If you don't know where to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
       },
       {
         type: 'div',
