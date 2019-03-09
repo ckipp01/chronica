@@ -11,7 +11,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/andaga.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Original version of ándaga' }
             ]
           }
         ]
@@ -87,7 +88,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/andaga-cli.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Example log entry using ándaga-cli' }
             ]
           }
         ]
@@ -274,7 +276,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/modern-heirloom-studio.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Homepage of the old Modern Heirloom Studio website.' }
             ]
           }
         ]
@@ -322,7 +325,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/studiosyk.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Homepage of studio syk website.' }
             ]
           }
         ]
@@ -349,7 +353,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/waka-fetch.jpg' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Logo for waka-fetch.' }
             ]
           }
         ]
@@ -394,7 +399,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/desktop3.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Snapshot of my desktop.' }
             ]
           }
         ]
