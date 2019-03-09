@@ -7,7 +7,7 @@
 body { font-family: 'inter'; font-weight: 300; background-color: #f7f7f7; line-height: 1.4; }
 header { grid-column: span 3; padding: 2em 2em 0 2em; font-size: 1.4em; text-align: center; }
 main { flex: 1; padding: 20px; }
-footer { grid-column: span 3; padding: 30px; text-align: center; font-size: 1.4em; }
+footer { grid-column: span 3; padding: 30px; text-align: center; font-size: 0.8em; }
 h1, h2, h3, h4, h5 { margin-bottom: 1em; }
 h1 { font-size: 1.4em; font-weight: 700; }
 h2 { font-size: 1.3em; font-weight: 600; }

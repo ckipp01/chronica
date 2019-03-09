@@ -135,6 +135,14 @@ const CRATE = {
     template: 'mainTemplate',
     body: [
       {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/wiki.chronica">wiki</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Type: <a target="_blank" href="https://rsms.me/inter">Inter</a>'
+      },
+      {
         type: 'p',
         text: `This is chronica. I wanted a place do display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment or playground of sorts. A place for me to both work and display my work in a raw unpolished way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
       },
