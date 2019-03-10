@@ -11,7 +11,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/andaga.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Original version of ándaga' }
             ]
           }
         ]
@@ -87,7 +88,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/andaga-cli.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Example log entry using ándaga-cli' }
             ]
           }
         ]
@@ -132,6 +134,14 @@ const CRATE = {
     title: 'chronica',
     template: 'mainTemplate',
     body: [
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/wiki.chronica">wiki</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Type: <a target="_blank" href="https://rsms.me/inter">Inter</a>'
+      },
       {
         type: 'p',
         text: `This is chronica. I wanted a place do display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment or playground of sorts. A place for me to both work and display my work in a raw unpolished way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
@@ -227,7 +237,7 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        text: `Feel free to explore. This is my collected works and logs. If you don't know here to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
+        text: `Feel free to explore. This is my collected works and logs. If you don't know where to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
       },
       {
         type: 'div',
@@ -274,7 +284,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/modern-heirloom-studio.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Homepage of the old Modern Heirloom Studio website.' }
             ]
           }
         ]
@@ -322,7 +333,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/studiosyk.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Homepage of studio syk website.' }
             ]
           }
         ]
@@ -349,7 +361,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/waka-fetch.jpg' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Logo for waka-fetch.' }
             ]
           }
         ]
@@ -394,7 +407,8 @@ const CRATE = {
           { type: 'img',
             attributes: [
               { type: 'src', value: 'media/desktop3.png' },
-              { type: 'class', value: 'main-image' }
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Snapshot of my desktop.' }
             ]
           }
         ]
