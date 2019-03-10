@@ -56,6 +56,20 @@ const footer = [
             ]
           }
         ]
+      },
+      { type: 'a',
+        attributes: [
+          { type: 'href', value: 'https://keybase.io/chriskipp' },
+          { type: 'target', value: '_blank' }
+        ],
+        children: [
+          { type: 'img',
+            attributes: [
+              { type: 'src', value: 'media/keybase.png' },
+              { type: 'alt', value: 'Keybase icon' }
+            ]
+          }
+        ]
       }
     ]
   },
