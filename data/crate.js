@@ -233,11 +233,11 @@ const CRATE = {
   },
   home: {
     title: 'welcome',
-    template: 'homeTemplate',
+    template: 'basicTemplate',
     body: [
       {
         type: 'p',
-        text: `Feel free to explore. This is my collected works and logs. If you don't know where to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
+        text: `Feel free to explore. This is <a href="#me">my</a> collected works and logs. If you don't know where to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
       },
       {
         type: 'div',
@@ -259,6 +259,38 @@ const CRATE = {
       {
         type: 'p',
         text: 'In July of 2018 I moved to the Netherlands, so any current activity on language learning for the time being will probably be Dutch'
+      }
+    ]
+  },
+  me: {
+    title: 'Chris',
+    template: 'basicTemplate',
+    body: [
+      { type: 'div',
+        attributes: [
+          { type: 'class', value: 'media-container' }
+        ],
+        children: [
+          { type: 'img',
+            attributes: [
+              { type: 'src', value: 'media/me.jpg' },
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Chris' }
+            ]
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: `Hi, I'm Chris, and you've stumbled onto my wiki. Originally from the United States, I'm now located in the Netherlands with my wife Sé. I'm a developer and digital explorer. I currently work for Visma Connect primarily working in Scala and JavaScript. Feel free to reach out by any of the means below.`
+      },
+      {
+        type: 'p',
+        text: 'Thanks for visiting.'
+      },
+      {
+        type: 'p',
+        text: 'Chris'
       }
     ]
   },

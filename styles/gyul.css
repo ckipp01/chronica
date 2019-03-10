@@ -130,6 +130,7 @@ a:hover,
 .contact img {
   width: 32px;
   height: 32px;
+  margin: 0 0.5em;
 }
 
 .quote {

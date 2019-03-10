@@ -45,6 +45,17 @@ const footer = [
             ]
           }
         ]
+      },
+      { type: 'a',
+        attributes: [{ type: 'href', value: 'mailto:ckipp@pm.me' }],
+        children: [
+          { type: 'img',
+            attributes: [
+              { type: 'src', value: 'media/mail.png' },
+              { type: 'alt', value: 'Mail icon' }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -114,7 +125,7 @@ const TEMPLATES = {
     }
     return t
   },
-  homeTemplate: function (title, body) {
+  basicTemplate: function (title, body) {
     const t = {
       header: [
         { type: 'a',
