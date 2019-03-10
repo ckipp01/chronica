@@ -3951,5 +3951,36 @@ const LOGS =
     "notes": "finish up the last of the entries before putting the wiki live",
     "location": "home",
     "project": "chronica"
+  },
+  {
+    "date": "2019-3-9",
+    "category": "admin",
+    "time": 45,
+    "notes": "cleaned up a few entries and did a quick fix for old versions of firefix",
+    "location": "home",
+    "project": "chronica"
+  },
+  {
+    "date": "2018-3-8",
+    "category": "study",
+    "time": 25,
+    "notes": "Watched another video in the reactive programming Scala course",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-3-9",
+    "category": "code",
+    "time": 35,
+    "notes": "Add in a couple small things like creative commons, a couple forgotten alt tags, and some linked code for chronica",
+    "location": "home",
+    "project": "chronica",
+    "tags": [
+      "javascript",
+      "css"
+    ]
   }
 ]
