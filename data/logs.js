@@ -3982,5 +3982,17 @@ const LOGS =
       "javascript",
       "css"
     ]
+  },
+  {
+    "date": "2019-3-10",
+    "category": "code",
+    "time": 60,
+    "notes": "Made sure the landing page matches the wiki. Also add in a mail icon, clean up css, and enable auto deployment of chronica.xyz just like the wiki",
+    "location": "home",
+    "project": "chronica",
+    "tags": [
+      "css",
+      "wiki.chronica"
+    ]
   }
 ]
