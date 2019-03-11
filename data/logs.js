@@ -3994,5 +3994,24 @@ const LOGS =
       "css",
       "wiki.chronica"
     ]
+  },
+  {
+    "date": "2019-3-11",
+    "category": "code",
+    "time": 50,
+    "notes": "Work on adding in the GET route for logs with a number to specify the amount of logs",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-3-11",
+    "category": "research",
+    "time": 35,
+    "notes": "Research some more general function as a service infomration for my tech-talk at work",
+    "location": "home",
+    "project": "programming"
   }
 ]
