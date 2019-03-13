@@ -4013,5 +4013,16 @@ const LOGS =
     "notes": "Research some more general function as a service infomration for my tech-talk at work",
     "location": "home",
     "project": "programming"
+  },
+  {
+    "date": "2019-3-13",
+    "category": "code",
+    "time": 60,
+    "notes": "Got the GET portion of the log route fully working",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "javascript"
+    ]
   }
 ]
