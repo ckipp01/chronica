@@ -120,8 +120,8 @@ const CRATE = {
         type: 'ul',
         children: [
           { type: 'li', text: '<code>GET /category</code> used to retrieve a list of categories that have been used' },
-          { type: 'li', text: '<code>POST /log</code> used for storing logs' },
-          { type: 'li', text: '<code>GET /recall</code> used for recalling the last entry' }
+          { type: 'li', text: '<code>GET /log</code> used for retrieving a certain amount of logs with an optional amount parameter' },
+          { type: 'li', text: '<code>POST /log</code> used for storing logs' }
         ]
       },
       {
