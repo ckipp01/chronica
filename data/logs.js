@@ -4024,5 +4024,21 @@ const LOGS =
     "tags": [
       "javascript"
     ]
+  },
+  {
+    "date": "2019-3-14",
+    "category": "research",
+    "time": 30,
+    "notes": "Re-read some of the docs on Now deployments and lambdas to better prepare for my tech talk next week",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-3-14",
+    "category": "explore",
+    "time": 30,
+    "notes": "Started customizing st and seeing what is all possible with it",
+    "location": "home",
+    "project": "workspace"
   }
 ]
