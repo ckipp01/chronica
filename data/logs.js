@@ -4040,5 +4040,18 @@ const LOGS =
     "notes": "Started customizing st and seeing what is all possible with it",
     "location": "home",
     "project": "workspace"
+  },
+  {
+    "date": "2019-3-15",
+    "category": "code",
+    "time": 45,
+    "notes": "Work on the recall portion of andaga-cli",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript",
+      "andaga",
+      "andaga-core"
+    ]
   }
 ]
