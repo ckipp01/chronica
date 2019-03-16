@@ -4053,5 +4053,41 @@ const LOGS =
       "andaga",
       "andaga-core"
     ]
+  },
+  {
+    "date": "2019-3-16",
+    "category": "code",
+    "time": 35,
+    "notes": "Get recall working correctly and able to pull various amounts from the api",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "andaga-core",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-3-16",
+    "category": "code",
+    "time": 25,
+    "notes": "Finished up the log recall of the api and added documentation",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "andaga-ccli",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-3-16",
+    "category": "code",
+    "time": 45,
+    "notes": "Finished up the log recall command and also added in the category command to get a list of categories used from the api",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "andaga-core",
+      "javascript"
+    ]
   }
 ]
