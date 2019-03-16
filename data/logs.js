@@ -4013,5 +4013,45 @@ const LOGS =
     "notes": "Research some more general function as a service infomration for my tech-talk at work",
     "location": "home",
     "project": "programming"
+  },
+  {
+    "date": "2019-3-13",
+    "category": "code",
+    "time": 60,
+    "notes": "Got the GET portion of the log route fully working",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-3-14",
+    "category": "research",
+    "time": 30,
+    "notes": "Re-read some of the docs on Now deployments and lambdas to better prepare for my tech talk next week",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-3-14",
+    "category": "explore",
+    "time": 30,
+    "notes": "Started customizing st and seeing what is all possible with it",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-3-15",
+    "category": "code",
+    "time": 45,
+    "notes": "Work on the recall portion of andaga-cli",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript",
+      "andaga",
+      "andaga-core"
+    ]
   }
 ]
