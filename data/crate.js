@@ -72,6 +72,7 @@ const CRATE = {
       {
         type: 'ul',
         children: [
+          { type: 'li', text: '<code>andaga category</code> used for retrieving a list of categories that have been used' },
           { type: 'li', text: '<code>andaga log</code> used for logging new entries' },
           { type: 'li', text: '<code>andaga recall</code> used for recalling the last entry' }
         ]
