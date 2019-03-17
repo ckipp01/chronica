@@ -4089,5 +4089,21 @@ const LOGS =
       "andaga-core",
       "javascript"
     ]
+  },
+  {
+    "date": "2019-3-17",
+    "category": "research",
+    "time": 55,
+    "notes": "Looked up some more information on different FaaS providers for my presentation this week",
+    "location": "Filtro",
+    "project": "programming"
+  },
+  {
+    "date": "2019-3-17",
+    "category": "write",
+    "time": 75,
+    "notes": "Wrote the majority of the presentation with examples for my serverless/zeit presentation",
+    "location": "home",
+    "project": "programming"
   }
 ]
