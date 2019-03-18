@@ -64,29 +64,13 @@ a:hover,
   font-weight: 400;
 }
 
-.code-logbar {
-  fill: #45503B;
-}
-
-.explore-logbar {
-  fill: #D15B3A;
-}
-
-.study-logbar {
-  fill: #1F2421;
-}
-
-.research-logbar {
-  fill: #323744;
-}
-
-.admin-logbar {
-  fill: #40798C;
-}
-
-.design-logbar {
-  fill: #F3DE8A;
-}
+.code-logbar { fill: #45503B; }
+.explore-logbar { fill: #D15B3A; }
+.study-logbar { fill: #1F2421; }
+.research-logbar { fill: #323744; }
+.admin-logbar { fill: #40798C; }
+.design-logbar { fill: #F3DE8A; }
+.write-logbar { fill: #3E92CC }
 
 .key-block,
 .keys-container {
