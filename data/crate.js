@@ -19,11 +19,19 @@ const CRATE = {
       },
       {
         type: 'h5',
-        text: 'Code for verion 1 : <a target="_blank" href="https://github.com/ckipp01/andaga-cli">ándaga</a>'
+        text: 'Code for verion 1 : <a target="_blank" href="https://github.com/ckipp01/andaga-cli/tree/year-one">ándaga</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Code for verion 2 : <a target="_blank" href="https://github.com/ckipp01/andaga-cli">ándaga-cli</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Code for verion 2 : <a target="_blank" href="https://github.com/ckipp01/andaga-core">ándaga-core</a>'
       },
       {
         type: 'p',
-        text: 'On January 1, 2018 I decided to make an effort to log all of my free time for year. I was inspred and intrigued by multiple other time trackers such as <a target="_blank" href="https://wiki.xxiivv.com/#horaire">Horaire by Devine Lu Linvega</a> and <a target="_blank" href="https://hraew.autophagy.io/faereld/">Færeld by Mika Naylor</a>. I originally split my time up into 4 categories: act, learn, rest and social. I logged a total of 36,880 minutes spread across 578 logs. The time that I tracked was limited to only time that I had 100% control over, besides time spent with my spouse. I was curious to find trends, get insights, and to simply see if I was able to do the act of logging for an entire year'
+        text: 'On January 1, 2018 I decided to make an effort to log all of my free time for year. I was inspred and intrigued by multiple other time trackers such as <a target="_blank" href="https://wiki.xxiivv.com/#horaire">Horaire by Devine Lu Linvega</a> and <a target="_blank" href="https://hraew.autophagy.io/faereld/">Færeld by Mika Naylor</a>. I originally split my time up into 4 categories: act, learn, rest and social. I logged a total of 36,880 minutes spread across 578 logs. The time tracked was limited to only time that I had 100% control over, besides time spent with my spouse. I was curious to find trends, get insights, and to simply see if I was able to do the act of logging for an entire year'
       },
       {
         type: 'p',
@@ -42,7 +50,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself -- one that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I implement this moving forward will continually change. That's where the flexibility comes into play.  What exactly it tracks is also continually changing. Many of these factors were taken into account as I began work on version 2 of the project.`
+        text: `While I did learn some things through the tracking, the main lesson I learned was more about the process of how I want to use and build tools for my own use. This was one of the first projects that I fully built for myself and used on a daily basis. I realized that I often forgot to log entries either because I didn't like logging that type of entry, social for example, or I would simply forget. Again, this taught me about the type of software I want to both build and use for myself -- one that is simple to understand, easy to use, and flexible both in data format and code. I assume the way I implement this moving forward will continually change. That's where the flexibility comes into play.  What exactly it tracks is also continually changing. Many of these factors were taken into account as I began work on version 2 of the project.`
       },
       {
         type: 'p',
@@ -54,6 +62,10 @@ const CRATE = {
           { type: 'li', text: '<a href="#andaga-cli">ándaga-cli</a> which is a small command line app written in Node. Instead of storing the entries locally, they send them to a ándaga-core to be stored.' },
           { type: 'li', text: '<a href="#andaga-core">ándaga-core</a> which is a serverless Node app hosted on <a target="_blank" href="http://zeit.co">Zeit</a>, which will store my entries in a MongoDB database.' }
         ]
+      },
+      {
+        type: 'p',
+        text: `The aim for version 2 is largely the same as version 1, but a few details have changed. I'm no longer tracking social and rest time. The whole idea of everything fitting into 4 categories has been thrown out. There will now be no limit on the amount of categories there can be. Also, I'm only tracking the time I spend on personal projects. This can range from building something, learning language, or studying programming paradigms. Hopefully this will give me insight into when I'm productive, when I typically have more energy to study, and what I enjoy working on. My hope if to make this obvious as I build more data visualization into <a href="#chronica">chronica</a>.`
       }
     ]
   },
