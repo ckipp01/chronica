@@ -127,7 +127,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: 'There are currently only 3 routes built into the api:'
+        text: 'Below are the current routes that exist:'
       },
       {
         type: 'ul',
