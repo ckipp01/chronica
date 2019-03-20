@@ -4074,7 +4074,7 @@ const LOGS =
     "location": "home",
     "project": "andaga-core",
     "tags": [
-      "andaga-ccli",
+      "andaga-cli",
       "javascript"
     ]
   },
@@ -4103,6 +4103,14 @@ const LOGS =
     "category": "write",
     "time": 75,
     "notes": "Wrote the majority of the presentation with examples for my serverless/zeit presentation",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-3-18",
+    "category": "study",
+    "time": 55,
+    "notes": "Did full walkthrough of my presenation for tomorrow",
     "location": "home",
     "project": "programming"
   }
