@@ -4113,5 +4113,25 @@ const LOGS =
     "notes": "Did full walkthrough of my presenation for tomorrow",
     "location": "home",
     "project": "programming"
+  },
+  {
+    "date": "2019-3-20",
+    "category": "admin",
+    "time": 35,
+    "notes": "Double checked what I used for deployments for andaga-core, made a list of new routes that I should focus on, and make sure MongoDB and env is running fine",
+    "location": "home",
+    "project": "andaga"
+  },
+  {
+    "date": "2019-3-20",
+    "category": "code",
+    "time": 25,
+    "notes": "Added in the ability to retrieve a list of projects used so far",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "javascript",
+      "andaga"
+    ]
   }
 ]
