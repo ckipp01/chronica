@@ -4133,5 +4133,24 @@ const LOGS =
       "javascript",
       "andaga"
     ]
+  },
+  {
+    "date": "2019-3-21",
+    "category": "admin",
+    "time": 35,
+    "notes": "Trying to debug why my backup script isn't working correctly with CRON",
+    "location": "home",
+    "project": "chronica"
+  },
+  {
+    "date": "2019-3-21",
+    "category": "code",
+    "time": 45,
+    "notes": "Resized images, compressed them, and added in some twitter meta tags and a couple style tweaks",
+    "location": "home",
+    "project": "chronica",
+    "tags": [
+      "css"
+    ]
   }
 ]
