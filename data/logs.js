@@ -4152,5 +4152,13 @@ const LOGS =
     "tags": [
       "css"
     ]
+  },
+  {
+    "date": "2019-3-22",
+    "category": "research",
+    "time": 45,
+    "notes": "Try to research some common ssh connetion issues with github and scripting",
+    "location": "home",
+    "project": "chronica"
   }
 ]
