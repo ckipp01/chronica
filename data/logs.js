@@ -4160,5 +4160,46 @@ const LOGS =
     "notes": "Try to research some common ssh connetion issues with github and scripting",
     "location": "home",
     "project": "chronica"
+  },
+  {
+    "date": "2019-3-22",
+    "category": "admin",
+    "time": 45,
+    "notes": "Fixed the issue I was having with my cron job and was able to update dependencies and packages on server",
+    "location": "Filtro",
+    "project": "chronica"
+  },
+  {
+    "date": "2019-3-22",
+    "category": "code",
+    "time": 55,
+    "notes": "Started adding in the ability to have a report page on my wiki to give an overview of all missing tag entries or key entries",
+    "location": "home",
+    "project": "chronica",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-3-24",
+    "category": "study",
+    "time": 30,
+    "notes": "Worked on my reactive programming course",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-3-24",
+    "category": "code",
+    "time": 25,
+    "notes": "Cleaned up a bit of the templating and moved the crate helpers to another file",
+    "location": "home",
+    "project": "chronica",
+    "tags": [
+      "javascript"
+    ]
   }
 ]
