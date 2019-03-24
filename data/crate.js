@@ -1,7 +1,7 @@
 const CRATE = {
   andaga: {
     title: 'ándaga',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       { type: 'div',
         attributes: [
@@ -71,7 +71,7 @@ const CRATE = {
   },
   'andaga-cli': {
     title: 'ándaga-cli',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'h5',
@@ -84,8 +84,9 @@ const CRATE = {
       {
         type: 'ul',
         children: [
-          { type: 'li', text: '<code>andaga category</code> used for retrieving a list of categories that have been used' },
+          { type: 'li', text: '<code>andaga categories</code> used for retrieving a list of categories that have been used' },
           { type: 'li', text: '<code>andaga log</code> used for logging new entries' },
+          { type: 'li', text: '<code>andaga projects</code> used for retrieving a list of projects that have been logged' },
           { type: 'li', text: '<code>andaga recall</code> used for recalling the last entry' }
         ]
       },
@@ -93,19 +94,9 @@ const CRATE = {
         type: 'p',
         text: 'An example of how to store a log can be found below:'
       },
-      { type: 'div',
-        attributes: [
-          { type: 'class', value: 'media-container' }
-        ],
-        children: [
-          { type: 'img',
-            attributes: [
-              { type: 'src', value: 'media/andaga-cli.png' },
-              { type: 'class', value: 'main-image' },
-              { type: 'alt', value: 'Example log entry using ándaga-cli' }
-            ]
-          }
-        ]
+      {
+        type: 'p',
+        text: '<code>andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga,javascript'
       },
       {
         type: 'p',
@@ -115,7 +106,7 @@ const CRATE = {
   },
   'andaga-core': {
     title: 'ándaga-core',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'h5',
@@ -146,7 +137,7 @@ const CRATE = {
   },
   chronica: {
     title: 'chronica',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'h5',
@@ -212,7 +203,7 @@ const CRATE = {
   },
   gyul: {
     title: '귤 gyul',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       { type: 'div',
         attributes: [
@@ -247,7 +238,7 @@ const CRATE = {
   },
   home: {
     title: 'welcome',
-    template: 'basicTemplate',
+    template: 'basic',
     body: [
       {
         type: 'p',
@@ -264,7 +255,7 @@ const CRATE = {
   },
   language: {
     title: 'language',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'p',
@@ -278,7 +269,7 @@ const CRATE = {
   },
   me: {
     title: 'Chris',
-    template: 'basicTemplate',
+    template: 'basic',
     body: [
       { type: 'div',
         attributes: [
@@ -310,7 +301,7 @@ const CRATE = {
   },
   missing: {
     title: 'Missing',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'p',
@@ -320,7 +311,7 @@ const CRATE = {
   },
   modernheirloomstudio: {
     title: 'modern heirloom studio',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       { type: 'div',
         attributes: [
@@ -344,7 +335,7 @@ const CRATE = {
   },
   programming: {
     title: 'programming',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'h5',
@@ -359,7 +350,7 @@ const CRATE = {
   },
   scripts: {
     title: 'scripts',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'p',
@@ -369,7 +360,7 @@ const CRATE = {
   },
   studiosyk: {
     title: 'studio syk',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       { type: 'div',
         attributes: [
@@ -397,7 +388,7 @@ const CRATE = {
   },
   'waka-fetch': {
     title: 'waka-fetch',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       { type: 'div',
         attributes: [
@@ -425,7 +416,7 @@ const CRATE = {
   },
   'waka-machine': {
     title: 'waka-machine',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       {
         type: 'h5',
@@ -443,7 +434,7 @@ const CRATE = {
   },
   workspace: {
     title: 'workspace',
-    template: 'mainTemplate',
+    template: 'main',
     body: [
       { type: 'div',
         attributes: [
@@ -480,27 +471,4 @@ const CRATE = {
       }
     ]
   }
-}
-
-function createProjectObject (acc, cur) {
-  acc[cur.project] = acc[cur.project] || {}
-  acc[cur.project].time = acc[cur.project].time || 0
-  acc[cur.project].entries = acc[cur.project].entries || 0
-  acc[cur.project].time = acc[cur.project].time += cur.time
-  acc[cur.project].entries = acc[cur.project].entries += 1
-  return acc
-}
-
-function createProjects (logs) {
-  const logsObject = logs
-    .filter(_ => _.project !== undefined)
-    .reduce(createProjectObject, Object.create(null))
-  const projects = Object.keys(logsObject)
-  return projects
-    .sort()
-    .map(p => `<div>
-                  <p>Project: <a href='#${p}'>${p}</a><br>
-                  Time: ${logsObject[p].time} minutes<br>
-                  Entries: ${logsObject[p].entries} logs
-                </div>`)
 }

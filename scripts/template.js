@@ -83,7 +83,7 @@ const footer = [
 ]
 
 const TEMPLATES = {
-  mainTemplate: function (title, body) {
+  main: function (title, body) {
     const t = {
       header: [
         { type: 'a',
@@ -139,7 +139,7 @@ const TEMPLATES = {
     }
     return t
   },
-  basicTemplate: function (title, body) {
+  basic: function (title, body) {
     const t = {
       header: [
         { type: 'a',
