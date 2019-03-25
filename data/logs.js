@@ -4201,5 +4201,17 @@ const LOGS =
     "tags": [
       "javascript"
     ]
+  },
+  {
+    "date": "2019-3-25",
+    "category": "code",
+    "time": 30,
+    "notes": "Worked on getting another route in to add tags",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "javascript",
+      "andaga"
+    ]
   }
 ]
