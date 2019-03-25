@@ -73,12 +73,24 @@ const footer = [
       }
     ]
   },
-  { type: 'a',
-    attributes: [
-      { type: 'href', value: 'https://creativecommons.org/licenses/by-nc-sa/4.0/' },
-      { type: 'target', value: '_blank' }
-    ],
-    text: 'CC BY-NC-SA 4.0'
+  { type: 'div',
+    children: [
+      { type: 'a',
+        attributes: [
+          { type: 'href', value: 'https://creativecommons.org/licenses/by-nc-sa/4.0/' },
+          { type: 'target', value: '_blank' }
+        ],
+        text: 'CC BY-NC-SA 4.0'
+      }
+    ]
+  },
+  { type: 'div',
+    children: [
+      { type: 'a',
+        attributes: [{ type: 'href', value: '#gyul' }],
+        text: '귤 1.1.0'
+      }
+    ]
   }
 ]
 

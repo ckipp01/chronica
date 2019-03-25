@@ -20,6 +20,10 @@ a:hover,
   text-decoration: underline #D15B3A;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;

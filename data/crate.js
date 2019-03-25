@@ -126,7 +126,8 @@ const CRATE = {
           { type: 'li', text: '<code>GET /categories</code> used to retrieve a list of categories that have been used' },
           { type: 'li', text: '<code>GET /log</code> used for retrieving a certain amount of logs with an optional amount parameter' },
           { type: 'li', text: '<code>POST /log</code> used for storing logs' },
-          { type: 'li', text: '<code>GET /projects</code> used to retrieve a list of projects that have been used' }
+          { type: 'li', text: '<code>GET /projects</code> used to retrieve a list of projects that have been used' },
+          { type: 'li', text: '<code>GET /tags</code> used to retrieve a list of tags that have been used' }
         ]
       },
       {
