@@ -3768,7 +3768,7 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -3793,7 +3793,7 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -4211,6 +4211,28 @@ const LOGS =
     "project": "andaga-core",
     "tags": [
       "javascript",
+      "andaga"
+    ]
+  },
+  {
+    "date": "2019-3-26",
+    "category": "research",
+    "time": 30,
+    "notes": "Looked into some ranger settings and ways to display images with it",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "date": "2019-3-26",
+    "category": "code",
+    "time": 15,
+    "notes": "Added in the tags command to retrieve a list of used tags",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
       "andaga"
     ]
   }
