@@ -79,7 +79,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: 'ándaga-cli is a small command line application written in Node to log my personal project entries. This project is the command line portion of the <a href="#andaga">ándaga</a> system. Following a year of tracking my time I determined I wanted easier access to my logs in various ways which meant splitting up the project into more of an api and a client. This is the client. The cli program only currently has 2 commands:'
+        text: 'ándaga-cli is a small command line application written in Node to log my personal project entries. This project is the command line portion of the <a href="#andaga">ándaga</a> system. Following a year of tracking my time I determined I wanted easier access to my logs in various ways which meant splitting up the project into more of an api and a client. This is the client. Below are the current commands that exist:'
       },
       {
         type: 'ul',
@@ -87,7 +87,8 @@ const CRATE = {
           { type: 'li', text: '<code>andaga categories</code> used for retrieving a list of categories that have been used' },
           { type: 'li', text: '<code>andaga log</code> used for logging new entries' },
           { type: 'li', text: '<code>andaga projects</code> used for retrieving a list of projects that have been logged' },
-          { type: 'li', text: '<code>andaga recall</code> used for recalling the last entry' }
+          { type: 'li', text: '<code>andaga recall</code> used for recalling the last entry' },
+          { type: 'li', text: '<code>andaga tags</code> used for retrieving a list of tags that have been used' }
         ]
       },
       {
