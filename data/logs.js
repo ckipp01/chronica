@@ -4235,5 +4235,13 @@ const LOGS =
     "tags": [
       "andaga"
     ]
+  },
+  {
+    "date": "2019-3-27",
+    "category": "research",
+    "time": 40,
+    "notes": "Tried figuring out what would be the best way to impliment a timer in andaga",
+    "location": "home",
+    "project": "andaga-cli"
   }
 ]
