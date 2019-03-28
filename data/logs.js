@@ -2849,7 +2849,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-01",
+    "date": "2019-01-01",
     "category": "admin",
     "time": 25,
     "notes": "worked on cleaning up my workspsace a bit",
@@ -2857,7 +2857,7 @@ const LOGS =
     "project": "workspace"
   },
   {
-    "date": "2019-1-01",
+    "date": "2019-01-01",
     "category": "explore",
     "time": 120,
     "notes": "worked a bunch on figuring out what I want chronica.xyz to be",
@@ -2865,7 +2865,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-1-02",
+    "date": "2019-01-02",
     "category": "research",
     "time": 30,
     "notes": "researched serverless architecture",
@@ -2876,7 +2876,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-03",
+    "date": "2019-01-03",
     "category": "admin",
     "time": 45,
     "notes": "worked on dockerizing mongodb on server",
@@ -2886,7 +2886,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-03",
+    "date": "2019-01-03",
     "category": "admin",
     "time": 30,
     "notes": "worked some on waka-fetch database",
@@ -2894,7 +2894,7 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
-    "date": "2019-1-04",
+    "date": "2019-01-04",
     "category": "admin",
     "time": 120,
     "notes": "worked on mongo stuff on server",
@@ -2906,7 +2906,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-05",
+    "date": "2019-01-05",
     "category": "admin",
     "time": 60,
     "notes": "finished up db setup for waka fetch and waka machine",
@@ -2917,7 +2917,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-05",
+    "date": "2019-01-05",
     "category": "code",
     "time": 90,
     "notes": "worked on the new node version of waka-fetch",
@@ -2928,7 +2928,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-06",
+    "date": "2019-01-06",
     "category": "admin",
     "time": 45,
     "notes": "worked on security issues on digital ocean",
@@ -2938,7 +2938,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-06",
+    "date": "2019-01-06",
     "category": "code",
     "time": 120,
     "notes": "worked on rewriting waka-fetch in js",
@@ -2949,7 +2949,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-07",
+    "date": "2019-01-07",
     "category": "code",
     "time": 60,
     "notes": "worked on wakafetch",
@@ -2960,7 +2960,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-07",
+    "date": "2019-01-07",
     "category": "research",
     "time": 60,
     "notes": "read up on securing serverless apis",
@@ -2971,7 +2971,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-08",
+    "date": "2019-01-08",
     "category": "code",
     "time": 60,
     "notes": "worked on securing the waka-fetch api",
@@ -2979,7 +2979,7 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
-    "date": "2019-1-09",
+    "date": "2019-01-09",
     "category": "admin",
     "time": 45,
     "notes": "worked on deploying waka-fetch",
@@ -2987,7 +2987,7 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
-    "date": "2019-1-09",
+    "date": "2019-01-09",
     "category": "research",
     "time": 45,
     "notes": "read about request response stuff",
@@ -2998,7 +2998,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-10",
+    "date": "2019-01-10",
     "category": "code",
     "time": 45,
     "notes": "debugged some serverless issues with waka-fetch",
@@ -3009,7 +3009,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-11",
+    "date": "2019-01-11",
     "category": "admin",
     "time": 60,
     "notes": "finished up deploying waka-fetch",
@@ -3017,7 +3017,7 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
-    "date": "2019-1-11",
+    "date": "2019-01-11",
     "category": "design",
     "time": 30,
     "notes": "look a bit into options of new andaga-cli structure",
@@ -3029,14 +3029,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-12",
+    "date": "2019-01-12",
     "category": "admin",
     "time": 45,
     "notes": "work on server settings",
     "location": "home"
   },
   {
-    "date": "2019-1-12",
+    "date": "2019-01-12",
     "category": "code",
     "time": 10,
     "notes": "clean up links on chronica",
@@ -3047,7 +3047,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-12",
+    "date": "2019-01-12",
     "category": "code",
     "time": 60,
     "notes": "get started on andaga-core",
@@ -3059,7 +3059,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-14",
+    "date": "2019-01-14",
     "category": "admin",
     "time": 30,
     "notes": "trying debuggins some issues with cron related to waka-fetch",
@@ -3070,7 +3070,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-15",
+    "date": "2019-01-15",
     "category": "code",
     "time": 45,
     "notes": "started work on new andaga-cli",
@@ -3082,7 +3082,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-16",
+    "date": "2019-01-16",
     "category": "admin",
     "time": 20,
     "notes": "double checked server settings for waka-fetch and cleaned up logging",
@@ -3090,7 +3090,7 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
-    "date": "2019-1-16",
+    "date": "2019-01-16",
     "category": "code",
     "time": 30,
     "notes": "worked on new andaga-cli",
@@ -3102,7 +3102,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-17",
+    "date": "2019-01-17",
     "category": "code",
     "time": 60,
     "notes": "worked on new andaga-cli",
@@ -3114,7 +3114,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-18",
+    "date": "2019-01-18",
     "category": "research",
     "time": 20,
     "notes": "read some about error reporting in node",
@@ -3125,7 +3125,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-18",
+    "date": "2019-01-18",
     "category": "code",
     "time": 40,
     "notes": "worked on andaga-cli",
@@ -3137,7 +3137,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-19",
+    "date": "2019-01-19",
     "category": "code",
     "time": 180,
     "notes": "worked on andaga-cli",
@@ -3149,7 +3149,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-19",
+    "date": "2019-01-19",
     "category": "code",
     "time": 120,
     "notes": "worked on andaga-core",
@@ -3161,7 +3161,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-20",
+    "date": "2019-01-20",
     "category": "research",
     "time": 60,
     "notes": "tried to debug why andaga-core isn't working right in production",
@@ -3173,7 +3173,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-20",
+    "date": "2019-01-20",
     "category": "research",
     "time": 45,
     "notes": "read up on mongodb and serverless to try and debug andaga-core",
@@ -3185,7 +3185,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-20",
+    "date": "2019-01-20",
     "category": "code",
     "time": 60,
     "notes": "work on andaga-core",
@@ -3197,7 +3197,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-21",
+    "date": "2019-01-21",
     "category": "code",
     "time": 60,
     "notes": "work on debugging andaga-core",
@@ -3209,7 +3209,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-21",
+    "date": "2019-01-21",
     "category": "code",
     "time": 30,
     "notes": "fix version of mongodb to finally fix andaga-core in production",
@@ -3221,7 +3221,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-22",
+    "date": "2019-01-22",
     "category": "code",
     "time": 30,
     "notes": "made andaga-cli able to hand both test and live",
@@ -3233,7 +3233,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-23",
+    "date": "2019-01-23",
     "category": "admin",
     "time": 45,
     "notes": "cleaned up logs",
@@ -3241,7 +3241,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-1-24",
+    "date": "2019-01-24",
     "category": "admin",
     "time": 55,
     "notes": "finished up log import and restructuring",
@@ -3249,7 +3249,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-1-26",
+    "date": "2019-01-26",
     "category": "research",
     "time": 45,
     "notes": "researched proxy's for potential use in gyul",
@@ -3260,7 +3260,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-26",
+    "date": "2019-01-26",
     "category": "code",
     "time": 30,
     "notes": "start working on recall command",
@@ -3272,7 +3272,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-26",
+    "date": "2019-01-26",
     "category": "code",
     "time": 45,
     "notes": "start work on studiosyk",
@@ -3285,7 +3285,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-26",
+    "date": "2019-01-26",
     "category": "code",
     "time": 90,
     "notes": "work on main parts of studiosyk",
@@ -3298,7 +3298,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-27",
+    "date": "2019-01-27",
     "category": "code",
     "time": 120,
     "notes": "work more on studiosyk",
@@ -3311,7 +3311,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-27",
+    "date": "2019-01-27",
     "category": "code",
     "time": 120,
     "notes": "work on components for studiosyk",
@@ -3324,7 +3324,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-27",
+    "date": "2019-01-27",
     "category": "code",
     "time": 45,
     "notes": "worked some more on studiosyk",
@@ -3337,7 +3337,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-28",
+    "date": "2019-01-28",
     "category": "code",
     "time": 45,
     "notes": "worked some more on studiosyk",
@@ -3350,7 +3350,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-28",
+    "date": "2019-01-28",
     "category": "research",
     "time": 15,
     "notes": "watched some videos on js prototype inheritance",
@@ -3362,7 +3362,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-28",
+    "date": "2019-01-28",
     "category": "admin",
     "time": 90,
     "notes": "work on getting studiosyk up and also getting the email set up",
@@ -3375,7 +3375,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-29",
+    "date": "2019-01-29",
     "category": "code",
     "time": 60,
     "notes": "work on getting studiosyk finished",
@@ -3388,7 +3388,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-29",
+    "date": "2019-01-29",
     "category": "admin",
     "time": 100,
     "notes": "get studiosyk ready for launch",
@@ -3401,7 +3401,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-30",
+    "date": "2019-01-30",
     "category": "code",
     "time": 45,
     "notes": "finish up work on studiosyk for launch",
@@ -3414,14 +3414,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-30",
+    "date": "2019-01-30",
     "category": "research",
     "time": 30,
     "notes": "research about dat protocol",
     "location": "home"
   },
   {
-    "date": "2019-1-30",
+    "date": "2019-01-30",
     "category": "admin",
     "time": 60,
     "notes": "launch studiosyk and put on final touches",
@@ -3434,14 +3434,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-30",
+    "date": "2019-01-30",
     "category": "admin",
     "time": 30,
     "notes": "figured out a new way to do logging with categories",
     "location": "home"
   },
   {
-    "date": "2019-1-31",
+    "date": "2019-01-31",
     "category": "admin",
     "time": 60,
     "notes": "fixed all the categoris of previous logs and took out unrelated ones that no longer apply",
@@ -3449,7 +3449,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-2-1",
+    "date": "2019-02-01",
     "category": "admin",
     "time": 45,
     "notes": "assigning projects and tags to first year entries",
@@ -3457,7 +3457,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-2-2",
+    "date": "2019-02-02",
     "category": "admin",
     "time": 75,
     "notes": "workd on finishing up putting in projects and tags for old records",
@@ -3465,7 +3465,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-2-2",
+    "date": "2019-02-02",
     "category": "research",
     "time": 25,
     "notes": "looked at different types of mongo clients for node",
@@ -3477,7 +3477,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-1-3",
+    "date": "2019-01-03",
     "category": "code",
     "time": 90,
     "notes": "instead of using mongoose, create my own scheme like check on entries for logging using js classes",
@@ -3489,7 +3489,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-4",
+    "date": "2019-02-04",
     "category": "code",
     "time": 60,
     "notes": "debugged what I worked on yesterday and got it working in production",
@@ -3501,7 +3501,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-4",
+    "date": "2019-02-04",
     "category": "admin",
     "time": 45,
     "notes": "cleaned up some old logs and made sure categories matched",
@@ -3509,7 +3509,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-2-5",
+    "date": "2019-02-05",
     "category": "research",
     "time": 60,
     "notes": "look up different ways to build gyul with minimal code, clean logic, and not a bunch of unecessary stuff",
@@ -3520,7 +3520,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-6",
+    "date": "2019-02-06",
     "category": "explore",
     "time": 60,
     "notes": "started work on gyul and playing around with a few ideas",
@@ -3531,7 +3531,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-7",
+    "date": "2019-02-07",
     "category": "explore",
     "time": 45,
     "notes": "looked and played around with oscean to get an idea of how thing are working and how I could borrow some stuff for gyul",
@@ -3542,7 +3542,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-7",
+    "date": "2019-02-07",
     "category": "code",
     "time": 45,
     "notes": "started work on layout of gyul",
@@ -3553,7 +3553,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-8",
+    "date": "2019-02-08",
     "category": "explore",
     "time": 60,
     "notes": "working on the best way to store a templating and data store locally",
@@ -3565,7 +3565,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-9",
+    "date": "2019-02-09",
     "category": "research",
     "time": 45,
     "notes": "dove into some react stuff to better prepare for work",
@@ -3576,7 +3576,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-10",
+    "date": "2019-02-10",
     "category": "research",
     "time": 120,
     "notes": "found a way to export logs from mongo, remove the id field, insert const LOGS = and save it as a js file to be used. Also worked on some general format stuff with gyul",
@@ -3588,7 +3588,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-10",
+    "date": "2019-02-10",
     "category": "explore",
     "time": 60,
     "notes": "still really working on the data structure and how gyul will work",
@@ -3599,7 +3599,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-11",
+    "date": "2019-02-11",
     "category": "study",
     "time": 30,
     "notes": "worked on dutch",
@@ -3610,7 +3610,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-11",
+    "date": "2019-02-11",
     "category": "design",
     "time": 60,
     "notes": "worked a lot on the layout of how I want chronica to be",
@@ -3618,7 +3618,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-2-12",
+    "date": "2019-02-12",
     "category": "code",
     "time": 45,
     "notes": "worked a bit more on the class structure of gyul",
@@ -3629,7 +3629,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-13",
+    "date": "2019-02-13",
     "category": "code",
     "time": 60,
     "notes": "worked on some class layout of gyul and some basic styling",
@@ -3641,7 +3641,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-13",
+    "date": "2019-02-13",
     "category": "study",
     "time": 45,
     "notes": "worked through some YDKJ stuff again",
@@ -3652,7 +3652,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-13",
+    "date": "2019-02-13",
     "category": "code",
     "time": 45,
     "notes": "worked on getting attributes in for elems",
@@ -3663,7 +3663,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-14",
+    "date": "2019-02-14",
     "category": "code",
     "time": 60,
     "notes": "worked on adding in more element types",
@@ -3674,7 +3674,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-15",
+    "date": "2019-02-15",
     "category": "explore",
     "time": 45,
     "notes": "messed around with a view various ways to do the main gyul",
@@ -3682,7 +3682,7 @@ const LOGS =
     "project": "gyul"
   },
   {
-    "date": "2019-2-16",
+    "date": "2019-02-16",
     "category": "code",
     "time": 90,
     "notes": "worked on adding in some more tab features",
@@ -3693,7 +3693,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-17",
+    "date": "2019-02-17",
     "category": "code",
     "time": 45,
     "notes": "worked some more on the tabs of gyul",
@@ -3704,7 +3704,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-18",
+    "date": "2019-02-18",
     "category": "code",
     "time": 90,
     "notes": "worked on getting all of the stats I want to display",
@@ -3715,7 +3715,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-19",
+    "date": "2019-02-19",
     "category": "code",
     "time": 55,
     "notes": "worked on a couple helper functions utilizing reduce to get the logs in the shape that I want them to start displaying",
@@ -3726,7 +3726,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-19",
+    "date": "2019-02-19",
     "category": "code",
     "time": 30,
     "notes": "worked on my reactive programming with Scala course",
@@ -3736,7 +3736,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-19",
+    "date": "2019-02-19",
     "category": "code",
     "time": 45,
     "notes": "worked on data vizualization for logs",
@@ -3748,7 +3748,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-20",
+    "date": "2019-02-20",
     "category": "code",
     "time": 50,
     "notes": "worked on dynamically displaying svgs",
@@ -3760,7 +3760,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-20",
+    "date": "2019-02-20",
     "category": "study",
     "time": 25,
     "notes": "watched a video for my reactive programming series",
@@ -3772,7 +3772,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-21",
+    "date": "2019-02-21",
     "category": "code",
     "time": 50,
     "notes": "worked on displaying stats and keys",
@@ -3785,7 +3785,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-21",
+    "date": "2019-02-21",
     "category": "code",
     "time": 65,
     "notes": "finished week on of the excersies for programming reactive systems in scala",
@@ -3797,7 +3797,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-22",
+    "date": "2019-02-22",
     "category": "code",
     "time": 55,
     "notes": "added in more details on what is shown about logs in chronica and also how the stats are displayed",
@@ -3809,7 +3809,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-22",
+    "date": "2019-02-22",
     "category": "design",
     "time": 25,
     "notes": "worked on the colorscheme for chronica a bit",
@@ -3817,7 +3817,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-2-22",
+    "date": "2019-02-22",
     "category": "code",
     "time": 45,
     "notes": "worked on displaying tags in a better way and also adding in links with tags",
@@ -3829,7 +3829,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-23",
+    "date": "2019-02-23",
     "category": "admin",
     "time": 20,
     "notes": "took down chronica for a bit and put up a placeholder until the whole thing is actually ready to be up",
@@ -3837,7 +3837,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-2-23",
+    "date": "2019-02-23",
     "category": "code",
     "time": 45,
     "notes": "add in another templace for the homepage and add in styling for links",
@@ -3850,7 +3850,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-23",
+    "date": "2019-02-23",
     "category": "code",
     "time": 55,
     "notes": "worked on specific styling and layout for some things on chronica",
@@ -3863,7 +3863,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-24",
+    "date": "2019-02-24",
     "category": "admin",
     "time": 75,
     "notes": "worked on the best way to deploy wiki.chronica with a custom 404 on zeit and also how to correctly minify html and css on deployment",
@@ -3871,7 +3871,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-2-24",
+    "date": "2019-02-24",
     "category": "study",
     "time": 30,
     "notes": "watched multiple videos for week two of the reactive programming course",
@@ -3879,7 +3879,7 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-2-26",
+    "date": "2019-02-26",
     "category": "code",
     "time": 35,
     "notes": "worked some more on the way the page refreshes - I want it to replace the dom elements without a refresh",
@@ -3890,7 +3890,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-27",
+    "date": "2019-02-27",
     "category": "code",
     "time": 45,
     "notes": "worked a bunch on fonts and figuring out the best way to do variable fonts",
@@ -3901,7 +3901,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-2-28",
+    "date": "2019-02-28",
     "category": "code",
     "time": 30,
     "notes": "got everything working responsively the way that I wanted it to",
@@ -3913,7 +3913,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-2",
+    "date": "2019-03-02",
     "category": "write",
     "time": 45,
     "notes": "worked on filling in content for andaga and andaga-core",
@@ -3921,7 +3921,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-3",
+    "date": "2019-03-03",
     "category": "write",
     "time": 25,
     "notes": "work on filling in some more data for wiki.chronica",
@@ -3929,7 +3929,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-4",
+    "date": "2019-03-04",
     "category": "admin",
     "time": 65,
     "notes": "work on figuring out a way for my logs to be nighly pulled, pushed, and deployed automatically",
@@ -3937,7 +3937,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-6",
+    "date": "2019-03-06",
     "category": "write",
     "time": 115,
     "notes": "Add in a bunch on info about various projects. Ready to go live soon",
@@ -3945,7 +3945,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-7",
+    "date": "2019-03-07",
     "category": "write",
     "time": 75,
     "notes": "finish up the last of the entries before putting the wiki live",
@@ -3953,7 +3953,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-9",
+    "date": "2019-03-09",
     "category": "admin",
     "time": 45,
     "notes": "cleaned up a few entries and did a quick fix for old versions of firefix",
@@ -3961,7 +3961,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2018-3-8",
+    "date": "2018-03-08",
     "category": "study",
     "time": 25,
     "notes": "Watched another video in the reactive programming Scala course",
@@ -3972,7 +3972,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-9",
+    "date": "2019-03-09",
     "category": "code",
     "time": 35,
     "notes": "Add in a couple small things like creative commons, a couple forgotten alt tags, and some linked code for chronica",
@@ -3984,7 +3984,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-10",
+    "date": "2019-03-10",
     "category": "code",
     "time": 60,
     "notes": "Made sure the landing page matches the wiki. Also add in a mail icon, clean up css, and enable auto deployment of chronica.xyz just like the wiki",
@@ -3996,7 +3996,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-11",
+    "date": "2019-03-11",
     "category": "code",
     "time": 50,
     "notes": "Work on adding in the GET route for logs with a number to specify the amount of logs",
@@ -4007,7 +4007,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-11",
+    "date": "2019-03-11",
     "category": "research",
     "time": 35,
     "notes": "Research some more general function as a service infomration for my tech-talk at work",
@@ -4015,7 +4015,7 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-3-13",
+    "date": "2019-03-13",
     "category": "code",
     "time": 60,
     "notes": "Got the GET portion of the log route fully working",
@@ -4026,7 +4026,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-14",
+    "date": "2019-03-14",
     "category": "research",
     "time": 30,
     "notes": "Re-read some of the docs on Now deployments and lambdas to better prepare for my tech talk next week",
@@ -4034,7 +4034,7 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-3-14",
+    "date": "2019-03-14",
     "category": "explore",
     "time": 30,
     "notes": "Started customizing st and seeing what is all possible with it",
@@ -4042,7 +4042,7 @@ const LOGS =
     "project": "workspace"
   },
   {
-    "date": "2019-3-15",
+    "date": "2019-03-15",
     "category": "code",
     "time": 45,
     "notes": "Work on the recall portion of andaga-cli",
@@ -4055,7 +4055,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-16",
+    "date": "2019-03-16",
     "category": "code",
     "time": 35,
     "notes": "Get recall working correctly and able to pull various amounts from the api",
@@ -4067,7 +4067,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-16",
+    "date": "2019-03-16",
     "category": "code",
     "time": 25,
     "notes": "Finished up the log recall of the api and added documentation",
@@ -4079,7 +4079,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-16",
+    "date": "2019-03-16",
     "category": "code",
     "time": 45,
     "notes": "Finished up the log recall command and also added in the category command to get a list of categories used from the api",
@@ -4091,7 +4091,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-17",
+    "date": "2019-03-17",
     "category": "research",
     "time": 55,
     "notes": "Looked up some more information on different FaaS providers for my presentation this week",
@@ -4099,7 +4099,7 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-3-17",
+    "date": "2019-03-17",
     "category": "write",
     "time": 75,
     "notes": "Wrote the majority of the presentation with examples for my serverless/zeit presentation",
@@ -4107,7 +4107,7 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-3-18",
+    "date": "2019-03-18",
     "category": "study",
     "time": 55,
     "notes": "Did full walkthrough of my presenation for tomorrow",
@@ -4115,7 +4115,7 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-3-20",
+    "date": "2019-03-20",
     "category": "admin",
     "time": 35,
     "notes": "Double checked what I used for deployments for andaga-core, made a list of new routes that I should focus on, and make sure MongoDB and env is running fine",
@@ -4123,7 +4123,7 @@ const LOGS =
     "project": "andaga"
   },
   {
-    "date": "2019-3-20",
+    "date": "2019-03-20",
     "category": "code",
     "time": 25,
     "notes": "Added in the ability to retrieve a list of projects used so far",
@@ -4135,7 +4135,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-21",
+    "date": "2019-03-21",
     "category": "admin",
     "time": 35,
     "notes": "Trying to debug why my backup script isn't working correctly with CRON",
@@ -4143,7 +4143,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-21",
+    "date": "2019-03-21",
     "category": "code",
     "time": 45,
     "notes": "Resized images, compressed them, and added in some twitter meta tags and a couple style tweaks",
@@ -4154,7 +4154,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-22",
+    "date": "2019-03-22",
     "category": "research",
     "time": 45,
     "notes": "Try to research some common ssh connetion issues with github and scripting",
@@ -4162,7 +4162,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-22",
+    "date": "2019-03-22",
     "category": "admin",
     "time": 45,
     "notes": "Fixed the issue I was having with my cron job and was able to update dependencies and packages on server",
@@ -4170,7 +4170,7 @@ const LOGS =
     "project": "chronica"
   },
   {
-    "date": "2019-3-22",
+    "date": "2019-03-22",
     "category": "code",
     "time": 55,
     "notes": "Started adding in the ability to have a report page on my wiki to give an overview of all missing tag entries or key entries",
@@ -4181,7 +4181,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-24",
+    "date": "2019-03-24",
     "category": "study",
     "time": 30,
     "notes": "Worked on my reactive programming course",
@@ -4192,7 +4192,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-24",
+    "date": "2019-03-24",
     "category": "code",
     "time": 25,
     "notes": "Cleaned up a bit of the templating and moved the crate helpers to another file",
@@ -4203,7 +4203,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-25",
+    "date": "2019-03-25",
     "category": "code",
     "time": 30,
     "notes": "Worked on getting another route in to add tags",
@@ -4215,7 +4215,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-26",
+    "date": "2019-03-26",
     "category": "research",
     "time": 30,
     "notes": "Looked into some ranger settings and ways to display images with it",
@@ -4226,7 +4226,7 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-26",
+    "date": "2019-03-26",
     "category": "code",
     "time": 15,
     "notes": "Added in the tags command to retrieve a list of used tags",
@@ -4237,11 +4237,31 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-3-27",
+    "date": "2019-03-27",
     "category": "research",
     "time": 40,
     "notes": "Tried figuring out what would be the best way to impliment a timer in andaga",
     "location": "home",
     "project": "andaga-cli"
+  },
+  {
+    "date": "2019-03-28",
+    "category": "explore",
+    "time": 45,
+    "notes": "Played around a bit with displaying some more information on my homepage per project",
+    "project": "chronica",
+    "tags": [
+      "gyul",
+      "javascript",
+      "andaga"
+    ]
+  },
+  {
+    "date": "2019-03-28",
+    "category": "admin",
+    "time": 25,
+    "notes": "Worked on padding all dates on all my logs with a 0 and figuring out a new way to sort when I export them",
+    "location": "home",
+    "project": "andaga"
   }
 ]
