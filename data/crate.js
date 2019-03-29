@@ -164,13 +164,24 @@ const CRATE = {
         ],
         children: [
           { type: 'code',
-            text: "#!/bin/bash <br> mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br> cat <i>logs file</i> | jq 'map(del(._id))' > </i>log dir</i> && sed -i '1 \\const LOGS =' <i>log file</i> && <br> cd <i>wiki directory</i> && <br> git add . && <br> git commit -m 'nightly auto-commit and push of logs' && <br> git push"
+            text: `#!/bin/bash <br>
+                    . env <br>
+                    cd /wiki/directory && <br>
+                    git fetch && <br>
+                    git rebase origin master <br><br>
+                    mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br>
+                    cat <i>logs file</i> | jq -r 'map(del(._id)) | sort_by(.date) | reverse' > </i>log dir</i> && <br>
+                    sed -i '1 \\const LOGS =' <i>log file</i> && <br>
+                    cd <i>wiki directory</i> && <br>
+                    git add . && <br>
+                    git commit -m 'nightly auto-commit and push of logs' && <br>
+                    git push origin master`
           }
         ]
       },
       {
         type: 'p',
-        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
+        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
       },
       {
         type: 'p',

@@ -137,7 +137,6 @@ const showLogs = () => {
   handleTabUnderline('logs')
   const main = document.getElementsByTagName('main')[0]
   const logNotes = GYUL.logs
-    .reverse()
     .map(log => `<p>${log.notes}<br>${log.date}<br>${log.time} minutes</p>`)
   const logNotesWithHeading = [`<h3>Breakdown of ${logNotes.length} logs</h3>`, ...logNotes]
   main.innerHTML = logNotesWithHeading.join('')
