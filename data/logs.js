@@ -1,6 +1,29 @@
 const LOGS =
 [
   {
+    "date": "2019-03-31",
+    "category": "code",
+    "time": 30,
+    "notes": "Worked on updated some error handling and also date padding",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-03-31",
+    "category": "explore",
+    "time": 45,
+    "notes": "Worked through a bunch of currying and function composition examples",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript",
+      "functional programming"
+    ]
+  },
+  {
     "date": "2019-03-30",
     "category": "study",
     "time": 55,
