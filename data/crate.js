@@ -266,6 +266,27 @@ const CRATE = {
       }
     ]
   },
+  'javascript': {
+    title: 'javascript',
+    template: 'basic',
+    body: [
+      {
+        type: 'p',
+        text: `When I first started learning programming, JavaScript was my introduction into what was really possible with programming. It's the language I currently feel most comfortable with and have the most experience with. In the last year say my JS has changed to a more functional style favoring immutability, pure functions, and higher order functions. This came as a result of working with Scala in my day job.`
+      },
+      {
+        type: 'p',
+        text: `Below I've listed a few resources that have really helped me with JavaScript and that I'd recommend to anyone.`
+      },
+      {
+        type: 'ul',
+        children: [
+          { type: 'li', text: '<a target="_blank" href="https://medium.com/javascript-scene/composing-software-the-book-f31c77fc3ddc">Composing Software - Eric Elliot</a> This series is one of my all time favorites. It introduces a lot of functional programming concepts in an easy to understand manner with a ton of examples. It also explains a lot of why the functional paradigm is important not just in JavaScript, but proramming in general.' },
+          { type: 'li', text: `<a target="_blank" href="https://github.com/getify/You-Dont-Know-JS">You-Don't-Know-JS - Kyle Simpson</a> Kyle Simpson's series YDKJS really layed the foundation for me in terms of knowledge and understanding. This is probably the best overview and study of the JS language that you'll find.` }
+        ]
+      }
+    ]
+  },
   language: {
     title: 'language',
     template: 'main',
@@ -353,7 +374,7 @@ const CRATE = {
       {
         type: 'h5',
         attributes: [{ type: 'class', value: 'quote' }],
-        text: 'Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.” <br> ~Eric Elliot'
+        text: 'Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.” <br> ~John Carmack'
       },
       {
         type: 'p',
