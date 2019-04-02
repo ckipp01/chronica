@@ -16,9 +16,12 @@ const createProjects = logs => {
   const projects = Object.keys(logsObject)
   return projects
     .sort()
-    .map(p => `<div>
-                  <p>Project: <a href='#${p}'>${p}</a><br>
-                  Time: ${logsObject[p].time} minutes<br>
-                  Entries: ${logsObject[p].entries} logs
-                </div>`)
+    .map(p => {
+      const plurality = logsObject[p].entries > 1 ? 'logs' : 'log'
+      return `<div>
+                <p>Project: <a href='#${p}'>${p}</a><br>
+                Time: ${logsObject[p].time} minutes<br>
+                Entries: ${logsObject[p].entries} ${plurality} 
+               </div>`
+    })
 }

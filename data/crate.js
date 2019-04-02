@@ -143,7 +143,7 @@ const CRATE = {
     body: [
       {
         type: 'h5',
-        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/wiki.chronica">wiki</a>'
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/chronica">chronica</a>'
       },
       {
         type: 'h5',
@@ -151,54 +151,11 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `This is chronica. I wanted a place do display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment or playground of sorts. A place for me to both work and display my work in a raw unpolished way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
+        text: `<a target="_blank" href="https://chronica.xyz">chronica</a> is the name that I'm using for the ecosystem of logs, writing, and art that I've produced. Currently the wiki is the main focus, but eventually you'll see a blog portion and also a portion dispalying generative art.`
       },
       {
         type: 'p',
-        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:`
-      },
-      {
-        type: 'div',
-        attributes: [
-          { type: 'class', value: 'code-block' }
-        ],
-        children: [
-          { type: 'code',
-            text: `#!/bin/bash <br>
-                    . env <br>
-                    cd /wiki/directory && <br>
-                    git fetch && <br>
-                    git rebase origin master <br><br>
-                    mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br>
-                    cat <i>logs file</i> | jq -r 'map(del(._id)) | sort_by(.date) | reverse' > </i>log dir</i> && <br>
-                    sed -i '1 \\const LOGS =' <i>log file</i> && <br>
-                    cd <i>wiki directory</i> && <br>
-                    git add . && <br>
-                    git commit -m 'nightly auto-commit and push of logs' && <br>
-                    git push origin master`
-          }
-        ]
-      },
-      {
-        type: 'p',
-        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
-      },
-      {
-        type: 'p',
-        text: `On just about every page you'll see the following four tabs:`
-      },
-      {
-        type: 'ul',
-        children: [
-          { type: 'li', text: '<b>info:</b> tells some basic info about the project' },
-          { type: 'li', text: '<b>stats:</b> shows a small graph of the breakdown of how much time was spent on each category for that project' },
-          { type: 'li', text: '<b>logs:</b> a copy of the logs that are tied to that project' },
-          { type: 'li', text: '<b>tags:</b> associated topics or projects that the current project was tagged with' }
-        ]
-      },
-      {
-        type: 'p',
-        text: `There is already plenty I would change about the way I've done this and even more that I'd like to add. This space will continually grow. There will also be a longer form blog portion of the chronica ecosystem that has not yet been created.`
+        text: `The main reason for chronica is to provide a unified place for things I've created. I really wanted a place for my logs to be displayed, but I also wanted a place to do a bit of writing. I soon realized that many of the ideas that I had were all sort of related, but also deserved to be in their own little worlds. Hence, chronica.`
       },
       {
         type: 'p',
@@ -255,7 +212,7 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        text: `Feel free to explore. This is <a href="#me">my</a> collected works and logs. If you don't know where to start, you can get an introduction <a href='#chronica'>here</a> or click on any of the projects below.`
+        text: `Feel free to explore. This is <a href="#me">my</a> collected works and logs. If you don't know where to start, you can get an introduction <a href='#wiki.chronica'>here</a> or click on any of the projects below.`
       },
       {
         type: 'div',
@@ -463,6 +420,71 @@ const CRATE = {
       {
         type: 'p',
         text: `This project currently only works locally. However, I've moved pretty much all of my backend projects over to serverless architecture. The plan for this project is to do the same. Nightly, after my daily summary is pulled, I'd like to run it through waka-machine to give my projection for the next week. Then, these will be added to <a href="#chronica">chronica</a> in a very similiar way as my logs to ensure that they are automatically updated daily.`
+      }
+    ]
+  },
+  'wiki.chronica': {
+    title: 'wiki.chronica',
+    template: 'main',
+    body: [
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/wiki.chronica">wiki.chronica</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Type: <a target="_blank" href="https://rsms.me/inter">Inter</a>'
+      },
+      {
+        type: 'p',
+        text: `Welcome to wiki.chronica. I wanted a place to display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment or playground of sorts. A place for me to both work and display my work in a raw way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
+      },
+      {
+        type: 'p',
+        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: `#!/bin/bash <br>
+                    . env <br>
+                    cd /wiki/directory && <br>
+                    git fetch && <br>
+                    git rebase origin master <br><br>
+                    mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br>
+                    cat <i>logs file</i> | jq -r 'map(del(._id)) | sort_by(.date) | reverse' > </i>log dir</i> && <br>
+                    sed -i '1 \\const LOGS =' <i>log file</i> && <br>
+                    cd <i>wiki directory</i> && <br>
+                    git add . && <br>
+                    git commit -m 'nightly auto-commit and push of logs' && <br>
+                    git push origin master`
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
+      },
+      {
+        type: 'p',
+        text: `On just about every page you'll see the following four tabs:`
+      },
+      {
+        type: 'ul',
+        children: [
+          { type: 'li', text: '<b>info:</b> tells some basic info about the project' },
+          { type: 'li', text: '<b>stats:</b> shows a small graph of the breakdown of how much time was spent on each category for that project' },
+          { type: 'li', text: '<b>logs:</b> a copy of the logs that are tied to that project' },
+          { type: 'li', text: '<b>tags:</b> associated topics or projects that the current project was tagged with' }
+        ]
+      },
+      {
+        type: 'p',
+        text: `There is already plenty I would change about the way I've done this and even more that I'd like to add. This space will continually grow. There will also be a longer form blog portion of the chronica ecosystem that has not yet been created.`
       }
     ]
   },
