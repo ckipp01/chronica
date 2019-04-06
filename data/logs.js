@@ -1,6 +1,28 @@
 const LOGS =
 [
   {
+    "date": "2019-04-06",
+    "category": "explore",
+    "time": 30,
+    "notes": "Worked on figuring out a way to dynamically set my linter and fixer for ale in vim based on whether or not a project is using standard or prettier",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "nvim"
+    ]
+  },
+  {
+    "date": "2019-04-06",
+    "category": "code",
+    "time": 30,
+    "notes": "Worked on global jsx styles and also simplified the styling",
+    "location": "Filtro",
+    "project": "studiosyk",
+    "tags": [
+      "css"
+    ]
+  },
+  {
     "date": "2019-04-05",
     "category": "study",
     "time": 30,
