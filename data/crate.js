@@ -202,7 +202,27 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: 'gyul works by reading the hash of the url and then creating a class from that hash. The hast serves as a key to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom.'
+        text: `gyul works by reading the hash of the url and then creating a class from that hash. If you look at the index.html page of this site you'll see what is shown below:`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: `const GYUL = new Gyul(window.location.hash)<br>
+                    GYUL.package()`
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: 'The hash serves as a key to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom.'
+      },
+      {
+        type: 'p',
+        text: 'There are basically two main important script files that power gyul. One is gyul.js where the class is created, and all of the necessary methods to parse the data and turn it into dom elements are created. The other file, tempate.js, does just want it sounds like and provides multiple different templates that gyul can choose from to determine how things are layed out.'
       }
     ]
   },
@@ -507,7 +527,7 @@ const CRATE = {
         children: [
           { type: 'img',
             attributes: [
-              { type: 'src', value: 'media/desktop3.png' },
+              { type: 'src', value: 'media/desktop4.png' },
               { type: 'class', value: 'main-image' },
               { type: 'alt', value: 'Snapshot of my desktop.' }
             ]
@@ -526,11 +546,12 @@ const CRATE = {
         type: 'ul',
         children: [
           { type: 'li', text: '<b>OS:</b> Ubuntu 18.04' },
-          { type: 'li', text: '<b>Terminal:</b> Termite' },
-          { type: 'li', text: '<b>Primary text editor for anything but Scala:</b> Vim' },
+          { type: 'li', text: '<b>Terminal:</b> st' },
+          { type: 'li', text: '<b>Terminal file explorer:</b> ranger' },
+          { type: 'li', text: '<b>Primary text editor for anything but Scala:</b> NVim' },
           { type: 'li', text: '<b>Primary text editor for Scala:</b> IntelliJ' },
-          { type: 'li', text: '<b>Browser:</b> Vivaldi or Firefox' },
-          { type: 'li', text: '<b>Other daily software:</b> Keybase, Slack, Spotify' }
+          { type: 'li', text: '<b>Browser:</b> Vivaldi' },
+          { type: 'li', text: '<b>Other daily software:</b> Tmux, Keybase, Slack, Spotify' }
         ]
       }
     ]

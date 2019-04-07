@@ -13,15 +13,17 @@ b { font-weight: 400; }
 p { margin-bottom: 1em; }
 li { margin: 0 0 1em 1em; }
 code { padding: .25em; background: #fff; font-family: monospace; }
-a { font-weight: 400; -webkit-text-decoration: underline #45503B; }
+a { font-weight: 400; -webkit-text-decoration: underline #45503B; text-decoration: underline #45503B }
 
 a:hover,
 .tabs:hover {
   text-decoration: underline #D15B3A;
+  -webkit-text-decoration: underline #D15B3A;
 }
 
 footer a {
   text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 .container {
@@ -32,6 +34,7 @@ footer a {
 
 .logo {
   text-decoration: none;
+  -webkit-text-decoration: none;
 }
 
 .code-block {
