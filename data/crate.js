@@ -393,7 +393,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `<a target="_blank" href="https://studiosyk.com">studio syk</a> is my wife's studio. She's a marbling artist that primarily works on fabric. Her site is a static site build with <a target="_blank" href="https://nextjs.org">Next.js</a>.`
+        text: `<a target="_blank" href="https://studiosyk.com">studio syk</a> is my wife's studio. She's a marbling artist that primarily works on fabric. Her site is a static site built with <a target="_blank" href="https://nextjs.org">Next.js</a>.`
       }
     ]
   },
