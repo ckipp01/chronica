@@ -97,7 +97,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: '<code>andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga,javascript'
+        text: '<code>andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga,javascript</code>'
       },
       {
         type: 'p',
@@ -441,7 +441,15 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. They are stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:`
+        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. An example of a log is located below: `
+      },
+      {
+        type: 'p',
+        text: '<code>andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga,javascript</code>'
+      },
+      {
+        type: 'p',
+        text: 'This log is then sent to <a href="#andaga-core">ándaga-core</a> which is a serverless endpoint that is deployed with <a target="_blank" href="https://zeit.co">Zeit Now</a>. They are then stored in a MongoDB database and nightly a cron job runs on my server to run the script placed below:'
       },
       {
         type: 'div',
@@ -484,7 +492,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `There is already plenty I would change about the way I've done this and even more that I'd like to add. This space will continually grow. There will also be a longer form blog portion of the chronica ecosystem that has not yet been created.`
+        text: `There is already plenty I would change about the way I've done this and even more that I'd like to add. In the future I plan on basically doing all of the work <a href="gyul">gyul</a> is doing on the server side and just serving up the html. This space will continually grow. There will also be a longer form blog portion of the chronica ecosystem that has not yet been created. Thanks for stopping by!`
       }
     ]
   },
