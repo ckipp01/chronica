@@ -1,6 +1,26 @@
 const LOGS =
 [
   {
+    "date": "2019-04-07",
+    "category": "code",
+    "time": 25,
+    "notes": "Fix some safari issues for styling and added in ability to determine whether values are plural or not and then changing the words based on that",
+    "location": "Filtro",
+    "project": "gyul",
+    "tags": [
+      "javascript",
+      "css"
+    ]
+  },
+  {
+    "date": "2019-04-07",
+    "category": "write",
+    "time": 55,
+    "notes": "Add in some more details about how the wiki works and how gyul works",
+    "location": "Filtro",
+    "project": "wiki.chronica"
+  },
+  {
     "date": "2019-04-06",
     "category": "explore",
     "time": 30,
