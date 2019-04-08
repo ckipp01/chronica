@@ -1,31 +1,31 @@
 'use strict'
 /* global CRATE, LOGS, GYUL, TEMPLATES */
 
-class Gyul {
-  constructor (page) {
-    page
-      ? this.key = page.substring(1)
-      : this.key = 'home'
-    this.tree = retrieveTree(this.key)
-    this.logs = LOGS.filter(log => log.project === this.key)
-    this.groupedLogs = groupByType(this.logs)
-    this.tags = this.logs
-      .map(log => log.tags)
-      .filter(log => log !== undefined)
-    this.template = retrieveTemplate(
-      this.tree.template,
-      this.tree.title,
-      this.tree.body
-    )
-  }
-  package () {
-    for (const section in this.template) {
-      const sectionElem =
-        document.body.appendChild(createElem({ elem: { 'type': section } }))
-      this.template[section]
-        .forEach(elem => createElem({ elem: elem, parent: sectionElem }))
+const Gyul = page => {
+  const key = page
+    ? page.substring(1)
+    : 'home'
+  const tree = retrieveTree(key)
+  const logs = LOGS.filter(log => log.project === key)
+  const groupedLogs = groupByType(logs)
+  const tags = logs
+    .map(log => log.tags)
+    .filter(log => log !== undefined)
+  const template = retrieveTemplate(
+    tree.template,
+    tree.title,
+    tree.body
+  )
+  return {
+    package: () => {
+      for (const section in template) {
+        const sectionElem =
+          document.body.appendChild(createElem({ elem: { 'type': section } }))
+        template[section]
+          .forEach(elem => createElem({ elem: elem, parent: sectionElem }))
+      }
+      if (tree.template === 'mainTemplate') handleTabUnderline('info')
     }
-    if (this.tree.template === 'mainTemplate') handleTabUnderline('info')
   }
 }
 

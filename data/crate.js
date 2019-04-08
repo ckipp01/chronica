@@ -202,7 +202,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `gyul works by reading the hash of the url and then creating a class from that hash. If you look at the index.html page of this site you'll see what is shown below:`
+        text: `gyul works by reading the hash of the url and then creating a factory function from that hash. If you look at the index.html page of this site you'll see what is shown below:`
       },
       {
         type: 'div',
@@ -211,18 +211,41 @@ const CRATE = {
         ],
         children: [
           { type: 'code',
-            text: `const GYUL = new Gyul(window.location.hash)<br>
+            text: `const GYUL = Gyul(window.location.hash)<br>
                     GYUL.package()`
           }
         ]
       },
       {
         type: 'p',
-        text: 'The hash serves as a key to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom.'
+        text: 'The hash serves as a key to look up the entry in JS file called <code>crate.js</code>. It will also filter through all of the logs and capture all of them that match the key. There is a templating system that is being used to determine what the layout should be and the body an array of html elements that get iterated over and placed on the dom. This will result in the factory function having the resulting shape:'
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: `GYUL<br>
+                    groupedLogs: { logType: Array(logs of specific type },<br>
+                    key: string,<br>
+                    logs: Array(allLogs),<br>
+                    package: () => { function that iterates through the section templates and creates DOM elments },<br>
+                    tags: Array(tags),
+                    template: { templateSection: Array(elements) },<br>
+                    tree: { title: page, templage: name, body: Array(elements) }
+                  `
+          }
+        ]
       },
       {
         type: 'p',
         text: 'There are basically two main important script files that power gyul. One is gyul.js where the class is created, and all of the necessary methods to parse the data and turn it into dom elements are created. The other file, tempate.js, does just want it sounds like and provides multiple different templates that gyul can choose from to determine how things are layed out.'
+      },
+      {
+        type: 'p',
+        text: `I'll be the first one to admit the way this works feels a bit gross. It starts out alright, but then on a page change event we are iterating over the fields in GYUL and mutating them to match the new key. Ideally we wouldn't mutuate the object at all, but rather through it away and create a new one. Thats the next step.`
       }
     ]
   },
