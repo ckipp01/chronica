@@ -1,6 +1,28 @@
 const LOGS =
 [
   {
+    "date": "2019-04-08",
+    "category": "study",
+    "time": 30,
+    "notes": "Worked on the monad chapter of composing software",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "functional programming"
+    ]
+  },
+  {
+    "date": "2019-04-08",
+    "category": "code",
+    "time": 30,
+    "notes": "Refactor out the class in Gyul and replace it with a factory function",
+    "location": "home",
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-04-07",
     "category": "code",
     "time": 25,
