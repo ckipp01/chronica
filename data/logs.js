@@ -1,6 +1,14 @@
 const LOGS =
 [
   {
+    "date": "2019-04-09",
+    "category": "research",
+    "time": 35,
+    "notes": "Did some research on how pure react components give you a performance boost",
+    "location": "home",
+    "project": "programming"
+  },
+  {
     "date": "2019-04-08",
     "category": "study",
     "time": 30,
