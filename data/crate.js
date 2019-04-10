@@ -480,7 +480,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `Welcome to wiki.chronica. I wanted a place to display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment or playground of sorts. A place for me to both work and display my work in a raw way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
+        text: `Hello, I'm <a href="#me">Chris</a>, and this is my digital playground of sorts. I wanted a place to display what I've been working on, and I wanted it to be a place fully built by me. No external tools, no build process, and no localhost. In some ways it's an experiment where I can learn, ignore the rules, and just create what I want. A place for me to both work and display my work in a raw way that will hopefully provide a glimpse into where I'm at with the state of development and also what I'm currently working and focusing on.`
       },
       {
         type: 'p',
@@ -518,7 +518,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to both chronica.xzy and www.chronica.xyz. This ensures that daily my wiki is up to date with my newest logs from the day before.`
+        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to chronica.xzy. This ensures that daily my wiki is up to date with my newest logs from the day before.`
       },
       {
         type: 'p',
