@@ -202,7 +202,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `gyul works by reading the hash of the url and then creating a factory function from that hash. If you look at the index.html page of this site you'll see what is shown below:`
+        text: `gyul works by reading the hash of the url and then creating a class from that hash (currently in the process of changing this to a factory function instead). If you look at the index.html page of this site you'll see what is shown below:`
       },
       {
         type: 'div',
@@ -211,7 +211,7 @@ const CRATE = {
         ],
         children: [
           { type: 'code',
-            text: `const GYUL = Gyul(window.location.hash)<br>
+            text: `const GYUL = new Gyul(window.location.hash)<br>
                     GYUL.package()`
           }
         ]
