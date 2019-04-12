@@ -1,6 +1,17 @@
 const LOGS =
 [
   {
+    "date": "2019-4-11",
+    "category": "code",
+    "time": 45,
+    "notes": "Rever factory function back to a class due to some wrong assumptions",
+    "location": "home",
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-04-10",
     "category": "study",
     "time": 55,
