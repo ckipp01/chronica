@@ -1,7 +1,29 @@
 const LOGS =
 [
   {
-    "date": "2019-4-11",
+    "date": "2019-04-13",
+    "category": "code",
+    "time": 135,
+    "notes": "Rewrote how the factory function works with gyul and pretty much the entire gyul.js file",
+    "location": "Filtro",
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-04-12",
+    "category": "research",
+    "time": 45,
+    "notes": "Spent some tirme reading a couple articles about factory functions",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-04-11",
     "category": "code",
     "time": 45,
     "notes": "Rever factory function back to a class due to some wrong assumptions",
