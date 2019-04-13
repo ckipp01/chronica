@@ -88,7 +88,7 @@ const footer = [
     children: [
       { type: 'a',
         attributes: [{ type: 'href', value: '#gyul' }],
-        text: '귤 1.3.1'
+        text: '귤 0.4.1'
       }
     ]
   }
@@ -116,7 +116,7 @@ const TEMPLATES = {
               attributes: [
                 { type: 'class', value: 'tabs' },
                 { type: 'id', value: 'info' },
-                { type: 'onclick', value: 'showInfo()' }
+                { type: 'onclick', value: 'GYUL.showInfo(window.location.hash)' }
               ]
             },
             { type: 'h5',
@@ -124,7 +124,7 @@ const TEMPLATES = {
               attributes: [
                 { type: 'class', value: 'tabs' },
                 { type: 'id', value: 'stats' },
-                { type: 'onclick', value: 'showStats()' }
+                { type: 'onclick', value: 'GYUL.showStats(window.location.hash)' }
               ]
             },
             { type: 'h5',
@@ -132,7 +132,7 @@ const TEMPLATES = {
               attributes: [
                 { type: 'class', value: 'tabs' },
                 { type: 'id', value: 'logs' },
-                { type: 'onclick', value: 'showLogs()' }
+                { type: 'onclick', value: 'GYUL.showLogs(window.location.hash)' }
               ]
             },
             { type: 'h5',
@@ -140,7 +140,7 @@ const TEMPLATES = {
               attributes: [
                 { type: 'class', value: 'tabs' },
                 { type: 'id', value: 'tags' },
-                { type: 'onclick', value: 'showTags()' }
+                { type: 'onclick', value: 'GYUL.showTags(window.location.hash)' }
               ]
             }
           ]
