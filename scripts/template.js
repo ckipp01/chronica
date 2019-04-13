@@ -40,7 +40,7 @@ const footer = [
         children: [
           { type: 'img',
             attributes: [
-              { type: 'src', value: 'https://webring.xxiivv.com/icon.black.svg' },
+              { type: 'src', value: 'media/icon.black.svg' },
               { type: 'alt', value: 'Webring icon' }
             ]
           }
