@@ -11,7 +11,7 @@ const createProjectObject = (acc, cur) => {
 
 const createProjects = logs => {
   const logsObject = logs
-    .filter(_ => _.project !== undefined)
+    .filter(log => log.project !== undefined)
     .reduce(createProjectObject, Object.create(null))
   const projects = Object.keys(logsObject)
   return projects

@@ -28,51 +28,53 @@ const Gyul = () => {
       const key = peelKey(rawKey, crateKeys)
       for (const section in packagedCrate[key].template) {
         const sectionElem =
-        document.body.appendChild(createElem({ elem: { 'type': section } }))
+          document.body.appendChild(createElem({ elem: { 'type': section } }))
         packagedCrate[key].template[section]
-          .forEach(elem => createElem({ elem: elem, parent: sectionElem }))
+          .forEach(elem => createElem({ elem, parent: sectionElem }))
       }
       if (packagedCrate[key].tree.template === 'main') handleTabUnderline('info')
     },
     showLogs: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      handleTabUnderline('logs')
       const main = document.getElementsByTagName('main')[0]
       const logNotes = packagedCrate[key].logs
         .map(log => `<p>${log.notes}<br>${log.date}<br>${log.time} minutes</p>`)
       const plurality = logNotes.length > 1 ? 'logs' : 'log'
       const logNotesWithHeading = [`<h3>Breakdown of ${logNotes.length} ${plurality}</h3>`, ...logNotes]
       main.innerHTML = logNotesWithHeading.join('')
+      handleTabUnderline('logs')
     },
     showInfo: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      handleTabUnderline('info')
       const main = document.getElementsByTagName('main')[0]
       main.innerHTML = ''
       packagedCrate[key].template.main
-        .forEach(elem => createElem({ elem: elem, parent: main }))
+        .forEach(elem => createElem({ elem, parent: main }))
+      handleTabUnderline('info')
     },
     showStats: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      handleTabUnderline('stats')
       const main = document.getElementsByTagName('main')[0]
       const categoryTotal = packagedCrate[key].logs.reduce((acc, cur) => acc + cur.time, 0)
       const categories = Object.keys(packagedCrate[key].groupedLogs).sort()
 
-      const summarizer = (acc, cur) => {
-        acc[cur.category] = acc[cur.category] || Object.create(null)
-        acc[cur.category].time = acc[cur.category].time || 0
-        acc[cur.category].time += cur.time
-        return acc
+      const groupByLogType = (groupedLogs, log) => {
+        groupedLogs[log.category] = groupedLogs[log.category] || Object.create(null)
+        groupedLogs[log.category].time = groupedLogs[log.category].time || 0
+        groupedLogs[log.category].time += log.time
+        return groupedLogs
       }
 
-      const totals = categories.map(category => {
-        const y = packagedCrate[key].groupedLogs[category]
-          .reduce(summarizer, Object.create(null))
-        y[category].totalLogs = packagedCrate[key].groupedLogs[category].length
-        y[category].percentage = Math.round((y[category].time / categoryTotal) * 100)
-        return y
-      })
+      const createGroupedLogs = category => {
+        const groupedLogs = packagedCrate[key].groupedLogs[category]
+          .reduce(groupByLogType, Object.create(null))
+        groupedLogs[category].totalLogs = packagedCrate[key].groupedLogs[category].length
+        groupedLogs[category].percentage = Math.round((groupedLogs[category].time / categoryTotal) * 100)
+        return groupedLogs
+      }
+
+      // Takes grouped logs and also groups them by log type
+      const totals = categories.map(createGroupedLogs)
 
       const keys = totals.map(total => {
         const type = Object.keys(total)[0]
@@ -104,15 +106,15 @@ const Gyul = () => {
       const innards = [...wrappedKeys, ...rects]
 
       main.innerHTML = innards.join('')
+      handleTabUnderline('stats')
     },
     showTags: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      handleTabUnderline('tags')
       const main = document.getElementsByTagName('main')[0]
-      const tagCounter = (acc, cur) => {
-        (acc[cur] = acc[cur] || 0)
-        acc[cur] = acc[cur] += 1
-        return acc
+      const tagCounter = (tagCount, tag) => {
+        (tagCount[tag] = tagCount[tag] || 0)
+        tagCount[tag] = tagCount[tag] += 1
+        return tagCount
       }
       const flattened = [].concat.apply([], packagedCrate[key].tags)
       const countedTags = flattened.reduce(tagCounter, {})
@@ -122,13 +124,14 @@ const Gyul = () => {
       const plurality = packagedCrate[key].tags.length > 1 ? 'tags' : 'tag'
       const tagsWithHeading = [`<h3>Tagged with ${packagedCrate[key].tags.length} ${plurality}</h3>`, ...finalTags]
       main.innerHTML = tagsWithHeading.join('')
+      handleTabUnderline('tags')
     },
     switchHeader: rawKey => {
       const key = peelKey(rawKey, crateKeys)
       const header = document.getElementsByTagName('header')[0]
       header.innerHTML = ''
       packagedCrate[key].template.header
-        .forEach(elem => createElem({ elem: elem, parent: header }))
+        .forEach(elem => createElem({ elem, parent: header }))
     }
   }
 }
@@ -143,11 +146,11 @@ const peelKey = (rawKey, crateKeys) => {
 const createElem = elemObject => {
   const elem = document.createElement(elemObject.elem.type)
 
-  if (elemObject.elem.text) { elem.innerHTML = elemObject.elem.text }
+  if (elemObject.elem.text) elem.innerHTML = elemObject.elem.text
 
   if (elemObject.elem.attributes) {
     elemObject.elem.attributes
-      .map(attribute => elem.setAttribute(attribute.type, attribute.value))
+      .forEach(attribute => elem.setAttribute(attribute.type, attribute.value))
   }
 
   if (elemObject.elem.children) {
@@ -155,11 +158,8 @@ const createElem = elemObject => {
       .forEach(childElem => createElem({ elem: childElem, parent: elem }))
   }
 
-  if (elemObject.parent) {
-    elemObject.parent.appendChild(elem)
-  } else {
-    return elem
-  }
+  if (elemObject.parent) elemObject.parent.appendChild(elem)
+  else return elem
 }
 
 const retrieveTree = key => CRATE[key] ? CRATE[key] : CRATE.missing
@@ -169,25 +169,21 @@ const retrieveTemplate = (template, title, body) => {
   return t(title, body)
 }
 
-const handleTabUnderline = id => {
+const handleTabUnderline = tabName => {
   const tabs = ['info', 'stats', 'logs', 'tags']
-  const toRemove = tabs.filter(_ => _ !== id)
-  toRemove.forEach(item => {
-    const targetTab = document.getElementById(item)
-    if (targetTab !== null) {
-      targetTab.removeAttribute('style')
-    }
+  const tabUnderlineToRemove = tabs.filter(tab => tab !== tabName)
+  tabUnderlineToRemove.forEach(tabUnderline => {
+    const targetTab = document.getElementById(tabUnderline)
+    if (targetTab !== null) targetTab.removeAttribute('style')
   })
-  const targetTab = document.getElementById(id)
-  if (targetTab !== null) {
-    targetTab.setAttribute('style', 'text-decoration:underline#45503B')
-  }
+  const targetTab = document.getElementById(tabName)
+  if (targetTab !== null) targetTab.setAttribute('style', 'text-decoration:underline#45503B')
 }
 
 const groupByType = logs => {
-  return logs.reduce((acc, cur) => {
-    (acc[cur.category] = acc[cur.category] || []).push(cur)
-    return acc
+  return logs.reduce((logGroup, log) => {
+    (logGroup[log.category] = logGroup[log.category] || []).push(log)
+    return logGroup
   }, Object.create(null))
 }
 
