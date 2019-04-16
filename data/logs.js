@@ -1,6 +1,31 @@
 const LOGS =
 [
   {
+    "date": "2019-04-16",
+    "category": "code",
+    "time": 45,
+    "notes": "Finally fix the request by switching out the native node http client to request",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript",
+      "andaga"
+    ]
+  },
+  {
+    "date": "2019-04-15",
+    "category": "explore",
+    "time": 55,
+    "notes": "Try to find out why out of no where andaga-cli has no payload so the logs are all failing",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript",
+      "andaga",
+      "andaga-core"
+    ]
+  },
+  {
     "date": "2019-04-14",
     "category": "code",
     "time": 35,
