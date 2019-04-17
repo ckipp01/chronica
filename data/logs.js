@@ -1,6 +1,18 @@
 const LOGS =
 [
   {
+    "date": "2019-04-17",
+    "category": "code",
+    "time": 30,
+    "notes": "Put in the request library",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "andaga",
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-04-16",
     "category": "code",
     "time": 45,
