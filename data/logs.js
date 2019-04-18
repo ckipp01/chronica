@@ -1,6 +1,29 @@
 const LOGS =
 [
   {
+    "date": "2019-04-18",
+    "category": "admin",
+    "time": 35,
+    "notes": "Did some cleanup on old settings leftover in vimrc for a plugin I don't use anymore and start looking at using another lsc",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "vim"
+    ]
+  },
+  {
+    "date": "2019-04-18",
+    "category": "code",
+    "time": 25,
+    "notes": "Did some cleanup after getting request in",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript",
+      "andaga"
+    ]
+  },
+  {
     "date": "2019-04-17",
     "category": "code",
     "time": 30,
