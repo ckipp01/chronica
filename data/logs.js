@@ -1,6 +1,17 @@
 const LOGS =
 [
   {
+    "date": "2019-04-19",
+    "category": "admin",
+    "time": 45,
+    "notes": "Switched lsc to coc and updated all vim files",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "vim"
+    ]
+  },
+  {
     "date": "2019-04-18",
     "category": "admin",
     "time": 35,
