@@ -1,6 +1,36 @@
 const LOGS =
 [
   {
+    "date": "2019-04-20",
+    "category": "explore",
+    "time": 35,
+    "notes": "Start looking into some processing things that I want to play around with",
+    "location": "home",
+    "project": "processing"
+  },
+  {
+    "date": "2019-04-20",
+    "category": "research",
+    "time": 30,
+    "notes": "Worked on a better understanding of flatMap, why JS hasn't always had one, and how to always mimic it",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-04-20",
+    "category": "code",
+    "time": 45,
+    "notes": "Add in the recall function to GYUL in order to get missing a tags and projects from the CRATE object",
+    "location": "home",
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-04-19",
     "category": "admin",
     "time": 45,
