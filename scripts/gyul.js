@@ -12,7 +12,8 @@ const Gyul = () => {
       logs,
       groupedLogs: groupByType(logs),
       tags: logs
-        .flatMap(log => log.tags)
+        .map(log => log.tags)
+        .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
         .filter(log => log !== undefined),
       tree,
       template: retrieveTemplate(
@@ -116,8 +117,7 @@ const Gyul = () => {
         tagCount[tag] = tagCount[tag] += 1
         return tagCount
       }
-      const flattened = [].concat.apply([], packagedCrate[key].tags)
-      const countedTags = flattened.reduce(tagCounter, {})
+      const countedTags = packagedCrate[key].tags.reduce(tagCounter, {})
       const tagNames = Object.keys(countedTags).sort()
       const finalTags = tagNames
         .map(tagName => `<p>${countedTags[tagName]} - <a href='#${tagName}'>${tagName}</p></a>`)
@@ -132,6 +132,27 @@ const Gyul = () => {
       header.innerHTML = ''
       packagedCrate[key].template.header
         .forEach(elem => createElem({ elem, parent: header }))
+    },
+    report: () => {
+      const missingProjects = LOGS
+        .map(log => log.project)
+        .filter((v, i, a) => a.indexOf(v) === i)
+        .filter(project => project !== undefined)
+        .filter(project => !crateKeys.includes(project))
+        .sort()
+      missingProjects.length === 0
+        ? console.info('No missing project entries in CRATE')
+        : console.info(`Missing following project entris in CRATE: ${missingProjects.toString()}`)
+      const missingTags = LOGS
+        .map(log => log.tags)
+        .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
+        .filter((v, i, a) => a.indexOf(v) === i)
+        .filter(tag => tag !== undefined)
+        .filter(tag => !crateKeys.includes(tag))
+        .sort()
+      missingTags.length === 0
+        ? console.info('No missing tag entries in CRATE')
+        : console.info(`Missing following tag entris in CRATE: ${missingTags.toString()}`)
     }
   }
 }

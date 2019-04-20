@@ -88,7 +88,7 @@ const footer = [
     children: [
       { type: 'a',
         attributes: [{ type: 'href', value: '#gyul' }],
-        text: '귤 0.4.1'
+        text: '귤 0.5.0'
       }
     ]
   }
