@@ -1,5 +1,19 @@
+:root {
+  --dark-color: black;
+  --light-color: #F7F7F7;
+  --hover-color: #D15B3A;
+  --underline-color: #45503B;
+  --code-logbar: #45503B;
+  --explore-logbar: #D15B3A;
+  --study-logbar: #1F2421;
+  --research-logbar: #323744;
+  --admin-logbar: #40798C;
+  --design-logbar: #F3DE8A;
+  --write-logbar: #3E92CC;
+  --code-color: #FFF;
+}
 @font-face { font-family: 'inter'; src: url('../fonts/Inter.var.ttf') format('truetype-variations'); font-weight: 1 999; }
-body { font-family: 'inter'; font-size: 1.1em; font-weight: 300; background-color: #f7f7f7; line-height: 1.4; }
+body { font-family: 'inter'; font-size: 1.1em; font-weight: 300; background-color: var(--light-color); line-height: 1.4; }
 header { grid-column: span 3; padding: 2em 2em 0 2em; font-size: 1.4em; text-align: center; }
 main { flex: 1; padding: 20px; }
 footer { grid-column: span 3; padding: 30px; text-align: center; font-size: 0.8em; }
@@ -12,13 +26,13 @@ i { font-style: italic; }
 b { font-weight: 400; }
 p { margin-bottom: 1em; }
 li { margin: 0 0 1em 1em; }
-code { padding: .25em; background: #fff; font-family: monospace; }
-a { font-weight: 400; -webkit-text-decoration: underline #45503B; text-decoration: underline #45503B }
+code { padding: .25em; background: var(--code-color); font-family: monospace; }
+a { font-weight: 400; -webkit-text-decoration: underline var(--underline-color); text-decoration: underline var(--underline-color)}
 
 a:hover,
 .tabs:hover {
-  text-decoration: underline #D15B3A;
-  -webkit-text-decoration: underline #D15B3A;
+  text-decoration: underline var(--hover-color);
+  -webkit-text-decoration: underline var(--hover-color);
 }
 
 footer a {
@@ -38,7 +52,7 @@ footer a {
 }
 
 .code-block {
-  background: #fff;
+  background: var(--code-color);
   padding-left: 1em;
   margin-bottom: 1em;
 }
@@ -71,13 +85,13 @@ footer a {
   font-weight: 400;
 }
 
-.code-logbar { fill: #45503B; }
-.explore-logbar { fill: #D15B3A; }
+.code-logbar { fill: var(--code-logbar) }
+.explore-logbar { fill: var(--explore-logbar); }
 .study-logbar { fill: #1F2421; }
-.research-logbar { fill: #323744; }
-.admin-logbar { fill: #40798C; }
-.design-logbar { fill: #F3DE8A; }
-.write-logbar { fill: #3E92CC }
+.research-logbar { fill: var(--research-logbar) }
+.admin-logbar { fill: var(--admin-logbar); }
+.design-logbar { fill: var(--design-logbar); }
+.write-logbar { fill: var(--write-logbar); }
 
 .key-block,
 .keys-container {

@@ -78,7 +78,7 @@ const CRATE = {
     body: [
       {
         type: 'h5',
-        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/andaga-cli/tree/2.0">ándaga-cli</a>'
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/andaga-cli">ándaga-cli</a>'
       },
       {
         type: 'p',
