@@ -1,6 +1,18 @@
 const LOGS =
 [
   {
+    "date": "2019-04-23",
+    "category": "explore",
+    "time": 55,
+    "notes": "Just started looking around at how to best edit my crate file for longer entries. JSON sort of just is sucking at being easy to manage for how I'm using it",
+    "location": "home",
+    "project": "crate-builder",
+    "tags": [
+      "javascript",
+      "gyul"
+    ]
+  },
+  {
     "date": "2019-04-21",
     "category": "code",
     "time": 75,
