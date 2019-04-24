@@ -1,6 +1,18 @@
 const LOGS =
 [
   {
+    "date": "2019-04-24",
+    "category": "code",
+    "time": 40,
+    "notes": "Worked on getting a toggle to switch between night and sunny mode",
+    "location": "home",
+    "project": "wiki.chronica",
+    "tags": [
+      "javascript",
+      "css"
+    ]
+  },
+  {
     "date": "2019-04-23",
     "category": "explore",
     "time": 55,
