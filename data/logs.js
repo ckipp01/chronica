@@ -1,6 +1,29 @@
 const LOGS =
 [
   {
+    "date": "2019-04-26",
+    "category": "write",
+    "time": 15,
+    "notes": "Add in some description on what the crate-builder is",
+    "location": "home",
+    "project": "wiki.chronica",
+    "tags": [
+      "crate-builder"
+    ]
+  },
+  {
+    "date": "2019-04-26",
+    "category": "code",
+    "time": 25,
+    "notes": "Work on getting night mode for the wiki",
+    "location": "home",
+    "project": "wiki.chronica",
+    "tags": [
+      "javascript",
+      "css"
+    ]
+  },
+  {
     "date": "2019-04-24",
     "category": "code",
     "time": 40,
