@@ -140,6 +140,28 @@ const CRATE = {
       }
     ]
   },
+  'bash': {
+    title: 'bash',
+    template: 'basic',
+    body: [
+      {
+        type: 'p',
+        text: `Bash is currently my go to shell. I've worked with zsh and tcsh (forcefully) in the past, and I've always come Back to bash. I plan to stay with bash until I hit a point where I'm frustrated with the limits of what it has to other verse other shells. I don't see that happening any time soon, so I'll probably be with bash for quite some time.`
+      },
+      {
+        type: 'p',
+        text: `Below I've listed a few resources/libraries that I commonly use with bash and have had a good experience with.`
+      },
+      {
+        type: 'ul',
+        children: [
+          { type: 'li', text: '<a target="_blank" href="https://github.com/loliee/patatetoy">patetoy</a> is a minimal prompt that I use for bash and really enjoy.' },
+          { type: 'li', text: '<a target="_blank" href="https://github.com/wting/autojump">autojump</a> is a great tool that I use to easily jump to a specific directory.' },
+          { type: 'li', text: '<a target="_blank" href="https://github.com/scop/bash-completion">bash-completion</a> which provide and auto-completion experience similiar to what a lot of people switch to zsh for.' }
+        ]
+      }
+    ]
+  },
   chronica: {
     title: 'chronica',
     template: 'main',
@@ -388,6 +410,20 @@ const CRATE = {
       }
     ]
   },
+  processing: {
+    title: 'processing',
+    template: 'main',
+    body: [
+      {
+        type: 'p',
+        text: `<a target="_blank" href="https://processing.org">Processing</a> is something quite new to me. I've been really amazed at what people have created using libraries like <a target="_blank" href="http://p5js.org">p5.js</a> and am really interested in the intersection of coding and art.`
+      },
+      {
+        type: 'p',
+        text: `As I become more familiar with this, you'll see more info here. Eventually I'll also have a works.chronica section of chronica that will showcase some of the things I've created.`
+      }
+    ]
+  },
   programming: {
     title: 'programming',
     template: 'main',
@@ -409,7 +445,7 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        text: `Writing small scripts to accomplish tasks is one of my favorite things to do. If I find myself doing something multiple times in a row, my mind always questions how I can automate the process. Most of the scripts I've written are in Bash and solve pretty specific problems that I've encountered.`
+        text: `Writing small scripts to accomplish tasks is one of my favorite things to do. If I find myself doing something multiple times in a row, my mind always questions how I can automate the process. Most of the scripts I've written are in bash and solve pretty specific problems that I've encountered.`
       }
     ]
   },
