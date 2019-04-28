@@ -1,6 +1,14 @@
 const LOGS =
 [
   {
+    "date": "2019-04-28",
+    "category": "write",
+    "time": 30,
+    "notes": "Add in a couple more entries for missing tags",
+    "location": "home",
+    "project": "wiki.chronica"
+  },
+  {
     "date": "2019-04-26",
     "category": "write",
     "time": 15,
