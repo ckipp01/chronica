@@ -88,7 +88,7 @@ const footer = [
     children: [
       { type: 'a',
         attributes: [{ type: 'href', value: '#gyul' }],
-        text: '귤 0.5.0'
+        text: '귤 0.6.0'
       }
     ]
   }
@@ -169,6 +169,46 @@ const TEMPLATES = {
           children: [
             { type: 'h5',
               text: 'welcome to the chronica wiki'
+            }
+          ]
+        }
+      ],
+      main: body,
+      footer: footer
+    }
+    return t
+  },
+  tag: function (title, body) {
+    const t = {
+      header: [
+        { type: 'a',
+          attributes: [
+            { type: 'href', value: '#home' },
+            { type: 'class', value: 'logo' }
+          ],
+          children: [
+            { type: 'h1', text: 'chronica' }
+          ]
+        },
+        { type: 'h2', text: title },
+        { type: 'div',
+          attributes: [{ type: 'class', value: 'flex-center' }],
+          children: [
+            { type: 'h5',
+              text: 'info',
+              attributes: [
+                { type: 'class', value: 'tabs' },
+                { type: 'id', value: 'info' },
+                { type: 'onclick', value: 'GYUL.showInfo(window.location.hash)' }
+              ]
+            },
+            { type: 'h5',
+              text: 'tags',
+              attributes: [
+                { type: 'class', value: 'tabs' },
+                { type: 'id', value: 'tags' },
+                { type: 'onclick', value: 'GYUL.showTags(window.location.hash)' }
+              ]
             }
           ]
         }

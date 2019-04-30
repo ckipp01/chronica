@@ -142,7 +142,7 @@ const CRATE = {
   },
   'bash': {
     title: 'bash',
-    template: 'basic',
+    template: 'tag',
     body: [
       {
         type: 'p',
@@ -311,7 +311,7 @@ const CRATE = {
   },
   'javascript': {
     title: 'javascript',
-    template: 'basic',
+    template: 'tag',
     body: [
       {
         type: 'p',

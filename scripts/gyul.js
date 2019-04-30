@@ -74,7 +74,6 @@ const Gyul = () => {
         return groupedLogs
       }
 
-      // Takes grouped logs and also groups them by log type
       const totals = categories.map(createGroupedLogs)
 
       const keys = totals.map(total => {
@@ -113,7 +112,7 @@ const Gyul = () => {
       const key = peelKey(rawKey, crateKeys)
       const main = document.getElementsByTagName('main')[0]
       const tagCounter = (tagCount, tag) => {
-        (tagCount[tag] = tagCount[tag] || 0)
+        tagCount[tag] = tagCount[tag] || 0
         tagCount[tag] = tagCount[tag] += 1
         return tagCount
       }
@@ -121,9 +120,27 @@ const Gyul = () => {
       const tagNames = Object.keys(countedTags).sort()
       const finalTags = tagNames
         .map(tagName => `<p>${countedTags[tagName]} - <a href='#${tagName}'>${tagName}</p></a>`)
-      const plurality = packagedCrate[key].tags.length > 1 ? 'tags' : 'tag'
-      const tagsWithHeading = [`<h3>Tagged with ${packagedCrate[key].tags.length} ${plurality}</h3>`, ...finalTags]
-      main.innerHTML = tagsWithHeading.join('')
+      const tagPlurality = packagedCrate[key].tags.length === 1 ? 'tag' : 'tags'
+
+      const gatherTaggers = (taggedByArray, entry) => {
+        const length = packagedCrate[entry].tags.filter(tag => tag === key).length
+        if (length > 0) taggedByArray.push({ project: entry, times: length })
+        return taggedByArray
+      }
+
+      const taggedBy = Object.keys(packagedCrate)
+        .reduce(gatherTaggers, [])
+
+      const finalTaggers = taggedBy
+        .map(tagger => `<p>${tagger.times} - <a href='#${tagger.project}'>${tagger.project}</p></a>`)
+
+      const taggerPlurality = taggedBy.length === 1 ? 'project' : 'projects'
+
+      const taggersWithHeading = [`<h3>Tagged by ${taggedBy.length} other ${taggerPlurality}</h3>`, ...finalTaggers]
+
+      const tagsWithHeading = [`<h3>Tagged with ${packagedCrate[key].tags.length} ${tagPlurality}</h3>`, ...finalTags]
+      const finalFinal = [...tagsWithHeading, ...taggersWithHeading]
+      main.innerHTML = finalFinal.join('')
       handleTabUnderline('tags')
     },
     switchHeader: rawKey => {
