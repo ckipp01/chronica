@@ -1,6 +1,49 @@
 const LOGS =
 [
   {
+    "date": "2019-04-30",
+    "category": "explore",
+    "time": 55,
+    "notes": "Starting working on 스택 and trying to figure out how I want it to work",
+    "location": "home",
+    "project": "seutaeg"
+  },
+  {
+    "date": "2019-04-30",
+    "category": "study",
+    "time": 50,
+    "notes": "Worked through some of the essential scala book and exercises",
+    "location": "bus",
+    "project": "programming",
+    "tags": [
+      "scala",
+      "functional programming"
+    ]
+  },
+  {
+    "date": "2019-04-30",
+    "category": "code",
+    "time": 55,
+    "notes": "Add in the ability to not just see what a project tags, but also other projects that have tagged an entry",
+    "location": "bus",
+    "project": "gyul",
+    "tags": [
+      "wiki.chronica",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-04-28",
+    "category": "code",
+    "time": 35,
+    "notes": "Work on getting some more information about other projects that have tagged a certain entry",
+    "location": "bus",
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-04-28",
     "category": "write",
     "time": 30,
