@@ -1,6 +1,37 @@
 const LOGS =
 [
   {
+    "date": "2019-05-01",
+    "category": "code",
+    "time": 30,
+    "notes": "Start laying out how seutaeg will work",
+    "location": "home",
+    "project": "seutaeg",
+    "tags": [
+      "javascript",
+      "gyul"
+    ]
+  },
+  {
+    "date": "2019-05-01",
+    "category": "study",
+    "time": 30,
+    "notes": "Jumping back on studying dutch",
+    "location": "home",
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
+    "date": "2019-05-01",
+    "category": "explore",
+    "time": 25,
+    "notes": "Spend some more time figuring out a custom way to store data",
+    "location": "home",
+    "project": "seutaeg"
+  },
+  {
     "date": "2019-04-30",
     "category": "explore",
     "time": 55,
@@ -92,7 +123,7 @@ const LOGS =
     "time": 55,
     "notes": "Just started looking around at how to best edit my crate file for longer entries. JSON sort of just is sucking at being easy to manage for how I'm using it",
     "location": "home",
-    "project": "crate-builder",
+    "project": "gyul",
     "tags": [
       "javascript",
       "gyul"
