@@ -47,12 +47,15 @@ const footer = [
         ]
       },
       { type: 'a',
-        attributes: [{ type: 'href', value: 'mailto:ckipp@pm.me' }],
+        attributes: [
+          { type: 'href', value: 'https://twitter.com/ckipp01' },
+          { type: 'target', value: '_blank' }
+        ],
         children: [
           { type: 'img',
             attributes: [
-              { type: 'src', value: 'media/mail.png' },
-              { type: 'alt', value: 'Mail icon' }
+              { type: 'src', value: 'media/twitter.png' },
+              { type: 'alt', value: 'Twitter icon' }
             ]
           }
         ]

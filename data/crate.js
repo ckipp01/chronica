@@ -449,6 +449,25 @@ const CRATE = {
       }
     ]
   },
+  seutaeg: {
+    title: '스택 seutaeg',
+    template: 'main',
+    body: [
+      {
+        type: 'p',
+        text: `This is in the very early stages of development. Currently for <a href="#gyul">gyul</a> I use file called crate.js, which is just a big JS object, to hold all of the main data and content for my site. As I'm looking to also use <a href="#gyul">gyul</a> for longer writing, which means this needs to change. It's not the most human readable format.`
+      },
+      {
+        type: 'p',
+        text: `The current plan is to have the file be a tabular file that is more human readable. There will also be a parsing library involved that will be able to parse patterns and symbols to quickly create links, bold text, etc.`
+      },
+      {
+        type: 'p',
+        text: `This idea is heavily inspired by <a targer="_blank" href="https://wiki.xxiivv.com/#indental">Indental</a> and <a target="_blank" href="https://wiki.xxiivv.com/#runic">Runic</a>. Both of these are built by Devine Lu Linvega.`
+      }
+
+    ]
+  },
   studiosyk: {
     title: 'studio syk',
     template: 'main',
