@@ -1,6 +1,48 @@
 const LOGS =
 [
   {
+    "date": "2019-05-02",
+    "category": "code",
+    "time": 35,
+    "notes": "Start work on the webring checker",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-02",
+    "category": "study",
+    "time": 20,
+    "notes": "Studied Dutch",
+    "location": "home",
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
+    "date": "2019-05-02",
+    "category": "write",
+    "time": 10,
+    "notes": "Wrote in some info for missing projects",
+    "location": "home",
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-05-02",
+    "category": "code",
+    "time": 35,
+    "notes": "Work on getting some sort of parsing in to allow for links etc",
+    "location": "home",
+    "project": "seutaeg",
+    "tags": [
+      "javascript",
+      "gyul"
+    ]
+  },
+  {
     "date": "2019-05-01",
     "category": "code",
     "time": 30,
