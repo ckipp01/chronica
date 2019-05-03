@@ -542,6 +542,28 @@ const CRATE = {
       }
     ]
   },
+  'webring-checker': {
+    title: 'webring-checker',
+    template: 'main',
+    body: [
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/webring-checker">webring-checker</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Url: <a target="_blank" href="https://webring-checker.now.sh/?format=html">https://webring-checker.now.sh</a>'
+      },
+      {
+        type: 'p',
+        text: `You may have noticed the middle icon in the footer of this site. It leads to a <a target="_blank" href="https://webring.xxiivv.com">webring</a> full of wikis, portfolios, and the likes. The creativity and talent you'll find browsing around on the various sites is astounding. I'm grateful to be part of the community.`
+      },
+      {
+        type: 'p',
+        text: `webring-checker is a simple service that grabs the urls from the webring and then checks the status and last modified date of all of the sites. By default it will return a JSON array of data, but you can also pass in a query paramater format, with the specific type like <code>?format=html</code>. It currently only supports JSON and html.`
+      }
+    ]
+  },
   'wiki.chronica': {
     title: 'wiki.chronica',
     template: 'main',
