@@ -245,7 +245,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `gyul works by a factory function creating an object which creates a record of all the possible keys in the site and their relevant information. Then by passing it the hash of the url it does a look up in the object and return the necessary data. If you look at the index.html page of this site you'll see what is shown below:`
+        text: `gyul works by a factory function creating an object which creates a record of all the possible keys in the site and their relevant information. Then by passing it the hash of the url it does a look up in the object and returns the necessary data. If you look at the index.html page of this site you'll see what is shown below:`
       },
       {
         type: 'div',
