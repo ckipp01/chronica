@@ -107,6 +107,12 @@ footer a {
   margin: 1em 0;
 }
 
+.homepage-keys-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .key-color {
   margin: 0 .5em 1em .5em;
 }
@@ -120,6 +126,7 @@ footer a {
 .project-list > div {
   margin: 1em;
   width: 200px;
+  text-align: center;
 }
 
 .contact {
@@ -137,9 +144,18 @@ footer a {
   text-align: center;
 }
 
+.activity-graph-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   body { max-width: 986px; margin: 0 auto; }
   header { text-align: left; }
-  .project-list { justify-content: flex-start; }
 }
 

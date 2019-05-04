@@ -1,5 +1,5 @@
 'use strict'
-/* global LOGS, createProjects */
+/* global LOGS, createProjects, createActivityGraph, createKeys */
 
 const CRATE = {
   andaga: {
@@ -298,7 +298,24 @@ const CRATE = {
     body: [
       {
         type: 'p',
+        attributes: [
+          { type: 'class', value: 'text-center' }
+        ],
         text: `Feel free to explore. This is <a href="#me">my</a> collected works and logs. If you don't know where to start, you can get an introduction <a href='#wiki.chronica'>here</a> or click on any of the projects below.`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'homepage-keys-container' }
+        ],
+        text: createKeys(LOGS)
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'activity-graph-container' }
+        ],
+        text: createActivityGraph(LOGS)
       },
       {
         type: 'div',
