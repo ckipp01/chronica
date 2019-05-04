@@ -298,9 +298,6 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        attributes: [
-          { type: 'class', value: 'text-center' }
-        ],
         text: `Feel free to explore. This is <a href="#me">my</a> collected works and logs. If you don't know where to start, you can get an introduction <a href='#wiki.chronica'>here</a> or click on any of the projects below.`
       },
       {

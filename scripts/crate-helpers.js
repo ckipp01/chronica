@@ -21,9 +21,9 @@ const createProjects = logs => {
     .map(p => {
       const plurality = logsObject[p].entries > 1 ? 'logs' : 'log'
       return `<div>
-                <p>Project: <a href='#${p}'>${p}</a><br>
-                Time: ${logsObject[p].time} minutes<br>
-                Entries: ${logsObject[p].entries} ${plurality} 
+                <p><a href='#${p}'>${p}</a><br>
+                ${logsObject[p].time} minutes<br>
+                ${logsObject[p].entries} ${plurality} 
                </div>`
     })
 }

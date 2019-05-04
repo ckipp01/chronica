@@ -119,14 +119,12 @@ footer a {
 
 .project-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .project-list > div {
   margin: 1em;
   width: 200px;
-  text-align: center;
 }
 
 .contact {
