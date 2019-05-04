@@ -1,5 +1,7 @@
 'use-strict'
 
+/* homepage project list functions */
+
 const createProjectObject = (acc, cur) => {
   acc[cur.project] = acc[cur.project] || {}
   acc[cur.project].time = acc[cur.project].time || 0
@@ -25,8 +27,41 @@ const createProjects = logs => {
                </div>`
     })
 }
+/* end project list functions */
 
-const padNumber = number => number < 10 ? '0' + number : number
+/* homepage key functions */
+
+const createKeys = logs => {
+  const all = logs
+    .map(log => log.category)
+    .filter(category => category !== undefined)
+
+  const unique = [...new Set(all)]
+
+  return unique.reduce((keys, key) => {
+    return `${keys}<div class="key-block">
+             <svg height="10" width="10" class="key-color">
+               <rect width="10" height="10" class="${key}-logbar" />
+             </svg>
+             <p>${key}</p>
+           </div>`
+  }, '')
+}
+
+/* end homepage key functions */
+
+/* homepage activity graph functions */
+
+const createActivityGraph = logs => {
+  const trimmed = logs.map(log => ({ date: log.date, time: log.time, category: log.category }))
+  const grouped = groupByKey(trimmed, 'date')
+  const daysToCutoff = getDaysToCuttoff(90)
+  const relevantGroups = daysToCutoff.map(day => grouped[day]).reverse()
+  const highestMark = relevantGroups.reduce(findHighestMark, 0)
+  const totalMinutes = relevantGroups.reduce(getTotalMinutes, 0)
+  const graph = relevantGroups.reduce(createDayGraph(highestMark), '')
+  return `<p class="text-center small-text">${totalMinutes} min - 90 days - ${Math.round(totalMinutes / 90 * 100) / 100} avg/day</p><div class="activity-graph-container">${graph}</div>`
+}
 
 const getDaysToCuttoff = amount => {
   return Array(amount)
@@ -42,6 +77,24 @@ const getDate = daysAgo => {
   const cutoffMonth = padNumber(cutoffDate.getMonth() + 1)
   const cutoffDay = padNumber(cutoffDate.getDate())
   return `${cutoffYear}-${cutoffMonth}-${cutoffDay}`
+}
+
+const padNumber = number => number < 10 ? '0' + number : number
+
+const findHighestMark = (currentHighest, day) => {
+  const totalHoursForDay = day
+    ? getTotalHoursForDay(day)
+    : 0
+
+  if (totalHoursForDay > currentHighest) {
+    return getTotalHoursForDay(day)
+  } else {
+    return currentHighest
+  }
+}
+
+const getTotalHoursForDay = day => {
+  return day.reduce((totalTime, log) => { return totalTime + log.time }, 0)
 }
 
 const groupByKey = (arr, key) => {
@@ -70,49 +123,13 @@ const createDayGraph = highestMark => (days, day) => {
     ? day.reduce(createProjectRect(highestMark), [])
     : [[`<rect rx="2" width="90%" height="1px"></rect>`]]
 
-  console.log(rects)
   return `${days}<svg>${rects.map(rect => rect[0]).toString().replace(/,/g, '')}</svg>`
 }
 
-const getTotalHoursForDay = day => {
-  return day.reduce((totalTime, log) => { return totalTime + log.time }, 0)
+const getTotalMinutes = (total, day) => {
+  return day
+    ? total + day.reduce((ltotal, log) => { return ltotal + log.time }, 0)
+    : total
 }
 
-const findHighestMark = (currentHighest, day) => {
-  const totalHoursForDay = day
-    ? getTotalHoursForDay(day)
-    : 0
-
-  if (totalHoursForDay > currentHighest) {
-    return getTotalHoursForDay(day)
-  } else {
-    return currentHighest
-  }
-}
-
-const createKeys = logs => {
-  const all = logs
-    .map(log => log.category)
-    .filter(category => category !== undefined)
-
-  const unique = [...new Set(all)]
-
-  return unique.reduce((keys, key) => {
-    return `${keys}<div class="key-block">
-             <svg height="10" width="10" class="key-color">
-               <rect width="10" height="10" class="${key}-logbar" />
-             </svg>
-             <p>${key}</p>
-           </div>`
-  }, '')
-}
-
-const createActivityGraph = logs => {
-  const trimmed = logs.map(log => ({ date: log.date, time: log.time, category: log.category }))
-  const grouped = groupByKey(trimmed, 'date')
-  const daysToCutoff = getDaysToCuttoff(90)
-  const relevantGroups = daysToCutoff.map(day => grouped[day]).reverse()
-  const highestMark = relevantGroups.reduce(findHighestMark, 0)
-  const graph = relevantGroups.reduce(createDayGraph(highestMark), '')
-  return graph
-}
+/* end homepage activity graph functions */

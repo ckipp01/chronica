@@ -154,6 +154,10 @@ footer a {
   text-align: center;
 }
 
+.small-text {
+  font-size: 0.6em;
+}
+
 @media (min-width: 768px) {
   body { max-width: 986px; margin: 0 auto; }
   header { text-align: left; }
