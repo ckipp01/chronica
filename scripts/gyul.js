@@ -80,7 +80,7 @@ const Gyul = () => {
         const type = Object.keys(total)[0]
         return `<div class="key-block">
               <svg height="10" width="10" class="key-color">
-                <rect width="10" height="10" class="${type}-logbar" />
+                <rect rx="2" width="10" height="10" class="${type}-logbar" />
               </svg>
               <p>${type} ${total[type].percentage}%</p>
             </div>`
@@ -96,8 +96,8 @@ const Gyul = () => {
         const type = Object.keys(total)[0]
         const width = 500 * (total[type].percentage / 100)
         const rect = `<div class="graph-container">
-                    <svg height="7">
-                      <rect width="${width}" height="7" class="${type}-logbar" />
+                    <svg height="10">
+                      <rect rx="2" width="${width}" height="10" class="${type}-logbar" />
                     </svg>
                   </div>`
         return rect

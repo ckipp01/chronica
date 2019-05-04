@@ -59,7 +59,7 @@ const createProjectRect = highestMark => (rects, project) => {
     ? lastRect[1] + 1
     : 0
 
-  const tuple = [`<rect class="${project.category + '-logbar'}" y="${offSet}%" width="90%" height="${height}%"></rect>`, height + offSet]
+  const tuple = [`<rect class="${project.category + '-logbar'}" rx="2" y="${offSet}%" width="90%" height="${height}%"></rect>`, height + offSet]
 
   rects.push(tuple)
   return rects
