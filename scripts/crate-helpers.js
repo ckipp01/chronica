@@ -68,8 +68,9 @@ const createProjectRect = highestMark => (rects, project) => {
 const createDayGraph = highestMark => (days, day) => {
   const rects = day
     ? day.reduce(createProjectRect(highestMark), [])
-    : []
+    : [[`<rect rx="2" width="90%" height="1px"></rect>`]]
 
+  console.log(rects)
   return `${days}<svg>${rects.map(rect => rect[0]).toString().replace(/,/g, '')}</svg>`
 }
 
