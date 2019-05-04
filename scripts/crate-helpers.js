@@ -110,7 +110,7 @@ const createActivityGraph = logs => {
   const trimmed = logs.map(log => ({ date: log.date, time: log.time, category: log.category }))
   const grouped = groupByKey(trimmed, 'date')
   const daysToCutoff = getDaysToCuttoff(90)
-  const relevantGroups = daysToCutoff.map(day => grouped[day])
+  const relevantGroups = daysToCutoff.map(day => grouped[day]).reverse()
   const highestMark = relevantGroups.reduce(findHighestMark, 0)
   const graph = relevantGroups.reduce(createDayGraph(highestMark), '')
   return graph
