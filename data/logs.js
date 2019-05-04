@@ -1,6 +1,30 @@
 const LOGS =
 [
   {
+    "date": "2019-05-04",
+    "category": "code",
+    "time": 350,
+    "notes": "Worked on getting an activity graph on my homepage",
+    "location": "Filtro",
+    "project": "wiki.chronica",
+    "tags": [
+      "gyul",
+      "javascript",
+      "chronica"
+    ]
+  },
+  {
+    "date": "2019-05-04",
+    "category": "code",
+    "time": 20,
+    "notes": "Added in some better logging and cleaned up a couple things",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-03",
     "category": "code",
     "time": 45,
