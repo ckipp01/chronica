@@ -120,11 +120,13 @@ footer a {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-list > div {
   margin: 1em;
   width: 200px;
+  text-align: center;
 }
 
 .contact {
@@ -159,5 +161,8 @@ footer a {
 @media (min-width: 768px) {
   body { max-width: 986px; margin: 0 auto; }
   header { text-align: left; }
+  .project-list { justify-content: flex-start }
+  .project-list > div { text-align: left }
+
 }
 
