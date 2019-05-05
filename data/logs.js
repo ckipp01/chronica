@@ -1,6 +1,30 @@
 const LOGS =
 [
   {
+    "date": "2019-05-05",
+    "category": "explore",
+    "time": 45,
+    "notes": "Played around with different ways to have a scroll to top with an arrow and also reviewed and cleaned up some stuff",
+    "location": "home",
+    "project": "wiki.chronica",
+    "tags": [
+      "javascript",
+      "chronica"
+    ]
+  },
+  {
+    "date": "2019-05-05",
+    "category": "code",
+    "time": 25,
+    "notes": "Cleaned up some stuff now that zeit has now dev",
+    "location": "home",
+    "project": "andaga-core",
+    "tags": [
+      "javascript",
+      "andaga"
+    ]
+  },
+  {
     "date": "2019-05-04",
     "category": "code",
     "time": 350,
