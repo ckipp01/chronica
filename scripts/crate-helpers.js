@@ -41,14 +41,12 @@ const createKeys = logs => {
   return unique.reduce((keys, key) => {
     return `${keys}<div class="key-block">
              <svg height="10" width="10" class="key-color">
-               <rect width="10" height="10" class="${key}-logbar" />
+               <rect rx="2" width="10" height="10" class="${key}-logbar" />
              </svg>
              <p>${key}</p>
            </div>`
   }, '')
 }
-
-/* end homepage key functions */
 
 /* homepage activity graph functions */
 
@@ -86,11 +84,8 @@ const findHighestMark = (currentHighest, day) => {
     ? getTotalHoursForDay(day)
     : 0
 
-  if (totalHoursForDay > currentHighest) {
-    return getTotalHoursForDay(day)
-  } else {
-    return currentHighest
-  }
+  if (totalHoursForDay > currentHighest) return totalHoursForDay
+  else return currentHighest
 }
 
 const getTotalHoursForDay = day => {
@@ -106,7 +101,8 @@ const groupByKey = (arr, key) => {
 
 const createProjectRect = highestMark => (rects, project) => {
   const percentageOfHighest = project.time / highestMark * 100
-  const height = percentageOfHighest / 155 * 100
+  // 100px is max height, but use 125 for a bit of a buffer
+  const height = percentageOfHighest / 125 * 100
   const lastRect = rects[rects.length - 1]
   const offSet = lastRect
     ? lastRect[1] + 1
@@ -131,5 +127,3 @@ const getTotalMinutes = (total, day) => {
     ? total + day.reduce((ltotal, log) => { return ltotal + log.time }, 0)
     : total
 }
-
-/* end homepage activity graph functions */

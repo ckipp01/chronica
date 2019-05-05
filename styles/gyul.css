@@ -6,7 +6,7 @@
   --code-logbar: #45503B;
   --explore-logbar: #D15B3A;
   --study-logbar: #1F2421;
-  --research-logbar: #323744;
+  --research-logbar: #60D394;
   --admin-logbar: #40798C;
   --design-logbar: #F3DE8A;
   --write-logbar: #3E92CC;
@@ -163,6 +163,5 @@ footer a {
   header { text-align: left; }
   .project-list { justify-content: flex-start }
   .project-list > div { text-align: left }
-
 }
 

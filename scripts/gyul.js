@@ -226,6 +226,7 @@ const groupByType = logs => {
 }
 
 window.addEventListener('hashchange', () => {
-  GYUL.switchHeader(window.location.hash)
-  GYUL.showInfo(window.location.hash)
+  const newLocation = window.location.hash
+  GYUL.switchHeader(newLocation)
+  GYUL.showInfo(newLocation)
 })
