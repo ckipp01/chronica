@@ -61,11 +61,7 @@ const createActivityGraph = logs => {
   return `<p class="text-center small-text">${totalMinutes} min - 90 days - ${Math.round(totalMinutes / 90 * 100) / 100} avg/day</p><div class="activity-graph-container">${graph}</div>`
 }
 
-const getDaysToCuttoff = amount => {
-  return Array(amount)
-    .fill()
-    .map((_, index) => getDate(index))
-}
+const getDaysToCuttoff = amount => [...Array(amount).keys()].map(getDate)
 
 const getDate = daysAgo => {
   const today = new Date()

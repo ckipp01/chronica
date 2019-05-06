@@ -1,6 +1,19 @@
 'use strict'
 const footer = [
   { type: 'div',
+    attributes: [{ type: 'class', value: 'up-container' }],
+    children: [
+      {
+        type: 'a',
+        text: '↑',
+        attributes: [
+          { type: 'class', value: 'up' },
+          { type: 'onclick', value: 'window.scrollTo({top:0,left:0,behavior:"smooth"})' }
+        ]
+      }
+    ]
+  },
+  { type: 'div',
     attributes: [{ type: 'class', value: 'contact' }],
     children: [
       {

@@ -22,8 +22,8 @@ h1 { font-size: 1.4em; font-weight: 700; }
 h2 { font-size: 1.3em; font-weight: 600; }
 h3 { font-size: 1.2em; font-weight: 500; }
 h5 { font-size: 1em; font-weight: 400; }
-i { font-style: italic; }
-b { font-weight: 400; }
+em { font-style: italic; }
+strong { font-weight: 400; }
 p { margin-bottom: 1em; }
 li { margin: 0 0 1em 1em; }
 code { padding: .25em; background: var(--code-color); font-family: monospace; }
@@ -157,6 +157,9 @@ footer a {
 .small-text {
   font-size: 0.6em;
 }
+
+div.up-container { margin-bottom: 2em; }
+a.up:hover { cursor: pointer; }
 
 @media (min-width: 768px) {
   body { max-width: 986px; margin: 0 auto; }

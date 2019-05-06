@@ -309,9 +309,6 @@ const CRATE = {
       },
       {
         type: 'div',
-        attributes: [
-          { type: 'class', value: '' }
-        ],
         text: createActivityGraph(LOGS)
       },
       {
