@@ -1,6 +1,18 @@
 const LOGS =
 [
   {
+    "date": "2019-05-06",
+    "category": "code",
+    "time": 25,
+    "notes": "play around with the go to top feature and just settled on a very simple implimentation",
+    "location": "home",
+    "project": "wiki.chronica",
+    "tags": [
+      "javascript",
+      "gyul"
+    ]
+  },
+  {
     "date": "2019-05-05",
     "category": "explore",
     "time": 45,
