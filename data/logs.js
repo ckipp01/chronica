@@ -1,6 +1,17 @@
 const LOGS =
 [
   {
+    "date": "2019-05-07",
+    "category": "code",
+    "time": 25,
+    "notes": "Split up webring checker and also add in the ability to just get a list of sites",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-06",
     "category": "code",
     "time": 25,
