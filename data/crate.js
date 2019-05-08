@@ -356,7 +356,7 @@ const CRATE = {
     ]
   },
   me: {
-    title: 'Chris',
+    title: 'Hello',
     template: 'basic',
     body: [
       { type: 'div',
@@ -375,11 +375,11 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `Hi, I'm Chris, and you've stumbled onto my wiki. Originally from the United States, I'm now located in the Netherlands with my wife Sé. I'm a developer and digital explorer. I currently work for Visma Connect primarily working in Scala and JavaScript. Feel free to reach out by any of the means below.`
+        text: `Hi, I'm Chris, and you've stumbled upon my wiki. Originally from the United States, I'm now located in the Netherlands with my wife Sé. I'm a developer and digital explorer, currently working for Visma Connect. I primarily work in Scala and JavaScript with a preference for functional programming. I have a varied background that includes growing up on a farm and earning an MA in International Leadership, and even more varied interests that include cooking, sculpture, wine, and space. If you have any questions about this site, my work, or just want to say hello, feel free to reach out by any of the means below.`
       },
       {
         type: 'p',
-        text: 'Thanks for visiting.'
+        text: 'Thanks for visiting, and enjoy your exploring.'
       },
       {
         type: 'p',

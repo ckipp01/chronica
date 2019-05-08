@@ -184,7 +184,7 @@ const TEMPLATES = {
           attributes: [{ type: 'class', value: 'flex-center' }],
           children: [
             { type: 'h5',
-              text: 'welcome to the chronica wiki'
+              text: 'Welcome to the chronica wiki.'
             }
           ]
         }

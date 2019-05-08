@@ -1,5 +1,5 @@
 'use strict'
-/* global CRATE, LOGS, GYUL, TEMPLATES */
+/* global CRATE, LOGS, GYUL, TEMPLATES, createActivityGraph, padNumber */
 
 const Gyul = () => {
   const crateKeys = Object.keys(CRATE)
@@ -40,8 +40,8 @@ const Gyul = () => {
       const main = document.getElementsByTagName('main')[0]
       const logNotes = packagedCrate[key].logs
         .map(log => `<p>${log.notes}<br>${log.date}<br>${log.time} minutes</p>`)
-      const plurality = logNotes.length > 1 ? 'logs' : 'log'
-      const logNotesWithHeading = [`<h3>Breakdown of ${logNotes.length} ${plurality}</h3>`, ...logNotes]
+      const plurality = logNotes.length > 1 ? ['Records', 'logs'] : ['Record', 'log']
+      const logNotesWithHeading = [`<h3>${plurality[0]} of ${logNotes.length} ${plurality[1]}</h3>`, ...logNotes]
       main.innerHTML = logNotesWithHeading.join('')
       handleTabUnderline('logs')
     },
@@ -56,7 +56,10 @@ const Gyul = () => {
     showStats: rawKey => {
       const key = peelKey(rawKey, crateKeys)
       const main = document.getElementsByTagName('main')[0]
-      const categoryTotal = packagedCrate[key].logs.reduce((acc, cur) => acc + cur.time, 0)
+
+      const activityGraph = `<h3>Activity in previous 90 days</h3>${createActivityGraph(packagedCrate[key].logs)}`
+
+      const projectTotal = packagedCrate[key].logs.reduce((acc, cur) => acc + cur.time, 0)
       const categories = Object.keys(packagedCrate[key].groupedLogs).sort()
 
       const groupByLogType = (groupedLogs, log) => {
@@ -70,7 +73,7 @@ const Gyul = () => {
         const groupedLogs = packagedCrate[key].groupedLogs[category]
           .reduce(groupByLogType, Object.create(null))
         groupedLogs[category].totalLogs = packagedCrate[key].groupedLogs[category].length
-        groupedLogs[category].percentage = Math.round((groupedLogs[category].time / categoryTotal) * 100)
+        groupedLogs[category].percentage = Math.round((groupedLogs[category].time / projectTotal) * 100)
         return groupedLogs
       }
 
@@ -87,7 +90,8 @@ const Gyul = () => {
       })
 
       const wrappedKeys = [
-        `<h3>Breakdown of ${categoryTotal} minutes</h3><div class='keys-container'>`,
+        `<h3>Breakdown of ${projectTotal} total project minutes</h3>`,
+        `<div class='keys-container'>`,
         ...keys,
         `</div>`
       ]
@@ -103,7 +107,7 @@ const Gyul = () => {
         return rect
       })
 
-      const innards = [...wrappedKeys, ...rects]
+      const innards = [activityGraph, ...wrappedKeys, ...rects]
 
       main.innerHTML = innards.join('')
       handleTabUnderline('stats')
@@ -119,7 +123,7 @@ const Gyul = () => {
       const countedTags = packagedCrate[key].tags.reduce(tagCounter, {})
       const tagNames = Object.keys(countedTags).sort()
       const finalTags = tagNames
-        .map(tagName => `<p>${countedTags[tagName]} - <a href='#${tagName}'>${tagName}</p></a>`)
+        .map(tagName => `<p>${padNumber(countedTags[tagName])} - <a href='#${tagName}'>${tagName}</p></a>`)
       const tagPlurality = packagedCrate[key].tags.length === 1 ? 'tag' : 'tags'
 
       const gatherTaggers = (taggedByArray, entry) => {
@@ -132,7 +136,7 @@ const Gyul = () => {
         .reduce(gatherTaggers, [])
 
       const finalTaggers = taggedBy
-        .map(tagger => `<p>${tagger.times} - <a href='#${tagger.project}'>${tagger.project}</p></a>`)
+        .map(tagger => `<p>${padNumber(tagger.times)} - <a href='#${tagger.project}'>${tagger.project}</p></a>`)
 
       const taggerPlurality = taggedBy.length === 1 ? 'project' : 'projects'
 
