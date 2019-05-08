@@ -1,6 +1,29 @@
 const LOGS =
 [
   {
+    "date": "2019-05-08",
+    "category": "code",
+    "time": 40,
+    "notes": "Make a landing description page for the webring checker and move around the api endpoints",
+    "location": "airplane",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-08",
+    "category": "code",
+    "time": 50,
+    "notes": "Cleaned up the activity logger and also addit it in to each of the projects",
+    "location": "airplane",
+    "project": "gyul",
+    "tags": [
+      "javascript",
+      "wiki.chronica"
+    ]
+  },
+  {
     "date": "2019-05-07",
     "category": "code",
     "time": 25,
@@ -51,13 +74,13 @@ const LOGS =
     "date": "2019-05-04",
     "category": "code",
     "time": 350,
-    "notes": "Worked on getting an activity graph on my homepage",
+    "notes": "Worked on getting an activity graph on the homepage",
     "location": "Filtro",
-    "project": "wiki.chronica",
+    "project": "gyul",
     "tags": [
       "gyul",
       "javascript",
-      "chronica"
+      "wiki.chronica"
     ]
   },
   {
