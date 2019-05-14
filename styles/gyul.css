@@ -93,8 +93,7 @@ footer a {
 .design-logbar { fill: var(--design-logbar); }
 .write-logbar { fill: var(--write-logbar); }
 
-.key-block,
-.keys-container {
+.key-block {
   display: flex;
   align-items: center;
   margin: 0 .5em;
@@ -103,13 +102,7 @@ footer a {
 .keys-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin: 1em 0;
-}
-
-.homepage-keys-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 

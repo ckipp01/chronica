@@ -1,5 +1,5 @@
 'use strict'
-/* global LOGS, createProjects, createActivityGraph, createKeys */
+/* global LOGS, createProjects, createActivityGraph, createAllKeys */
 
 const CRATE = {
   andaga: {
@@ -303,9 +303,9 @@ const CRATE = {
       {
         type: 'div',
         attributes: [
-          { type: 'class', value: 'homepage-keys-container' }
+          { type: 'class', value: 'keys-container' }
         ],
-        text: createKeys(LOGS)
+        text: createAllKeys(LOGS)
       },
       {
         type: 'div',

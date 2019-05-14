@@ -31,7 +31,7 @@ const createProjects = logs => {
 
 /* homepage key functions */
 
-const createKeys = logs => {
+const createAllKeys = logs => {
   const all = logs
     .map(log => log.category)
     .filter(category => category !== undefined)

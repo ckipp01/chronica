@@ -1,5 +1,5 @@
 'use strict'
-/* global CRATE, LOGS, GYUL, TEMPLATES, createActivityGraph, padNumber */
+/* global CRATE, LOGS, GYUL, TEMPLATES, createActivityGraph, padNumber, groupByKey */
 
 const Gyul = () => {
   const crateKeys = Object.keys(CRATE)
@@ -10,7 +10,7 @@ const Gyul = () => {
     const tree = retrieveTree(key)
     packagedCrate[key] = {
       logs,
-      groupedLogs: groupByType(logs),
+      groupedLogs: groupByKey(logs, 'category'),
       tags: logs
         .map(log => log.tags)
         .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
@@ -59,6 +59,7 @@ const Gyul = () => {
 
       const activityGraph = `<h3>Activity in previous 90 days</h3>${createActivityGraph(packagedCrate[key].logs)}`
 
+      // TODO look to see if I use this pattern elsewhere to refactor into its own function
       const projectTotal = packagedCrate[key].logs.reduce((acc, cur) => acc + cur.time, 0)
       const categories = Object.keys(packagedCrate[key].groupedLogs).sort()
 
@@ -79,37 +80,34 @@ const Gyul = () => {
 
       const totals = categories.map(createGroupedLogs)
 
-      const keys = totals.map(total => {
-        const type = Object.keys(total)[0]
-        return `<div class="key-block">
+      const createProjectKeys = (keyString, typeObject) => {
+        const type = Object.keys(typeObject)[0]
+        return `${keyString}<div class="key-block">
               <svg height="10" width="10" class="key-color">
                 <rect rx="2" width="10" height="10" class="${type}-logbar" />
               </svg>
-              <p>${type} ${total[type].percentage}%</p>
+              <p>${type} ${typeObject[type].percentage}%</p>
             </div>`
-      })
+      }
 
-      const wrappedKeys = [
-        `<h3>Breakdown of ${projectTotal} total project minutes</h3>`,
-        `<div class='keys-container'>`,
-        ...keys,
-        `</div>`
-      ]
+      const projectKeys = totals.reduce(createProjectKeys, '')
 
-      const rects = totals.map(total => {
-        const type = Object.keys(total)[0]
-        const width = 500 * (total[type].percentage / 100)
-        const rect = `<div class="graph-container">
+      const wrappedKeys = `<div class='keys-container'>${projectKeys}</div>`
+
+      const constructRects = (rectString, typeObject) => {
+        const type = Object.keys(typeObject)[0]
+        const width = 500 * (typeObject[type].percentage / 100)
+        return `${rectString}<div class="graph-container">
                     <svg height="10">
                       <rect rx="2" width="${width}" height="10" class="${type}-logbar" />
                     </svg>
                   </div>`
-        return rect
-      })
+      }
 
-      const innards = [activityGraph, ...wrappedKeys, ...rects]
+      const rects = totals.reduce(constructRects, '')
+      const rectsWithHeading = `<h3>Breakdown of ${projectTotal} total project minutes ${rects}</h3>`
 
-      main.innerHTML = innards.join('')
+      main.innerHTML = wrappedKeys + activityGraph + rectsWithHeading
       handleTabUnderline('stats')
     },
     showTags: rawKey => {
@@ -220,13 +218,6 @@ const handleTabUnderline = tabName => {
   })
   const targetTab = document.getElementById(tabName)
   if (targetTab !== null) targetTab.setAttribute('style', 'text-decoration:underline#45503B')
-}
-
-const groupByType = logs => {
-  return logs.reduce((logGroup, log) => {
-    (logGroup[log.category] = logGroup[log.category] || []).push(log)
-    return logGroup
-  }, Object.create(null))
 }
 
 window.addEventListener('hashchange', () => {
