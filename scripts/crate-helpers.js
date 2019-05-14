@@ -84,9 +84,7 @@ const findHighestMark = (currentHighest, day) => {
   else return currentHighest
 }
 
-const getTotalHoursForDay = day => {
-  return day.reduce((totalTime, log) => { return totalTime + log.time }, 0)
-}
+const getTotalHoursForDay = day => day.reduce((totalTime, log) => totalTime + log.time, 0)
 
 const groupByKey = (arr, key) => {
   return arr.reduce((acc, cv) => {
@@ -120,6 +118,6 @@ const createDayGraph = highestMark => (days, day) => {
 
 const getTotalMinutes = (total, day) => {
   return day
-    ? total + day.reduce((ltotal, log) => { return ltotal + log.time }, 0)
+    ? total + day.reduce((ltotal, log) => ltotal + log.time, 0)
     : total
 }

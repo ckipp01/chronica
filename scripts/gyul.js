@@ -8,20 +8,13 @@ const Gyul = () => {
   for (const key in CRATE) {
     const logs = LOGS.filter(log => log.project === key)
     const tree = retrieveTree(key)
-    packagedCrate[key] = {
-      logs,
-      groupedLogs: groupByKey(logs, 'category'),
-      tags: logs
-        .map(log => log.tags)
-        .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
-        .filter(log => log !== undefined),
-      tree,
-      template: retrieveTemplate(
-        tree.template,
-        tree.title,
-        tree.body
-      )
-    }
+    const groupedLogs = groupByKey(logs, 'category')
+    const tags = logs
+      .map(log => log.tags)
+      .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
+      .filter(log => log !== undefined)
+    const template = retrieveTemplate(tree.template, tree.title, tree.body)
+    packagedCrate[key] = { logs, groupedLogs, tags, tree, template }
   }
   console.timeEnd('Packaged Crate Time')
   return {
@@ -59,7 +52,6 @@ const Gyul = () => {
 
       const activityGraph = `<h3>Activity in previous 90 days</h3>${createActivityGraph(packagedCrate[key].logs)}`
 
-      // TODO look to see if I use this pattern elsewhere to refactor into its own function
       const projectTotal = packagedCrate[key].logs.reduce((acc, cur) => acc + cur.time, 0)
       const categories = Object.keys(packagedCrate[key].groupedLogs).sort()
 
@@ -120,8 +112,9 @@ const Gyul = () => {
       }
       const countedTags = packagedCrate[key].tags.reduce(tagCounter, {})
       const tagNames = Object.keys(countedTags).sort()
-      const finalTags = tagNames
-        .map(tagName => `<p>${padNumber(countedTags[tagName])} - <a href='#${tagName}'>${tagName}</p></a>`)
+
+      const createTags = (tagString, tagName) => `${tagString}<p>${padNumber(countedTags[tagName])} - <a href='#${tagName}'>${tagName}</p></a>`
+      const tags = tagNames.reduce(createTags, '')
       const tagPlurality = packagedCrate[key].tags.length === 1 ? 'tag' : 'tags'
 
       const gatherTaggers = (taggedByArray, entry) => {
@@ -130,19 +123,14 @@ const Gyul = () => {
         return taggedByArray
       }
 
-      const taggedBy = Object.keys(packagedCrate)
-        .reduce(gatherTaggers, [])
-
-      const finalTaggers = taggedBy
-        .map(tagger => `<p>${padNumber(tagger.times)} - <a href='#${tagger.project}'>${tagger.project}</p></a>`)
-
+      const taggedBy = Object.keys(packagedCrate).reduce(gatherTaggers, [])
+      const createTaggersString = (taggerString, tagger) => `${taggerString}<p>${padNumber(tagger.times)} - <a href='#${tagger.project}'>${tagger.project}</p></a>`
+      const taggers = taggedBy.reduce(createTaggersString, '')
       const taggerPlurality = taggedBy.length === 1 ? 'project' : 'projects'
+      const taggersWithHeading = `<h3>Tagged by ${taggedBy.length} other ${taggerPlurality}</h3>${taggers}`
+      const tagsWithHeading = `<h3>Tagged with ${packagedCrate[key].tags.length} ${tagPlurality}</h3>${tags}`
 
-      const taggersWithHeading = [`<h3>Tagged by ${taggedBy.length} other ${taggerPlurality}</h3>`, ...finalTaggers]
-
-      const tagsWithHeading = [`<h3>Tagged with ${packagedCrate[key].tags.length} ${tagPlurality}</h3>`, ...finalTags]
-      const finalFinal = [...tagsWithHeading, ...taggersWithHeading]
-      main.innerHTML = finalFinal.join('')
+      main.innerHTML = tagsWithHeading + taggersWithHeading
       handleTabUnderline('tags')
     },
     switchHeader: rawKey => {
