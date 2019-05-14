@@ -1,6 +1,29 @@
 const LOGS =
 [
   {
+    "date": "2019-05-14",
+    "category": "code",
+    "time": 15,
+    "notes": "Clean up loggin in waka-fetch",
+    "location": "filtro",
+    "project": "waka-fetch",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-14",
+    "category": "code",
+    "time": 90,
+    "notes": "Refactored quite a bit of stuff with show stats and tags",
+    "location": "plane",
+    "project": "gyul",
+    "tags": [
+      "javascript",
+      "wiki.chronica"
+    ]
+  },
+  {
     "date": "2019-05-08",
     "category": "code",
     "time": 40,
