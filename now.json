@@ -15,5 +15,6 @@
     { "src": "/", "dest": "/index.html"},
     { "src": "/index.html", "dest": "/index.html"},
     { "src": "^/.+", "dest": "/404.html"}
-  ]
+  ],
+  "regions": [ "all" ]
 }
