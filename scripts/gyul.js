@@ -97,7 +97,7 @@ const Gyul = () => {
       }
 
       const rects = totals.reduce(constructRects, '')
-      const rectsWithHeading = `<h3>Breakdown of ${projectTotal} total project minutes ${rects}</h3>`
+      const rectsWithHeading = `<h3>Breakdown of ${projectTotal} total project minutes</h3>${rects}`
 
       main.innerHTML = wrappedKeys + activityGraph + rectsWithHeading
       handleTabUnderline('stats')

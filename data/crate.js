@@ -62,7 +62,7 @@ const CRATE = {
       {
         type: 'ul',
         children: [
-          { type: 'li', text: '<a href="#andaga-cli">ándaga-cli</a> which is a small command line app written in Node. Instead of storing the entries locally, they send them to a ándaga-core to be stored.' },
+          { type: 'li', text: '<a href="#andaga-cli">ándaga-cli</a> which is a small command line app written in Node. Instead of storing the entries locally, they send them to ándaga-core to be stored.' },
           { type: 'li', text: '<a href="#andaga-core">ándaga-core</a> which is a serverless Node app hosted on <a target="_blank" href="http://zeit.co">Zeit</a>, which will store my entries in a MongoDB database.' }
         ]
       },
