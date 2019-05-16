@@ -6,7 +6,11 @@
 		{ "src": "*.html", "use": "@now/html-minifier" },
 		{ "src": "styles/*.css", "use": "@now/html-minifier" },
 		{ "src": "fonts/*.ttf", "use": "@now/static" },
-		{ "src": "media/*", "use": "@now/static" },
+		{ "src": "media/*.ico", "use": "@now/static" },
+		{ "src": "media/*.jpg", "use": "@now/static" },
+		{ "src": "media/*.svg", "use": "@now/static" },
+		{ "src": "media/*.ico", "use": "@now/static" },
+		{ "src": "media/*.png", "use": "@now/optipng" },
 		{ "src": "data/*.js", "use": "@now/static" },
 		{ "src": "scripts/*.js", "use": "@now/static" }
   ],
