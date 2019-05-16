@@ -1,6 +1,28 @@
 const LOGS =
 [
   {
+    "date": "2019-05-16",
+    "category": "research",
+    "time": 30,
+    "notes": "Played around with the experimental flag and Node to try changing around the way I'm doing modules",
+    "location": "home",
+    "project": "andaga-cli",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-16",
+    "category": "code",
+    "time": 30,
+    "notes": "Fixed a couple things with Sé's site and really wanting to switch away from next.js",
+    "location": "home",
+    "project": "studiosyk",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-14",
     "category": "code",
     "time": 15,
