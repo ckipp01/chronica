@@ -1,6 +1,36 @@
 const LOGS =
 [
   {
+    "date": "2019-05-17",
+    "category": "explore",
+    "time": 75,
+    "notes": "Played around with Node streams for the first time. Trying to figure out a good way to stream data back to the client when doing the webring-checker checks instead of using websockets",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-17",
+    "category": "research",
+    "time": 25,
+    "notes": "Looked some more stuff on modules and also some stuff to do with websockets",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-05-17",
+    "category": "code",
+    "time": 25,
+    "notes": "Add in the same style for the html report as the rest of the stuff",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-16",
     "category": "research",
     "time": 30,
