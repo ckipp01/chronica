@@ -1,6 +1,34 @@
 const LOGS =
 [
   {
+    "date": "2019-05-18",
+    "category": "explore",
+    "time": 45,
+    "notes": "Play around with qemu and try to learn a bit more about os virtualization",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-05-18",
+    "category": "admin",
+    "time": 30,
+    "notes": "Get some stuff set up for a bare vm that I can use for a video on coc and metals",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "scala",
+      "nvim"
+    ]
+  },
+  {
+    "date": "2019-05-18",
+    "category": "research",
+    "time": 65,
+    "notes": "Doing some research into sculpting. It's something I'm interested in and I'd like to start if possible",
+    "location": "studio",
+    "project": "sculpting"
+  },
+  {
     "date": "2019-05-17",
     "category": "explore",
     "time": 75,
