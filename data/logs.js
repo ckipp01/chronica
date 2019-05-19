@@ -1,6 +1,30 @@
 const LOGS =
 [
   {
+    "date": "2019-05-19",
+    "category": "admin",
+    "time": 25,
+    "notes": "Fixed some stuff with my tmux conf",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-05-19",
+    "category": "explore",
+    "time": 55,
+    "notes": "Play around some more with Qemu",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-05-19",
+    "category": "explore",
+    "time": 30,
+    "notes": "Played around some more with Qemu",
+    "location": "home",
+    "project": "programming"
+  },
+  {
     "date": "2019-05-18",
     "category": "explore",
     "time": 45,
