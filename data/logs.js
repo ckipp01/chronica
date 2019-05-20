@@ -1,6 +1,17 @@
 const LOGS =
 [
   {
+    "date": "2019-05-20",
+    "category": "study",
+    "time": 45,
+    "notes": "Worked with js streams for a while",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-19",
     "category": "admin",
     "time": 25,
