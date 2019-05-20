@@ -677,13 +677,12 @@ const CRATE = {
       {
         type: 'ul',
         children: [
-          { type: 'li', text: '<b>OS:</b> Ubuntu 18.04' },
-          { type: 'li', text: '<b>Terminal:</b> st' },
-          { type: 'li', text: '<b>Terminal file explorer:</b> ranger' },
-          { type: 'li', text: '<b>Primary text editor for anything but Scala:</b> NVim' },
-          { type: 'li', text: '<b>Primary text editor for Scala:</b> IntelliJ' },
-          { type: 'li', text: '<b>Browser:</b> Vivaldi' },
-          { type: 'li', text: '<b>Other daily software:</b> Tmux, Keybase, Slack, Spotify' }
+          { type: 'li', text: '<b>OS:</b> <a target="_blank" href="https://wiki.ubuntu.com/DiscoDingo/ReleaseNotes">Ubuntu 19.04</a>' },
+          { type: 'li', text: '<b>Terminal:</b> <a target="_blank" href="https://github.com/thestinger/termite/">Termite</a>' },
+          { type: 'li', text: '<b>Terminal file explorer:</b> <a target="_blank" href="https://github.com/ranger/ranger">ranger</a>' },
+          { type: 'li', text: '<b>Primary text editor:</b> <a target="_blank" href="https://neovim.io/">NVim</a>' },
+          { type: 'li', text: '<b>Browser:</b> <a target="_blank" href="https://www.chromium.org/Home"> Chromium</a>' },
+          { type: 'li', text: '<b>Other daily software:</b> <a target="_blank" href="https://github.com/tmux/tmux">tmux</a>, <a target="_blank" href="https://keybase.io/">Keybase</a>, Slack, Spotify' }
         ]
       }
     ]
