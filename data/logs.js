@@ -1,6 +1,28 @@
 const LOGS =
 [
   {
+    "date": "2019-05-22",
+    "category": "code",
+    "time": 90,
+    "notes": "Change the way the sites are gathered now that they are objects instead of strings",
+    "location": "studio",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-22",
+    "category": "explore",
+    "time": 35,
+    "notes": "Play around some more with node streaming",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-20",
     "category": "study",
     "time": 45,
