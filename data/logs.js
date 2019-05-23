@@ -1,6 +1,25 @@
 const LOGS =
 [
   {
+    "date": "2019-05-23",
+    "category": "admin",
+    "time": 65,
+    "notes": "Start playing around with Xubuntu in a vm to get ready to make the switch",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-05-23",
+    "category": "explore",
+    "time": 35,
+    "notes": "Try out rollup and play around with it a bit to consider it for an upcoming project",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-22",
     "category": "code",
     "time": 90,
