@@ -1,6 +1,22 @@
 const LOGS =
 [
   {
+    "date": "2019-05-25",
+    "category": "admin",
+    "time": 165,
+    "notes": "Finished transfering stuff and started on rofi style",
+    "location": "Filtro",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-05-25",
+    "category": "admin",
+    "time": 185,
+    "notes": "Make the switch over to Xubuntu, carry over everything I need and get basic set up done",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
     "date": "2019-05-24",
     "category": "explore",
     "time": 35,
