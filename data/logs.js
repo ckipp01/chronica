@@ -1,6 +1,55 @@
 const LOGS =
 [
   {
+    "date": "2019-05-26",
+    "category": "draw",
+    "time": 25,
+    "notes": "Started working on a movement sketch training",
+    "location": "studio",
+    "project": "sketching"
+  },
+  {
+    "date": "2019-05-26",
+    "category": "code",
+    "time": 25,
+    "notes": "Fix char support and add in site titles",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-26",
+    "category": "explore",
+    "time": 90,
+    "notes": "Figure out setup for a preact, typescript, and parcel project with correct linting etc",
+    "location": "studio",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-26",
+    "category": "write",
+    "time": 10,
+    "notes": "Add in my new workspace tools to the wiki",
+    "location": "home",
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-05-26",
+    "category": "code",
+    "time": 15,
+    "notes": "Fix a parsing bug",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-25",
     "category": "admin",
     "time": 165,
