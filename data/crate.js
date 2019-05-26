@@ -677,8 +677,8 @@ const CRATE = {
       {
         type: 'ul',
         children: [
-          { type: 'li', text: '<b>OS:</b> <a target="_blank" href="https://wiki.ubuntu.com/DiscoDingo/ReleaseNotes">Ubuntu 19.04</a>' },
-          { type: 'li', text: '<b>Terminal:</b> <a target="_blank" href="https://github.com/thestinger/termite/">Termite</a>' },
+          { type: 'li', text: '<b>OS/Distro:</b> <a target="_blank" href="https://xubuntu.org">Xubuntu 19.04</a>' },
+          { type: 'li', text: '<b>Terminal:</b> <a target="_blank" href="https://docs.xfce.org/apps/terminal/start">xfce terminal</a>' },
           { type: 'li', text: '<b>Terminal file explorer:</b> <a target="_blank" href="https://github.com/ranger/ranger">ranger</a>' },
           { type: 'li', text: '<b>Primary text editor:</b> <a target="_blank" href="https://neovim.io/">NVim</a>' },
           { type: 'li', text: '<b>Browser:</b> <a target="_blank" href="https://www.chromium.org/Home"> Chromium</a>' },
