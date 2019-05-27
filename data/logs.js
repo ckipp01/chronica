@@ -1,6 +1,51 @@
 const LOGS =
 [
   {
+    "date": "2019-05-27",
+    "category": "code",
+    "time": 25,
+    "notes": "Change filename and add in a couple new styles",
+    "location": "home",
+    "project": "wiki.chronica",
+    "tags": [
+      "javascript",
+      "html"
+    ]
+  },
+  {
+    "date": "2019-05-27",
+    "category": "code",
+    "time": 15,
+    "notes": "Some more cleanup on the webring-checker",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-27",
+    "category": "code",
+    "time": 25,
+    "notes": "Refactor styling and add in site types",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-27",
+    "category": "code",
+    "time": 25,
+    "notes": "Refactor out typescript of a project",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-26",
     "category": "draw",
     "time": 25,
