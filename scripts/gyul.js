@@ -149,7 +149,7 @@ const Gyul = () => {
         .sort()
       missingProjects.length === 0
         ? console.info('No missing project entries in CRATE')
-        : console.info(`Missing following project entris in CRATE: ${missingProjects.toString()}`)
+        : console.info(`Missing following project entries in CRATE: ${missingProjects.toString()}`)
       const missingTags = LOGS
         .map(log => log.tags)
         .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
@@ -159,7 +159,7 @@ const Gyul = () => {
         .sort()
       missingTags.length === 0
         ? console.info('No missing tag entries in CRATE')
-        : console.info(`Missing following tag entris in CRATE: ${missingTags.toString()}`)
+        : console.info(`Missing following tag entries in CRATE: ${missingTags.toString()}`)
     }
   }
 }

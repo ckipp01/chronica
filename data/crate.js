@@ -393,7 +393,7 @@ const CRATE = {
     body: [
       {
         type: 'p',
-        text: 'No entry has been found for this key'
+        text: 'No entry has been found or created yet for this key'
       }
     ]
   },

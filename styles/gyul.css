@@ -10,6 +10,8 @@
   --admin-logbar: #40798C;
   --design-logbar: #F3DE8A;
   --write-logbar: #3E92CC;
+  --draw-logbar: #D8D4F2;
+  --study-logbar: #1F2421;
   --code-color: #FFF;
 }
 
@@ -88,11 +90,12 @@ footer a {
 
 .code-logbar { fill: var(--code-logbar) }
 .explore-logbar { fill: var(--explore-logbar); }
-.study-logbar { fill: #1F2421; }
+.study-logbar { fill: var(--study-logbar); }
 .research-logbar { fill: var(--research-logbar) }
 .admin-logbar { fill: var(--admin-logbar); }
 .design-logbar { fill: var(--design-logbar); }
 .write-logbar { fill: var(--write-logbar); }
+.draw-logbar { fill: var(--draw-logbar); }
 
 .key-block {
   display: flex;
