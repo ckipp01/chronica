@@ -1,6 +1,33 @@
 const LOGS =
 [
   {
+    "date": "2019-05-28",
+    "category": "code",
+    "time": 35,
+    "notes": "Start working on a rss to html renderer for the webring",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-28",
+    "category": "write",
+    "time": 15,
+    "notes": "Update some of the info on the webring checker",
+    "location": "home",
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-05-28",
+    "category": "draw",
+    "time": 25,
+    "notes": "Worked on some still life sketches",
+    "location": "studio",
+    "project": "sketching"
+  },
+  {
     "date": "2019-05-27",
     "category": "code",
     "time": 25,
