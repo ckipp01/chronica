@@ -571,8 +571,17 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `webring-checker is a simple service that grabs the urls from the webring and then checks the status and last modified date of all of the sites. By default it will return a JSON array of data, but you can also pass in a query paramater format, with the specific type like <code>?format=html</code>. It currently only supports JSON and html.`
-      }
+        text: `webring-checker is a simple service that grabs the urls from the webring and then checks the status and last modified date of all of the sites. The below options are available:`
+      },
+      {
+        type: 'ul',
+        children: [
+          { type: 'li', text: '<code>GET /</code> will return a description page' },
+          { type: 'li', text: '<code>GET /check?format=html</code> will return an html report of all sites, their status code, and if available, the last modified date' },
+          { type: 'li', text: '<code>GET /check?format=json</code> will return the same info as the html format but in json' },
+          { type: 'li', text: '<code>GET /sites</code> will return a json array of site objects that are part of the webring' }
+        ]
+      },
     ]
   },
   'wiki.chronica': {
