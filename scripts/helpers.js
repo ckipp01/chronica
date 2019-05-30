@@ -17,7 +17,6 @@ const createProjects = logs => {
     .reduce(createProjectObject, Object.create(null))
   const projects = Object.keys(logsObject)
   return projects
-    .sort()
     .map(p => {
       const plurality = logsObject[p].entries > 1 ? 'logs' : 'log'
       return `<div>
