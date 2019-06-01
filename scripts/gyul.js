@@ -56,7 +56,7 @@ const Gyul = () => {
       const categories = Object.keys(packagedCrate[key].groupedLogs).sort()
 
       const groupByLogType = (groupedLogs, log) => {
-        groupedLogs[log.category] = groupedLogs[log.category] || Object.create(null)
+        groupedLogs[log.category] = groupedLogs[log.category] || {}
         groupedLogs[log.category].time = groupedLogs[log.category].time || 0
         groupedLogs[log.category].time += log.time
         return groupedLogs
@@ -64,7 +64,7 @@ const Gyul = () => {
 
       const createGroupedLogs = category => {
         const groupedLogs = packagedCrate[key].groupedLogs[category]
-          .reduce(groupByLogType, Object.create(null))
+          .reduce(groupByLogType, {}) 
         groupedLogs[category].totalLogs = packagedCrate[key].groupedLogs[category].length
         groupedLogs[category].percentage = Math.round((groupedLogs[category].time / projectTotal) * 100)
         return groupedLogs
