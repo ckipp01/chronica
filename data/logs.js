@@ -1,6 +1,18 @@
 const LOGS =
 [
   {
+    "date": "2019-06-05",
+    "category": "research",
+    "time": 35,
+    "notes": "Dove into some of entropic stuff",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "open-source",
+      "entropic"
+    ]
+  },
+  {
     "date": "2019-06-04",
     "category": "study",
     "time": 25,
