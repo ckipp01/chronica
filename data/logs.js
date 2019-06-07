@@ -1,6 +1,39 @@
 const LOGS =
 [
   {
+    "date": "2019-06-07",
+    "category": "explore",
+    "time": 45,
+    "notes": "Starting the installation process of Arch in a vm to see if I can do everything I need",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "date": "2019-06-07",
+    "category": "admin",
+    "time": 35,
+    "notes": "Work on some more custimizations with i3",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "date": "2019-06-06",
+    "category": "admin",
+    "time": 35,
+    "notes": "Switch over to i3 and start setting up configs",
+    "location": "home",
+    "project": "workspace",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
     "date": "2019-06-05",
     "category": "research",
     "time": 35,
