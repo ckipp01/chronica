@@ -1,6 +1,22 @@
 const LOGS =
 [
   {
+    "date": "2019-06-10",
+    "category": "explore",
+    "time": 185,
+    "notes": "Look through a bunch of stuff on encrypting drives and arch install",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-06-09",
+    "category": "explore",
+    "time": 160,
+    "notes": "Work on arch stuff",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
     "date": "2019-06-07",
     "category": "explore",
     "time": 45,
