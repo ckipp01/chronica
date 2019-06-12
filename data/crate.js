@@ -602,7 +602,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I used <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. An example of a log is located below: `
+        text: `To provide a bit of context, wiki.chronica is built using <a href="#gyul">gyul</a>. There is no build process apart from adding my data into a json file. wiki.chronica is also tied directly into my time tracking system, <a href="#andaga">ándaga</a>. Daily I use <a href="#andaga-cli">ándaga-cli</a> to log entries about what I'm working on. An example of a log is located below: `
       },
       {
         type: 'p',
