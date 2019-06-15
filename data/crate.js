@@ -571,7 +571,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `webring-checker is a simple service that grabs the urls from the webring and then checks the status and last modified date of all of the sites. The below options are available:`
+        text: `webring-checker is a simple service and api the webring. The api is able to provide a list of sites in the webring, check the status of the webring, and also show an rss feed of the webring. The full options are below.`
       },
       {
         type: 'ul',
@@ -579,7 +579,33 @@ const CRATE = {
           { type: 'li', text: '<code>GET /</code> will return a description page' },
           { type: 'li', text: '<code>GET /check?format=html</code> will return an html report of all sites, their status code, and if available, the last modified date' },
           { type: 'li', text: '<code>GET /check?format=json</code> will return the same info as the html format but in json' },
-          { type: 'li', text: '<code>GET /sites</code> will return a json array of site objects that are part of the webring' }
+          { type: 'li', text: '<code>GET /sites</code> will return a json array of site objects that are part of the webring' },
+          { type: 'li', text: '<code>GET /rss?format=html</code> to view a collection of all availabe rss feeds in the Webring ordered by date' },
+          { type: 'li', text: '<code>GET /rss?format=json</code> to retrieve the collection of rss feeds in json format ordered by date' }
+        ]
+      },
+      {
+        type: 'p',
+        text: `The webring currently has rss feeds that are either rss or atom feeds. Since they both have a bit different format, I've standardized them into a common json object. This is the format that the json of the <code>/rss?format=json</code> will return.`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: `{<br>
+                      &emsp;title": String,<br>
+                      &emsp;link": String,<br>
+                      &emsp;post": {<br>
+                        &emsp;&emsp;postTitle": String,<br>
+                        &emsp;&emsp;postDate": String,<br>
+                        &emsp;&emsp;postLink": String,<br>
+                        &emsp;&emsp;postConent": String<br>
+                      &emsp;}<br>
+                  }`
+          }
         ]
       },
     ]
