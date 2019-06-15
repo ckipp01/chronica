@@ -1,6 +1,41 @@
 const LOGS =
 [
   {
+    "date": "2019-06-13",
+    "category": "code",
+    "time": 45,
+    "notes": "Work on iterating through the various rss types the webring has",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript",
+      "Mervielles"
+    ]
+  },
+  {
+    "date": "2019-06-13",
+    "category": "research",
+    "time": 35,
+    "notes": "Look into a few different ways to access xml nodes in js",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript",
+      "Mervielles"
+    ]
+  },
+  {
+    "date": "2019-06-12",
+    "category": "code",
+    "time": 35,
+    "notes": "Start working on an rss reader for the webring",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-06-11",
     "category": "study",
     "time": 30,
