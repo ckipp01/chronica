@@ -1,6 +1,65 @@
 const LOGS =
 [
   {
+    "date": "2019-06-16",
+    "category": "code",
+    "time": 40,
+    "notes": "Work on getting both rss and atom to work with reader",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-06-16",
+    "category": "code",
+    "time": 35,
+    "notes": "Work on getting both rss and atom to work with reader",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-06-15",
+    "category": "write",
+    "time": 10,
+    "notes": "Add in info about the rss feeds to site",
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-06-15",
+    "category": "code",
+    "time": 65,
+    "notes": "Finish up the ability to see a collection of rss feeds from the webring all together",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-06-15",
+    "category": "code",
+    "time": 5,
+    "notes": "Few small changes to text",
+    "location": "home",
+    "project": "studiosyk"
+  },
+  {
+    "date": "2019-06-15",
+    "category": "code",
+    "time": 25,
+    "notes": "Work on finishing up the json report for the standardized rss",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-06-13",
     "category": "code",
     "time": 45,
