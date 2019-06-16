@@ -3,6 +3,26 @@ const LOGS =
   {
     "date": "2019-06-16",
     "category": "code",
+    "time": 35,
+    "notes": "Fix some bugs and update styling on the rss reader",
+    "location": "home",
+    "project": "webring-checker",
+    "tags": [
+      "javascript",
+      "Mervielles"
+    ]
+  },
+  {
+    "date": "2019-06-16",
+    "category": "explore",
+    "time": 25,
+    "notes": "Start diving into what I want words.chronica to look like",
+    "location": "home",
+    "project": "words.chronica"
+  },
+  {
+    "date": "2019-06-16",
+    "category": "code",
     "time": 40,
     "notes": "Work on getting both rss and atom to work with reader",
     "location": "home",
