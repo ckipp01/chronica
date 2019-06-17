@@ -1,6 +1,28 @@
 const LOGS =
 [
   {
+    "date": "2019-06-17",
+    "category": "code",
+    "time": 25,
+    "notes": "Work on some recursion exercises",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-06-17",
+    "category": "study",
+    "time": 45,
+    "notes": "Study some more about error types in JS",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-06-16",
     "category": "code",
     "time": 35,
