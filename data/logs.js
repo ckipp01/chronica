@@ -1,6 +1,55 @@
 const LOGS =
 [
   {
+    "date": "2019-06-18",
+    "category": "explore",
+    "time": 25,
+    "notes": "Play around with customizing i3 lock",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-06-18",
+    "category": "explore",
+    "time": 25,
+    "notes": "Look a bit into scala swing",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-06-18",
+    "category": "code",
+    "time": 55,
+    "notes": "Work on grids",
+    "location": "Filtro",
+    "project": "programming",
+    "tags": [
+      "css"
+    ]
+  },
+  {
+    "date": "2019-06-18",
+    "category": "admin",
+    "time": 25,
+    "notes": "Fix a few things with my i3 setup",
+    "location": "home",
+    "project": "workspace"
+  },
+  {
+    "date": "2019-06-17",
+    "category": "study",
+    "time": 20,
+    "notes": "Start back reading some functional programming simplified",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2019-06-17",
     "category": "code",
     "time": 25,
