@@ -596,13 +596,13 @@ const CRATE = {
         children: [
           { type: 'code',
             text: `{<br>
-                      &emsp;title": String,<br>
-                      &emsp;link": String,<br>
-                      &emsp;post": {<br>
-                        &emsp;&emsp;postTitle": String,<br>
-                        &emsp;&emsp;postDate": String,<br>
-                        &emsp;&emsp;postLink": String,<br>
-                        &emsp;&emsp;postConent": String<br>
+                      &emsp;"title": String,<br>
+                      &emsp;"link": String,<br>
+                      &emsp;"post": {<br>
+                        &emsp;&emsp;"postTitle": String,<br>
+                        &emsp;&emsp;"postDate": String,<br>
+                        &emsp;&emsp;"postLink": String,<br>
+                        &emsp;&emsp;"postConent": String<br>
                       &emsp;}<br>
                   }`
           }
