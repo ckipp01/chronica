@@ -1,6 +1,25 @@
 const LOGS =
 [
   {
+    "date": "2019-06-25",
+    "category": "study",
+    "time": 25,
+    "notes": "Read some about the CAP theorem tonight",
+    "location": "home",
+    "project": "programming"
+  },
+  {
+    "date": "2019-06-25",
+    "category": "explore",
+    "time": 35,
+    "notes": "Play around a bit with Keybase chat bots to figure out a way to send myself notifications about errors on Now",
+    "location": "home",
+    "project": "waka-fetch",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-06-24",
     "category": "code",
     "time": 125,
