@@ -25,7 +25,7 @@ const LOGS =
     "time": 125,
     "notes": "Work on getting Joh to parse input json and fake write to file",
     "location": "home",
-    "project": "Joh",
+    "project": "joh",
     "tags": [
       "scala"
     ]
