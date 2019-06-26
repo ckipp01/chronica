@@ -1,6 +1,17 @@
 const LOGS =
 [
   {
+    "date": "2019-06-26",
+    "category": "code",
+    "time": 130,
+    "notes": "Work on an akka project and lay out the skeleton and the actors",
+    "location": "home",
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2019-06-25",
     "category": "study",
     "time": 25,
