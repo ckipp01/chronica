@@ -273,7 +273,6 @@ const CRATE = {
             text: `GYUL<br>
                     package: rawKey => { iterates throw data using the template and renders the dom }<br>
                     showInfo: rawKey => { changes the main element on the page to show the main info of the current key's data }<br>
-                    showLogs: rawKey => { changes the main element on the page to show the logs of the current key's type }<br>
                     showStats: rawKey => { changes the main element on the page to show the stats and breakdown of the time spent on the key's entries }<br>
                     showTags: rawKey => { changes the main element on the page to show the related tags to the key }<br>
                     switchHeader: rawKey => { changes the header element on the page to match the header element found in the key's template }<br>
@@ -651,7 +650,7 @@ const CRATE = {
                     git fetch && <br>
                     git rebase origin master <br><br>
                     mongoexport -u <i>user</i> -p <i>password</i> --db <i>database</i> --collection <i>collection</i> --jsonArray --authenticationDatabase <i>db</i> --out <i>outdir</i> && <br>
-                    cat <i>logs file</i> | jq -r 'map(del(._id)) | sort_by(.date) | reverse' > </i>log dir</i> && <br>
+                    cat <i>logs file</i> | jq -r 'map(del(._id, .notest, .location)) | sort_by(.date) | reverse' > </i>log dir</i> && <br>
                     sed -i '1 \\const LOGS =' <i>log file</i> && <br>
                     cd <i>wiki directory</i> && <br>
                     git add . && <br>
@@ -662,7 +661,7 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id</code> field since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to chronica.xzy. This ensures that daily my wiki is up to date with my newest logs from the day before.`
+        text: `This script exports my logs in a JSON array. I then cat the file and pipe it into jq to map through all of the values in the array and remove the <code>_id, notes, and place</code> fields since it won't be used in chronica, sort the logs by date, and then reverse them to have the newest logs first. I then save this new file. If that is successfully I then use sed to place <code>const LOGS =</code> on the first line turning the JSON array into a JS array. Following this I commit and use push this to my github repo. My github repo has the <a target="_blank" href="https://zeit.co/docs/v2/integrations/now-for-github/">Now for Github integration</a> that automatically deploys my site when something is pushed to master. Following the deployment it auto aliases my site to chronica.xzy. This ensures that daily my wiki is up to date with my newest logs from the day before.`
       },
       {
         type: 'p',

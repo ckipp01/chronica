@@ -28,16 +28,6 @@ const Gyul = () => {
       }
       if (packagedCrate[key].tree.template === 'main') handleTabUnderline('info')
     },
-    showLogs: rawKey => {
-      const key = peelKey(rawKey, crateKeys)
-      const main = document.getElementsByTagName('main')[0]
-      const logNotes = packagedCrate[key].logs
-        .map(log => `<p>${log.notes}<br>${log.date}<br>${log.time} minutes</p>`)
-      const plurality = logNotes.length > 1 ? ['Records', 'logs'] : ['Record', 'log']
-      const logNotesWithHeading = [`<h3>${plurality[0]} of ${logNotes.length} ${plurality[1]}</h3>`, ...logNotes]
-      main.innerHTML = logNotesWithHeading.join('')
-      handleTabUnderline('logs')
-    },
     showInfo: rawKey => {
       const key = peelKey(rawKey, crateKeys)
       const main = document.getElementsByTagName('main')[0]
@@ -64,7 +54,7 @@ const Gyul = () => {
 
       const createGroupedLogs = category => {
         const groupedLogs = packagedCrate[key].groupedLogs[category]
-          .reduce(groupByLogType, {}) 
+          .reduce(groupByLogType, {})
         groupedLogs[category].totalLogs = packagedCrate[key].groupedLogs[category].length
         groupedLogs[category].percentage = Math.round((groupedLogs[category].time / projectTotal) * 100)
         return groupedLogs
@@ -97,7 +87,7 @@ const Gyul = () => {
       }
 
       const rects = totals.reduce(constructRects, '')
-      const rectsWithHeading = `<h3>Breakdown of ${projectTotal} total project minutes</h3>${rects}`
+      const rectsWithHeading = `<h3>Breakdown of ${projectTotal} total project minutes over ${packagedCrate[key].logs.length} total logs</h3>${rects}`
 
       main.innerHTML = wrappedKeys + activityGraph + rectsWithHeading
       handleTabUnderline('stats')
@@ -198,7 +188,7 @@ const retrieveTemplate = (template, title, body) => {
 }
 
 const handleTabUnderline = tabName => {
-  const tabs = ['info', 'stats', 'logs', 'tags']
+  const tabs = ['info', 'stats', 'tags']
   const tabUnderlineToRemove = tabs.filter(tab => tab !== tabName)
   tabUnderlineToRemove.forEach(tabUnderline => {
     const targetTab = document.getElementById(tabUnderline)

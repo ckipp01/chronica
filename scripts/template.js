@@ -104,7 +104,7 @@ const footer = [
     children: [
       { type: 'a',
         attributes: [{ type: 'href', value: '#gyul' }],
-        text: '귤 0.7.1'
+        text: '귤 0.8.1'
       }
     ]
   }
@@ -141,14 +141,6 @@ const TEMPLATES = {
                 { type: 'class', value: 'tabs' },
                 { type: 'id', value: 'stats' },
                 { type: 'onclick', value: 'GYUL.showStats(window.location.hash)' }
-              ]
-            },
-            { type: 'h5',
-              text: 'logs',
-              attributes: [
-                { type: 'class', value: 'tabs' },
-                { type: 'id', value: 'logs' },
-                { type: 'onclick', value: 'GYUL.showLogs(window.location.hash)' }
               ]
             },
             { type: 'h5',
