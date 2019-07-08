@@ -190,7 +190,7 @@ const CRATE = {
         type: 'ul',
         children: [
           { type: 'li', text: `<a target="_blank" href="https://wiki.xxiivv.com/#home">wiki.xxivv.com</a> Devine has radically changed the way I think about development. His philosophy and approach to development has taught me that it's ok to go against he grain and to simply create. His ecosystem of tools are a testimony of productivity and creativity that in my opinion flies in the face of many modern day trends.` },
-          { type: 'li', text: `<a target="_blank" href="https://joshavanier.github.io">joshavanier.github.io</a> Josh's pursuit of functional minimalism (my interpretation of his work) inspires me to ignore the noise and focus on what matters.` },
+          { type: 'li', text: `<a target="_blank" href="https://avanier.now.sh">avenier.now.sh</a> Josh's pursuit of functional minimalism (my interpretation of his work) inspires me to ignore the noise and focus on what matters.` },
           { type: 'li', text: `<a target="_blank" href="https://macwright.org">macwright.org</a> Tom's site is a reminder that I don't have to settle for giant sites full of trackers and adds to find quality content.` }
         ]
       }
@@ -340,6 +340,20 @@ const CRATE = {
       }
     ]
   },
+  joh: {
+    title: 'joh',
+    template: 'main',
+    body: [
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/joh">joh</a>'
+      },
+      {
+        type: 'p',
+        text: 'joh is currently very much a work in progress. When completed, joh will take in a json schema file and produce a static html page of that schema in order to better visualize the json data structures that we often create in teams. In my experience this helps others easily understand your schema without having to dig through your code.'
+      }
+    ]
+  },
   language: {
     title: 'language',
     template: 'main',
@@ -417,6 +431,16 @@ const CRATE = {
       {
         type: 'p',
         text: 'Modern Heirloom Studio was studio name that my wife starter her art studio under. My small part in her project was creating a static site using <a target="_blank" href="https://nuxtjs.org">Nuxt</a>. She is now operating under the name <a href="#studiosyk">studio syk</a>.'
+      }
+    ]
+  },
+  network: {
+    title: 'network',
+    template: 'main',
+    body: [
+      {
+        type: 'p',
+        text: `This project is sort of a catch all that should've been created a long time ago. I currently have a server that is running a few databases that store logs for <a href="#andaga">ándaga</a> and also records from <a href="#waka-fetch">waka-fetch</a>. I'm also in the process of degoogling as much as I'm able to. Part of that process is to get rid of google drive. I'm currently in process of doing so by a self-hosted <a target="_blank" href="https://nextcloud.com/">Nextcloud</a> with <a target="_blank" href="https://wasabi.com/">Wasabi</a> data storage. In the future, I'll have a full writeup of my entire network setup.`
       }
     ]
   },
