@@ -630,7 +630,7 @@ const CRATE = {
                   }`
           }
         ]
-      },
+      }
     ]
   },
   'wiki.chronica': {
@@ -640,6 +640,13 @@ const CRATE = {
       {
         type: 'h5',
         text: 'Code: <a target="_blank" href="https://github.com/ckipp01/wiki.chronica">wiki.chronica</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Availabe on dat: <a target="_blank" href="dat://df9adb0452321876fd373d80ecfeb104b6a2ac7044c7aa40410d954adc592579/">dat://df9adb0452321876fd373d80ecfeb104b6a2ac7044c7aa40410d954adc592579/</a>',
+        attributes: [
+          { type: 'class', value: 'bw' }
+        ]
       },
       {
         type: 'h5',

@@ -154,6 +154,10 @@ footer a {
   font-size: 0.6em;
 }
 
+.bw {
+  word-wrap: break-word;
+}
+
 div.up-container { margin-bottom: 2em; }
 a.up:hover { cursor: pointer; }
 
