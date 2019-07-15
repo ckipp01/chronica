@@ -2,6 +2,12 @@ const LOGS =
 [
   {
     "date": "2019-07-14",
+    "category": "study",
+    "time": 25,
+    "project": "programming"
+  },
+  {
+    "date": "2019-07-14",
     "category": "explore",
     "time": 30,
     "project": "processing"
