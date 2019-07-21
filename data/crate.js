@@ -633,6 +633,85 @@ const CRATE = {
       }
     ]
   },
+  'webring-cli': {
+    title: 'webring-cli',
+    template: 'main',
+    body: [
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/webring-cli">webring-cli</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Install: <code>yarn global add webring-cli</code>'
+      },
+      {
+        type: 'p',
+        text: `You may have noticed the middle icon in the footer of this site. It leads to a <a target="_blank" href="https://webring.xxiivv.com">webring</a> full of wikis, portfolios, and the likes. The creativity and talent you'll find browsing around on the various sites is astounding. I'm grateful to be part of the community.`
+      },
+      {
+        type: 'p',
+        text: `webring-cli is an attempt to mimic the behavior of the webring through the cli. Eventually, I'd also like to merge all the functionality that the <a href="#webring-checker">webring-checker api</a> also provides.`
+      },
+      {
+        type: 'p',
+        text: `The project is built with node and minimal dependencies. The <a target="_blank" href="https://github.com/tj/commander.js/">commander</a> library is used as an easier way to parse the command line arguments, <a target="_blank" href="https://github.com/bitinn/node-fetch">node-fetch</a> is used to make all of the necessary http requests, and <a target="_blank" href="https://github.com/cli-table/cli-table3">cli-table3</a> is also used to for the output tables.`
+      },
+      {
+        type: 'p',
+        text: `These are the currently available commands:`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: ` webring -h<br>
+                    Usage: webring [options] [command]<br>
+                    <br>
+                    Options:<br>
+                    &emsp;-v, --version     output the version number<br>
+                    &emsp;-h, --help        output usage information<br>
+                    <br>
+                    Commands:<br>
+                    &emsp;sync              syncs latest sites.js file from the xxiivv webring and the hallway feeds<br>
+                    &emsp;sites             lists all the sites in the webring<br>
+                    &emsp;random            brings you to a random site in the webring<br>
+                    &emsp;rss               shows you a list of all available rss feeds in the webring<br>
+                    &emsp;hallway [options] a voice echoes in the hallway<br>
+                  `
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: `The following options are available to interact with the hallway`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: ` webring hallway -h<br>
+                    Usage: hallway [options]<br>
+                    <br>
+                    a voice echoes in the hallway<br>
+                    <br>
+                    Options:<br>
+                    &emsp;gander  <user | channel | tag>   take a gander at the hallway<br>
+                    &emsp;write   <message>                write a message on the wall<br>
+                    &emsp;setup                            setup location of the twtxt file<br>
+                    &emsp;-h, --help [options]             output usage information<br> 
+                  `
+          }
+        ]
+      }
+    ]
+  },
   'wiki.chronica': {
     title: 'wiki.chronica',
     template: 'main',
