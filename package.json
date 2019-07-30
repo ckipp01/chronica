@@ -2,6 +2,6 @@
   "name": "wiki.chronica",
   "description": "Personal wiki for the chronica ecosystem",
   "devDependencies": {
-    "standard": "12.0.1"
+    "standard": "13.1.0"
   }
 }
