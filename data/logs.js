@@ -1,6 +1,24 @@
 const LOGS =
 [
   {
+    "date": "2019-07-31",
+    "category": "research",
+    "time": 45,
+    "project": "spatium"
+  },
+  {
+    "date": "2019-07-31",
+    "category": "research",
+    "time": 35,
+    "project": "spatium"
+  },
+  {
+    "date": "2019-07-31",
+    "category": "research",
+    "time": 30,
+    "project": "spatium"
+  },
+  {
     "date": "2019-07-30",
     "category": "code",
     "time": 65,
