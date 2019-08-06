@@ -705,7 +705,7 @@ const CRATE = {
                     &emsp;gander  <user | channel | tag>   take a gander at the hallway<br>
                     &emsp;write   <message>                write a message on the wall<br>
                     &emsp;setup                            setup location of the twtxt file<br>
-                    &emsp;-h, --help [options]             output usage information<br> 
+                    &emsp;-h, --help [options]             output usage information<br>
                   `
           }
         ]
@@ -775,14 +775,13 @@ const CRATE = {
       },
       {
         type: 'p',
-        text: `On just about every page you'll see the following four tabs:`
+        text: `On just about every page you'll see the following three tabs:`
       },
       {
         type: 'ul',
         children: [
           { type: 'li', text: '<b>info:</b> tells some basic info about the project' },
           { type: 'li', text: '<b>stats:</b> shows a small graph of the breakdown of how much time was spent on each category for that project' },
-          { type: 'li', text: '<b>logs:</b> a copy of the logs that are tied to that project' },
           { type: 'li', text: '<b>tags:</b> associated topics or projects that the current project was tagged with' }
         ]
       },
