@@ -672,15 +672,16 @@ const CRATE = {
                     Usage: webring [options] [command]<br>
                     <br>
                     Options:<br>
-                    &emsp;-v, --version     output the version number<br>
+                    &emsp;-V, --version     output the version number<br>
                     &emsp;-h, --help        output usage information<br>
                     <br>
                     Commands:<br>
-                    &emsp;sync              syncs latest sites.js file from the xxiivv webring and the hallway feeds<br>
+                    &emsp;sync              syncs latest sites.js file from the xxiivv webring and cache's wikis<br>
                     &emsp;sites             lists all the sites in the webring<br>
                     &emsp;random            brings you to a random site in the webring<br>
-                    &emsp;rss               shows you a list of all available rss feeds in the webring<br>
+                    &emsp;rss [options]     rss feeds are alive and well<br>
                     &emsp;hallway [options] a voice echoes in the hallway<br>
+                    &emsp;wiki              a decentralized encyclopedia REPL<br>
                   `
           }
         ]
@@ -704,8 +705,57 @@ const CRATE = {
                     Options:<br>
                     &emsp;gander  <user | channel | tag>   take a gander at the hallway<br>
                     &emsp;write   <message>                write a message on the wall<br>
-                    &emsp;setup                            setup location of the twtxt file<br>
+                    &emsp;setup                            setup options for hallway related settings<br>
                     &emsp;-h, --help [options]             output usage information<br>
+                  `
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: `The following options are available to interact with the rss feeds`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: ` webring rss -h<br>
+                    Usage: rss [options]<br>
+                    <br>
+                    rss feeds are alive and well<br>
+                    <br>
+                    Options:<br>
+                    &emsp;feeds                 shows you a list of all available rss feeds and their authors<br>
+                    &emsp;gander <feed>         shows you either all of the feeds combined or a specific feed<br>
+                    &emsp;-h, --help [options]  output usage information<br>
+                  `
+          }
+        ]
+      },
+      {
+        type: 'p',
+        text: `The wiki is modeled after <a target='_blank' hreg="https://gitlab.com/jrc03c/compendium">Josh's Compendium</a> Upon entering it you will be dropped into a REPL which will allow you to navigate the wiki entries. The availabe REPL command are below.`
+      },
+      {
+        type: 'div',
+        attributes: [
+          { type: 'class', value: 'code-block' }
+        ],
+        children: [
+          { type: 'code',
+            text: ` webring wiki<br>
+                    Usage: [command]<br>
+                    <br>
+                    Commands:<br>
+                    &emsp;ls              list directory contents<br>
+                    &emsp;cd <index>      change directory<br>
+                    &emsp;exit            to exit the repl<br>
+                    &emsp;help            display all commands<br>
+                    <br>
+                    wiki ><br>
                   `
           }
         ]
