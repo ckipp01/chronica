@@ -30,11 +30,10 @@ const LOGS =
     "date": "2019-08-13",
     "category": "code",
     "time": 25,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source",
-      "javascript",
-      "webring"
+      "javascript"
     ]
   },
   {
@@ -47,10 +46,9 @@ const LOGS =
     "date": "2019-08-12",
     "category": "code",
     "time": 30,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source",
-      "webring",
       "javascript"
     ]
   },
@@ -96,19 +94,17 @@ const LOGS =
     "date": "2019-08-11",
     "category": "admin",
     "time": 25,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "open-source",
-      "webring"
+      "open-source"
     ]
   },
   {
     "date": "2019-08-11",
     "category": "code",
     "time": 35,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "webring",
       "javascript"
     ]
   },
@@ -143,20 +139,18 @@ const LOGS =
     "date": "2019-08-10",
     "category": "code",
     "time": 180,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source",
-      "javascript",
-      "webring"
+      "javascript"
     ]
   },
   {
     "date": "2019-08-09",
     "category": "code",
     "time": 180,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "webring",
       "javascript",
       "open-source"
     ]
@@ -165,10 +159,9 @@ const LOGS =
     "date": "2019-08-08",
     "category": "code",
     "time": 175,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "javascript",
-      "webring",
       "open-source"
     ]
   },
@@ -176,11 +169,10 @@ const LOGS =
     "date": "2019-08-07",
     "category": "code",
     "time": 135,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "javascript",
-      "open-source",
-      "webring"
+      "open-source"
     ]
   },
   {
@@ -196,7 +188,7 @@ const LOGS =
     "date": "2019-08-05",
     "category": "admin",
     "time": 45,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source"
     ]
@@ -214,7 +206,7 @@ const LOGS =
     "date": "2019-08-03",
     "category": "code",
     "time": 35,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "javascript",
       "open-source"
@@ -224,7 +216,7 @@ const LOGS =
     "date": "2019-08-03",
     "category": "code",
     "time": 85,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source",
       "javascript"
@@ -234,7 +226,7 @@ const LOGS =
     "date": "2019-08-03",
     "category": "code",
     "time": 160,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source",
       "javascript"
@@ -289,10 +281,9 @@ const LOGS =
     "date": "2019-07-29",
     "category": "admin",
     "time": 15,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "open-source",
-      "webring"
+      "open-source"
     ]
   },
   {
@@ -357,7 +348,7 @@ const LOGS =
     "date": "2019-07-25",
     "category": "admin",
     "time": 25,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "open-source"
     ]
@@ -394,10 +385,9 @@ const LOGS =
     "date": "2019-07-22",
     "category": "code",
     "time": 220,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "javascript",
-      "webring"
+      "javascript"
     ]
   },
   {
@@ -413,20 +403,18 @@ const LOGS =
     "date": "2019-07-22",
     "category": "admin",
     "time": 25,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "open-source",
-      "webring"
+      "open-source"
     ]
   },
   {
     "date": "2019-07-21",
     "category": "code",
     "time": 35,
-    "project": "programming",
+    "project": "webring",
     "tags": [
       "javascript",
-      "webring",
       "open-source"
     ]
   },
@@ -434,9 +422,8 @@ const LOGS =
     "date": "2019-07-21",
     "category": "admin",
     "time": 35,
-    "project": "programming",
+    "project": "webring",
     "tags": [
-      "webring",
       "open-source"
     ]
   },
