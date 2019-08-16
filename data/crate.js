@@ -502,6 +502,25 @@ const CRATE = {
 
     ]
   },
+  spatium: {
+    title: 'spatium',
+    template: 'main',
+    body: [
+      {
+        type: 'h5',
+        attributes: [{ type: 'class', value: 'quote' }],
+        text: 'The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself. <br> ~ Carl Sagan'
+      },
+      {
+        type: 'p',
+        text: `Spatium is heavily a work in a progress and probably will be for quite some time as it's much heavier in research than the rest of my projects.`
+      },
+      {
+        type: 'p',
+        text: `I've been intrigued by space for a long time, but have never dove in as deep as I'd like to. In this season I've been curious about the intersection of my interests, and I'm taking this opportunity to combine a curiousity about astronomy and my love for coding to create Spatium. Spatium will be a series of writings and simulations surrounding astronomical concepts. My plan is to learn them, and then illustrate them.`
+      }
+    ]
+  },
   studiosyk: {
     title: 'studio syk',
     template: 'main',
@@ -573,6 +592,32 @@ const CRATE = {
       {
         type: 'p',
         text: `This project currently only works locally. However, I've moved pretty much all of my backend projects over to serverless architecture. The plan for this project is to do the same. Nightly, after my daily summary is pulled, I'd like to run it through waka-machine to give my projection for the next week. Then, these will be added to <a href="#chronica">chronica</a> in a very similiar way as my logs to ensure that they are automatically updated daily.`
+      }
+    ]
+  },
+  webring: {
+    title: 'xxiivv webring',
+    template: 'main',
+    body: [
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/XXIIVV/Webring">xxiivv webring</a>'
+      },
+      {
+        type: 'h5',
+        text: 'Url: <a target="_blank" href="https://webring.xxiivv.com/">https://webring.xxiivv.com/</a>'
+      },
+      {
+        type: 'p',
+        text: `You may have noticed the middle icon in the footer of this site. It leads to a <a target="_blank" href="https://webring.xxiivv.com">webring</a> full of wikis, portfolios, and the likes. The creativity and talent you'll find browsing around on the various sites is astounding. I'm grateful to be part of the community.`
+      },
+      {
+        type: 'p',
+        text: `I'm one of the maintainers of the webring and am passionate about exploring alternatives to the current ways we communicate online. I believe decentralizing our social channels and owning our data is important. The webring consists of a traditional webring, but also a few other non-traditional parts. <a target="_blank" href="https://webring.xxiivv.com/hallway.html">The Hallway</a> is a web client utilizing decentralized <a target="_blank" href="https://github.com/buckket/twtxt">twtxt</a> feeds to communicate. <a target="_blank" href="https://webring.xxiivv.com/wiki.html">The Wiki</a> is a accumulated wiki from decentralized <a target="_blank" href="https://wiki.xxiivv.com/#Indental">Indental</a> feeds.`
+      },
+      {
+        type: 'p',
+        text: `I've also built multiple tools around the webring ecosystem such as the <a href="#webring-checker">webring-checker</a> and the <a href="#webring-cli">webring-cli</a>.`
       }
     ]
   },
