@@ -1,6 +1,31 @@
 const LOGS =
 [
   {
+    "date": "2019-08-17",
+    "category": "explore",
+    "time": 115,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-08-17",
+    "category": "explore",
+    "time": 180,
+    "project": "wiki.chronica",
+    "tags": [
+      "javascript",
+      "chronica"
+    ]
+  },
+  {
+    "date": "2019-08-17",
+    "category": "code",
+    "time": 15,
+    "project": "webring",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-08-16",
     "category": "write",
     "time": 20,
@@ -1131,7 +1156,7 @@ const LOGS =
   },
   {
     "date": "2019-05-28",
-    "category": "draw",
+    "category": "design",
     "time": 25,
     "project": "sketching"
   },
@@ -1174,7 +1199,7 @@ const LOGS =
   },
   {
     "date": "2019-05-26",
-    "category": "draw",
+    "category": "design",
     "time": 25,
     "project": "sketching"
   },
