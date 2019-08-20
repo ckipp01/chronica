@@ -1,6 +1,24 @@
 const LOGS =
 [
   {
+    "date": "2019-08-20",
+    "category": "research",
+    "time": 30,
+    "project": "astronomy"
+  },
+  {
+    "date": "2019-08-20",
+    "category": "explore",
+    "time": 45,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-08-20",
+    "category": "code",
+    "time": 45,
+    "project": "wiki.chronica"
+  },
+  {
     "date": "2019-08-19",
     "category": "design",
     "time": 45,
@@ -1182,7 +1200,7 @@ const LOGS =
     "date": "2019-05-28",
     "category": "design",
     "time": 25,
-    "project": "sketching"
+    "project": "programming"
   },
   {
     "date": "2019-05-27",
@@ -1225,7 +1243,7 @@ const LOGS =
     "date": "2019-05-26",
     "category": "design",
     "time": 25,
-    "project": "sketching"
+    "project": "programming"
   },
   {
     "date": "2019-05-26",
@@ -1356,12 +1374,6 @@ const LOGS =
       "scala",
       "nvim"
     ]
-  },
-  {
-    "date": "2019-05-18",
-    "category": "research",
-    "time": 65,
-    "project": "sculpting"
   },
   {
     "date": "2019-05-17",
@@ -5345,6 +5357,7 @@ const LOGS =
     "date": "2018-01-01",
     "category": "explore",
     "time": 60,
+    "project": "programming",
     "tags": [
       "bash"
     ]
