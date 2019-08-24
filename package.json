@@ -2,12 +2,6 @@
 	"name": "wiki.chronica",
 	"description": "Personal wiki for the chronica ecosystem",
 	"devDependencies": {
-		"xo": "0.24.0"
-	},
-	"xo": {
-		"semicolon": false,
-		"env": [
-			"browser"
-		]
+		"eslint": "^6.2.2"
 	}
 }
