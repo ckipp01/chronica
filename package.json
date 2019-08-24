@@ -1,7 +1,13 @@
 {
-  "name": "wiki.chronica",
-  "description": "Personal wiki for the chronica ecosystem",
-  "devDependencies": {
-    "standard": "13.1.0"
-  }
+	"name": "wiki.chronica",
+	"description": "Personal wiki for the chronica ecosystem",
+	"devDependencies": {
+		"xo": "0.24.0"
+	},
+	"xo": {
+		"semicolon": false,
+		"env": [
+			"browser"
+		]
+	}
 }
