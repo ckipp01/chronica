@@ -131,7 +131,7 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -172,7 +172,7 @@ const LOGS =
     "time": 30,
     "project": "programming",
     "tags": [
-      "functional-programming",
+      "functional programming",
       "scala"
     ]
   },
@@ -201,7 +201,7 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
