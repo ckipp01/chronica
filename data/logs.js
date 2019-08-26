@@ -1,6 +1,18 @@
 const LOGS =
 [
   {
+    "date": "2019-08-26",
+    "category": "explore",
+    "time": 60,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-08-26",
+    "category": "admin",
+    "time": 25,
+    "project": "workspace"
+  },
+  {
     "date": "2019-08-25",
     "category": "design",
     "time": 30,
