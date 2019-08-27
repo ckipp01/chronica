@@ -1,6 +1,46 @@
 const LOGS =
 [
   {
+    "date": "2019-08-27",
+    "category": "code",
+    "time": 25,
+    "project": "studiosyk",
+    "tags": [
+      "javascript",
+      "choo"
+    ]
+  },
+  {
+    "date": "2019-08-27",
+    "category": "study",
+    "time": 25,
+    "project": "studiosyk",
+    "tags": [
+      "toml"
+    ]
+  },
+  {
+    "date": "2019-08-27",
+    "category": "explore",
+    "time": 35,
+    "project": "studiosyk",
+    "tags": [
+      "javascript",
+      "toml",
+      "choo"
+    ]
+  },
+  {
+    "date": "2019-08-27",
+    "category": "code",
+    "time": 30,
+    "project": "studiosyk",
+    "tags": [
+      "javascript",
+      "choo"
+    ]
+  },
+  {
     "date": "2019-08-26",
     "category": "explore",
     "time": 60,
