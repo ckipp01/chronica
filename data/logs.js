@@ -1,6 +1,15 @@
 const LOGS =
 [
   {
+    "date": "2019-09-08",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "cassandra"
+    ]
+  },
+  {
     "date": "2019-09-07",
     "category": "study",
     "time": 30,
