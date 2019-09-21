@@ -1,6 +1,26 @@
 const LOGS =
 [
   {
+    "date": "2019-09-21",
+    "category": "design",
+    "time": 30,
+    "project": "teach-crud",
+    "tags": [
+      "javascript",
+      "typescript",
+      "parcel"
+    ]
+  },
+  {
+    "date": "2019-09-21",
+    "category": "code",
+    "time": 30,
+    "project": "webring-cli",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-09-17",
     "category": "study",
     "time": 30,
