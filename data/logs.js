@@ -1,6 +1,35 @@
 const LOGS =
 [
   {
+    "date": "2019-09-27",
+    "category": "study",
+    "time": 70,
+    "project": "tooling",
+    "tags": [
+      "scala",
+      "metals"
+    ]
+  },
+  {
+    "date": "2019-09-27",
+    "category": "study",
+    "time": 65,
+    "tags": [
+      "programming",
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-09-27",
+    "category": "code",
+    "time": 225,
+    "project": "vim-indental",
+    "tags": [
+      "vimscript",
+      "vim"
+    ]
+  },
+  {
     "date": "2019-09-26",
     "category": "code",
     "time": 30,
