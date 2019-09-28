@@ -553,6 +553,48 @@ const CRATE = {
       }
     ]
   },
+  'tooling': {
+    title: 'tooling',
+    template: 'main',
+    body: [
+      {
+        type: 'p',
+        text: 'I have a sort of fascination with programming tooling. Partly because it\'s something as a developer I use so much, but also something that seemingly hasn\'t really made that many changes in the past years. I think this is an area ripe for improvements and innovation.'
+      },
+      {
+        type: 'p',
+        text: 'Since I primarily work with JavaScript and Scala, my focus is in these two ecosystems. Recently I\'ve been studying about the <a target="_blank" href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol</a>, and it\'s an area that I\'d like to do some more formal work in.'
+      }
+    ]
+  },
+  'vim-indental': {
+    title: 'vim-indental',
+    template: 'main',
+    body: [
+      { type: 'div',
+        attributes: [
+          { type: 'class', value: 'media-container' }
+        ],
+        children: [
+          { type: 'img',
+            attributes: [
+              { type: 'src', value: 'media/indetal.png' },
+              { type: 'class', value: 'main-image' },
+              { type: 'alt', value: 'Screen shot of indental syntax highlighting' }
+            ]
+          }
+        ]
+      },
+      {
+        type: 'h5',
+        text: 'Code: <a target="_blank" href="https://github.com/ckipp01/vim-indental">vim-indental</a>'
+      },
+      {
+        type: 'p',
+        text: 'Indental is a creation of <a target="_blank" href="https://wiki.xxiivv.com/#indental">Devine\'s</a> that is used a space-senstive, human readable text database format. I was originally intrigued by it since the parser is a mere 50ish lines of code. It allowed for easy to read key-value and list storage. It\'s also the format that the <a target="_blank" href="https://webring.xxiivv.com/wiki.html">Webring Wiki</a> uses. I store a lot of information this way, and was yearning for some type of syntax highlighting. One thing led to another, and vim-indental was born. It\'s very much a work in progress, but it has also served as a great way for me to learn about vim plugins.'
+      }
+    ]
+  },
   'waka-fetch': {
     title: 'waka-fetch',
     template: 'main',
