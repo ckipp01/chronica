@@ -1,6 +1,22 @@
 const LOGS =
 [
   {
+    "date": "2019-09-28",
+    "category": "write",
+    "time": 25,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2019-09-28",
+    "category": "research",
+    "time": 45,
+    "project": "tooling",
+    "tags": [
+      "vim",
+      "vimscript"
+    ]
+  },
+  {
     "date": "2019-09-27",
     "category": "study",
     "time": 70,
