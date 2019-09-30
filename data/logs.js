@@ -1,6 +1,21 @@
 const LOGS =
 [
   {
+    "date": "2019-09-30",
+    "category": "study",
+    "time": 25,
+    "project": "tooling",
+    "tags": [
+      "vimscript"
+    ]
+  },
+  {
+    "date": "2019-09-30",
+    "category": "research",
+    "time": 25,
+    "project": "webring"
+  },
+  {
     "date": "2019-09-29",
     "category": "study",
     "time": 45,
