@@ -1,6 +1,36 @@
 const LOGS =
 [
   {
+    "date": "2019-10-09",
+    "category": "code",
+    "time": 20,
+    "project": "tooling",
+    "tags": [
+      "scala",
+      "metals"
+    ]
+  },
+  {
+    "date": "2019-10-09",
+    "category": "code",
+    "time": 25,
+    "project": "webring",
+    "tags": [
+      "open-source",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-10-09",
+    "category": "study",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "scala",
+      "kafka"
+    ]
+  },
+  {
     "date": "2019-10-08",
     "category": "study",
     "time": 20,
