@@ -1,6 +1,25 @@
 const LOGS =
 [
   {
+    "date": "2019-11-10",
+    "category": "explore",
+    "time": 60,
+    "project": "andaga-cli",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-11-10",
+    "category": "code",
+    "time": 120,
+    "project": "tooling",
+    "tags": [
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2019-11-09",
     "category": "explore",
     "time": 60,
