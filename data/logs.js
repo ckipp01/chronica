@@ -495,7 +495,7 @@ const LOGS =
     "time": 120,
     "project": "programming",
     "tags": [
-      "funcitonal-programming"
+      "functional programming"
     ]
   },
   {
@@ -514,7 +514,7 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -543,7 +543,7 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -588,7 +588,7 @@ const LOGS =
     "time": 25,
     "project": "programming",
     "tags": [
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -597,7 +597,7 @@ const LOGS =
     "time": 25,
     "project": "programming",
     "tags": [
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -678,7 +678,7 @@ const LOGS =
     "time": 20,
     "project": "programming",
     "tags": [
-      "object-oriented-programming"
+      "object oriented programming"
     ]
   },
   {
@@ -707,7 +707,7 @@ const LOGS =
     "time": 30,
     "project": "programming",
     "tags": [
-      "object-oriented-programming"
+      "object oriented programming"
     ]
   },
   {
