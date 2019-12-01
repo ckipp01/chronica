@@ -1,6 +1,23 @@
 const LOGS =
 [
   {
+    "date": "2019-12-01",
+    "category": "explore",
+    "time": 60,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2019-12-01",
+    "category": "code",
+    "time": 240,
+    "project": "coc-metals",
+    "tags": [
+      "metals",
+      "typescript",
+      "open source"
+    ]
+  },
+  {
     "date": "2019-11-30",
     "category": "code",
     "time": 120,
