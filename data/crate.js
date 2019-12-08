@@ -303,7 +303,7 @@ const CRATE = {
     body: [
       {
         type: "p",
-        text: "Feel free to explore. This is <a href=\"#me\">my</a> collected works, logs, and experiments. If you don't know where to start, you can get an introduction <a href='#wiki.chronica'>here</a> or click on any of the projects below."
+        text: "Feel free to explore. This is <a href='#me'>my</a> collected works, logs, and experiments. If you don't know where to start, you can get an introduction <a href='#wiki.chronica'>here</a> or click on any of the projects below."
       },
       {
         type: "div",
@@ -396,7 +396,7 @@ const CRATE = {
       },
       {
         type: "p",
-        text: "Hi, I'm Chris, and you've stumbled upon my wiki. Originally from the United States, I'm now located in the Netherlands with my wife Sé. I'm a developer and digital explorer, currently working for Visma Connect. I primarily work in Scala and JavaScript with a preference for functional programming. I have a varied background that includes growing up on a farm and earning an MA in International Leadership, and even more varied interests that include cooking, sculpture, wine, and space. If you have any questions about this site, my work, or just want to say hello, feel free to reach out by any of the means below."
+        text: "Hi, I'm Chris, and you've stumbled upon my wiki. Originally from the United States, I'm now located in the Netherlands with my wife Sé. I'm a developer and digital explorer, currently working for <a target='_blank' href='https://www.lunatech.com/'>Lunatech</a>. I primarily work in Scala and JavaScript with a preference for functional programming. I have a varied background that includes growing up on a farm and earning an MA in International Leadership, and even more varied interests that include cooking, sculpture, wine, and space. If you have any questions about this site, my work, or just want to say hello, feel free to reach out by any of the means below."
       },
       {
         type: "p",
