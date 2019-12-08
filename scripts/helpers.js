@@ -1,4 +1,4 @@
-'use-strict'
+"use-strict"
 
 /* Homepage project list functions */
 
@@ -18,7 +18,7 @@ const createProjects = logs => {
   const projects = Object.keys(logsObject)
   return projects
     .map(p => {
-      const plurality = logsObject[p].entries > 1 ? 'logs' : 'log'
+      const plurality = logsObject[p].entries > 1 ? "logs" : "log"
       return `<div>
                 <p><a href='#${p}'>${p}</a><br>
                 ${logsObject[p].time} minutes<br>
@@ -44,19 +44,19 @@ const createAllKeys = logs => {
                 </svg>
               <p>${key}</p>
             </div>`
-  }, '')
+  }, "")
 }
 
 /* Homepage activity graph functions */
 
 const createActivityGraph = logs => {
   const trimmed = logs.map(log => ({date: log.date, time: log.time, category: log.category}))
-  const grouped = groupByKey(trimmed, 'date')
+  const grouped = groupByKey(trimmed, "date")
   const daysToCutoff = getDaysToCuttoff(90)
   const relevantGroups = daysToCutoff.map(day => grouped[day]).reverse()
   const highestMark = relevantGroups.reduce(findHighestMark, 0)
   const totalMinutes = relevantGroups.reduce(getTotalMinutes, 0)
-  const graph = relevantGroups.reduce(createDayGraph(highestMark), '')
+  const graph = relevantGroups.reduce(createDayGraph(highestMark), "")
   return `<p class="text-center small-text">${totalMinutes} min - 90 days - ${Math.round(totalMinutes / 90 * 100) / 100} avg/day</p><div class="activity-graph-container">${graph}</div>`
 }
 
@@ -72,7 +72,7 @@ const getDate = daysAgo => {
   return `${cutoffYear}-${cutoffMonth}-${cutoffDay}`
 }
 
-const padNumber = number => number < 10 ? '0' + number : number
+const padNumber = number => number < 10 ? "0" + number : number
 
 const findHighestMark = (currentHighest, day) => {
   const totalHoursForDay = day ? getTotalHoursForDay(day) : 0
@@ -100,7 +100,7 @@ const createProjectRect = highestMark => (rects, project) => {
   const lastRect = rects[rects.length - 1]
   const offSet = lastRect ? lastRect[1] + 1 : 0
 
-  const tuple = [`<rect class="${project.category + '-logbar'}" rx="2" y="${offSet}%" width="90%" height="${height}%"></rect>`, height + offSet]
+  const tuple = [`<rect class="${project.category + "-logbar"}" rx="2" y="${offSet}%" width="90%" height="${height}%"></rect>`, height + offSet]
 
   rects.push(tuple)
   return rects
@@ -109,9 +109,9 @@ const createProjectRect = highestMark => (rects, project) => {
 const createDayGraph = highestMark => (days, day) => {
   const rects = day ?
     day.reduce(createProjectRect(highestMark), []) :
-    [['<rect rx="2" width="90%" height="1px"></rect>']]
+    [["<rect rx=\"2\" width=\"90%\" height=\"1px\"></rect>"]]
 
-  return `${days}<svg>${rects.map(rect => rect[0]).toString().replace(/,/g, '')}</svg>`
+  return `${days}<svg>${rects.map(rect => rect[0]).toString().replace(/,/g, "")}</svg>`
 }
 
 const getTotalMinutes = (total, day) => {

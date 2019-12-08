@@ -1,15 +1,15 @@
-'use strict'
+"use strict"
 /* global CRATE, LOGS, GYUL, TEMPLATES, createActivityGraph, padNumber, groupByKey */
 
 const Gyul = () => {
   const crateKeys = Object.keys(CRATE)
   const packagedCrate = {}
-  console.time('Packaged Crate Time')
+  console.time("Packaged Crate Time")
   for (const key in CRATE) {
     if (Object.prototype.hasOwnProperty.call(CRATE, key)) {
       const logs = LOGS.filter(log => log.project === key)
       const tree = retrieveTree(key)
-      const groupedLogs = groupByKey(logs, 'category')
+      const groupedLogs = groupByKey(logs, "category")
       const tags = logs
         .map(log => log.tags)
         .reduce((flattenedTags, tags) => flattenedTags.concat(tags), [])
@@ -19,7 +19,7 @@ const Gyul = () => {
     }
   }
 
-  console.timeEnd('Packaged Crate Time')
+  console.timeEnd("Packaged Crate Time")
   return {
     package: rawKey => {
       const key = peelKey(rawKey, crateKeys)
@@ -32,21 +32,21 @@ const Gyul = () => {
         }
       }
 
-      if (packagedCrate[key].tree.template === 'main') {
-        handleTabUnderline('info')
+      if (packagedCrate[key].tree.template === "main") {
+        handleTabUnderline("info")
       }
     },
     showInfo: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      const main = document.querySelectorAll('main')[0]
-      main.innerHTML = ''
+      const main = document.querySelectorAll("main")[0]
+      main.innerHTML = ""
       packagedCrate[key].template.main
         .forEach(elem => createElem({elem, parent: main}))
-      handleTabUnderline('info')
+      handleTabUnderline("info")
     },
     showStats: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      const main = document.querySelectorAll('main')[0]
+      const main = document.querySelectorAll("main")[0]
 
       const activityGraph = `<h3>Activity in previous 90 days</h3>${createActivityGraph(packagedCrate[key].logs)}`
 
@@ -80,7 +80,7 @@ const Gyul = () => {
                 </div>`
       }
 
-      const projectKeys = totals.reduce(createProjectKeys, '')
+      const projectKeys = totals.reduce(createProjectKeys, "")
 
       const wrappedKeys = `<div class='keys-container'>${projectKeys}</div>`
 
@@ -94,15 +94,15 @@ const Gyul = () => {
                   </div>`
       }
 
-      const rects = totals.reduce(constructRects, '')
+      const rects = totals.reduce(constructRects, "")
       const rectsWithHeading = `<h3>Breakdown of ${projectTotal} total project minutes over ${packagedCrate[key].logs.length} total logs</h3>${rects}`
 
       main.innerHTML = wrappedKeys + activityGraph + rectsWithHeading
-      handleTabUnderline('stats')
+      handleTabUnderline("stats")
     },
     showTags: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      const main = document.querySelectorAll('main')[0]
+      const main = document.querySelectorAll("main")[0]
       const tagCounter = (tagCount, tag) => {
         tagCount[tag] = tagCount[tag] || 0
         tagCount[tag] += 1
@@ -114,8 +114,8 @@ const Gyul = () => {
 
       const createTags = (tagString, tagName) =>
         `${tagString}<p>${padNumber(countedTags[tagName])} - <a href='#${tagName}'>${tagName}</p></a>`
-      const tags = tagNames.reduce(createTags, '')
-      const tagPlurality = packagedCrate[key].tags.length === 1 ? 'tag' : 'tags'
+      const tags = tagNames.reduce(createTags, "")
+      const tagPlurality = packagedCrate[key].tags.length === 1 ? "tag" : "tags"
 
       const gatherTaggers = (taggedByArray, entry) => {
         const {length} = packagedCrate[entry].tags.filter(tag => tag === key)
@@ -128,18 +128,18 @@ const Gyul = () => {
 
       const taggedBy = Object.keys(packagedCrate).reduce(gatherTaggers, [])
       const createTaggersString = (taggerString, tagger) => `${taggerString}<p>${padNumber(tagger.times)} - <a href='#${tagger.project}'>${tagger.project}</p></a>`
-      const taggers = taggedBy.reduce(createTaggersString, '')
-      const taggerPlurality = taggedBy.length === 1 ? 'project' : 'projects'
+      const taggers = taggedBy.reduce(createTaggersString, "")
+      const taggerPlurality = taggedBy.length === 1 ? "project" : "projects"
       const taggersWithHeading = `<h3>Tagged by ${taggedBy.length} other ${taggerPlurality}</h3>${taggers}`
       const tagsWithHeading = `<h3>Tagged with ${packagedCrate[key].tags.length} ${tagPlurality}</h3>${tags}`
 
       main.innerHTML = tagsWithHeading + taggersWithHeading
-      handleTabUnderline('tags')
+      handleTabUnderline("tags")
     },
     switchHeader: rawKey => {
       const key = peelKey(rawKey, crateKeys)
-      const header = document.querySelectorAll('header')[0]
-      header.innerHTML = ''
+      const header = document.querySelectorAll("header")[0]
+      header.innerHTML = ""
       packagedCrate[key].template.header
         .forEach(elem => createElem({elem, parent: header}))
     },
@@ -151,7 +151,7 @@ const Gyul = () => {
         .filter(project => !crateKeys.includes(project))
         .sort()
       const missingProjectsMsg = missingProjects.length === 0 ?
-        'No missing project entries in CRATE' :
+        "No missing project entries in CRATE" :
         `Missing following project entries in CRATE: ${missingProjects.toString()}`
       console.log(missingProjectsMsg)
       const missingTags = LOGS
@@ -162,7 +162,7 @@ const Gyul = () => {
         .filter(tag => !crateKeys.includes(tag))
         .sort()
       const missingTagsMsg = missingTags.length === 0 ?
-        'No missing tag entries in CRATE' :
+        "No missing tag entries in CRATE" :
         `Missing following tag entries in CRATE: ${missingTags.toString()}`
       console.log(missingTagsMsg)
     }
@@ -170,13 +170,13 @@ const Gyul = () => {
 }
 
 const peelKey = (rawKey, crateKeys) => {
-  const strippedKey = rawKey.charAt(0) === '#' ? rawKey.substring(1) : rawKey
-  if (strippedKey === '') {
-    return 'home'
+  const strippedKey = rawKey.charAt(0) === "#" ? rawKey.substring(1) : rawKey
+  if (strippedKey === "") {
+    return "home"
   }
 
   if (crateKeys.indexOf(strippedKey) === -1) {
-    return 'missing'
+    return "missing"
   }
 
   return strippedKey
@@ -214,21 +214,21 @@ const retrieveTemplate = (template, title, body) => {
 }
 
 const handleTabUnderline = tabName => {
-  const tabs = ['info', 'stats', 'tags']
+  const tabs = ["info", "stats", "tags"]
   const tabUnderlineToRemove = tabs.filter(tab => tab !== tabName)
   tabUnderlineToRemove.forEach(tabUnderline => {
     const targetTab = document.querySelector(`#${tabUnderline}`)
     if (targetTab !== null) {
-      targetTab.removeAttribute('style')
+      targetTab.removeAttribute("style")
     }
   })
   const targetTab = document.querySelector(`#${tabName}`)
   if (targetTab !== null) {
-    targetTab.setAttribute('style', 'text-decoration:underline#45503B')
+    targetTab.setAttribute("style", "text-decoration:underline#45503B")
   }
 }
 
-window.addEventListener('hashchange', () => {
+window.addEventListener("hashchange", () => {
   const newLocation = window.location.hash
   GYUL.switchHeader(newLocation)
   GYUL.showInfo(newLocation)
