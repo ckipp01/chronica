@@ -985,12 +985,11 @@ const CRATE = {
       {
         type: "ul",
         children: [
-          {type: "li", text: "<b>OS/Distro:</b> <a target=\"_blank\" href=\"https://xubuntu.org\">Xubuntu 19.04</a>"},
-          {type: "li", text: "<b>Terminal:</b> <a target=\"_blank\" href=\"https://docs.xfce.org/apps/terminal/start\">xfce terminal</a>"},
-          {type: "li", text: "<b>Terminal file explorer:</b> <a target=\"_blank\" href=\"https://github.com/ranger/ranger\">ranger</a>"},
-          {type: "li", text: "<b>Primary text editor:</b> <a target=\"_blank\" href=\"https://neovim.io/\">NVim</a>"},
-          {type: "li", text: "<b>Browser:</b> <a target=\"_blank\" href=\"https://www.chromium.org/Home\"> Chromium</a>"},
-          {type: "li", text: "<b>Other daily software:</b> <a target=\"_blank\" href=\"https://github.com/tmux/tmux\">tmux</a>, <a target=\"_blank\" href=\"https://keybase.io/\">Keybase</a>, Slack, Spotify"}
+          {type: "li", text: "<b>OS/Distro:</b>macOS Majave"},
+          {type: "li", text: "<b>Terminal:</b> <a target=\"_blank\" href=\"https://iterm2.com/\">iterm2</a>"},
+          {type: "li", text: "<b>Primary text editor:</b> <a target=\"_blank\" href=\"https://www.vim.org/\">Vim</a>"},
+          {type: "li", text: "<b>Browser:</b> <a target=\"_blank\" href=\"https://www.mozilla.org/en-US/firefox/developer/\">Firefox Developer Edition</a>"},
+          {type: "li", text: "<b>Other daily software:</b> <a target=\"_blank\" href=\"https://keybase.io/\">Keybase</a>, Slack, Spotify"}
         ]
       }
     ]
