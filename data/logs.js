@@ -1,6 +1,43 @@
 const LOGS =
 [
   {
+    "date": "2019-12-16",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals",
+    "tags": [
+      "metals"
+    ]
+  },
+  {
+    "date": "2019-12-16",
+    "category": "code",
+    "time": 60,
+    "project": "tooling",
+    "tags": [
+      "metals"
+    ]
+  },
+  {
+    "date": "2019-12-16",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-12-16",
+    "category": "code",
+    "time": 45,
+    "project": "coc-metals",
+    "tags": [
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2019-12-15",
     "category": "code",
     "time": 120,
