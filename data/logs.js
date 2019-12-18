@@ -1,6 +1,16 @@
 const LOGS =
 [
   {
+    "date": "2019-12-18",
+    "category": "admin",
+    "time": 120,
+    "project": "coc-metals",
+    "tags": [
+      "vim",
+      "metals"
+    ]
+  },
+  {
     "date": "2019-12-17",
     "category": "admin",
     "time": 45,
