@@ -198,6 +198,36 @@ const CRATE = {
       }
     ]
   },
+  "coc-metals": {
+    title: "coc-metals",
+    template: "main",
+    body: [
+      {
+        type: "div",
+        attributes: [
+          {type: "class", value: "media-container"}
+        ],
+        children: [
+          {
+            type: "img",
+            attributes: [
+              {type: "src", value: "media/coc-metals.png"},
+              {type: "class", value: "main-image"},
+              {type: "alt", value: "coc-metals"}
+            ]
+          }
+        ]
+      },
+      {
+        type: "h5",
+        text: "Code: <a target=\"_blank\" href=\"https://github.com/ckipp01/coc-metals\">coc-metals</a>"
+      },
+      {
+        type: "p",
+        text: "coc-metals is a <a target='_blank' href='https://github.com/neoclide/coc.nvim'>coc.nvim</a> extension for <a target='_blank' href='https://scalameta.org/metals/'>Metals</a>, the Scala language Server.",
+      }
+    ]
+  },
   "crate-builder": {
     title: "crate-builder",
     template: "main",
