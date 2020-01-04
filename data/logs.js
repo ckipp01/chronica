@@ -1,6 +1,12 @@
 const LOGS =
 [
   {
+    "date": "2020-01-04",
+    "category": "code",
+    "time": 120,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-01-02",
     "category": "code",
     "time": 60,
