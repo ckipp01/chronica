@@ -1,6 +1,52 @@
 const LOGS =
 [
   {
+    "date": "2020-01-11",
+    "category": "code",
+    "time": 60,
+    "project": "andaga",
+    "tags": [
+      "scala",
+      "mill"
+    ]
+  },
+  {
+    "date": "2020-01-11",
+    "category": "study",
+    "time": 60,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-01-11",
+    "category": "admin",
+    "time": 45,
+    "project": "tooling"
+  },
+  {
+    "date": "2020-01-11",
+    "category": "explore",
+    "time": 45,
+    "project": "tooling"
+  },
+  {
+    "date": "2020-01-11",
+    "category": "admin",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "metals"
+    ]
+  },
+  {
+    "date": "2020-01-11",
+    "category": "admin",
+    "time": 45,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-01-10",
     "category": "explore",
     "time": 45,
