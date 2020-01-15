@@ -1,10 +1,41 @@
 const LOGS =
 [
   {
+    "date": "2020-01-15",
+    "category": "code",
+    "time": 30,
+    "project": "vim-scala",
+    "tags": [
+      "vim",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-01-15",
+    "category": "explore",
+    "time": 45,
+    "project": "vim-scala"
+  },
+  {
+    "date": "2020-01-15",
+    "category": "explore",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "bloop"
+    ]
+  },
+  {
+    "date": "2020-01-15",
+    "category": "code",
+    "time": 45,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-01-13",
     "category": "code",
     "time": 45,
-    "project": "scala.vim",
+    "project": "vim-scala",
     "tags": [
       "scala",
       "vim"
