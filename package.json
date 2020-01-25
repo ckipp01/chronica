@@ -1,7 +1,0 @@
-{
-	"name": "wiki.chronica",
-	"description": "Personal wiki for the chronica ecosystem",
-	"devDependencies": {
-		"eslint": "^6.7.2"
-	}
-}
