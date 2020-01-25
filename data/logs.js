@@ -2,6 +2,36 @@ const LOGS =
 [
   {
     "date": "2020-01-25",
+    "category": "admin",
+    "time": 30,
+    "project": "workspace"
+  },
+  {
+    "date": "2020-01-25",
+    "category": "study",
+    "time": 30,
+    "project": "programming"
+  },
+  {
+    "date": "2020-01-25",
+    "category": "explore",
+    "time": 45,
+    "project": "tooling",
+    "tags": [
+      "vim"
+    ]
+  },
+  {
+    "date": "2020-01-25",
+    "category": "code",
+    "time": 60,
+    "project": "wiki.chronica",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-01-25",
     "category": "study",
     "time": 45,
     "project": "programming",
