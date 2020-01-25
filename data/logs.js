@@ -1,6 +1,16 @@
 const LOGS =
 [
   {
+    "date": "2020-01-25",
+    "category": "study",
+    "time": 45,
+    "project": "programming",
+    "tags": [
+      "scala",
+      "functional programming"
+    ]
+  },
+  {
     "date": "2020-01-23",
     "category": "code",
     "time": 30,
@@ -887,7 +897,7 @@ const LOGS =
   },
   {
     "date": "2019-11-24",
-    "category": "adming",
+    "category": "admin",
     "time": 60,
     "project": "tooling",
     "tags": [
