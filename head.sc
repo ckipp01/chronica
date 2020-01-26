@@ -1,5 +1,17 @@
 def putTogetherHtml(head: String, partialHtml: String): String =
-  s"""<html lang="en">$head</html>"""
+  s"""|
+      |<html lang="en">
+      |  ${head}
+      |  <body>
+      |    <nav>
+      |      <ul>
+      |        <li>about</li>
+      |        <li>wiki</li>
+      |        <li>posts</li>
+      |      </ul>
+      |   </nav>
+      |  <main>${partialHtml}</main>
+      |</html>""".stripMargin
 
 def createHead(title: String)(implicit style: String): String =
   s"""|
@@ -45,6 +57,15 @@ implicit val style: String =
      |  outline: none
      |}
      |body {
-     |  display: grid;
+     |  display: flex;
+     |  justify-content: center;
+     |  font: 18px/1.6 sans-serif;
+     |}
+     |nav {
+     |  margin: 20px;
+     |}
+     |main {
+     |  max-width: 640px;
+     |  margin: 20px;
      |}
      |""".stripMargin
