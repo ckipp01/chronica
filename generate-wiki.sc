@@ -9,6 +9,14 @@ import com.vladsch.flexmark.parser.Parser
 
 import scala.io.Source
 
+case class Log(
+  date: String,
+  category: String,
+  time: Int,
+  project: String,
+  tags: List[String] = List.empty
+)
+
 case class Page(name: String, content: String)
 
 println("""|
@@ -27,11 +35,20 @@ def getListOfFiles(dir: String): List[String] = {
   file.listFiles
     .filter(_.isFile)
     .map(_.getPath)
+    .filter(_.endsWith(".md"))
     .toList
 }
 
+def getLogs(fileLoc: String): ujson.Value = {
+  val bufferedLogs = Source.fromFile(fileLoc)
+  val logs = bufferedLogs.getLines.mkString
+  bufferedLogs.close()
+  ujson.read(logs)
+}
+
 def createPage(
-    fileLoc: String
+    fileLoc: String,
+    logs: ujson.Value
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
   val fileName = fileLoc.split("/").last.replace(".md", ".html")
   val bufferedMarkdown = Source.fromFile(fileLoc)
@@ -47,6 +64,7 @@ def createPage(
 
   val fullHtml = putTogetherHtml(head, htmlBody)
 
+  // val jsonString = os.read(os.pwd / "logs.json")
   println(s"---- created $fileName ----")
 
   Page(fileName, fullHtml)
@@ -63,9 +81,10 @@ def writeToOut(page: Page): Unit = {
 }
 
 val files = getListOfFiles("./pages")
+val logs  = getLogs("./logs.json")
 
 val _ = files
-  .map(createPage)
+  .map(file => createPage(file, logs))
   .foreach(writeToOut)
 
 println(s"""|

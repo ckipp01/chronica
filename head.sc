@@ -1,21 +1,20 @@
 def putTogetherHtml(head: String, partialHtml: String): String =
-  s"""|
-      |<html lang="en">
+  s"""|<html lang="en">
       |  ${head}
       |  <body>
       |    <nav>
+      |      <span>chronica</span>
       |      <ul>
-      |        <li>about</li>
       |        <li>wiki</li>
       |        <li>posts</li>
+      |        <li>about</li>
       |      </ul>
       |   </nav>
       |  <main>${partialHtml}</main>
       |</html>""".stripMargin
 
 def createHead(title: String)(implicit style: String): String =
-  s"""|
-      |<head>
+  s"""|<head>
       |  <meta charset="utf-8">
       |  <meta name="description" content="Wiki for the chronica ecosystem.">
       |  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,8 +33,7 @@ def createHead(title: String)(implicit style: String): String =
       |""".stripMargin
 
 implicit val style: String =
-  """|
-     |* {
+  """|* {
      |  margin:0;
      |  padding:0;
      |  border:0;
@@ -62,10 +60,18 @@ implicit val style: String =
      |  font: 18px/1.6 sans-serif;
      |}
      |nav {
-     |  margin: 20px;
+     |  margin: 30px;
      |}
      |main {
      |  max-width: 640px;
-     |  margin: 20px;
+     |  margin: 30px;
+     |}
+     |h1 {
+     |  font: 1.3em/1.3 sans-serif;
+     |  margin-bottom: 10px;
+     |}
+     |code,codeblock {
+     |  font: 0.9em/1.3 monospace;
+     |  margin: 10px 0;
      |}
      |""".stripMargin
