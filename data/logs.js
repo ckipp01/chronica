@@ -1,6 +1,12 @@
 const LOGS =
 [
   {
+    "date": "2020-01-30",
+    "category": "explore",
+    "time": 45,
+    "project": "wiki.chronica"
+  },
+  {
     "date": "2020-01-27",
     "category": "code",
     "time": 60,
@@ -6149,7 +6155,8 @@ const LOGS =
   {
     "date": "2018-07-14",
     "category": "study",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-07-14",
@@ -6172,12 +6179,14 @@ const LOGS =
   {
     "date": "2018-07-12",
     "category": "study",
-    "time": 60
+    "time": 60,
+    "project": "programming"
   },
   {
     "date": "2018-07-09",
     "category": "study",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-07-09",
@@ -6577,7 +6586,8 @@ const LOGS =
   {
     "date": "2018-04-07",
     "category": "research",
-    "time": 25
+    "time": 25,
+    "project": "network"
   },
   {
     "date": "2018-04-05",
@@ -6587,11 +6597,6 @@ const LOGS =
     "tags": [
       "linux"
     ]
-  },
-  {
-    "date": "2018-04-04",
-    "category": "admin",
-    "time": 35
   },
   {
     "date": "2018-04-03",
@@ -6611,12 +6616,14 @@ const LOGS =
   {
     "date": "2018-04-02",
     "category": "admin",
-    "time": 50
+    "time": 50,
+    "project": "network"
   },
   {
     "date": "2018-04-02",
     "category": "admin",
-    "time": 25
+    "time": 25,
+    "project": "network"
   },
   {
     "date": "2018-04-01",
@@ -6633,7 +6640,8 @@ const LOGS =
   {
     "date": "2018-03-24",
     "category": "study",
-    "time": 60
+    "time": 60,
+    "project": "network"
   },
   {
     "date": "2018-03-22",
@@ -6674,7 +6682,8 @@ const LOGS =
   {
     "date": "2018-03-18",
     "category": "admin",
-    "time": 135
+    "time": 135,
+    "project": "workspace"
   },
   {
     "date": "2018-03-17",
@@ -6720,12 +6729,14 @@ const LOGS =
   {
     "date": "2018-03-10",
     "category": "research",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-03-10",
     "category": "admin",
-    "time": 20
+    "time": 20,
+    "project": "programming"
   },
   {
     "date": "2018-03-09",
@@ -7069,7 +7080,8 @@ const LOGS =
   {
     "date": "2018-02-19",
     "category": "explore",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-02-19",
@@ -7126,7 +7138,8 @@ const LOGS =
   {
     "date": "2018-02-13",
     "category": "admin",
-    "time": 35
+    "time": 35,
+    "project": "programming"
   },
   {
     "date": "2018-02-12",
@@ -7188,7 +7201,8 @@ const LOGS =
     "time": 20,
     "tags": [
       "git"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-02-08",
@@ -7478,7 +7492,8 @@ const LOGS =
   {
     "date": "2018-01-07",
     "category": "admin",
-    "time": 30
+    "time": 30,
+    "project": "andaga"
   },
   {
     "date": "2018-01-07",
@@ -7560,7 +7575,8 @@ const LOGS =
   {
     "date": "2018-01-02",
     "category": "research",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-01-01",
@@ -7574,6 +7590,7 @@ const LOGS =
   {
     "date": "2018-01-01",
     "category": "admin",
-    "time": 15
+    "time": 15,
+    "project": "programming"
   }
 ]
