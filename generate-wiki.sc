@@ -82,6 +82,7 @@ def writeToOut(page: Page): Unit = {
 
 val files = getListOfFiles("./pages")
 val logs  = getLogs("./logs.json")
+println(logs)
 
 val _ = files
   .map(file => createPage(file, logs))

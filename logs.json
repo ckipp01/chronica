@@ -1,5 +1,26 @@
 [
   {
+    "date": "2020-01-30",
+    "category": "explore",
+    "time": 45,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2020-01-27",
+    "category": "code",
+    "time": 60,
+    "project": "wiki.chronica",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-01-27",
+    "category": "admin",
+    "time": 30,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-01-26",
     "category": "admin",
     "time": 60,
@@ -1445,7 +1466,7 @@
     "date": "2019-10-20",
     "category": "study",
     "time": 25,
-    "project": "aesthetic",
+    "project": "wiki.chronica",
     "tags": [
       "color"
     ]
@@ -1795,7 +1816,8 @@
     "tags": [
       "programming",
       "scala"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-09-27",
@@ -4752,7 +4774,8 @@
       "waka-fetch",
       "andaga-core",
       "andaga"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-02-02",
@@ -4775,7 +4798,8 @@
   {
     "date": "2019-01-30",
     "category": "admin",
-    "time": 30
+    "time": 30,
+    "project": "andaga"
   },
   {
     "date": "2019-01-30",
@@ -4791,7 +4815,8 @@
   {
     "date": "2019-01-30",
     "category": "research",
-    "time": 30
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2019-01-30",
@@ -4845,7 +4870,8 @@
       "javascript",
       "html",
       "css"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-01-28",
@@ -5110,7 +5136,8 @@
   {
     "date": "2019-01-12",
     "category": "admin",
-    "time": 45
+    "time": 45,
+    "project": "network"
   },
   {
     "date": "2019-01-11",
@@ -5144,7 +5171,8 @@
     "tags": [
       "waka-fetch",
       "andaga-core"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-01-09",
@@ -5165,7 +5193,8 @@
     "tags": [
       "waka-fetch",
       "andaga-core"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-07",
@@ -5191,7 +5220,8 @@
     "time": 45,
     "tags": [
       "javascript"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-05",
@@ -5209,7 +5239,8 @@
     "tags": [
       "waka-fetch",
       "waka-machine"
-    ]
+    ],
+    "project": "waka-fetch"
   },
   {
     "date": "2019-01-04",
@@ -5219,7 +5250,8 @@
       "waka-fetch",
       "andaga-core",
       "andaga-cli"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-03",
@@ -5243,7 +5275,8 @@
     "time": 45,
     "tags": [
       "waka-fetch"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-02",
@@ -5252,7 +5285,8 @@
     "tags": [
       "waka-fetch",
       "andaga-core"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-01-01",
@@ -5297,7 +5331,8 @@
   {
     "date": "2018-12-27",
     "category": "study",
-    "time": 120
+    "time": 120,
+    "project": "programming"
   },
   {
     "date": "2018-12-27",
@@ -5314,17 +5349,20 @@
   {
     "date": "2018-12-26",
     "category": "research",
-    "time": 45
+    "time": 45,
+    "project": "network"
   },
   {
     "date": "2018-12-26",
     "category": "research",
-    "time": 30
+    "time": 30,
+    "project": "network"
   },
   {
     "date": "2018-12-25",
     "category": "admin",
-    "time": 90
+    "time": 90,
+    "project": "programming"
   },
   {
     "date": "2018-12-24",
@@ -5438,7 +5476,8 @@
   {
     "date": "2018-12-12",
     "category": "admin",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-12-09",
@@ -5453,7 +5492,8 @@
   {
     "date": "2018-12-08",
     "category": "admin",
-    "time": 65
+    "time": 65,
+    "project": "tooling"
   },
   {
     "date": "2018-12-08",
@@ -5504,7 +5544,8 @@
   {
     "date": "2018-12-02",
     "category": "admin",
-    "time": 120
+    "time": 120,
+    "project": "network"
   },
   {
     "date": "2018-11-30",
@@ -5566,22 +5607,26 @@
   {
     "date": "2018-11-28",
     "category": "explore",
-    "time": 60
+    "time": 60,
+    "project": "workspace"
   },
   {
     "date": "2018-11-25",
     "category": "study",
-    "time": 30
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2018-11-25",
     "category": "admin",
-    "time": 160
+    "time": 160,
+    "project": "network"
   },
   {
     "date": "2018-11-24",
     "category": "research",
-    "time": 60
+    "time": 60,
+    "project": "network"
   },
   {
     "date": "2018-11-19",
@@ -5659,7 +5704,8 @@
     "time": 65,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-08",
@@ -5677,7 +5723,8 @@
     "time": 15,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-07",
@@ -5703,7 +5750,8 @@
     "time": 25,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-06",
@@ -5711,7 +5759,8 @@
     "time": 45,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "workspace"
   },
   {
     "date": "2018-11-05",
@@ -5729,7 +5778,8 @@
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-10-29",
@@ -5756,7 +5806,8 @@
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2018-10-24",
@@ -5764,7 +5815,8 @@
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2018-10-24",
@@ -5781,7 +5833,8 @@
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "workspace"
   },
   {
     "date": "2018-10-20",
@@ -5798,7 +5851,8 @@
     "time": 45,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-10-16",
@@ -5806,7 +5860,8 @@
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-10-14",
@@ -6109,17 +6164,20 @@
   {
     "date": "2018-07-30",
     "category": "study",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-07-29",
     "category": "study",
-    "time": 65
+    "time": 65,
+    "project": "programming"
   },
   {
     "date": "2018-07-14",
     "category": "study",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-07-14",
@@ -6133,7 +6191,8 @@
   {
     "date": "2018-07-14",
     "category": "study",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-07-14",
@@ -6156,12 +6215,14 @@
   {
     "date": "2018-07-12",
     "category": "study",
-    "time": 60
+    "time": 60,
+    "project": "programming"
   },
   {
     "date": "2018-07-09",
     "category": "study",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-07-09",
@@ -6247,7 +6308,8 @@
   {
     "date": "2018-06-29",
     "category": "design",
-    "time": 30
+    "time": 30,
+    "project": "chronica"
   },
   {
     "date": "2018-06-23",
@@ -6285,12 +6347,14 @@
   {
     "date": "2018-06-08",
     "category": "admin",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-06-07",
     "category": "admin",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-06-07",
@@ -6373,17 +6437,20 @@
   {
     "date": "2018-05-17",
     "category": "admin",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-05-16",
     "category": "explore",
-    "time": 90
+    "time": 90,
+    "project": "programming"
   },
   {
     "date": "2018-05-15",
     "category": "admin",
-    "time": 120
+    "time": 120,
+    "project": "programming"
   },
   {
     "date": "2018-05-10",
@@ -6430,7 +6497,8 @@
   {
     "date": "2018-05-03",
     "category": "study",
-    "time": 30
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2018-05-03",
@@ -6444,7 +6512,8 @@
   {
     "date": "2018-05-02",
     "category": "admin",
-    "time": 60
+    "time": 60,
+    "project": "programming"
   },
   {
     "date": "2018-04-30",
@@ -6519,12 +6588,14 @@
   {
     "date": "2018-04-17",
     "category": "admin",
-    "time": 240
+    "time": 240,
+    "project": "network"
   },
   {
     "date": "2018-04-16",
     "category": "admin",
-    "time": 210
+    "time": 210,
+    "project": "network"
   },
   {
     "date": "2018-04-16",
@@ -6535,22 +6606,26 @@
   {
     "date": "2018-04-09",
     "category": "code",
-    "time": 25
+    "time": 25,
+    "project": "network"
   },
   {
     "date": "2018-04-08",
     "category": "explore",
-    "time": 30
+    "time": 30,
+    "project": "network"
   },
   {
     "date": "2018-04-08",
     "category": "research",
-    "time": 65
+    "time": 65,
+    "project": "network"
   },
   {
     "date": "2018-04-07",
     "category": "research",
-    "time": 35
+    "time": 35,
+    "project": "network"
   },
   {
     "date": "2018-04-07",
@@ -6561,7 +6636,8 @@
   {
     "date": "2018-04-07",
     "category": "research",
-    "time": 25
+    "time": 25,
+    "project": "network"
   },
   {
     "date": "2018-04-05",
@@ -6571,11 +6647,6 @@
     "tags": [
       "linux"
     ]
-  },
-  {
-    "date": "2018-04-04",
-    "category": "admin",
-    "time": 35
   },
   {
     "date": "2018-04-03",
@@ -6595,12 +6666,14 @@
   {
     "date": "2018-04-02",
     "category": "admin",
-    "time": 50
+    "time": 50,
+    "project": "network"
   },
   {
     "date": "2018-04-02",
     "category": "admin",
-    "time": 25
+    "time": 25,
+    "project": "network"
   },
   {
     "date": "2018-04-01",
@@ -6617,7 +6690,8 @@
   {
     "date": "2018-03-24",
     "category": "study",
-    "time": 60
+    "time": 60,
+    "project": "network"
   },
   {
     "date": "2018-03-22",
@@ -6658,7 +6732,8 @@
   {
     "date": "2018-03-18",
     "category": "admin",
-    "time": 135
+    "time": 135,
+    "project": "workspace"
   },
   {
     "date": "2018-03-17",
@@ -6704,12 +6779,14 @@
   {
     "date": "2018-03-10",
     "category": "research",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-03-10",
     "category": "admin",
-    "time": 20
+    "time": 20,
+    "project": "programming"
   },
   {
     "date": "2018-03-09",
@@ -7053,7 +7130,8 @@
   {
     "date": "2018-02-19",
     "category": "explore",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-02-19",
@@ -7110,7 +7188,8 @@
   {
     "date": "2018-02-13",
     "category": "admin",
-    "time": 35
+    "time": 35,
+    "project": "programming"
   },
   {
     "date": "2018-02-12",
@@ -7172,7 +7251,8 @@
     "time": 20,
     "tags": [
       "git"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-02-08",
@@ -7462,7 +7542,8 @@
   {
     "date": "2018-01-07",
     "category": "admin",
-    "time": 30
+    "time": 30,
+    "project": "andaga"
   },
   {
     "date": "2018-01-07",
@@ -7544,7 +7625,8 @@
   {
     "date": "2018-01-02",
     "category": "research",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-01-01",
@@ -7558,6 +7640,7 @@
   {
     "date": "2018-01-01",
     "category": "admin",
-    "time": 15
+    "time": 15,
+    "project": "programming"
   }
 ]
