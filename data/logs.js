@@ -1467,7 +1467,7 @@ const LOGS =
     "date": "2019-10-20",
     "category": "study",
     "time": 25,
-    "project": "aesthetic",
+    "project": "wiki.chronica",
     "tags": [
       "color"
     ]
