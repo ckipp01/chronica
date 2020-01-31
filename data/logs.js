@@ -1817,7 +1817,8 @@ const LOGS =
     "tags": [
       "programming",
       "scala"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-09-27",
@@ -4774,7 +4775,8 @@ const LOGS =
       "waka-fetch",
       "andaga-core",
       "andaga"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-02-02",
@@ -4797,7 +4799,8 @@ const LOGS =
   {
     "date": "2019-01-30",
     "category": "admin",
-    "time": 30
+    "time": 30,
+    "project": "andaga"
   },
   {
     "date": "2019-01-30",
@@ -4813,7 +4816,8 @@ const LOGS =
   {
     "date": "2019-01-30",
     "category": "research",
-    "time": 30
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2019-01-30",
@@ -4867,7 +4871,8 @@ const LOGS =
       "javascript",
       "html",
       "css"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-01-28",
@@ -5132,7 +5137,8 @@ const LOGS =
   {
     "date": "2019-01-12",
     "category": "admin",
-    "time": 45
+    "time": 45,
+    "project": "network"
   },
   {
     "date": "2019-01-11",
@@ -5166,7 +5172,8 @@ const LOGS =
     "tags": [
       "waka-fetch",
       "andaga-core"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-01-09",
@@ -5187,7 +5194,8 @@ const LOGS =
     "tags": [
       "waka-fetch",
       "andaga-core"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-07",
@@ -5213,7 +5221,8 @@ const LOGS =
     "time": 45,
     "tags": [
       "javascript"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-05",
@@ -5231,7 +5240,8 @@ const LOGS =
     "tags": [
       "waka-fetch",
       "waka-machine"
-    ]
+    ],
+    "project": "waka-fetch"
   },
   {
     "date": "2019-01-04",
@@ -5241,7 +5251,8 @@ const LOGS =
       "waka-fetch",
       "andaga-core",
       "andaga-cli"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-03",
@@ -5265,7 +5276,8 @@ const LOGS =
     "time": 45,
     "tags": [
       "waka-fetch"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-02",
@@ -5274,7 +5286,8 @@ const LOGS =
     "tags": [
       "waka-fetch",
       "andaga-core"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2019-01-01",
@@ -5319,7 +5332,8 @@ const LOGS =
   {
     "date": "2018-12-27",
     "category": "study",
-    "time": 120
+    "time": 120,
+    "project": "programming"
   },
   {
     "date": "2018-12-27",
@@ -5336,17 +5350,20 @@ const LOGS =
   {
     "date": "2018-12-26",
     "category": "research",
-    "time": 45
+    "time": 45,
+    "project": "network"
   },
   {
     "date": "2018-12-26",
     "category": "research",
-    "time": 30
+    "time": 30,
+    "project": "network"
   },
   {
     "date": "2018-12-25",
     "category": "admin",
-    "time": 90
+    "time": 90,
+    "project": "programming"
   },
   {
     "date": "2018-12-24",
@@ -5460,7 +5477,8 @@ const LOGS =
   {
     "date": "2018-12-12",
     "category": "admin",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-12-09",
@@ -5475,7 +5493,8 @@ const LOGS =
   {
     "date": "2018-12-08",
     "category": "admin",
-    "time": 65
+    "time": 65,
+    "project": "tooling"
   },
   {
     "date": "2018-12-08",
@@ -5526,7 +5545,8 @@ const LOGS =
   {
     "date": "2018-12-02",
     "category": "admin",
-    "time": 120
+    "time": 120,
+    "project": "network"
   },
   {
     "date": "2018-11-30",
@@ -5588,22 +5608,26 @@ const LOGS =
   {
     "date": "2018-11-28",
     "category": "explore",
-    "time": 60
+    "time": 60,
+    "project": "workspace"
   },
   {
     "date": "2018-11-25",
     "category": "study",
-    "time": 30
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2018-11-25",
     "category": "admin",
-    "time": 160
+    "time": 160,
+    "project": "network"
   },
   {
     "date": "2018-11-24",
     "category": "research",
-    "time": 60
+    "time": 60,
+    "project": "network"
   },
   {
     "date": "2018-11-19",
@@ -5681,7 +5705,8 @@ const LOGS =
     "time": 65,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-08",
@@ -5699,7 +5724,8 @@ const LOGS =
     "time": 15,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-07",
@@ -5725,7 +5751,8 @@ const LOGS =
     "time": 25,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-06",
@@ -5733,7 +5760,8 @@ const LOGS =
     "time": 45,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "workspace"
   },
   {
     "date": "2018-11-05",
@@ -5751,7 +5779,8 @@ const LOGS =
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-10-29",
@@ -5778,7 +5807,8 @@ const LOGS =
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2018-10-24",
@@ -5786,7 +5816,8 @@ const LOGS =
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "network"
   },
   {
     "date": "2018-10-24",
@@ -5803,7 +5834,8 @@ const LOGS =
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "workspace"
   },
   {
     "date": "2018-10-20",
@@ -5820,7 +5852,8 @@ const LOGS =
     "time": 45,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-10-16",
@@ -5828,7 +5861,8 @@ const LOGS =
     "time": 60,
     "tags": [
       "linux"
-    ]
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-10-14",
@@ -6131,17 +6165,20 @@ const LOGS =
   {
     "date": "2018-07-30",
     "category": "study",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-07-29",
     "category": "study",
-    "time": 65
+    "time": 65,
+    "project": "programming"
   },
   {
     "date": "2018-07-14",
     "category": "study",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-07-14",
@@ -6272,7 +6309,8 @@ const LOGS =
   {
     "date": "2018-06-29",
     "category": "design",
-    "time": 30
+    "time": 30,
+    "project": "chronica"
   },
   {
     "date": "2018-06-23",
@@ -6310,12 +6348,14 @@ const LOGS =
   {
     "date": "2018-06-08",
     "category": "admin",
-    "time": 25
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-06-07",
     "category": "admin",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-06-07",
@@ -6398,17 +6438,20 @@ const LOGS =
   {
     "date": "2018-05-17",
     "category": "admin",
-    "time": 45
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-05-16",
     "category": "explore",
-    "time": 90
+    "time": 90,
+    "project": "programming"
   },
   {
     "date": "2018-05-15",
     "category": "admin",
-    "time": 120
+    "time": 120,
+    "project": "programming"
   },
   {
     "date": "2018-05-10",
@@ -6455,7 +6498,8 @@ const LOGS =
   {
     "date": "2018-05-03",
     "category": "study",
-    "time": 30
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2018-05-03",
@@ -6469,7 +6513,8 @@ const LOGS =
   {
     "date": "2018-05-02",
     "category": "admin",
-    "time": 60
+    "time": 60,
+    "project": "programming"
   },
   {
     "date": "2018-04-30",
@@ -6544,12 +6589,14 @@ const LOGS =
   {
     "date": "2018-04-17",
     "category": "admin",
-    "time": 240
+    "time": 240,
+    "project": "network"
   },
   {
     "date": "2018-04-16",
     "category": "admin",
-    "time": 210
+    "time": 210,
+    "project": "network"
   },
   {
     "date": "2018-04-16",
@@ -6560,22 +6607,26 @@ const LOGS =
   {
     "date": "2018-04-09",
     "category": "code",
-    "time": 25
+    "time": 25,
+    "project": "network"
   },
   {
     "date": "2018-04-08",
     "category": "explore",
-    "time": 30
+    "time": 30,
+    "project": "network"
   },
   {
     "date": "2018-04-08",
     "category": "research",
-    "time": 65
+    "time": 65,
+    "project": "network"
   },
   {
     "date": "2018-04-07",
     "category": "research",
-    "time": 35
+    "time": 35,
+    "project": "network"
   },
   {
     "date": "2018-04-07",
