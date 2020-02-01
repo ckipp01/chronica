@@ -32,6 +32,13 @@ object Log {
 
 case class Page(name: String, content: String)
 
+case class TopicDetail(
+  topic: String,
+  category: String,
+  logs: List[Log],
+  percentage: Double
+)
+
 println("""|
            |      generating chronica
            |===============================
@@ -64,7 +71,8 @@ def createPage(
     fileLoc: String,
     logs: List[Log]
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
-  val fileName = fileLoc.split("/").last.replace(".md", ".html")
+  val topic = fileLoc.split("/").last.takeWhile(_ != '.')
+  println(topic)
   val bufferedMarkdown = Source.fromFile(fileLoc)
 
   val markdown = bufferedMarkdown.getLines
@@ -72,11 +80,20 @@ def createPage(
 
   bufferedMarkdown.close()
 
-  val parsed = parser.parse(markdown)
-  val head = createHead(fileName.takeWhile(_ != '.'))
-  val htmlBody = renderer.render(parsed)
+  val topicLogs: List[Log] = logs.filter(_.project == topic)
+  val categories = topicLogs.groupBy(_.category)
 
+  val topicDetails: List[TopicDetail] = categories.collect { case (cat, logs) =>
+    TopicDetail(topic, cat, logs, (logs.length.toDouble / topicLogs.length * 100).round)
+  }.toList
+
+  println(topicDetails)
+
+  val parsed = parser.parse(markdown)
+  val head = createHead(topic)
+  val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, htmlBody)
+  val fileName = topic + ".html"
 
   println(s"---- created $fileName ----")
 
@@ -97,7 +114,7 @@ val files = getListOfFiles("./pages")
 val logs  = getLogs("./logs.json")
 
 val _ = files
-  .map(file => createPage(file, logs))
+  .map(createPage(_, logs))
   .foreach(writeToOut)
 
 println(s"""|
