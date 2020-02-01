@@ -14,20 +14,30 @@ case class Log(
   category: String,
   time: Int,
   project: String,
-  tags: List[String] = List.empty
+  tags: Option[List[String]]
 )
+
+object Log {
+  def fromJson(json: ujson.Value) =
+    Log(
+      json.obj("date").str,
+      json.obj("category").str,
+      json.obj("time").num.toInt,
+      json.obj("project").str,
+      json.obj
+        .get("tags")
+        .map(_.arr.map(_.str).toList)
+    )
+}
 
 case class Page(name: String, content: String)
 
 println("""|
            |      generating chronica
            |===============================
-           |
            |""".stripMargin)
 
-println("---- creating parser ----")
 implicit val parser = Parser.builder().build()
-println("---- creating renderer ----")
 implicit val renderer = HtmlRenderer.builder().build()
 
 def getListOfFiles(dir: String): List[String] = {
@@ -39,16 +49,20 @@ def getListOfFiles(dir: String): List[String] = {
     .toList
 }
 
-def getLogs(fileLoc: String): ujson.Value = {
+def getLogs(fileLoc: String): List[Log] = {
   val bufferedLogs = Source.fromFile(fileLoc)
-  val logs = bufferedLogs.getLines.mkString
+  val rawLogs = bufferedLogs.getLines.mkString
   bufferedLogs.close()
-  ujson.read(logs)
+
+  ujson.read(rawLogs)
+    .arr
+    .map(Log.fromJson)
+    .toList
 }
 
 def createPage(
     fileLoc: String,
-    logs: ujson.Value
+    logs: List[Log]
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
   val fileName = fileLoc.split("/").last.replace(".md", ".html")
   val bufferedMarkdown = Source.fromFile(fileLoc)
@@ -64,7 +78,6 @@ def createPage(
 
   val fullHtml = putTogetherHtml(head, htmlBody)
 
-  // val jsonString = os.read(os.pwd / "logs.json")
   println(s"---- created $fileName ----")
 
   Page(fileName, fullHtml)
@@ -82,7 +95,6 @@ def writeToOut(page: Page): Unit = {
 
 val files = getListOfFiles("./pages")
 val logs  = getLogs("./logs.json")
-println(logs)
 
 val _ = files
   .map(file => createPage(file, logs))
@@ -91,5 +103,4 @@ val _ = files
 println(s"""|
             |         finished creating ${files.length} pages
             |============================================
-            |
             |""".stripMargin)
