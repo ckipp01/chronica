@@ -1,6 +1,37 @@
 const LOGS =
 [
   {
+    "date": "2020-02-01",
+    "category": "admin",
+    "time": 30,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2020-02-01",
+    "category": "code",
+    "time": 60,
+    "project": "wiki.chronica",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-02-01",
+    "category": "code",
+    "time": 45,
+    "project": "tooling",
+    "tags": [
+      "metals",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-02-01",
+    "category": "admin",
+    "time": 45,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-01-31",
     "category": "admin",
     "time": 60,
