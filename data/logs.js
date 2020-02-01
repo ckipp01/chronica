@@ -6545,7 +6545,9 @@ const LOGS =
     "category": "code",
     "time": 15,
     "project": "andaga",
-    "tags": "javascript"
+    "tags": [
+      "javascript"
+    ]
   },
   {
     "date": "2018-04-23",
