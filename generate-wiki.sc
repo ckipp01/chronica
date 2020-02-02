@@ -1,43 +1,16 @@
 import $ivy.{`com.vladsch.flexmark:flexmark-all:0.50.44`}
 import $file.head, head._
+import $file.data, data._
+import $file.modifiers, modifiers._
 
 import java.io.File
+import java.nio.file.Paths
 import java.io.PrintWriter
 
 import com.vladsch.flexmark.html.HtmlRenderer
 import com.vladsch.flexmark.parser.Parser
 
 import scala.io.Source
-
-case class Log(
-  date: String,
-  category: String,
-  time: Int,
-  project: String,
-  tags: Option[List[String]]
-)
-
-object Log {
-  def fromJson(json: ujson.Value) =
-    Log(
-      json.obj("date").str,
-      json.obj("category").str,
-      json.obj("time").num.toInt,
-      json.obj("project").str,
-      json.obj
-        .get("tags")
-        .map(_.arr.map(_.str).toList)
-    )
-}
-
-case class Page(name: String, content: String)
-
-case class TopicDetail(
-  topic: String,
-  category: String,
-  logs: List[Log],
-  percentage: Double
-)
 
 println("""|
            |      generating chronica
@@ -61,7 +34,8 @@ def getLogs(fileLoc: String): List[Log] = {
   val rawLogs = bufferedLogs.getLines.mkString
   bufferedLogs.close()
 
-  ujson.read(rawLogs)
+  ujson
+    .read(rawLogs)
     .arr
     .map(Log.fromJson)
     .toList
@@ -72,7 +46,6 @@ def createPage(
     logs: List[Log]
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
   val topic = fileLoc.split("/").last.takeWhile(_ != '.')
-  println(topic)
   val bufferedMarkdown = Source.fromFile(fileLoc)
 
   val markdown = bufferedMarkdown.getLines
@@ -83,8 +56,14 @@ def createPage(
   val topicLogs: List[Log] = logs.filter(_.project == topic)
   val categories = topicLogs.groupBy(_.category)
 
-  val topicDetails: List[TopicDetail] = categories.collect { case (cat, logs) =>
-    TopicDetail(topic, cat, logs, (logs.length.toDouble / topicLogs.length * 100).round)
+  val topicDetails: List[TopicDetail] = categories.collect {
+    case (cat, logs) =>
+      TopicDetail(
+        topic,
+        cat,
+        logs,
+        (logs.length.toDouble / topicLogs.length * 100).round
+      )
   }.toList
 
   println(topicDetails)
@@ -110,8 +89,19 @@ def writeToOut(page: Page): Unit = {
   pw.close
 }
 
-val files = getListOfFiles("./pages")
-val logs  = getLogs("./logs.json")
+val logs = getLogs("./logs.json")
+val percentageGenerator = new PercentageGenerator(logs)
+
+val settings = mdoc
+  .MainSettings()
+  .withIn(Paths.get("./pages"))
+  .withOut(Paths.get("./converted"))
+  .withStringModifiers(List(percentageGenerator))
+
+val exitCode = mdoc.Main.process(settings)
+if (exitCode != 0) sys.exit(exitCode)
+
+val files = getListOfFiles("./converted")
 
 val _ = files
   .map(createPage(_, logs))
