@@ -1,5 +1,7 @@
 # javascript
 
+```scala mdoc:percentages:javascript
+```
 When I first started learning programming, JavaScript was my introduction into
 what was really possible with programming. It's the language I currently feel
 most comfortable with and have the most experience with. In the last year say my

@@ -1,7 +1,9 @@
 # chronica
-#####Code: [chronica](https://github.com/ckipp01/chronica)
-#####Type: [Inter[(https://rsms.me/inter)
+##### Code: [chronica](https://github.com/ckipp01/chronica)
+##### Type: [Inter](https://rsms.me/inter)
 
+```scala mdoc:percentages:chronica
+```
 [chronica](https://chronica.xyz) is the name that I'm using for the ecosystem of
 logs, writing, and art that I've produced. Currently the wiki is the main focus,
 but eventually you'll see a blog portion and also a portion displaying

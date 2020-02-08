@@ -1,8 +1,10 @@
 # xxiivv webring
 
 ##### Code: [xxiivv webring](https://github.com/XXIIVV/Webring)
-
 ##### Url: [https://webring.xxiivv.com](https://webring.xxiivv.com)
+
+```scala mdoc:percentages:webring
+```
 
 "You may have noticed the middle icon in the footer of this site. It leads to a
 [webring](https://webring.xxiivv.com) full of wikis, portfolios, and the likes.

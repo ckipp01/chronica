@@ -1,5 +1,8 @@
 # 스택 seutaeg
 
+```scala mdoc:percentages:seutaeg
+```
+
 This is in the very early stages of development. Currently for [gyul](/gyul) I
 use file called crate.js, which is just a big JS object, to hold all of the main
 data and content for my site. As I'm looking to also use [gyul](/gyul) for

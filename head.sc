@@ -58,6 +58,7 @@ implicit val style: String =
      |  display: flex;
      |  justify-content: center;
      |  font: 18px/1.6 sans-serif;
+     |  background: rgb(252, 243, 217)
      |}
      |nav {
      |  margin: 30px;
@@ -73,5 +74,20 @@ implicit val style: String =
      |code,codeblock {
      |  font: 0.9em/1.3 monospace;
      |  margin: 10px 0;
+     |}
+     |.code {
+     |  fill: rgb(250, 194, 43);
+     |}
+     |.explore {
+     |  fill: rgb(4, 19, 142);
+     |}
+     |.study {
+     |  fill: rgb(212, 42, 32);
+     |}
+     |.research {
+     |  fill: rgb(48, 107, 52);
+     |}
+     |.admin {
+     |  fill: rgb(228, 87, 46);
      |}
      |""".stripMargin

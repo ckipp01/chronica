@@ -1,6 +1,9 @@
 # ándaga
 ![andaga](media/andaga.png)
 
+
+```scala mdoc:percentages:andaga
+```
 ##### [Code for version 1](https://github.com/ckipp01/andaga-cli/tree/year-one)
 ##### [Code for version 2 cli](https://github.com/ckipp01/andaga-cli)
 ##### [Code for version 2 core](https://github.com/ckipp01/andaga-core)

@@ -3,6 +3,9 @@
 ##### Code: [wiki.chronica](https://github.com/ckipp01/wiki.chronica)
 ##### Type: [Inter](https://rsms.me/inter)
 
+```scala mdoc:percentages:wiki.chronica
+```
+
 Hello, I'm [Chris](/me), and this is my digital playground of sorts. I wanted a
 place to display what I've been working on, and I wanted it to be a place fully
 built by me. No external tools, no build process, and no localhost. In some ways

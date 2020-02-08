@@ -1,5 +1,7 @@
 # Network
 
+```scala mdoc:percentages:network
+```
 This project is sort of a catch all that should've been created a long time ago.
 I currently have a server that is running a few databases that store logs for
 [ándaga](/andaga) and also records from [waka-fetch](/waka-fetch). I'm also in

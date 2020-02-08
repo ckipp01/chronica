@@ -1,5 +1,7 @@
 # bash
 
+```scala mdoc:percentages:bash
+```
 Bash is currently my go to shell. I've worked with zsh and tcsh (forcefully) in
 the past, and I've always come Back to bash. I plan to stay with bash until I
 hit a point where I'm frustrated with the limits of what it has to other verse

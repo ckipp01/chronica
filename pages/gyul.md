@@ -2,6 +2,8 @@
 
 ##### Code:[gyul](https://github.com/ckipp01/gyul)
 
+```scala mdoc:percentages:gyul
+```
 gyul is an attempt to make a small wiki engine that will seamlessly tie into my
 timetracker, [ándaga](/andaga)
 

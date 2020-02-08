@@ -4,6 +4,9 @@
 
 ##### Code: [vim-indental](https://github.com/ckipp01/vim-indental)
 
+```scala mdoc:percentages:vim-indental
+```
+
 Indental is a creation of [Devine's](https://wiki.xxiivv.com/site/oscean.html)
 that is used a space-senstive, human readable text database format. I was
 originally intrigued by it since the parser is a mere 50ish lines of code. It

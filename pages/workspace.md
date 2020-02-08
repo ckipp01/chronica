@@ -2,6 +2,9 @@
 
 ![desktop image](/media/desktop4.png)
 
+```scala mdoc:percentages:workspace
+```
+
 ##### Code: [dots](https://github.com/ckipp01/dots)
 
 As soon as I started developing I became interested in making sure the machine I

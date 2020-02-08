@@ -4,6 +4,9 @@
 
 ##### Code: [waka-fetch](https://github.com/ckipp01/waka-fetch)
 
+```scala mdoc:percentages:waka-fetch
+```
+
 waka-fetch is a small serverless app hosted on [Zeit](https://zeit.co) that
 grabs my daily [wakatime](https://wakatime.com) summaries. I grab these
 summaries and store them in a MongoDB database. I grab them in order to feed

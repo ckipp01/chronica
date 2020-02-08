@@ -1,5 +1,8 @@
 # tooling
 
+```scala mdoc:percentages:tooling
+```
+
 I have a sort of fascination with programming tooling. Partly because it's
 something as a developer I use so much, but also something that seemingly hasn't
 really made that many changes in the past years. I think this is an area ripe

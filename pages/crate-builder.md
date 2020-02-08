@@ -1,5 +1,7 @@
 # crate-builder
 
+```scala mdoc:percentages:create-builder
+```
 One of the things I actually dislike about [gyul](/gyul) is that all of my data
 is stored as JS objects. While this makes it extremely easy to parse and deal
 with, it sort of makes it a nightmare to manage. Writing new pages and managing

@@ -2,6 +2,9 @@
 
 ##### Code: [webring-checker](https://github.com/ckipp01/webring-checker)
 
+```scala mdoc:percentages:webring-checker
+```
+
 You may have noticed the middle icon in the footer of this site. It leads to a
 [webring](https://webring.xxiivv.com) full of wikis, portfolios, and the likes.
 The creativity and talent you'll find browsing around on the various sites is

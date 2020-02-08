@@ -1,6 +1,8 @@
 # ándaga-core
 ##### Code: [ándaga-core](https://github.com/ckipp01/andaga-core)
 
+```scala mdoc:percentages:andaga-core
+```
 ándaga-core is the main engine and api for my [ándaga](/andaga) time-tracking
 system. After the first initial year of tracking with [ándaga](/andaga), I
 realized I wanted a better way to store my logs.  I didn't want them to only be

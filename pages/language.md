@@ -1,5 +1,7 @@
 # language
 
+```scala mdoc:percentages:language
+```
 This project is an ongoing one. I studied Spanish for 6 years when younger,
 studied in Mexico and Costa Rica, and then slowly watched the language dwindle
 away in my mind. I've studied some Turkish and spent 4 months traveling around

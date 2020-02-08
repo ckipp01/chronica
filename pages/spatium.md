@@ -3,6 +3,9 @@
 > The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself
 ~ Carl Sagan"
 
+```scala mdoc:percentages:spatium
+```
+
 Spatium is heavily a work in a progress and probably will be for quite some time
 as it's much heavier in research than the rest of my projects."
 

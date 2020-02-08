@@ -1,5 +1,8 @@
 # processing
 
+```scala mdoc:percentages:processing
+```
+
 [Processing](https://processing.org) is something quite new to me. I've been
 really amazed at what people have created using libraries like
 [p5.js](http://p5js.org) and am really interested in the intersection of coding

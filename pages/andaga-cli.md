@@ -2,6 +2,9 @@
 
 ##### Code: [ándaga-cli](https://github.com/ckipp01/andaga-cli)
 
+```scala mdoc:percentages:andaga-cli
+```
+
 ándaga-cli is a small command line application written in Node to log my
 personal project entries. This project is the command line portion of the
 [ándaga](/andaga) system. Following a year of tracking my time I
