@@ -79,13 +79,13 @@ val percentageGenerator = new PercentageGenerator(logs)
 val settings = mdoc
   .MainSettings()
   .withIn(Paths.get("pages"))
-  .withOut(Paths.get("converted"))
   .withStringModifiers(List(percentageGenerator))
+  .withNoLinkHygiene(true)
 
 val exitCode = mdoc.Main.process(settings)
 if (exitCode != 0) sys.exit(exitCode)
 
-val files = getListOfFiles("converted")
+val files = getListOfFiles("out")
 
 val _ = files
   .map(createPage)

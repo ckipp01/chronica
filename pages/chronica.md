@@ -1,13 +1,11 @@
-# chronica
-##### Code: [chronica](https://github.com/ckipp01/chronica)
-##### Type: [Inter](https://rsms.me/inter)
+# [chronica](https://github.com/ckipp01/chronica)
 
 ```scala mdoc:percentages:chronica
 ```
 [chronica](https://chronica.xyz) is the name that I'm using for the ecosystem of
 logs, writing, and art that I've produced. Currently the wiki is the main focus,
 but eventually you'll see a blog portion and also a portion displaying
-generative art."
+generative art.
 
 The main reason for chronica is to provide a unified place for things I've
 created. I really wanted a place for my logs to be displayed, but I also wanted

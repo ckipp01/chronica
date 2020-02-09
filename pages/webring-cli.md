@@ -1,7 +1,6 @@
-# webring-cli
+# [webring-cli](https://github.com/ckipp01/webring-cli)
 
-##### Code: [webring-cli](https://github.com/ckipp01/webring-cli)
-##### Install: `yarn global add webring-cli`
+##### To install: `yarn global add webring-cli`
 
 ```scala mdoc:percentages:webring-cli
 ```
@@ -13,7 +12,7 @@ astounding. I'm grateful to be part of the community.
 
 webring-cli is an attempt to mimic the behavior of the webring through the cli.
 Eventually, I'd also like to merge all the functionality that the
-[webring-checker api](/webring-checker) also provides.
+[webring-checker api](webring-checker.html) also provides.
 
 The project is built with node and minimal dependencies. The
 [commander](https://github.com/tj/commander.js) library is used as an easier way
@@ -71,10 +70,9 @@ webring rss -h
     -h, --help [options]  output usage information
 ```
 
-The wiki is modeled after [Josh's
-Compendium](https://gitlab.com/jrc03c/compendium). Upon entering it you will be
-dropped into a REPL which will allow you to navigate the wiki entries. The
-available REPL command are below.
+The wiki is modeled after [Josh's Compendium](https://gitlab.com/jrc03c/compendium).
+Upon entering it you will be dropped into a REPL which will allow you to
+navigate the wiki entries. The available REPL command are below.
 
 ```txt
 webring wiki

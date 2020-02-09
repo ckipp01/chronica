@@ -3,9 +3,9 @@
 ```scala mdoc:percentages:seutaeg
 ```
 
-This is in the very early stages of development. Currently for [gyul](/gyul) I
+This is in the very early stages of development. Currently for [gyul](gyul.html) I
 use file called crate.js, which is just a big JS object, to hold all of the main
-data and content for my site. As I'm looking to also use [gyul](/gyul) for
+data and content for my site. As I'm looking to also use [gyul](gyul.html) for
 longer writing, which means this needs to change. It's not the most human
 readable format.
 

@@ -1,8 +1,6 @@
-# vim-indental
+# [vim-indental](https://github.com/ckipp01/vim-indental)
 
 ![indental](/media/indetal.png)
-
-##### Code: [vim-indental](https://github.com/ckipp01/vim-indental)
 
 ```scala mdoc:percentages:vim-indental
 ```

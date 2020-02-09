@@ -3,11 +3,11 @@ def putTogetherHtml(head: String, partialHtml: String): String =
       |  ${head}
       |  <body>
       |    <nav>
-      |      <span>chronica</span>
+      |      <span id="chronica">chronica</span>
       |      <ul>
-      |        <li>wiki</li>
-      |        <li>posts</li>
-      |        <li>about</li>
+      |        <li><a href="wiki.html" class="active">wiki</a></li>
+      |        <li><a href="posts.html">posts</a></li>
+      |        <li><a href="about.html">about</a></li>
       |      </ul>
       |   </nav>
       |  <main>${partialHtml}</main>
@@ -56,16 +56,36 @@ implicit val style: String =
      |}
      |body {
      |  display: flex;
+     |  flex-direction: column;
      |  justify-content: center;
      |  font: 18px/1.6 sans-serif;
      |  background: rgb(252, 243, 217)
      |}
      |nav {
-     |  margin: 30px;
+     |  margin: 20px 30px;
+     |  border-bottom: double;
+     |  padding-bottom: 10px;
+     |}
+     |nav a {
+     |  text-decoration: none;
+     |}
+     |nav a.active::after {
+     |  content: "\25cf";
+     |  margin: 0 10px;
+     |}
+     |nav a:hover:after {
+     |  content: "\25cf";
+     |  margin: 0 10px;
      |}
      |main {
      |  max-width: 640px;
-     |  margin: 30px;
+     |  margin: 0 30px;
+     |}
+     |a {
+     |  text-decoration: underline dotted;
+     |}
+     |a:hover {
+     |
      |}
      |h1 {
      |  font: 1.3em/1.3 sans-serif;
@@ -74,6 +94,13 @@ implicit val style: String =
      |code,codeblock {
      |  font: 0.9em/1.3 monospace;
      |  margin: 10px 0;
+     |}
+     |blockquote {
+     |  text-align: center;
+     |}
+     |#chronica {
+     |  text-decoration: underline double;
+     |  font-size: 1.2em;
      |}
      |.code {
      |  fill: rgb(250, 194, 43);
@@ -89,5 +116,18 @@ implicit val style: String =
      |}
      |.admin {
      |  fill: rgb(228, 87, 46);
+     |}
+     |@media (min-width: 768px) {
+     | body {
+     |  flex-direction: row;
+     | }
+     | nav {
+     |   margin: 30px 0;
+     |   width: 100px;
+     |   border: none;
+     | }
+     | main {
+     |   margin: 30px;
+     | }
      |}
      |""".stripMargin

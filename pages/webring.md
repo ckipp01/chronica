@@ -1,15 +1,14 @@
-# xxiivv webring
+# [xxiivv webring](https://github.com/XXIIVV/Webring)
 
-##### Code: [xxiivv webring](https://github.com/XXIIVV/Webring)
 ##### Url: [https://webring.xxiivv.com](https://webring.xxiivv.com)
 
 ```scala mdoc:percentages:webring
 ```
 
-"You may have noticed the middle icon in the footer of this site. It leads to a
+You may have noticed the middle icon in the footer of this site. It leads to a
 [webring](https://webring.xxiivv.com) full of wikis, portfolios, and the likes.
 The creativity and talent you'll find browsing around on the various sites is
-astounding. I'm grateful to be part of the community."
+astounding. I'm grateful to be part of the community.
 
 I'm one of the maintainers of the webring and am passionate about exploring
 alternatives to the current ways we communicate online. I believe decentralizing
@@ -21,4 +20,4 @@ decentralized [twtxt](https://github.com/buckket/twtxt) feeds to communicate.
 decentralized [Indental](https://wiki.xxiivv.com/site/oscean.html) feeds.
 
 I've also built multiple tools around the webring ecosystem such as the
-[webring-checker](/webring-checker) and the [webring-cli](/webring-cli)
+[webring-checker](webring-checker.html) and the [webring-cli](webring-cli.html)

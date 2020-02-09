@@ -1,13 +1,11 @@
-# ándaga-cli
-
-##### Code: [ándaga-cli](https://github.com/ckipp01/andaga-cli)
+# [ándaga-cli](https://github.com/ckipp01/andaga-cli)
 
 ```scala mdoc:percentages:andaga-cli
 ```
 
 ándaga-cli is a small command line application written in Node to log my
 personal project entries. This project is the command line portion of the
-[ándaga](/andaga) system. Following a year of tracking my time I
+[ándaga](andaga.html) system. Following a year of tracking my time I
 determined I wanted easier access to my logs in various ways which meant
 splitting up the project into more of an api and a client. This is the client.
 Below are the current commands that exist:"
@@ -25,7 +23,7 @@ An example of how to store a log can be found below:
 
 The aim for ándaga-cli is to keep the project lean and only have it do the
 minimal necessary commands that I need from the command line. The bulk of the
-work will be done in [ándaga-core](/andaga-core). In the future I'd
+work will be done in [ándaga-core](andaga-core.html). In the future I'd
 possibly like to build a pomodoro like timer directly into the cli portion of
 the project. I'd also like to add a way to track meaningful output for the day
 to best see under what conditions I'm working at my best.

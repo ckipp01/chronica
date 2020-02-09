@@ -28,12 +28,12 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
     }.toList
 
     val (recs, _) = topicDetails.foldLeft(("", 0.0)) { (acc, next) =>
-      val rec = s"""<rect width="${next.percentage}%" height="20" x="${acc._2}%" class="${next.category}"/>"""
+      val rec =
+        s"""<rect width="${next.percentage}%" height="20" x="${acc._2}%" class="${next.category}"/>"""
       (acc._1 + rec, acc._2 + next.percentage)
     }
 
     s"""
-       | ${logs.filter(_.project == topic).length}
        | <svg width="100%" height="20">
        |  $recs
        | </svg>

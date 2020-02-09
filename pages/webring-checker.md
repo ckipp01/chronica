@@ -1,6 +1,4 @@
-# webring-checker
-
-##### Code: [webring-checker](https://github.com/ckipp01/webring-checker)
+# [webring-checker](https://github.com/ckipp01/webring-checker)
 
 ```scala mdoc:percentages:webring-checker
 ```
@@ -16,7 +14,7 @@ also show an rss feed of the webring. The full options are below.
 
   - `GET /` will return a description page
   - `GET /check?format=html` will return an html report of all sites, their
-    status code, and if available, the last modified date"
+    status code, and if available, the last modified date
   - `GET /check?format=json` will return the same info as the html format but in json
   - `GET /sites` will return a json array of site objects that are part of the webring
   - `GET /rss?format=html` to view a collection of all available rss feeds in the

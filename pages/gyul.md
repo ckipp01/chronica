@@ -1,11 +1,10 @@
-# 귤 gyul
-
-##### Code:[gyul](https://github.com/ckipp01/gyul)
+# [귤 gyul](https://github.com/ckipp01/gyul)
 
 ```scala mdoc:percentages:gyul
 ```
+
 gyul is an attempt to make a small wiki engine that will seamlessly tie into my
-timetracker, [ándaga](/andaga)
+timetracker, [ándaga](andaga.html)
 
 For a while I found myself reverting to large frameworks for simple tasks just
 because I knew the technology. There came a point where I realized the amount of
@@ -15,7 +14,7 @@ doesn't do a ton, but does exactly what I need it to. It's also flexible enough
 that if needed to be adapted for another project, it can be. This was my first
 attempt at creating something like this, and it was a huge learning experience.
 Expect to see this change and grow and I adjust to fix some of the trouble
-pointst that I know exist.
+points that I know exist.
 
 gyul works by a factory function creating an object which creates a record of
 all the possible keys in the site and their relevant information. Then by

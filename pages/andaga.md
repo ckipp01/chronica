@@ -1,6 +1,6 @@
 # ándaga
-![andaga](media/andaga.png)
 
+![andaga](media/andaga.png)
 
 ```scala mdoc:percentages:andaga
 ```
