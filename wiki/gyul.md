@@ -34,12 +34,24 @@ object is below:
 
 ```javascript
   GYUL
-    package: rawKey => { iterates throw data using the template and renders the dom }
-    showInfo: rawKey => { changes the main element on the page to show the main info of the current key's data }
-    showStats: rawKey => { changes the main element on the page to show the stats and breakdown of the time spent on the key's entries }
-    showTags: rawKey => { changes the main element on the page to show the related tags to the key }
-    switchHeader: rawKey => { changes the header element on the page to match the header element found in the key's template }
-    report: () => { gives a report to the console on missing projects and tags from the CRATE }
+    package: rawKey => {
+      iterates throw data using the template and renders the dom
+    },
+    showInfo: rawKey => {
+      changes the main element on the page to show the main info of the current key's data
+    },
+    showStats: rawKey => {
+      changes the main element on the page to show the stats and breakdown of the time spent on the key's entries
+    },
+    showTags: rawKey => {
+      changes the main element on the page to show the related tags to the key
+    },
+    switchHeader: rawKey => {
+      changes the header element on the page to match the header element found in the key's template
+    },
+    report: () => {
+      gives a report to the console on missing projects and tags from the CRATE
+    }
 ```
 
 There are basically two main important script files that power gyul. One is

@@ -1,4 +1,4 @@
-import $file.head, head._
+import $file.partials, partials._
 import $file.data, data._
 import $file.modifiers, modifiers._
 
@@ -54,8 +54,9 @@ def createPage(
 
   val parsed = parser.parse(markdown)
   val head = createHead(topic)
+  val nav = createNav("wiki")
   val htmlBody = renderer.render(parsed)
-  val fullHtml = putTogetherHtml(head, htmlBody)
+  val fullHtml = putTogetherHtml(head, nav, htmlBody)
   val fileName = topic + ".html"
 
   println(s"---- created $fileName ----")
@@ -76,22 +77,26 @@ def writeToOut(page: Page): Unit = {
 val logs = getLogs("./logs.json")
 val percentageGenerator = new PercentageGenerator(logs)
 
-val settings = mdoc
+val mdocSettings = mdoc
   .MainSettings()
-  .withIn(Paths.get("pages"))
+  .withIn(Paths.get("wiki"))
   .withStringModifiers(List(percentageGenerator))
   .withNoLinkHygiene(true)
 
-val exitCode = mdoc.Main.process(settings)
+val exitCode = mdoc.Main.process(mdocSettings)
 if (exitCode != 0) sys.exit(exitCode)
 
-val files = getListOfFiles("out")
+val wikiFiles = getListOfFiles("out")
+val blogFiles = getListOfFiles("words")
 
-val _ = files
+// createWikiList(logs, wikiFiles)
+// createBlogList(blogs)
+
+wikiFiles
   .map(createPage)
   .foreach(writeToOut)
 
 println(s"""|
-            |         finished creating ${files.length} pages
+            |         finished creating ${wikiFiles.length} pages
             |============================================
             |""".stripMargin)

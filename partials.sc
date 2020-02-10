@@ -1,17 +1,24 @@
-def putTogetherHtml(head: String, partialHtml: String): String =
+def putTogetherHtml(
+    head: String,
+    nav: String,
+    body: String,
+): String =
   s"""|<html lang="en">
       |  ${head}
       |  <body>
-      |    <nav>
-      |      <span id="chronica">chronica</span>
-      |      <ul>
-      |        <li><a href="wiki.html" class="active">wiki</a></li>
-      |        <li><a href="posts.html">posts</a></li>
-      |        <li><a href="about.html">about</a></li>
-      |      </ul>
-      |   </nav>
-      |  <main>${partialHtml}</main>
+      |  ${nav}
+      |  <main>${body}</main>
       |</html>""".stripMargin
+
+def createNav(pageType: String) =
+  s"""|<nav>
+      |  <span id="chronica">chronica</span>
+      |  <ul>
+      |    <li><a href="wiki.html" class="active">wiki</a></li>
+      |    <li><a href="words.html">words</a></li>
+      |    <li><a href="about.html">about</a></li>
+      |  </ul>
+      |</nav>""".stripMargin
 
 def createHead(title: String)(implicit style: String): String =
   s"""|<head>
@@ -54,17 +61,30 @@ implicit val style: String =
      |*:focus {
      |  outline: none
      |}
+     |:root {
+     |  --dark-color: #000;
+     |  --light-color: rgb(252, 243, 217);
+     |  --code-color: rgb(250, 194, 43);
+     |  --explore-color: rgb(4, 19, 142);
+     |  --study-color: rgb(212, 42, 32);
+     |  --research-color: rgb(48, 107, 52);
+     |  --admin-color: rgb(228, 87, 46);
+     |}
      |body {
      |  display: flex;
      |  flex-direction: column;
      |  justify-content: center;
      |  font: 18px/1.6 sans-serif;
-     |  background: rgb(252, 243, 217)
+     |  background: var(--light-color)
      |}
      |nav {
      |  margin: 20px 30px;
      |  border-bottom: double;
      |  padding-bottom: 10px;
+     |}
+     |nav li {
+     |  list-style-type: none;
+     |  margin-left: 5px;
      |}
      |nav a {
      |  text-decoration: none;
@@ -82,40 +102,70 @@ implicit val style: String =
      |  margin: 0 30px;
      |}
      |a {
-     |  text-decoration: underline dotted;
+     |  text-decoration: underline dashed;
      |}
-     |a:hover {
-     |
+     |a:hover, ::selection {
+     |  background: var(--dark-color);
+     |  color: var(--light-color);
      |}
      |h1 {
      |  font: 1.3em/1.3 sans-serif;
+     |}
+     |h1, h2, h5 {
      |  margin-bottom: 10px;
      |}
-     |code,codeblock {
+     |p {
+     |  margin-bottom: 5px;
+     |}
+     |code, codeblock {
      |  font: 0.9em/1.3 monospace;
      |  margin: 10px 0;
      |}
+     |pre {
+     |  overflow: auto;
+     |  margin: 5px 0;
+     |}
      |blockquote {
      |  text-align: center;
+     |}
+     |li {
+     |  list-style-type: circle;
+     |  margin-left: 25px;
+     |}
+     |svg {
+     |  margin: 10px 0;
      |}
      |#chronica {
      |  text-decoration: underline double;
      |  font-size: 1.2em;
      |}
      |.code {
-     |  fill: rgb(250, 194, 43);
+     |  fill: var(--code-color);
      |}
      |.explore {
-     |  fill: rgb(4, 19, 142);
+     |  fill: var(--explore-color);
      |}
      |.study {
-     |  fill: rgb(212, 42, 32);
+     |  fill: var(--study-color);
      |}
      |.research {
-     |  fill: rgb(48, 107, 52);
+     |  fill: var(--research-color);
      |}
      |.admin {
-     |  fill: rgb(228, 87, 46);
+     |  fill: var(--admin-color);
+     |}
+     |.keys-container {
+     |  display: flex;
+     |  flex-wrap: wrap;
+     |  justify-content: center;
+     |}
+     |.key-block {
+     |  display: flex;
+     |  align-items: center;
+     |  margin: 0 .5em;
+     |}
+     |.key-color {
+     |  margin: 0 0.25em .25em 0;
      |}
      |@media (min-width: 768px) {
      | body {

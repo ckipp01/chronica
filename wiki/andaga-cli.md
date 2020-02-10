@@ -18,8 +18,9 @@ Below are the current commands that exist:"
 
 An example of how to store a log can be found below:
 
-`andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli
--t andaga,javascript`
+```fish
+andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga javascript
+```
 
 The aim for ándaga-cli is to keep the project lean and only have it do the
 minimal necessary commands that I need from the command line. The bulk of the

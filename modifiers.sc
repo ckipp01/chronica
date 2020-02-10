@@ -27,16 +27,28 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
         )
     }.toList
 
-    val (recs, _) = topicDetails.foldLeft(("", 0.0)) { (acc, next) =>
+    val (keys, recs, _) = topicDetails.foldLeft(("", "", 0.0)) { (acc, next) =>
+      val key =
+        s"""|<div class="key-block">
+            |  <svg height="10" width="10" class="key-color">
+            |    <rect rx="2" width="10" height="10" class="${next.category}" />
+            |  </svg>
+            |  <p>${next.category} ${next.percentage.toString}%</p>
+            |</div>""".stripMargin
+
       val rec =
-        s"""<rect width="${next.percentage}%" height="20" x="${acc._2}%" class="${next.category}"/>"""
-      (acc._1 + rec, acc._2 + next.percentage)
+        s"""<rect width="${next.percentage}%" height="20" x="${acc._3}%" class="${next.category}"/>"""
+
+      (acc._1 + key, acc._2 + rec, acc._3 + next.percentage)
     }
 
     s"""
-       | <svg width="100%" height="20">
+       |<div class="keys-container">
+       |  $keys
+       |</div>
+       |<svg width="100%" height="20">
        |  $recs
-       | </svg>
+       |</svg>
        |""".stripMargin
   }
 }
