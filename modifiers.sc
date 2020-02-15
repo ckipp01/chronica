@@ -1,5 +1,5 @@
 import $ivy.`org.scalameta::mdoc:2.1.1`
-import $file.data, data._
+import $file.domain, domain._
 
 import mdoc.Reporter
 import mdoc.StringModifier
@@ -15,6 +15,7 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
       reporter: Reporter
   ): String = {
     val topicLogs: List[Log] = logs.filter(_.project == topic)
+    val totalTime = topicLogs.foldLeft(0)(_ + _.time)
     val categories = topicLogs.groupBy(_.category)
 
     val topicDetails: List[TopicDetail] = categories.collect {
@@ -43,12 +44,15 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
     }
 
     s"""
-       |<div class="keys-container">
-       |  $keys
+       |<div class="category-totals">
+       |  <em>${topicLogs.size} logs for ${totalTime} minutes</em>
        |</div>
        |<svg width="100%" height="20">
        |  $recs
        |</svg>
+       |<div class="keys-container">
+       |  $keys
+       |</div>
        |""".stripMargin
   }
 }

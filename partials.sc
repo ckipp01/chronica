@@ -12,7 +12,7 @@ def putTogetherHtml(
 
 def createNav(pageType: String) =
   s"""|<nav>
-      |  <span id="chronica">chronica</span>
+      |  <h1 id="chronica"><a href="/">chronica</a></h1>
       |  <ul>
       |    <li><a href="wiki.html" class="active">wiki</a></li>
       |    <li><a href="words.html">words</a></li>
@@ -69,6 +69,7 @@ implicit val style: String =
      |  --study-color: rgb(212, 42, 32);
      |  --research-color: rgb(48, 107, 52);
      |  --admin-color: rgb(228, 87, 46);
+     |  --write-color: rgb(135, 0, 88);
      |}
      |body {
      |  display: flex;
@@ -135,9 +136,15 @@ implicit val style: String =
      |svg {
      |  margin: 10px 0;
      |}
+     |em {
+     |  font-style: italic;
+     |}
      |#chronica {
      |  text-decoration: underline double;
      |  font-size: 1.2em;
+     |}
+     |.category-totals {
+     |  text-align: center;
      |}
      |.code {
      |  fill: var(--code-color);
@@ -153,6 +160,9 @@ implicit val style: String =
      |}
      |.admin {
      |  fill: var(--admin-color);
+     |}
+     |.write {
+     |  fill: var(--write-color);
      |}
      |.keys-container {
      |  display: flex;

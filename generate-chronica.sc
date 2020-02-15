@@ -1,5 +1,5 @@
 import $file.partials, partials._
-import $file.data, data._
+import $file.domain, domain._
 import $file.modifiers, modifiers._
 
 import java.io.File
