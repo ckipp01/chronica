@@ -1,6 +1,24 @@
 const LOGS =
 [
   {
+    "date": "2020-02-15",
+    "category": "code",
+    "time": 60,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2020-02-15",
+    "category": "code",
+    "time": 90,
+    "project": "wiki.chronica"
+  },
+  {
+    "date": "2020-02-15",
+    "category": "code",
+    "time": 90,
+    "project": "wiki.chronica"
+  },
+  {
     "date": "2020-02-13",
     "category": "code",
     "time": 30,
