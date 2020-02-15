@@ -2,6 +2,7 @@
 
 ```scala mdoc:percentages:andaga-core
 ```
+
 ándaga-core is the main engine and api for my [ándaga](andaga.html) time-tracking
 system. After the first initial year of tracking with [ándaga](andaga.html), I
 realized I wanted a better way to store my logs.  I didn't want them to only be

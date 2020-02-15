@@ -57,7 +57,8 @@ def createOverview(
 }
 
 def createPage(
-    fileLoc: String
+    fileLoc: String,
+    fileType: String
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
   val topic = retrieveFileName(fileLoc)
   val bufferedMarkdown = Source.fromFile(fileLoc)
@@ -69,7 +70,7 @@ def createPage(
 
   val parsed = parser.parse(markdown)
   val head = createHead(topic)
-  val nav = createNav("wiki")
+  val nav = createNav(fileType)
   val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, nav, htmlBody)
   val fileName = topic + ".html"
@@ -98,22 +99,33 @@ val mdocSettings = mdoc
   .withStringModifiers(List(percentageGenerator))
   .withNoLinkHygiene(true)
 
-val exitCode = mdoc.Main.process(mdocSettings)
-if (exitCode != 0) sys.exit(exitCode)
+mdoc.Main.process(mdocSettings)
 
-val wikiFiles: List[String] = getListOfFiles("out")
-val blogFiles: List[String] = getListOfFiles("blog")
+val wikiMarkdown: List[String] = getListOfFiles("out")
+val wikiOverviewPage: Page = createOverview(logs, wikiMarkdown, "wiki")
+val wikiHtml: List[Page] = wikiMarkdown.map(createPage(_, "wiki"))
 
-val wikiOverview = createOverview(logs, wikiFiles, "wiki")
-writeToOut(wikiOverview)
-val blogOverview = createOverview(logs, blogFiles, "blog")
-writeToOut(blogOverview)
+for (page <- (wikiOverviewPage :: wikiHtml))
+  writeToOut(page)
 
-wikiFiles
-  .map(createPage)
-  .foreach(writeToOut)
+val blogMarkdown: List[String] = getListOfFiles("blog")
+val blogOverviewPage: Page = createOverview(logs, blogMarkdown, "blog")
+val blogHtml: List[Page] = blogMarkdown.map(createPage(_, "blog"))
+
+for (page <- (blogOverviewPage :: blogHtml))
+  writeToOut(page)
+
+val extraMarkdown: List[String] = getListOfFiles("extras")
+val extraHtml: List[Page] = extraMarkdown.map {
+  case index if index.contains("index") => createPage(index, "index")
+  case about if about.contains("about") => createPage(about, "about")
+  case unknown                          => createPage(unknown, "unknown")
+}
+
+for (page <- extraHtml)
+  writeToOut(page)
 
 println(s"""|
-            |         finished creating ${wikiFiles.length} pages
+            |         finished generating chronica 
             |============================================
             |""".stripMargin)
