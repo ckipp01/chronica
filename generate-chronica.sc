@@ -41,10 +41,25 @@ def getLogs(fileLoc: String): List[Log] = {
     .toList
 }
 
+def createOverview(
+    logs: List[Log],
+    fileList: List[String],
+    topic: String
+): Page = {
+  val head = createHead(topic)
+  val nav = createNav(topic)
+  val htmlBody = createList(fileList, topic, logs)
+  val fullHtml = putTogetherHtml(head, nav, htmlBody)
+  val fileName = topic + ".html"
+
+  println(s"---- created $fileName overview ----")
+  Page(fileName, fullHtml)
+}
+
 def createPage(
     fileLoc: String
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
-  val topic = fileLoc.split("/").last.takeWhile(_ != '.')
+  val topic = retrieveFileName(fileLoc)
   val bufferedMarkdown = Source.fromFile(fileLoc)
 
   val markdown = bufferedMarkdown.getLines
@@ -74,7 +89,7 @@ def writeToOut(page: Page): Unit = {
   pw.close
 }
 
-val logs = getLogs("./logs.json")
+val logs: List[Log] = getLogs("./logs.json")
 val percentageGenerator = new PercentageGenerator(logs)
 
 val mdocSettings = mdoc
@@ -86,11 +101,13 @@ val mdocSettings = mdoc
 val exitCode = mdoc.Main.process(mdocSettings)
 if (exitCode != 0) sys.exit(exitCode)
 
-val wikiFiles = getListOfFiles("out")
-val blogFiles = getListOfFiles("words")
+val wikiFiles: List[String] = getListOfFiles("out")
+val blogFiles: List[String] = getListOfFiles("blog")
 
-// createWikiList(logs, wikiFiles)
-// createBlogList(blogs)
+val wikiOverview = createOverview(logs, wikiFiles, "wiki")
+writeToOut(wikiOverview)
+val blogOverview = createOverview(logs, blogFiles, "blog")
+writeToOut(blogOverview)
 
 wikiFiles
   .map(createPage)

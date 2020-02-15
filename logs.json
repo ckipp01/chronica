@@ -3,19 +3,19 @@
     "date": "2020-01-31",
     "category": "admin",
     "time": 60,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-30",
     "category": "explore",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-27",
     "category": "code",
     "time": 60,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala"
     ]
@@ -48,7 +48,7 @@
     "date": "2020-01-26",
     "category": "code",
     "time": 90,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-26",
@@ -81,7 +81,7 @@
     "date": "2020-01-25",
     "category": "code",
     "time": 60,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala"
     ]
@@ -115,7 +115,7 @@
     "date": "2020-01-22",
     "category": "admin",
     "time": 20,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-22",
@@ -141,7 +141,7 @@
     "date": "2020-01-20",
     "category": "admin",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala"
     ]
@@ -150,7 +150,7 @@
     "date": "2020-01-19",
     "category": "write",
     "time": 30,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-19",
@@ -162,13 +162,13 @@
     "date": "2020-01-19",
     "category": "explore",
     "time": 60,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-18",
     "category": "explore",
     "time": 60,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-18",
@@ -184,7 +184,7 @@
     "date": "2020-01-18",
     "category": "code",
     "time": 60,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala"
     ]
@@ -814,7 +814,7 @@
     "date": "2019-12-08",
     "category": "admin",
     "time": 20,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-12-08",
@@ -1347,7 +1347,7 @@
     "date": "2019-10-27",
     "category": "explore",
     "time": 60,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "elm"
     ]
@@ -1472,7 +1472,7 @@
     "date": "2019-10-20",
     "category": "study",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "color"
     ]
@@ -1550,7 +1550,7 @@
     "date": "2019-10-15",
     "category": "code",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "typescript",
       "javascript"
@@ -1570,13 +1570,13 @@
     "date": "2019-10-13",
     "category": "explore",
     "time": 90,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-10-13",
     "category": "code",
     "time": 120,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "typescript"
@@ -1793,7 +1793,7 @@
     "date": "2019-09-28",
     "category": "write",
     "time": 25,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-09-28",
@@ -1839,7 +1839,7 @@
     "date": "2019-09-26",
     "category": "code",
     "time": 30,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-09-26",
@@ -1940,7 +1940,7 @@
     "date": "2019-09-15",
     "category": "design",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "choo"
@@ -2084,13 +2084,13 @@
     "date": "2019-08-28",
     "category": "code",
     "time": 45,
-    "project": "studiosyk"
+    "project": "studio-syk"
   },
   {
     "date": "2019-08-27",
     "category": "code",
     "time": 25,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "choo"
@@ -2100,7 +2100,7 @@
     "date": "2019-08-27",
     "category": "study",
     "time": 25,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "toml"
     ]
@@ -2109,7 +2109,7 @@
     "date": "2019-08-27",
     "category": "explore",
     "time": 35,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "toml",
@@ -2120,7 +2120,7 @@
     "date": "2019-08-27",
     "category": "code",
     "time": 30,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "choo"
@@ -2130,7 +2130,7 @@
     "date": "2019-08-26",
     "category": "explore",
     "time": 60,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-26",
@@ -2142,13 +2142,13 @@
     "date": "2019-08-25",
     "category": "design",
     "time": 30,
-    "project": "studiosyk"
+    "project": "studio-syk"
   },
   {
     "date": "2019-08-25",
     "category": "code",
     "time": 155,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "choo",
       "javascript"
@@ -2180,7 +2180,7 @@
     "date": "2019-08-24",
     "category": "code",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "choo",
       "javascript"
@@ -2190,7 +2190,7 @@
     "date": "2019-08-23",
     "category": "explore",
     "time": 30,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "choo",
       "javascript"
@@ -2200,7 +2200,7 @@
     "date": "2019-08-22",
     "category": "explore",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "choo",
       "javascript"
@@ -2231,25 +2231,25 @@
     "date": "2019-08-20",
     "category": "explore",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-20",
     "category": "code",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-19",
     "category": "design",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-19",
     "category": "explore",
     "time": 30,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-18",
@@ -2261,19 +2261,19 @@
     "date": "2019-08-18",
     "category": "design",
     "time": 125,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-17",
     "category": "explore",
     "time": 115,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-17",
     "category": "explore",
     "time": 180,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "chronica"
@@ -2292,7 +2292,7 @@
     "date": "2019-08-16",
     "category": "write",
     "time": 20,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-15",
@@ -2366,7 +2366,7 @@
     "date": "2019-08-11",
     "category": "explore",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-11",
@@ -2433,7 +2433,7 @@
     "date": "2019-08-10",
     "category": "write",
     "time": 25,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-10",
@@ -2731,7 +2731,7 @@
     "date": "2019-07-21",
     "category": "write",
     "time": 20,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-07-21",
@@ -2827,7 +2827,7 @@
     "date": "2019-07-12",
     "category": "admin",
     "time": 75,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "dat"
     ]
@@ -2914,7 +2914,7 @@
     "date": "2019-07-08",
     "category": "write",
     "time": 20,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-07-08",
@@ -3034,7 +3034,7 @@
     "project": "gyul",
     "tags": [
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
@@ -3202,7 +3202,7 @@
     "date": "2019-06-15",
     "category": "write",
     "time": 10,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-06-15",
@@ -3217,7 +3217,7 @@
     "date": "2019-06-15",
     "category": "code",
     "time": 5,
-    "project": "studiosyk"
+    "project": "studio-syk"
   },
   {
     "date": "2019-06-15",
@@ -3415,7 +3415,7 @@
     "date": "2019-05-28",
     "category": "write",
     "time": 15,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-05-28",
@@ -3427,7 +3427,7 @@
     "date": "2019-05-27",
     "category": "code",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "html"
@@ -3488,7 +3488,7 @@
     "date": "2019-05-26",
     "category": "write",
     "time": 10,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-05-26",
@@ -3633,7 +3633,7 @@
     "date": "2019-05-16",
     "category": "code",
     "time": 30,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript"
     ]
@@ -3654,7 +3654,7 @@
     "project": "gyul",
     "tags": [
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
@@ -3673,7 +3673,7 @@
     "project": "gyul",
     "tags": [
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
@@ -3689,7 +3689,7 @@
     "date": "2019-05-06",
     "category": "code",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "gyul"
@@ -3699,7 +3699,7 @@
     "date": "2019-05-05",
     "category": "explore",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "chronica"
@@ -3723,7 +3723,7 @@
     "tags": [
       "gyul",
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
@@ -3775,7 +3775,7 @@
     "date": "2019-05-02",
     "category": "write",
     "time": 10,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-05-02",
@@ -3834,7 +3834,7 @@
     "time": 55,
     "project": "gyul",
     "tags": [
-      "wiki.chronica",
+      "wiki-chronica",
       "javascript"
     ]
   },
@@ -3851,13 +3851,13 @@
     "date": "2019-04-28",
     "category": "write",
     "time": 30,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-04-26",
     "category": "write",
     "time": 15,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "crate-builder"
     ]
@@ -3866,7 +3866,7 @@
     "date": "2019-04-26",
     "category": "code",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "css"
@@ -3876,7 +3876,7 @@
     "date": "2019-04-24",
     "category": "code",
     "time": 40,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "css"
@@ -4068,7 +4068,7 @@
     "date": "2019-04-07",
     "category": "write",
     "time": 55,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-04-06",
@@ -4083,7 +4083,7 @@
     "date": "2019-04-06",
     "category": "code",
     "time": 30,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "css"
     ]
@@ -4098,7 +4098,7 @@
     "date": "2019-04-02",
     "category": "code",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "css",
       "chronica",
@@ -4109,7 +4109,7 @@
     "date": "2019-04-01",
     "category": "write",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "chronica"
     ]
@@ -4376,7 +4376,7 @@
     "project": "chronica",
     "tags": [
       "css",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
@@ -4811,7 +4811,7 @@
     "date": "2019-01-30",
     "category": "admin",
     "time": 60,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4828,7 +4828,7 @@
     "date": "2019-01-30",
     "category": "code",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4839,7 +4839,7 @@
     "date": "2019-01-29",
     "category": "admin",
     "time": 100,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4850,7 +4850,7 @@
     "date": "2019-01-29",
     "category": "code",
     "time": 60,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4861,7 +4861,7 @@
     "date": "2019-01-28",
     "category": "admin",
     "time": 90,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4883,7 +4883,7 @@
     "date": "2019-01-28",
     "category": "code",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4894,7 +4894,7 @@
     "date": "2019-01-27",
     "category": "code",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4905,7 +4905,7 @@
     "date": "2019-01-27",
     "category": "code",
     "time": 120,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4916,7 +4916,7 @@
     "date": "2019-01-27",
     "category": "code",
     "time": 120,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -4927,7 +4927,7 @@
     "date": "2019-01-26",
     "category": "code",
     "time": 90,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "css",
@@ -4938,7 +4938,7 @@
     "date": "2019-01-26",
     "category": "code",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "css",
