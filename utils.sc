@@ -1,4 +1,4 @@
-import $file.domain, domain.{ Log, Page }
+import $file.domain, domain.{Log, Page}
 import $file.head, head._
 import $file.html, html._
 
@@ -21,6 +21,11 @@ def getListOfFiles(dir: String): List[String] = {
     .map(_.getPath)
     .filter(_.endsWith(".md"))
     .toList
+}
+
+def getFile(target: String): String = {
+  val file = new File(target)
+  file.getPath
 }
 
 def getLogs(fileLoc: String): List[Log] = {
@@ -60,7 +65,7 @@ def createPage(
   val markdown = bufferedMarkdown.getLines
     .mkString("\n")
 
-  bufferedMarkdown.close()
+  bufferedMarkdown.close
 
   val parsed = parser.parse(markdown)
   val head = createHead(topic)
@@ -72,6 +77,25 @@ def createPage(
   println(s"---- created $fileName ----")
 
   Page(fileName, fullHtml)
+}
+
+def createHomepage(
+    fileLoc: String
+)(implicit parser: Parser, renderer: HtmlRenderer): Page = {
+  val bufferedMarkdown = Source.fromFile(fileLoc)
+
+  val markdown = bufferedMarkdown
+    .getLines()
+    .mkString("\n")
+
+  bufferedMarkdown.close
+
+  val parsed = parser.parse(markdown)
+  val head = createHead("chronica")
+  val htmlBody = renderer.render(parsed)
+  val fullHtml = putTogetherHtml(head, htmlBody)
+
+  Page("index.html", fullHtml)
 }
 
 def writeToOut(page: Page): Unit = {

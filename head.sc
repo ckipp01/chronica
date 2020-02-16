@@ -81,6 +81,12 @@ implicit val style: String =
      |  margin: 0 30px;
      |  flex: 1;
      |}
+     |#home main {
+     |  display: flex;
+     |  flex-direction: column;
+     |  align-items: center;
+     |  margin-top: 25vh;
+     |}
      |a {
      |  text-decoration: underline dashed;
      |}
@@ -125,6 +131,12 @@ implicit val style: String =
      |#chronica {
      |  text-decoration: underline double;
      |  font-size: 1.2em;
+     |}
+     |#home {
+     |  height: 100vh;
+     |}
+     |#home h1 {
+     |  text-decoration: underline double;
      |}
      |.category-totals {
      |  text-align: center;

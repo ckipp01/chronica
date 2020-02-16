@@ -15,17 +15,30 @@ def putTogetherHtml(
       |  <main>${body}</main>
       |</html>""".stripMargin
 
+def putTogetherHtml(
+    head: String,
+    body: String
+): String =
+  s"""|<html lang="en">
+      |  ${head}
+      |  <body id="home">
+      |  <main>${body}</main>
+      |</html>""".stripMargin
+
 def createNav(pageType: String) = {
   val wiki =
-    if (pageType == "wiki") """<li><a href="wiki.html" class="active">wiki</a></li>"""
+    if (pageType == "wiki")
+      """<li><a href="wiki.html" class="active">wiki</a></li>"""
     else """<li><a href="wiki.html">wiki</a></li>"""
 
   val blog =
-    if (pageType == "blog") """<li><a href="blog.html" class="active">blog</a></li>"""
+    if (pageType == "blog")
+      """<li><a href="blog.html" class="active">blog</a></li>"""
     else """<li><a href="blog.html">blog</a></li>"""
 
   val about =
-    if (pageType == "about") """<li><a href="about.html" class="active">about</a></li>"""
+    if (pageType == "about")
+      """<li><a href="about.html" class="active">about</a></li>"""
     else """<li><a href="about.html">about</a></li>"""
 
   s"""|<nav>
@@ -48,7 +61,8 @@ def createList(
     val topicLogs: List[Log] = logs.filter(_.project == name)
     val totalTime = topicLogs.foldLeft(0)(_ + _.time)
     val details =
-      if (totalTime > 0) s"- <em>${topicLogs.size} logs for ${totalTime}</em>"
+      if (totalTime > 0)
+        s"- <em>${topicLogs.size} logs for ${totalTime} minutes</em>"
       else ""
 
     acc + s"""<li><a href="${name}.html">$name</a> $details</li>"""
@@ -58,4 +72,3 @@ def createList(
       |<ul>$list</ul>
       |""".stripMargin
 }
-
