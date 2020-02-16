@@ -14,3 +14,6 @@ have a more visual way to edit it, add elements to it, and easily read it.
 
 I'm currently still exploring the best way to do this, so it may be a while
 before something working shows up here.
+
+```scala mdoc:tags:crate-builder
+```

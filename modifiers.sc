@@ -56,3 +56,30 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
        |""".stripMargin
   }
 }
+
+class TagGenerator(logs: List[Log]) extends StringModifier {
+  override val name: String = "tags"
+
+  override def process(
+      topic: String,
+      code: Input,
+      reporter: Reporter
+  ): String = {
+    val topicLogs: List[Log] = logs.filter(_.project == topic)
+    val tags = (for {
+      log <- topicLogs
+      if log.project == topic
+      if log.tags.nonEmpty
+      tags <- log.tags
+    } yield tags).flatten.toSet
+    val linkedTags = tags.foldLeft("") { (acc, next) =>
+      acc + s"""<p><em><a href="${next}.html">$next</a></em></p>"""
+    }
+
+    s"""
+       |<div class="tags-container">
+       |  ${linkedTags}
+       |</div>
+       |""".stripMargin
+  }
+}

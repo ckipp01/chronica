@@ -38,3 +38,6 @@ will return.
   }
 }
 ```
+
+```scala mdoc:tags:webring-checker
+```

@@ -63,3 +63,6 @@ choose from to determine how things are layed out.
 The next iteration of this plans on doing all of this on the sever side and just
 handing up the necessary data in order to not have to rely on JS on the client
 side
+
+```scala mdoc:tags:gyul
+```

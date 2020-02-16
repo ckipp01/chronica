@@ -15,3 +15,6 @@ interests, and I'm taking this opportunity to combine a curiosity about
 astronomy and my love for coding to create Spatium. Spatium will be a series of
 writings and simulations surrounding astronomical concepts. My plan is to learn
 them, and then illustrate them.
+
+```scala mdoc:tags:spatium
+```

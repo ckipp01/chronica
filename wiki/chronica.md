@@ -27,3 +27,6 @@ recommend and that have highly influenced chronica.
   - [macwright.org](https://macwright.org) Tom's site is a reminder that I don't
     have to settle for giant sites full of trackers and adds to find quality
     content.
+
+```scala mdoc:tags:chronica
+```

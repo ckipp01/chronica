@@ -15,3 +15,6 @@ helping lower the barriers to tech. Professionally I work primarily in
 JavaScript and Scala, but you can get a picture of the languages and focuses by
 peaking at the tags tab. This category is sort of a catch all to all things
 related to programming that don't fall into a specific other category.
+
+```scala mdoc:tags:programming
+```

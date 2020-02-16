@@ -18,3 +18,6 @@ build your own.
   - Primary text editor: [**Neovim**](https://neovim.io/)
   - Browser: [**Firefox Developer Edition**](https://www.mozilla.org/en-US/firefox/developer)
   - Other daily software: [**Keybase**](https://keybase.io), Slack, Spotify
+
+```scala mdoc:tags:workspace
+```

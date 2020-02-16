@@ -14,3 +14,6 @@ information this way, and was yearning for some type of syntax highlighting. One
 thing led to another, and vim-indental was born. It's very much a work in
 progress, but it has also served as a great way for me to learn about vim
 plugins.
+
+```scala mdoc:tags:vim-indental
+```

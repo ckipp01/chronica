@@ -11,3 +11,6 @@ and art.
 As I become more familiar with this, you'll see more info here. Eventually I'll
 also have a works.chronica section of chronica that will showcase some of the
 things I've created.
+
+```scala mdoc:tags:processing
+```

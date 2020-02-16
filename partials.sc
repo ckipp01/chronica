@@ -24,7 +24,7 @@ def createNav(pageType: String) = {
     if (pageType == "blog") """<li><a href="blog.html" class="active">blog</a></li>"""
     else """<li><a href="blog.html">blog</a></li>"""
 
-  val about = 
+  val about =
     if (pageType == "about") """<li><a href="about.html" class="active">about</a></li>"""
     else """<li><a href="about.html">about</a></li>"""
 
@@ -152,6 +152,9 @@ implicit val style: String =
      |h1 {
      |  font: 1.3em/1.3 sans-serif;
      |}
+     |h2 {
+     |  font: 1.2em/1.3 sans-serif;
+     |}
      |h1, h2, h5 {
      |  margin-bottom: 10px;
      |}
@@ -217,6 +220,11 @@ implicit val style: String =
      |}
      |.key-color {
      |  margin: 0 0.25em .25em 0;
+     |}
+     |.tags-container {
+     |  display: flex;
+     |  flex-wrap: wrap;
+     |  justify-content: space-around;
      |}
      |@media (min-width: 768px) {
      | body {

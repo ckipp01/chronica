@@ -86,3 +86,6 @@ webring wiki
 
 wiki >
 ```
+
+```scala mdoc:tags:webring-cli
+```

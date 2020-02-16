@@ -19,3 +19,6 @@ Below are the current routes that exist:
 
 As I continue to expand [ándaga-cli](andaga-cli.html) this api will become more
 robust
+
+```scala mdoc:tags:andaga-core
+```

@@ -12,3 +12,6 @@ Since I primarily work with JavaScript and Scala, my focus is in these two
 ecosystems. Recently I've been studying about the [Language Server
 Protocol](https://microsoft.github.io/language-server-protocol), and it's an
 area that I'd like to do some more formal work in.
+
+```scala mdoc:tags:tooling
+```

@@ -28,3 +28,6 @@ work will be done in [ándaga-core](andaga-core.html). In the future I'd
 possibly like to build a pomodoro like timer directly into the cli portion of
 the project. I'd also like to add a way to track meaningful output for the day
 to best see under what conditions I'm working at my best.
+
+```scala mdoc:tags:andaga-cli
+```

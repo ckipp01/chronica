@@ -92,11 +92,12 @@ def writeToOut(page: Page): Unit = {
 
 val logs: List[Log] = getLogs("./logs.json")
 val percentageGenerator = new PercentageGenerator(logs)
+val tagGenerator = new TagGenerator(logs)
 
 val mdocSettings = mdoc
   .MainSettings()
   .withIn(Paths.get("wiki"))
-  .withStringModifiers(List(percentageGenerator))
+  .withStringModifiers(List(percentageGenerator, tagGenerator))
   .withNoLinkHygiene(true)
 
 mdoc.Main.process(mdocSettings)

@@ -63,3 +63,6 @@ language, or studying programming paradigms. Hopefully this will give me insight
 into when I'm productive, when I typically have more energy to study, and what I
 enjoy working on. My hope if to make this obvious as I build more data
 visualization into chronica.
+
+```scala mdoc:tags:andaga
+```

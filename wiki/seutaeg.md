@@ -16,3 +16,6 @@ parse patterns and symbols to quickly create links, bold text, etc.
 This idea is heavily inspired by [Indental](https://wiki.xxiivv.com/#indental)
 and [Runic](https://wiki.xxiivv.com/#runic). Both of these are built by Devine
 Lu Linvega.
+
+```scala mdoc:tags:seutaeg
+```

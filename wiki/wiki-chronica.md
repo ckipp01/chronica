@@ -63,3 +63,6 @@ more that I'd like to add. In the future I plan on basically doing all of the
 work [gyul](gyul.html) is doing on the server side and just serving up the html.
 This space will continually grow. There will also be a longer form blog portion
 of the chronica ecosystem that has not yet been created. Thanks for stopping by!
+
+```scala mdoc:tags:wiki-chronica
+```
