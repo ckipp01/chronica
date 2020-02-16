@@ -1,5 +1,6 @@
 import $file.domain, domain.{ Log, Page }
-import $file.partials, partials._
+import $file.head, head._
+import $file.html, html._
 
 import java.io.File
 import java.io.PrintWriter
