@@ -1,6 +1,6 @@
 # modern heirloom studio
 
-[modern heirloom studio homepage](/media/modern-heirloom-studio.png)
+[modern heirloom studio homepage](media/modern-heirloom-studio.png)
 
 ```scala mdoc:percentages:modern-heirloom-studio
 ```

@@ -1,6 +1,6 @@
 # ándaga
 
-![andaga](/media/andaga.png)
+![andaga](media/andaga.png)
 
 ```scala mdoc:percentages:andaga
 ```
@@ -10,11 +10,6 @@
 ##### [Code for version 2 cli](https://github.com/ckipp01/andaga-cli)
 
 ##### [Code for version 2 core](https://github.com/ckipp01/andaga-core)
-
-
-
-
-
 
 On January 1, 2018 I decided to make an effort to log all of my free time for a
 year. I was inspired and intrigued by multiple other time trackers such as

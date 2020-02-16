@@ -128,6 +128,12 @@ implicit val style: String =
      |  font-size: 0.8em;
      |  font-style: italic;
      |}
+     |img {
+     |  display: block;
+     |  margin: auto;
+     |  max-width: 100%;
+     |  max-height: 300px;
+     |}
      |#chronica {
      |  text-decoration: underline double;
      |  font-size: 1.2em;

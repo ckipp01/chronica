@@ -1,6 +1,6 @@
 # Hello
 
-![Picture of me](/media/me.jpg)
+![Picture of me](media/me.jpg)
 
 Hi, I'm Chris, and you've stumbled upon my wiki. Originally from the United
 States, I'm now located in the Netherlands with my wife Sé. I'm a developer and

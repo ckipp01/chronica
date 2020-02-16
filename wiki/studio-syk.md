@@ -1,6 +1,6 @@
 # studio syk
 
-![Homepage of studio syk](/media/studiosyk.png)
+![Homepage of studio syk](media/studiosyk.png)
 
 ```scala mdoc:percentages:studio-syk
 ```
