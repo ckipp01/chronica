@@ -1,6 +1,6 @@
-import $file.domain, domain.{Log, Page}
-import $file.modifiers, modifiers._
-import $file.utils, utils._
+import $file.scripts.domain, domain.{Log, Page}
+import $file.scripts.modifiers, modifiers._
+import $file.scripts.utils, utils._
 
 import java.nio.file.Paths
 import scala.io.Source
