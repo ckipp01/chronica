@@ -4,9 +4,9 @@ const LOGS =
     "date": "2020-02-20",
     "category": "code",
     "time": 60,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
@@ -25,38 +25,39 @@ const LOGS =
   {
     "date": "2020-02-15",
     "category": "code",
+    "time": 90,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2020-02-15",
+    "category": "code",
+    "time": 90,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2020-02-15",
+    "category": "code",
     "time": 60,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-02-15",
-    "category": "code",
-    "time": 90,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-02-15",
-    "category": "code",
-    "time": 90,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-02-13",
-    "category": "code",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals"
-    ]
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-02-13",
     "category": "admin",
     "time": 30,
-    "project": "tooling",
+    "project": "coc-metals",
     "tags": [
-      "metals",
-      "coc-metals"
+      "tooling",
+      "coc-metals",
+      "metals"
+    ]
+  },
+  {
+    "date": "2020-02-13",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling"
     ]
   },
   {
@@ -72,6 +73,16 @@ const LOGS =
   },
   {
     "date": "2020-02-10",
+    "category": "code",
+    "time": 120,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-02-10",
     "category": "study",
     "time": 45,
     "project": "programming",
@@ -81,12 +92,11 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-02-10",
+    "date": "2020-02-09",
     "category": "code",
-    "time": 120,
-    "project": "tooling",
+    "time": 180,
+    "project": "wiki-chronica",
     "tags": [
-      "metals",
       "scala"
     ]
   },
@@ -94,18 +104,28 @@ const LOGS =
     "date": "2020-02-09",
     "category": "explore",
     "time": 120,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala",
       "css"
     ]
   },
   {
-    "date": "2020-02-09",
+    "date": "2020-02-08",
     "category": "code",
-    "time": 180,
-    "project": "wiki.chronica",
+    "time": 120,
+    "project": "wiki-chronica",
     "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-02-08",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling",
       "scala"
     ]
   },
@@ -113,35 +133,7 @@ const LOGS =
     "date": "2020-02-08",
     "category": "design",
     "time": 30,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-02-08",
-    "category": "code",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
-    "date": "2020-02-08",
-    "category": "code",
-    "time": 120,
-    "project": "wiki.chronica",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2020-02-07",
-    "category": "research",
-    "time": 45,
-    "project": "tooling",
-    "tags": [
-      "metals"
-    ]
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-02-07",
@@ -150,8 +142,17 @@ const LOGS =
     "project": "coc-metals"
   },
   {
+    "date": "2020-02-07",
+    "category": "research",
+    "time": 45,
+    "project": "metals",
+    "tags": [
+      "tooling"
+    ]
+  },
+  {
     "date": "2020-02-06",
-    "category": "code",
+    "category": "study",
     "time": 30,
     "project": "programming"
   },
@@ -163,24 +164,24 @@ const LOGS =
   },
   {
     "date": "2020-02-06",
-    "category": "study",
+    "category": "code",
     "time": 30,
     "project": "programming"
-  },
-  {
-    "date": "2020-02-05",
-    "category": "code",
-    "time": 45,
-    "project": "wiki.chronica",
-    "tags": [
-      "scala"
-    ]
   },
   {
     "date": "2020-02-05",
     "category": "admin",
     "time": 45,
     "project": "programming"
+  },
+  {
+    "date": "2020-02-05",
+    "category": "code",
+    "time": 45,
+    "project": "wiki-chronica",
+    "tags": [
+      "scala"
+    ]
   },
   {
     "date": "2020-02-04",
@@ -196,10 +197,21 @@ const LOGS =
     "date": "2020-02-03",
     "category": "admin",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
+    ]
+  },
+  {
+    "date": "2020-02-02",
+    "category": "code",
+    "time": 120,
+    "project": "wiki-chronica",
+    "tags": [
+      "scala",
+      "ammonite",
+      "mdoc"
     ]
   },
   {
@@ -212,67 +224,47 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-02-02",
+    "date": "2020-02-01",
+    "category": "admin",
+    "time": 45,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2020-02-01",
     "category": "code",
-    "time": 120,
-    "project": "wiki.chronica",
+    "time": 45,
+    "project": "metals",
     "tags": [
-      "scala",
-      "ammonite",
-      "mdoc"
+      "tooling",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-02-01",
+    "category": "code",
+    "time": 60,
+    "project": "wiki-chronica",
+    "tags": [
+      "scala"
     ]
   },
   {
     "date": "2020-02-01",
     "category": "admin",
     "time": 30,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-02-01",
-    "category": "code",
-    "time": 60,
-    "project": "wiki.chronica",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2020-02-01",
-    "category": "code",
-    "time": 45,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
-    "date": "2020-02-01",
-    "category": "admin",
-    "time": 45,
-    "project": "coc-metals"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-31",
     "category": "admin",
     "time": 60,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-30",
     "category": "explore",
     "time": 45,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-01-27",
-    "category": "code",
-    "time": 60,
-    "project": "wiki.chronica",
-    "tags": [
-      "scala"
-    ]
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-27",
@@ -281,63 +273,42 @@ const LOGS =
     "project": "coc-metals"
   },
   {
-    "date": "2020-01-26",
-    "category": "admin",
+    "date": "2020-01-27",
+    "category": "code",
     "time": 60,
-    "project": "tooling",
+    "project": "wiki-chronica",
     "tags": [
-      "metals"
+      "scala"
     ]
   },
   {
     "date": "2020-01-26",
-    "category": "explore",
+    "category": "admin",
     "time": 60,
-    "project": "tooling",
-    "tags": [
-      "metals"
-    ]
+    "project": "coc-metals"
   },
   {
     "date": "2020-01-26",
     "category": "code",
     "time": 90,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2020-01-26",
+    "category": "explore",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "tooling"
+    ]
   },
   {
     "date": "2020-01-26",
     "category": "admin",
     "time": 60,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2020-01-25",
-    "category": "admin",
-    "time": 30,
-    "project": "workspace"
-  },
-  {
-    "date": "2020-01-25",
-    "category": "study",
-    "time": 30,
-    "project": "programming"
-  },
-  {
-    "date": "2020-01-25",
-    "category": "explore",
-    "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "vim"
-    ]
-  },
-  {
-    "date": "2020-01-25",
-    "category": "code",
-    "time": 60,
-    "project": "wiki.chronica",
-    "tags": [
-      "scala"
+      "tooling"
     ]
   },
   {
@@ -351,13 +322,34 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-01-23",
+    "date": "2020-01-25",
     "category": "code",
-    "time": 30,
+    "time": 60,
+    "project": "wiki-chronica",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-01-25",
+    "category": "explore",
+    "time": 45,
     "project": "tooling",
     "tags": [
-      "metals"
+      "vim"
     ]
+  },
+  {
+    "date": "2020-01-25",
+    "category": "study",
+    "time": 30,
+    "project": "programming"
+  },
+  {
+    "date": "2020-01-25",
+    "category": "admin",
+    "time": 30,
+    "project": "workspace"
   },
   {
     "date": "2020-01-23",
@@ -366,45 +358,54 @@ const LOGS =
     "project": "coc-metals"
   },
   {
-    "date": "2020-01-22",
-    "category": "admin",
-    "time": 20,
-    "project": "wiki.chronica"
+    "date": "2020-01-23",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling"
+    ]
   },
   {
     "date": "2020-01-22",
     "category": "code",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala",
       "open-source"
     ]
   },
   {
+    "date": "2020-01-22",
+    "category": "admin",
+    "time": 20,
+    "project": "wiki-chronica"
+  },
+  {
     "date": "2020-01-21",
     "category": "admin",
     "time": 60,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2020-01-20",
     "category": "admin",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala"
     ]
   },
   {
     "date": "2020-01-19",
-    "category": "write",
-    "time": 30,
-    "project": "wiki.chronica"
+    "category": "explore",
+    "time": 60,
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-19",
@@ -414,34 +415,34 @@ const LOGS =
   },
   {
     "date": "2020-01-19",
-    "category": "explore",
-    "time": 60,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-01-18",
-    "category": "explore",
-    "time": 60,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2020-01-18",
-    "category": "admin",
-    "time": 60,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
+    "category": "write",
+    "time": 30,
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-18",
     "category": "code",
     "time": 60,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "scala"
     ]
+  },
+  {
+    "date": "2020-01-18",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2020-01-18",
+    "category": "explore",
+    "time": 60,
+    "project": "wiki-chronica"
   },
   {
     "date": "2020-01-16",
@@ -456,18 +457,8 @@ const LOGS =
   {
     "date": "2020-01-15",
     "category": "code",
-    "time": 30,
-    "project": "vim-scala",
-    "tags": [
-      "vim",
-      "scala"
-    ]
-  },
-  {
-    "date": "2020-01-15",
-    "category": "explore",
     "time": 45,
-    "project": "vim-scala"
+    "project": "coc-metals"
   },
   {
     "date": "2020-01-15",
@@ -480,9 +471,25 @@ const LOGS =
   },
   {
     "date": "2020-01-15",
-    "category": "code",
+    "category": "explore",
     "time": 45,
-    "project": "coc-metals"
+    "project": "vim-scala"
+  },
+  {
+    "date": "2020-01-15",
+    "category": "code",
+    "time": 30,
+    "project": "vim-scala",
+    "tags": [
+      "vim",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-01-13",
+    "category": "admin",
+    "time": 30,
+    "project": "tooling"
   },
   {
     "date": "2020-01-13",
@@ -495,28 +502,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-01-13",
-    "category": "admin",
-    "time": 30,
-    "project": "tooling"
-  },
-  {
     "date": "2020-01-12",
     "category": "code",
-    "time": 20,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2020-01-12",
-    "category": "admin",
-    "time": 20,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2020-01-12",
-    "category": "write",
-    "time": 30,
-    "project": "talks"
+    "time": 45,
+    "project": "andaga",
+    "tags": [
+      "scala"
+    ]
   },
   {
     "date": "2020-01-12",
@@ -531,9 +523,54 @@ const LOGS =
   },
   {
     "date": "2020-01-12",
+    "category": "write",
+    "time": 30,
+    "project": "talks"
+  },
+  {
+    "date": "2020-01-12",
+    "category": "admin",
+    "time": 20,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2020-01-12",
     "category": "code",
+    "time": 20,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2020-01-11",
+    "category": "admin",
     "time": 45,
-    "project": "andaga",
+    "project": "coc-metals"
+  },
+  {
+    "date": "2020-01-11",
+    "category": "admin",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling"
+    ]
+  },
+  {
+    "date": "2020-01-11",
+    "category": "explore",
+    "time": 45,
+    "project": "tooling"
+  },
+  {
+    "date": "2020-01-11",
+    "category": "admin",
+    "time": 45,
+    "project": "tooling"
+  },
+  {
+    "date": "2020-01-11",
+    "category": "study",
+    "time": 60,
+    "project": "programming",
     "tags": [
       "scala"
     ]
@@ -549,40 +586,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-01-11",
-    "category": "study",
-    "time": 60,
-    "project": "programming",
+    "date": "2020-01-10",
+    "category": "admin",
+    "time": 45,
+    "project": "metals",
     "tags": [
-      "scala"
+      "scala",
+      "tooling"
     ]
-  },
-  {
-    "date": "2020-01-11",
-    "category": "admin",
-    "time": 45,
-    "project": "tooling"
-  },
-  {
-    "date": "2020-01-11",
-    "category": "explore",
-    "time": 45,
-    "project": "tooling"
-  },
-  {
-    "date": "2020-01-11",
-    "category": "admin",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals"
-    ]
-  },
-  {
-    "date": "2020-01-11",
-    "category": "admin",
-    "time": 45,
-    "project": "coc-metals"
   },
   {
     "date": "2020-01-10",
@@ -594,14 +605,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-01-10",
-    "category": "admin",
-    "time": 45,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
+    "date": "2020-01-08",
+    "category": "code",
+    "time": 30,
+    "project": "coc-metals"
   },
   {
     "date": "2020-01-08",
@@ -615,12 +622,6 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-01-08",
-    "category": "code",
-    "time": 30,
-    "project": "coc-metals"
-  },
-  {
     "date": "2020-01-07",
     "category": "code",
     "time": 60,
@@ -632,16 +633,6 @@ const LOGS =
   },
   {
     "date": "2020-01-05",
-    "category": "explore",
-    "time": 60,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
-    "date": "2020-01-05",
     "category": "code",
     "time": 60,
     "project": "coc-metals",
@@ -650,10 +641,30 @@ const LOGS =
     ]
   },
   {
+    "date": "2020-01-05",
+    "category": "explore",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-01-04",
     "category": "code",
     "time": 120,
     "project": "coc-metals"
+  },
+  {
+    "date": "2020-01-02",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
   },
   {
     "date": "2020-01-02",
@@ -666,78 +677,68 @@ const LOGS =
     ]
   },
   {
-    "date": "2020-01-02",
-    "category": "code",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
-  },
-  {
-    "date": "2020-01-01",
-    "category": "explore",
-    "time": 45,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
-  },
-  {
     "date": "2020-01-01",
     "category": "explore",
     "time": 60,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals",
+      "tooling",
       "coc-metals"
     ]
   },
   {
-    "date": "2019-12-31",
-    "category": "code",
-    "time": 60,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-12-31",
-    "category": "code",
-    "time": 60,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-12-30",
-    "category": "admin",
+    "date": "2020-01-01",
+    "category": "explore",
     "time": 45,
-    "project": "coc-metals"
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-12-31",
+    "category": "code",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-12-31",
+    "category": "code",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
+    ]
   },
   {
     "date": "2019-12-30",
     "category": "code",
     "time": 180,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals"
+      "tooling"
     ]
+  },
+  {
+    "date": "2019-12-30",
+    "category": "admin",
+    "time": 45,
+    "project": "coc-metals"
   },
   {
     "date": "2019-12-29",
     "category": "code",
     "time": 120,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
@@ -749,12 +750,6 @@ const LOGS =
   },
   {
     "date": "2019-12-28",
-    "category": "admin",
-    "time": 60,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2019-12-27",
     "category": "admin",
     "time": 60,
     "project": "coc-metals"
@@ -763,11 +758,17 @@ const LOGS =
     "date": "2019-12-27",
     "category": "write",
     "time": 60,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "coc-metals"
     ]
+  },
+  {
+    "date": "2019-12-27",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals"
   },
   {
     "date": "2019-12-26",
@@ -787,24 +788,6 @@ const LOGS =
   },
   {
     "date": "2019-12-23",
-    "category": "code",
-    "time": 60,
-    "project": "tooling"
-  },
-  {
-    "date": "2019-12-23",
-    "category": "code",
-    "time": 60,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2019-12-23",
-    "category": "code",
-    "time": 60,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2019-12-23",
     "category": "explore",
     "time": 60,
     "project": "coc-metals",
@@ -813,21 +796,33 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-12-23",
+    "category": "code",
+    "time": 60,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2019-12-23",
+    "category": "code",
+    "time": 60,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2019-12-23",
+    "category": "code",
+    "time": 60,
+    "project": "tooling"
+  },
+  {
+    "date": "2019-12-22",
+    "category": "code",
+    "time": 180,
+    "project": "coc-metals"
+  },
+  {
     "date": "2019-12-22",
     "category": "research",
     "time": 180,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2019-12-22",
-    "category": "code",
-    "time": 180,
-    "project": "coc-metals"
-  },
-  {
-    "date": "2019-12-21",
-    "category": "code",
-    "time": 60,
     "project": "coc-metals"
   },
   {
@@ -847,6 +842,18 @@ const LOGS =
     "category": "admin",
     "time": 45,
     "project": "coc-metals"
+  },
+  {
+    "date": "2019-12-21",
+    "category": "code",
+    "time": 60,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2019-12-20",
+    "category": "admin",
+    "time": 45,
+    "project": "workspace"
   },
   {
     "date": "2019-12-20",
@@ -858,16 +865,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-12-20",
-    "category": "admin",
-    "time": 45,
-    "project": "workspace"
-  },
-  {
     "date": "2019-12-19",
     "category": "admin",
-    "time": 60,
-    "project": "coc-metals"
+    "time": 45,
+    "project": "tooling"
   },
   {
     "date": "2019-12-19",
@@ -881,8 +882,8 @@ const LOGS =
   {
     "date": "2019-12-19",
     "category": "admin",
-    "time": 45,
-    "project": "tooling"
+    "time": 60,
+    "project": "coc-metals"
   },
   {
     "date": "2019-12-18",
@@ -898,27 +899,19 @@ const LOGS =
     "date": "2019-12-17",
     "category": "admin",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
-    ]
-  },
-  {
-    "date": "2019-12-16",
-    "category": "admin",
-    "time": 60,
-    "project": "coc-metals",
-    "tags": [
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-12-16",
     "category": "code",
-    "time": 60,
-    "project": "tooling",
+    "time": 45,
+    "project": "coc-metals",
     "tags": [
+      "scala",
       "metals"
     ]
   },
@@ -934,11 +927,29 @@ const LOGS =
   {
     "date": "2019-12-16",
     "category": "code",
-    "time": 45,
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-12-16",
+    "category": "admin",
+    "time": 60,
     "project": "coc-metals",
     "tags": [
-      "scala",
       "metals"
+    ]
+  },
+  {
+    "date": "2019-12-15",
+    "category": "study",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
     ]
   },
   {
@@ -947,16 +958,6 @@ const LOGS =
     "time": 120,
     "project": "andaga",
     "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-12-15",
-    "category": "study",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals",
       "scala"
     ]
   },
@@ -978,8 +979,11 @@ const LOGS =
   {
     "date": "2019-12-12",
     "category": "study",
-    "time": 30,
-    "project": "programming"
+    "time": 45,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
   },
   {
     "date": "2019-12-12",
@@ -990,20 +994,8 @@ const LOGS =
   {
     "date": "2019-12-12",
     "category": "study",
-    "time": 45,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-12-11",
-    "category": "study",
     "time": 30,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
+    "project": "programming"
   },
   {
     "date": "2019-12-11",
@@ -1014,6 +1006,15 @@ const LOGS =
       "metals",
       "typescript",
       "nvim"
+    ]
+  },
+  {
+    "date": "2019-12-11",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "scala"
     ]
   },
   {
@@ -1030,10 +1031,11 @@ const LOGS =
   {
     "date": "2019-12-09",
     "category": "code",
-    "time": 60,
+    "time": 30,
     "project": "coc-metals",
     "tags": [
-      "nvim"
+      "nvim",
+      "typescript"
     ]
   },
   {
@@ -1048,27 +1050,11 @@ const LOGS =
   {
     "date": "2019-12-09",
     "category": "code",
-    "time": 30,
+    "time": 60,
     "project": "coc-metals",
     "tags": [
-      "nvim",
-      "typescript"
+      "nvim"
     ]
-  },
-  {
-    "date": "2019-12-08",
-    "category": "code",
-    "time": 45,
-    "project": "andaga",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-12-08",
-    "category": "admin",
-    "time": 20,
-    "project": "wiki.chronica"
   },
   {
     "date": "2019-12-08",
@@ -1078,6 +1064,21 @@ const LOGS =
     "tags": [
       "typescript",
       "metals"
+    ]
+  },
+  {
+    "date": "2019-12-08",
+    "category": "admin",
+    "time": 20,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-12-08",
+    "category": "code",
+    "time": 45,
+    "project": "andaga",
+    "tags": [
+      "scala"
     ]
   },
   {
@@ -1092,38 +1093,32 @@ const LOGS =
   },
   {
     "date": "2019-12-06",
-    "category": "code",
+    "category": "study",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals"
+      "scala",
+      "tooling"
     ]
   },
   {
     "date": "2019-12-06",
-    "category": "study",
+    "category": "code",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-12-04",
     "category": "explore",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
-  },
-  {
-    "date": "2019-12-01",
-    "category": "explore",
-    "time": 60,
-    "project": "coc-metals"
   },
   {
     "date": "2019-12-01",
@@ -1133,6 +1128,23 @@ const LOGS =
     "tags": [
       "metals",
       "typescript",
+      "open source"
+    ]
+  },
+  {
+    "date": "2019-12-01",
+    "category": "explore",
+    "time": 60,
+    "project": "coc-metals"
+  },
+  {
+    "date": "2019-11-30",
+    "category": "code",
+    "time": 180,
+    "project": "coc-metals",
+    "tags": [
+      "typescript",
+      "metals",
       "open source"
     ]
   },
@@ -1149,31 +1161,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-11-30",
-    "category": "code",
-    "time": 180,
-    "project": "coc-metals",
-    "tags": [
-      "typescript",
-      "metals",
-      "open source"
-    ]
-  },
-  {
     "date": "2019-11-29",
     "category": "study",
     "time": 30,
     "project": "tooling"
-  },
-  {
-    "date": "2019-11-27",
-    "category": "study",
-    "time": 110,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
   },
   {
     "date": "2019-11-27",
@@ -1185,13 +1176,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-11-26",
-    "category": "code",
-    "time": 60,
-    "project": "coc-metals",
+    "date": "2019-11-27",
+    "category": "study",
+    "time": 110,
+    "project": "metals",
     "tags": [
-      "javascript",
-      "metals"
+      "scala",
+      "tooling"
     ]
   },
   {
@@ -1205,13 +1196,24 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-11-25",
+    "date": "2019-11-26",
     "category": "code",
     "time": 60,
     "project": "coc-metals",
     "tags": [
-      "metals",
-      "nvim"
+      "javascript",
+      "metals"
+    ]
+  },
+  {
+    "date": "2019-11-25",
+    "category": "explore",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling",
+      "open source"
     ]
   },
   {
@@ -1226,23 +1228,12 @@ const LOGS =
   },
   {
     "date": "2019-11-25",
-    "category": "explore",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals",
-      "open source"
-    ]
-  },
-  {
-    "date": "2019-11-24",
-    "category": "admin",
+    "category": "code",
     "time": 60,
-    "project": "tooling",
+    "project": "coc-metals",
     "tags": [
-      "scala",
-      "metals"
+      "metals",
+      "nvim"
     ]
   },
   {
@@ -1252,6 +1243,26 @@ const LOGS =
     "project": "andaga",
     "tags": [
       "scala"
+    ]
+  },
+  {
+    "date": "2019-11-24",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-11-23",
+    "category": "research",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "scala",
+      "scalameta"
     ]
   },
   {
@@ -1266,16 +1277,6 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-11-23",
-    "category": "research",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "scalameta"
-    ]
-  },
-  {
     "date": "2019-11-22",
     "category": "research",
     "time": 120,
@@ -1286,20 +1287,20 @@ const LOGS =
   },
   {
     "date": "2019-11-21",
-    "category": "code",
-    "time": 90,
-    "project": "andaga",
+    "category": "admin",
+    "time": 45,
+    "project": "metals",
     "tags": [
+      "tooling",
       "scala"
     ]
   },
   {
     "date": "2019-11-21",
-    "category": "admin",
-    "time": 45,
-    "project": "tooling",
+    "category": "code",
+    "time": 90,
+    "project": "andaga",
     "tags": [
-      "metals",
       "scala"
     ]
   },
@@ -1314,18 +1315,18 @@ const LOGS =
   },
   {
     "date": "2019-11-15",
-    "category": "explore",
+    "category": "code",
     "time": 60,
-    "project": "tooling"
+    "project": "metals",
+    "tags": [
+      "tooling"
+    ]
   },
   {
     "date": "2019-11-15",
-    "category": "code",
+    "category": "explore",
     "time": 60,
-    "project": "tooling",
-    "tags": [
-      "metals"
-    ]
+    "project": "tooling"
   },
   {
     "date": "2019-11-14",
@@ -1340,40 +1341,30 @@ const LOGS =
     "date": "2019-11-13",
     "category": "explore",
     "time": 90,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals",
+      "tooling",
       "open-source"
-    ]
-  },
-  {
-    "date": "2019-11-12",
-    "category": "admin",
-    "time": 90,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
     ]
   },
   {
     "date": "2019-11-12",
     "category": "explore",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
   {
-    "date": "2019-11-11",
+    "date": "2019-11-12",
     "category": "admin",
     "time": 90,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
@@ -1381,18 +1372,19 @@ const LOGS =
     "date": "2019-11-11",
     "category": "study",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
   {
-    "date": "2019-11-10",
-    "category": "explore",
-    "time": 60,
-    "project": "andaga-cli",
+    "date": "2019-11-11",
+    "category": "admin",
+    "time": 90,
+    "project": "metals",
     "tags": [
+      "tooling",
       "scala"
     ]
   },
@@ -1400,14 +1392,14 @@ const LOGS =
     "date": "2019-11-10",
     "category": "code",
     "time": 120,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
-    "date": "2019-11-09",
+    "date": "2019-11-10",
     "category": "explore",
     "time": 60,
     "project": "andaga-cli",
@@ -1419,10 +1411,19 @@ const LOGS =
     "date": "2019-11-09",
     "category": "code",
     "time": 180,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "open-source",
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-11-09",
+    "category": "explore",
+    "time": 60,
+    "project": "andaga-cli",
+    "tags": [
       "scala"
     ]
   },
@@ -1430,9 +1431,9 @@ const LOGS =
     "date": "2019-11-07",
     "category": "code",
     "time": 150,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala",
       "open-source"
     ]
@@ -1441,9 +1442,9 @@ const LOGS =
     "date": "2019-11-06",
     "category": "code",
     "time": 150,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala",
       "open-source"
     ]
@@ -1452,47 +1453,31 @@ const LOGS =
     "date": "2019-11-05",
     "category": "explore",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals",
+      "tooling",
       "vim"
+    ]
+  },
+  {
+    "date": "2019-11-04",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
     ]
   },
   {
     "date": "2019-11-04",
     "category": "explore",
     "time": 120,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
-    ]
-  },
-  {
-    "date": "2019-11-04",
-    "category": "code",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
-  },
-  {
-    "date": "2019-11-03",
-    "category": "code",
-    "time": 30,
-    "project": "scripts"
-  },
-  {
-    "date": "2019-11-03",
-    "category": "code",
-    "time": 150,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
@@ -1502,22 +1487,38 @@ const LOGS =
     "project": "tooling"
   },
   {
+    "date": "2019-11-03",
+    "category": "code",
+    "time": 150,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-11-03",
+    "category": "code",
+    "time": 30,
+    "project": "scripts"
+  },
+  {
     "date": "2019-11-02",
     "category": "code",
-    "time": 120,
-    "project": "tooling",
+    "time": 60,
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
   {
     "date": "2019-11-02",
     "category": "code",
-    "time": 60,
-    "project": "tooling",
+    "time": 120,
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
@@ -1531,69 +1532,69 @@ const LOGS =
     "date": "2019-10-31",
     "category": "code",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-10-30",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
     ]
   },
   {
     "date": "2019-10-30",
     "category": "code",
     "time": 150,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
-    ]
-  },
-  {
-    "date": "2019-10-30",
-    "category": "code",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-10-29",
-    "category": "code",
-    "time": 90,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-10-29",
     "category": "code",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
-    "date": "2019-10-28",
+    "date": "2019-10-29",
     "category": "code",
     "time": 90,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
-      "scala"
+      "scala",
+      "tooling"
     ]
   },
   {
     "date": "2019-10-28",
     "category": "code",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-10-28",
+    "category": "code",
+    "time": 90,
+    "project": "metals",
+    "tags": [
+      "tooling",
       "scala"
     ]
   },
@@ -1601,7 +1602,7 @@ const LOGS =
     "date": "2019-10-27",
     "category": "explore",
     "time": 60,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "elm"
     ]
@@ -1610,19 +1611,19 @@ const LOGS =
     "date": "2019-10-26",
     "category": "explore",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-10-25",
-    "category": "code",
-    "time": 45,
-    "project": "tooling",
+    "category": "explore",
+    "time": 25,
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
@@ -1630,19 +1631,28 @@ const LOGS =
     "date": "2019-10-25",
     "category": "code",
     "time": 240,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-10-25",
-    "category": "explore",
-    "time": 25,
-    "project": "tooling",
+    "category": "code",
+    "time": 45,
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-10-24",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
       "scala"
     ]
   },
@@ -1656,19 +1666,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-10-24",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
     "date": "2019-10-23",
     "category": "study",
     "time": 25,
-    "project": "programming",
+    "project": "tooling",
     "tags": [
       "scala"
     ]
@@ -1683,6 +1684,15 @@ const LOGS =
     "date": "2019-10-23",
     "category": "study",
     "time": 25,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-10-22",
+    "category": "study",
+    "time": 30,
     "project": "tooling",
     "tags": [
       "scala"
@@ -1695,10 +1705,10 @@ const LOGS =
     "project": "workspace"
   },
   {
-    "date": "2019-10-22",
+    "date": "2019-10-21",
     "category": "study",
-    "time": 30,
-    "project": "tooling",
+    "time": 25,
+    "project": "programming",
     "tags": [
       "scala"
     ]
@@ -1714,22 +1724,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-10-21",
-    "category": "study",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
     "date": "2019-10-20",
     "category": "study",
     "time": 25,
-    "project": "wiki.chronica",
-    "tags": [
-      "color"
-    ]
+    "project": "programming"
   },
   {
     "date": "2019-10-20",
@@ -1741,15 +1739,9 @@ const LOGS =
     "date": "2019-10-20",
     "category": "study",
     "time": 25,
-    "project": "programming"
-  },
-  {
-    "date": "2019-10-19",
-    "category": "study",
-    "time": 120,
-    "project": "programming",
+    "project": "wiki-chronica",
     "tags": [
-      "functional programming"
+      "color"
     ]
   },
   {
@@ -1762,12 +1754,11 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-10-17",
-    "category": "explore",
-    "time": 25,
+    "date": "2019-10-19",
+    "category": "study",
+    "time": 120,
     "project": "programming",
     "tags": [
-      "scala",
       "functional programming"
     ]
   },
@@ -1775,10 +1766,20 @@ const LOGS =
     "date": "2019-10-17",
     "category": "study",
     "time": 25,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-10-17",
+    "category": "explore",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "scala",
+      "functional programming"
     ]
   },
   {
@@ -1792,6 +1793,16 @@ const LOGS =
   },
   {
     "date": "2019-10-15",
+    "category": "code",
+    "time": 45,
+    "project": "wiki-chronica",
+    "tags": [
+      "typescript",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-10-15",
     "category": "study",
     "time": 30,
     "project": "programming",
@@ -1801,39 +1812,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-10-15",
-    "category": "code",
-    "time": 45,
-    "project": "wiki.chronica",
-    "tags": [
-      "typescript",
-      "javascript"
-    ]
-  },
-  {
     "date": "2019-10-14",
     "category": "study",
     "time": 25,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
-    ]
-  },
-  {
-    "date": "2019-10-13",
-    "category": "explore",
-    "time": 90,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-10-13",
-    "category": "code",
-    "time": 120,
-    "project": "wiki.chronica",
-    "tags": [
-      "javascript",
-      "typescript"
     ]
   },
   {
@@ -1844,6 +1829,22 @@ const LOGS =
     "tags": [
       "functional programming"
     ]
+  },
+  {
+    "date": "2019-10-13",
+    "category": "code",
+    "time": 120,
+    "project": "wiki-chronica",
+    "tags": [
+      "javascript",
+      "typescript"
+    ]
+  },
+  {
+    "date": "2019-10-13",
+    "category": "explore",
+    "time": 90,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-10-12",
@@ -1852,6 +1853,27 @@ const LOGS =
     "project": "programming",
     "tags": [
       "functional programming"
+    ]
+  },
+  {
+    "date": "2019-10-11",
+    "category": "research",
+    "time": 25,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-10-11",
+    "category": "code",
+    "time": 180,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "open-source",
+      "scala"
     ]
   },
   {
@@ -1865,55 +1887,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-10-11",
-    "category": "code",
-    "time": 180,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "open-source",
-      "scala"
-    ]
-  },
-  {
-    "date": "2019-10-11",
-    "category": "research",
-    "time": 25,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
-  },
-  {
     "date": "2019-10-10",
     "category": "code",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "open-source",
       "scala"
-    ]
-  },
-  {
-    "date": "2019-10-09",
-    "category": "code",
-    "time": 20,
-    "project": "tooling",
-    "tags": [
-      "scala",
-      "metals"
-    ]
-  },
-  {
-    "date": "2019-10-09",
-    "category": "code",
-    "time": 25,
-    "project": "webring",
-    "tags": [
-      "open-source",
-      "javascript"
     ]
   },
   {
@@ -1927,6 +1908,36 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-10-09",
+    "category": "code",
+    "time": 25,
+    "project": "webring",
+    "tags": [
+      "open-source",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-10-09",
+    "category": "code",
+    "time": 20,
+    "project": "metals",
+    "tags": [
+      "scala",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2019-10-08",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
+    ]
+  },
+  {
     "date": "2019-10-08",
     "category": "study",
     "time": 20,
@@ -1936,39 +1947,25 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-10-08",
-    "category": "code",
-    "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
-  },
-  {
     "date": "2019-10-07",
     "category": "study",
     "time": 30,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-10-06",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
+    "category": "code",
+    "time": 115,
+    "project": "metals",
     "tags": [
-      "object oriented programming"
+      "open-source",
+      "scala",
+      "tooling"
     ]
-  },
-  {
-    "date": "2019-10-06",
-    "category": "admin",
-    "time": 25,
-    "project": "tooling"
   },
   {
     "date": "2019-10-06",
@@ -1981,22 +1978,26 @@ const LOGS =
   },
   {
     "date": "2019-10-06",
-    "category": "code",
-    "time": 115,
-    "project": "tooling",
+    "category": "admin",
+    "time": 25,
+    "project": "tooling"
+  },
+  {
+    "date": "2019-10-06",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
     "tags": [
-      "open-source",
-      "scala",
-      "metals"
+      "object oriented programming"
     ]
   },
   {
     "date": "2019-10-03",
     "category": "code",
     "time": 95,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals",
+      "tooling",
       "scala"
     ]
   },
@@ -2004,20 +2005,26 @@ const LOGS =
     "date": "2019-10-02",
     "category": "explore",
     "time": 90,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals"
+      "tooling"
     ]
   },
   {
     "date": "2019-10-01",
     "category": "research",
     "time": 115,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
       "scala",
-      "metals"
+      "tooling"
     ]
+  },
+  {
+    "date": "2019-09-30",
+    "category": "research",
+    "time": 25,
+    "project": "webring"
   },
   {
     "date": "2019-09-30",
@@ -2027,12 +2034,6 @@ const LOGS =
     "tags": [
       "vimscript"
     ]
-  },
-  {
-    "date": "2019-09-30",
-    "category": "research",
-    "time": 25,
-    "project": "webring"
   },
   {
     "date": "2019-09-29",
@@ -2045,12 +2046,6 @@ const LOGS =
   },
   {
     "date": "2019-09-28",
-    "category": "write",
-    "time": 25,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-09-28",
     "category": "research",
     "time": 45,
     "project": "tooling",
@@ -2060,13 +2055,19 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-09-28",
+    "category": "write",
+    "time": 25,
+    "project": "wiki-chronica"
+  },
+  {
     "date": "2019-09-27",
-    "category": "study",
-    "time": 70,
-    "project": "tooling",
+    "category": "code",
+    "time": 225,
+    "project": "vim-indental",
     "tags": [
-      "scala",
-      "metals"
+      "vimscript",
+      "vim"
     ]
   },
   {
@@ -2081,19 +2082,23 @@ const LOGS =
   },
   {
     "date": "2019-09-27",
-    "category": "code",
-    "time": 225,
-    "project": "vim-indental",
+    "category": "study",
+    "time": 70,
+    "project": "metals",
     "tags": [
-      "vimscript",
-      "vim"
+      "scala",
+      "tooling"
     ]
   },
   {
     "date": "2019-09-26",
-    "category": "code",
+    "category": "study",
     "time": 30,
-    "project": "wiki.chronica"
+    "project": "metals",
+    "tags": [
+      "tooling",
+      "scala"
+    ]
   },
   {
     "date": "2019-09-26",
@@ -2106,34 +2111,24 @@ const LOGS =
   },
   {
     "date": "2019-09-26",
-    "category": "study",
+    "category": "code",
     "time": 30,
-    "project": "tooling",
-    "tags": [
-      "metals",
-      "scala"
-    ]
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-09-25",
+    "category": "code",
+    "time": 45,
+    "project": "teach-crud"
   },
   {
     "date": "2019-09-25",
     "category": "research",
     "time": 45,
-    "project": "tooling",
+    "project": "metals",
     "tags": [
-      "metals"
+      "tooling"
     ]
-  },
-  {
-    "date": "2019-09-25",
-    "category": "code",
-    "time": 45,
-    "project": "teach-crud"
-  },
-  {
-    "date": "2019-09-24",
-    "category": "code",
-    "time": 75,
-    "project": "teach-crud"
   },
   {
     "date": "2019-09-24",
@@ -2147,10 +2142,25 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-09-24",
+    "category": "code",
+    "time": 75,
+    "project": "teach-crud"
+  },
+  {
     "date": "2019-09-23",
     "category": "design",
     "time": 65,
     "project": "teach-crud"
+  },
+  {
+    "date": "2019-09-21",
+    "category": "code",
+    "time": 30,
+    "project": "webring-cli",
+    "tags": [
+      "javascript"
+    ]
   },
   {
     "date": "2019-09-21",
@@ -2164,25 +2174,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-09-21",
-    "category": "code",
-    "time": 30,
-    "project": "webring-cli",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
     "date": "2019-09-17",
     "category": "study",
     "time": 30,
     "project": "tooling"
-  },
-  {
-    "date": "2019-09-16",
-    "category": "study",
-    "time": 30,
-    "project": "programming"
   },
   {
     "date": "2019-09-16",
@@ -2191,10 +2186,16 @@ const LOGS =
     "project": "webring"
   },
   {
+    "date": "2019-09-16",
+    "category": "study",
+    "time": 30,
+    "project": "programming"
+  },
+  {
     "date": "2019-09-15",
     "category": "design",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "choo"
@@ -2203,11 +2204,10 @@ const LOGS =
   {
     "date": "2019-09-14",
     "category": "code",
-    "time": 25,
-    "project": "webring-cli",
+    "time": 45,
+    "project": "webring",
     "tags": [
-      "javascript",
-      "webring"
+      "javascript"
     ]
   },
   {
@@ -2222,10 +2222,11 @@ const LOGS =
   {
     "date": "2019-09-14",
     "category": "code",
-    "time": 45,
-    "project": "webring",
+    "time": 25,
+    "project": "webring-cli",
     "tags": [
-      "javascript"
+      "javascript",
+      "webring"
     ]
   },
   {
@@ -2237,8 +2238,8 @@ const LOGS =
   {
     "date": "2019-09-12",
     "category": "code",
-    "time": 45,
-    "project": "webring",
+    "time": 30,
+    "project": "webring-cli",
     "tags": [
       "javascript"
     ]
@@ -2255,8 +2256,8 @@ const LOGS =
   {
     "date": "2019-09-12",
     "category": "code",
-    "time": 30,
-    "project": "webring-cli",
+    "time": 45,
+    "project": "webring",
     "tags": [
       "javascript"
     ]
@@ -2288,9 +2289,9 @@ const LOGS =
   },
   {
     "date": "2019-09-07",
-    "category": "study",
+    "category": "code",
     "time": 30,
-    "project": "programming"
+    "project": "webring-checker"
   },
   {
     "date": "2019-09-07",
@@ -2304,9 +2305,9 @@ const LOGS =
   },
   {
     "date": "2019-09-07",
-    "category": "code",
+    "category": "study",
     "time": 30,
-    "project": "webring-checker"
+    "project": "programming"
   },
   {
     "date": "2019-09-03",
@@ -2338,13 +2339,13 @@ const LOGS =
     "date": "2019-08-28",
     "category": "code",
     "time": 45,
-    "project": "studiosyk"
+    "project": "studio-syk"
   },
   {
     "date": "2019-08-27",
     "category": "code",
-    "time": 25,
-    "project": "studiosyk",
+    "time": 30,
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "choo"
@@ -2352,18 +2353,9 @@ const LOGS =
   },
   {
     "date": "2019-08-27",
-    "category": "study",
-    "time": 25,
-    "project": "studiosyk",
-    "tags": [
-      "toml"
-    ]
-  },
-  {
-    "date": "2019-08-27",
     "category": "explore",
     "time": 35,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "toml",
@@ -2372,19 +2364,22 @@ const LOGS =
   },
   {
     "date": "2019-08-27",
+    "category": "study",
+    "time": 25,
+    "project": "studio-syk",
+    "tags": [
+      "toml"
+    ]
+  },
+  {
+    "date": "2019-08-27",
     "category": "code",
-    "time": 30,
-    "project": "studiosyk",
+    "time": 25,
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "choo"
     ]
-  },
-  {
-    "date": "2019-08-26",
-    "category": "explore",
-    "time": 60,
-    "project": "wiki.chronica"
   },
   {
     "date": "2019-08-26",
@@ -2393,20 +2388,10 @@ const LOGS =
     "project": "workspace"
   },
   {
-    "date": "2019-08-25",
-    "category": "design",
-    "time": 30,
-    "project": "studiosyk"
-  },
-  {
-    "date": "2019-08-25",
-    "category": "code",
-    "time": 155,
-    "project": "studiosyk",
-    "tags": [
-      "choo",
-      "javascript"
-    ]
+    "date": "2019-08-26",
+    "category": "explore",
+    "time": 60,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-25",
@@ -2415,10 +2400,30 @@ const LOGS =
     "project": "programming"
   },
   {
+    "date": "2019-08-25",
+    "category": "code",
+    "time": 155,
+    "project": "studio-syk",
+    "tags": [
+      "choo",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-08-25",
+    "category": "design",
+    "time": 30,
+    "project": "studio-syk"
+  },
+  {
     "date": "2019-08-24",
-    "category": "admin",
-    "time": 35,
-    "project": "workspace"
+    "category": "code",
+    "time": 45,
+    "project": "studio-syk",
+    "tags": [
+      "choo",
+      "javascript"
+    ]
   },
   {
     "date": "2019-08-24",
@@ -2432,19 +2437,15 @@ const LOGS =
   },
   {
     "date": "2019-08-24",
-    "category": "code",
-    "time": 45,
-    "project": "studiosyk",
-    "tags": [
-      "choo",
-      "javascript"
-    ]
+    "category": "admin",
+    "time": 35,
+    "project": "workspace"
   },
   {
     "date": "2019-08-23",
     "category": "explore",
     "time": 30,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "choo",
       "javascript"
@@ -2454,17 +2455,11 @@ const LOGS =
     "date": "2019-08-22",
     "category": "explore",
     "time": 45,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "choo",
       "javascript"
     ]
-  },
-  {
-    "date": "2019-08-21",
-    "category": "research",
-    "time": 30,
-    "project": "astronomy"
   },
   {
     "date": "2019-08-21",
@@ -2476,62 +2471,52 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-08-20",
+    "date": "2019-08-21",
     "category": "research",
     "time": 30,
     "project": "astronomy"
-  },
-  {
-    "date": "2019-08-20",
-    "category": "explore",
-    "time": 45,
-    "project": "wiki.chronica"
   },
   {
     "date": "2019-08-20",
     "category": "code",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
-    "date": "2019-08-19",
-    "category": "design",
+    "date": "2019-08-20",
+    "category": "explore",
     "time": 45,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-08-20",
+    "category": "research",
+    "time": 30,
+    "project": "astronomy"
   },
   {
     "date": "2019-08-19",
     "category": "explore",
     "time": 30,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-08-19",
+    "category": "design",
+    "time": 45,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-08-18",
+    "category": "design",
+    "time": 125,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-18",
     "category": "research",
     "time": 30,
     "project": "astronomy"
-  },
-  {
-    "date": "2019-08-18",
-    "category": "design",
-    "time": 125,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-08-17",
-    "category": "explore",
-    "time": 115,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-08-17",
-    "category": "explore",
-    "time": 180,
-    "project": "wiki.chronica",
-    "tags": [
-      "javascript",
-      "chronica"
-    ]
   },
   {
     "date": "2019-08-17",
@@ -2543,26 +2528,32 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-08-17",
+    "category": "explore",
+    "time": 180,
+    "project": "wiki-chronica",
+    "tags": [
+      "javascript",
+      "chronica"
+    ]
+  },
+  {
+    "date": "2019-08-17",
+    "category": "explore",
+    "time": 115,
+    "project": "wiki-chronica"
+  },
+  {
     "date": "2019-08-16",
     "category": "write",
     "time": 20,
-    "project": "wiki.chronica"
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-15",
     "category": "research",
     "time": 175,
     "project": "spatium"
-  },
-  {
-    "date": "2019-08-14",
-    "category": "code",
-    "time": 15,
-    "project": "webring",
-    "tags": [
-      "javascript",
-      "open-source"
-    ]
   },
   {
     "date": "2019-08-14",
@@ -2575,10 +2566,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-08-13",
-    "category": "research",
-    "time": 30,
-    "project": "astronomy"
+    "date": "2019-08-14",
+    "category": "code",
+    "time": 15,
+    "project": "webring",
+    "tags": [
+      "javascript",
+      "open-source"
+    ]
   },
   {
     "date": "2019-08-13",
@@ -2591,20 +2586,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-08-12",
+    "date": "2019-08-13",
     "category": "research",
-    "time": 15,
-    "project": "astronomy"
-  },
-  {
-    "date": "2019-08-12",
-    "category": "code",
     "time": 30,
-    "project": "webring",
-    "tags": [
-      "open-source",
-      "javascript"
-    ]
+    "project": "astronomy"
   },
   {
     "date": "2019-08-12",
@@ -2617,13 +2602,17 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-08-11",
-    "category": "explore",
-    "time": 45,
-    "project": "wiki.chronica"
+    "date": "2019-08-12",
+    "category": "code",
+    "time": 30,
+    "project": "webring",
+    "tags": [
+      "open-source",
+      "javascript"
+    ]
   },
   {
-    "date": "2019-08-11",
+    "date": "2019-08-12",
     "category": "research",
     "time": 15,
     "project": "astronomy"
@@ -2631,17 +2620,16 @@ const LOGS =
   {
     "date": "2019-08-11",
     "category": "research",
-    "time": 55,
+    "time": 25,
     "project": "astronomy"
   },
   {
     "date": "2019-08-11",
-    "category": "study",
-    "time": 55,
-    "project": "programming",
+    "category": "code",
+    "time": 35,
+    "project": "webring",
     "tags": [
-      "scala",
-      "functional programming"
+      "javascript"
     ]
   },
   {
@@ -2655,24 +2643,47 @@ const LOGS =
   },
   {
     "date": "2019-08-11",
-    "category": "code",
-    "time": 35,
-    "project": "webring",
+    "category": "study",
+    "time": 55,
+    "project": "programming",
     "tags": [
-      "javascript"
+      "scala",
+      "functional programming"
     ]
   },
   {
     "date": "2019-08-11",
     "category": "research",
-    "time": 25,
+    "time": 55,
     "project": "astronomy"
   },
   {
-    "date": "2019-08-10",
+    "date": "2019-08-11",
     "category": "research",
-    "time": 25,
+    "time": 15,
     "project": "astronomy"
+  },
+  {
+    "date": "2019-08-11",
+    "category": "explore",
+    "time": 45,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-08-10",
+    "category": "code",
+    "time": 180,
+    "project": "webring",
+    "tags": [
+      "open-source",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-08-10",
+    "category": "write",
+    "time": 25,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-08-10",
@@ -2685,19 +2696,9 @@ const LOGS =
   },
   {
     "date": "2019-08-10",
-    "category": "write",
+    "category": "research",
     "time": 25,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-08-10",
-    "category": "code",
-    "time": 180,
-    "project": "webring",
-    "tags": [
-      "open-source",
-      "javascript"
-    ]
+    "project": "astronomy"
   },
   {
     "date": "2019-08-09",
@@ -2740,15 +2741,6 @@ const LOGS =
   },
   {
     "date": "2019-08-05",
-    "category": "admin",
-    "time": 45,
-    "project": "webring",
-    "tags": [
-      "open-source"
-    ]
-  },
-  {
-    "date": "2019-08-05",
     "category": "code",
     "time": 185,
     "project": "webring-cli",
@@ -2757,13 +2749,22 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-08-03",
-    "category": "code",
-    "time": 35,
+    "date": "2019-08-05",
+    "category": "admin",
+    "time": 45,
     "project": "webring",
     "tags": [
-      "javascript",
       "open-source"
+    ]
+  },
+  {
+    "date": "2019-08-03",
+    "category": "code",
+    "time": 160,
+    "project": "webring",
+    "tags": [
+      "open-source",
+      "javascript"
     ]
   },
   {
@@ -2779,10 +2780,19 @@ const LOGS =
   {
     "date": "2019-08-03",
     "category": "code",
-    "time": 160,
+    "time": 35,
     "project": "webring",
     "tags": [
-      "open-source",
+      "javascript",
+      "open-source"
+    ]
+  },
+  {
+    "date": "2019-08-01",
+    "category": "code",
+    "time": 30,
+    "project": "webring-cli",
+    "tags": [
       "javascript"
     ]
   },
@@ -2796,18 +2806,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-08-01",
-    "category": "code",
-    "time": 30,
-    "project": "webring-cli",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
     "date": "2019-07-31",
     "category": "research",
-    "time": 45,
+    "time": 30,
     "project": "spatium"
   },
   {
@@ -2819,13 +2820,28 @@ const LOGS =
   {
     "date": "2019-07-31",
     "category": "research",
-    "time": 30,
+    "time": 45,
     "project": "spatium"
   },
   {
     "date": "2019-07-30",
     "category": "code",
     "time": 65,
+    "project": "webring-cli",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-07-29",
+    "category": "code",
+    "time": 15,
+    "project": "webring-checker"
+  },
+  {
+    "date": "2019-07-29",
+    "category": "code",
+    "time": 45,
     "project": "webring-cli",
     "tags": [
       "javascript"
@@ -2841,19 +2857,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-07-29",
+    "date": "2019-07-28",
     "category": "code",
     "time": 45,
     "project": "webring-cli",
     "tags": [
       "javascript"
     ]
-  },
-  {
-    "date": "2019-07-29",
-    "category": "code",
-    "time": 15,
-    "project": "webring-checker"
   },
   {
     "date": "2019-07-28",
@@ -2862,15 +2872,6 @@ const LOGS =
     "project": "programming",
     "tags": [
       "open-source",
-      "javascript"
-    ]
-  },
-  {
-    "date": "2019-07-28",
-    "category": "code",
-    "time": 45,
-    "project": "webring-cli",
-    "tags": [
       "javascript"
     ]
   },
@@ -2900,21 +2901,21 @@ const LOGS =
   },
   {
     "date": "2019-07-25",
-    "category": "admin",
-    "time": 25,
-    "project": "webring",
-    "tags": [
-      "open-source"
-    ]
-  },
-  {
-    "date": "2019-07-25",
     "category": "code",
     "time": 55,
     "project": "webring-cli",
     "tags": [
       "webring",
       "javascript"
+    ]
+  },
+  {
+    "date": "2019-07-25",
+    "category": "admin",
+    "time": 25,
+    "project": "webring",
+    "tags": [
+      "open-source"
     ]
   },
   {
@@ -2937,11 +2938,11 @@ const LOGS =
   },
   {
     "date": "2019-07-22",
-    "category": "code",
-    "time": 220,
+    "category": "admin",
+    "time": 25,
     "project": "webring",
     "tags": [
-      "javascript"
+      "open-source"
     ]
   },
   {
@@ -2955,8 +2956,32 @@ const LOGS =
   },
   {
     "date": "2019-07-22",
+    "category": "code",
+    "time": 220,
+    "project": "webring",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-07-21",
+    "category": "code",
+    "time": 55,
+    "project": "webring-cli",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-07-21",
+    "category": "write",
+    "time": 20,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-07-21",
     "category": "admin",
-    "time": 25,
+    "time": 35,
     "project": "webring",
     "tags": [
       "open-source"
@@ -2973,30 +2998,6 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-07-21",
-    "category": "admin",
-    "time": 35,
-    "project": "webring",
-    "tags": [
-      "open-source"
-    ]
-  },
-  {
-    "date": "2019-07-21",
-    "category": "write",
-    "time": 20,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-07-21",
-    "category": "code",
-    "time": 55,
-    "project": "webring-cli",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
     "date": "2019-07-20",
     "category": "code",
     "time": 185,
@@ -3007,15 +3008,15 @@ const LOGS =
   },
   {
     "date": "2019-07-18",
-    "category": "study",
-    "time": 35,
-    "project": "programming"
-  },
-  {
-    "date": "2019-07-18",
     "category": "code",
     "time": 120,
     "project": "webring-cli"
+  },
+  {
+    "date": "2019-07-18",
+    "category": "study",
+    "time": 35,
+    "project": "programming"
   },
   {
     "date": "2019-07-17",
@@ -3046,9 +3047,9 @@ const LOGS =
   },
   {
     "date": "2019-07-14",
-    "category": "study",
-    "time": 25,
-    "project": "programming"
+    "category": "admin",
+    "time": 65,
+    "project": "words.chronica"
   },
   {
     "date": "2019-07-14",
@@ -3058,15 +3059,24 @@ const LOGS =
   },
   {
     "date": "2019-07-14",
-    "category": "admin",
-    "time": 65,
-    "project": "words.chronica"
+    "category": "study",
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2019-07-13",
     "category": "code",
     "time": 45,
     "project": "words.chronica"
+  },
+  {
+    "date": "2019-07-12",
+    "category": "admin",
+    "time": 75,
+    "project": "wiki-chronica",
+    "tags": [
+      "dat"
+    ]
   },
   {
     "date": "2019-07-12",
@@ -3078,18 +3088,15 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-07-12",
-    "category": "admin",
-    "time": 75,
-    "project": "wiki.chronica",
-    "tags": [
-      "dat"
-    ]
+    "date": "2019-07-11",
+    "category": "explore",
+    "time": 25,
+    "project": "words.chronica"
   },
   {
     "date": "2019-07-11",
     "category": "code",
-    "time": 45,
+    "time": 80,
     "project": "webring-checker",
     "tags": [
       "javascript"
@@ -3107,15 +3114,24 @@ const LOGS =
   {
     "date": "2019-07-11",
     "category": "code",
-    "time": 80,
+    "time": 45,
     "project": "webring-checker",
     "tags": [
       "javascript"
     ]
   },
   {
-    "date": "2019-07-11",
-    "category": "explore",
+    "date": "2019-07-10",
+    "category": "code",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "css"
+    ]
+  },
+  {
+    "date": "2019-07-10",
+    "category": "write",
     "time": 25,
     "project": "words.chronica"
   },
@@ -3129,19 +3145,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-07-10",
+    "date": "2019-07-09",
     "category": "write",
     "time": 25,
     "project": "words.chronica"
-  },
-  {
-    "date": "2019-07-10",
-    "category": "code",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "css"
-    ]
   },
   {
     "date": "2019-07-09",
@@ -3153,22 +3160,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-07-09",
-    "category": "write",
-    "time": 25,
-    "project": "words.chronica"
-  },
-  {
     "date": "2019-07-08",
     "category": "research",
-    "time": 20,
-    "project": "words.chronica"
-  },
-  {
-    "date": "2019-07-08",
-    "category": "write",
-    "time": 20,
-    "project": "wiki.chronica"
+    "time": 35,
+    "project": "network"
   },
   {
     "date": "2019-07-08",
@@ -3178,20 +3173,26 @@ const LOGS =
   },
   {
     "date": "2019-07-08",
+    "category": "write",
+    "time": 20,
+    "project": "wiki-chronica"
+  },
+  {
+    "date": "2019-07-08",
     "category": "research",
-    "time": 35,
+    "time": 20,
+    "project": "words.chronica"
+  },
+  {
+    "date": "2019-07-07",
+    "category": "admin",
+    "time": 25,
     "project": "network"
   },
   {
     "date": "2019-07-07",
     "category": "admin",
     "time": 145,
-    "project": "network"
-  },
-  {
-    "date": "2019-07-07",
-    "category": "admin",
-    "time": 25,
     "project": "network"
   },
   {
@@ -3229,15 +3230,6 @@ const LOGS =
   },
   {
     "date": "2019-07-02",
-    "category": "code",
-    "time": 15,
-    "project": "webring-checker",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2019-07-02",
     "category": "research",
     "time": 25,
     "project": "joh",
@@ -3246,18 +3238,18 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-06-30",
+    "date": "2019-07-02",
     "category": "code",
-    "time": 120,
-    "project": "joh",
+    "time": 15,
+    "project": "webring-checker",
     "tags": [
-      "scala"
+      "javascript"
     ]
   },
   {
-    "date": "2019-06-29",
+    "date": "2019-06-30",
     "category": "code",
-    "time": 135,
+    "time": 120,
     "project": "joh",
     "tags": [
       "scala"
@@ -3273,9 +3265,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-06-28",
+    "date": "2019-06-29",
     "category": "code",
-    "time": 25,
+    "time": 135,
     "project": "joh",
     "tags": [
       "scala"
@@ -3288,7 +3280,16 @@ const LOGS =
     "project": "gyul",
     "tags": [
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
+    ]
+  },
+  {
+    "date": "2019-06-28",
+    "category": "code",
+    "time": 25,
+    "project": "joh",
+    "tags": [
+      "scala"
     ]
   },
   {
@@ -3311,18 +3312,18 @@ const LOGS =
   },
   {
     "date": "2019-06-25",
-    "category": "study",
-    "time": 25,
-    "project": "programming"
-  },
-  {
-    "date": "2019-06-25",
     "category": "explore",
     "time": 35,
     "project": "waka-fetch",
     "tags": [
       "javascript"
     ]
+  },
+  {
+    "date": "2019-06-25",
+    "category": "study",
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2019-06-24",
@@ -3335,8 +3336,8 @@ const LOGS =
   },
   {
     "date": "2019-06-23",
-    "category": "code",
-    "time": 80,
+    "category": "explore",
+    "time": 55,
     "project": "joh",
     "tags": [
       "scala"
@@ -3344,8 +3345,8 @@ const LOGS =
   },
   {
     "date": "2019-06-23",
-    "category": "explore",
-    "time": 55,
+    "category": "code",
+    "time": 80,
     "project": "joh",
     "tags": [
       "scala"
@@ -3363,18 +3364,9 @@ const LOGS =
   },
   {
     "date": "2019-06-18",
-    "category": "explore",
+    "category": "admin",
     "time": 25,
     "project": "workspace"
-  },
-  {
-    "date": "2019-06-18",
-    "category": "explore",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
   },
   {
     "date": "2019-06-18",
@@ -3387,27 +3379,18 @@ const LOGS =
   },
   {
     "date": "2019-06-18",
-    "category": "admin",
+    "category": "explore",
     "time": 25,
-    "project": "workspace"
-  },
-  {
-    "date": "2019-06-17",
-    "category": "study",
-    "time": 20,
     "project": "programming",
     "tags": [
       "scala"
     ]
   },
   {
-    "date": "2019-06-17",
-    "category": "code",
+    "date": "2019-06-18",
+    "category": "explore",
     "time": 25,
-    "project": "programming",
-    "tags": [
-      "javascript"
-    ]
+    "project": "workspace"
   },
   {
     "date": "2019-06-17",
@@ -3419,20 +3402,31 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-06-17",
+    "category": "code",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-06-17",
+    "category": "study",
+    "time": 20,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2019-06-16",
     "category": "code",
     "time": 35,
     "project": "webring-checker",
     "tags": [
-      "javascript",
-      "Mervielles"
+      "javascript"
     ]
-  },
-  {
-    "date": "2019-06-16",
-    "category": "explore",
-    "time": 25,
-    "project": "words.chronica"
   },
   {
     "date": "2019-06-16",
@@ -3445,8 +3439,24 @@ const LOGS =
   },
   {
     "date": "2019-06-16",
+    "category": "explore",
+    "time": 25,
+    "project": "words.chronica"
+  },
+  {
+    "date": "2019-06-16",
     "category": "code",
     "time": 35,
+    "project": "webring-checker",
+    "tags": [
+      "javascript",
+      "Mervielles"
+    ]
+  },
+  {
+    "date": "2019-06-15",
+    "category": "code",
+    "time": 25,
     "project": "webring-checker",
     "tags": [
       "javascript"
@@ -3454,9 +3464,9 @@ const LOGS =
   },
   {
     "date": "2019-06-15",
-    "category": "write",
-    "time": 10,
-    "project": "wiki.chronica"
+    "category": "code",
+    "time": 5,
+    "project": "studio-syk"
   },
   {
     "date": "2019-06-15",
@@ -3469,23 +3479,14 @@ const LOGS =
   },
   {
     "date": "2019-06-15",
-    "category": "code",
-    "time": 5,
-    "project": "studiosyk"
-  },
-  {
-    "date": "2019-06-15",
-    "category": "code",
-    "time": 25,
-    "project": "webring-checker",
-    "tags": [
-      "javascript"
-    ]
+    "category": "write",
+    "time": 10,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-06-13",
-    "category": "code",
-    "time": 45,
+    "category": "research",
+    "time": 35,
     "project": "webring-checker",
     "tags": [
       "javascript",
@@ -3494,8 +3495,8 @@ const LOGS =
   },
   {
     "date": "2019-06-13",
-    "category": "research",
-    "time": 35,
+    "category": "code",
+    "time": 45,
     "project": "webring-checker",
     "tags": [
       "javascript",
@@ -3534,8 +3535,8 @@ const LOGS =
   },
   {
     "date": "2019-06-07",
-    "category": "explore",
-    "time": 45,
+    "category": "admin",
+    "time": 35,
     "project": "workspace",
     "tags": [
       "linux"
@@ -3543,8 +3544,8 @@ const LOGS =
   },
   {
     "date": "2019-06-07",
-    "category": "admin",
-    "time": 35,
+    "category": "explore",
+    "time": 45,
     "project": "workspace",
     "tags": [
       "linux"
@@ -3571,18 +3572,18 @@ const LOGS =
   },
   {
     "date": "2019-06-04",
+    "category": "research",
+    "time": 35,
+    "project": "talks"
+  },
+  {
+    "date": "2019-06-04",
     "category": "study",
     "time": 25,
     "project": "language",
     "tags": [
       "Korean"
     ]
-  },
-  {
-    "date": "2019-06-04",
-    "category": "research",
-    "time": 35,
-    "project": "talks"
   },
   {
     "date": "2019-06-03",
@@ -3596,7 +3597,7 @@ const LOGS =
   {
     "date": "2019-06-01",
     "category": "code",
-    "time": 55,
+    "time": 155,
     "project": "programming",
     "tags": [
       "javascript"
@@ -3614,7 +3615,7 @@ const LOGS =
   {
     "date": "2019-06-01",
     "category": "code",
-    "time": 155,
+    "time": 55,
     "project": "programming",
     "tags": [
       "javascript"
@@ -3628,6 +3629,12 @@ const LOGS =
   },
   {
     "date": "2019-05-30",
+    "category": "research",
+    "time": 35,
+    "project": "programming"
+  },
+  {
+    "date": "2019-05-30",
     "category": "code",
     "time": 45,
     "project": "programming",
@@ -3636,10 +3643,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-30",
-    "category": "research",
-    "time": 35,
-    "project": "programming"
+    "date": "2019-05-29",
+    "category": "code",
+    "time": 45,
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
   },
   {
     "date": "2019-05-29",
@@ -3648,13 +3658,16 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-05-29",
-    "category": "code",
-    "time": 45,
-    "project": "programming",
-    "tags": [
-      "javascript"
-    ]
+    "date": "2019-05-28",
+    "category": "design",
+    "time": 25,
+    "project": "programming"
+  },
+  {
+    "date": "2019-05-28",
+    "category": "write",
+    "time": 15,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-05-28",
@@ -3666,46 +3679,6 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-28",
-    "category": "write",
-    "time": 15,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-05-28",
-    "category": "design",
-    "time": 25,
-    "project": "programming"
-  },
-  {
-    "date": "2019-05-27",
-    "category": "code",
-    "time": 25,
-    "project": "wiki.chronica",
-    "tags": [
-      "javascript",
-      "html"
-    ]
-  },
-  {
-    "date": "2019-05-27",
-    "category": "code",
-    "time": 15,
-    "project": "webring-checker",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2019-05-27",
-    "category": "code",
-    "time": 25,
-    "project": "webring-checker",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
     "date": "2019-05-27",
     "category": "code",
     "time": 25,
@@ -3715,19 +3688,47 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-26",
-    "category": "design",
-    "time": 25,
-    "project": "programming"
-  },
-  {
-    "date": "2019-05-26",
+    "date": "2019-05-27",
     "category": "code",
     "time": 25,
     "project": "webring-checker",
     "tags": [
       "javascript"
     ]
+  },
+  {
+    "date": "2019-05-27",
+    "category": "code",
+    "time": 15,
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-27",
+    "category": "code",
+    "time": 25,
+    "project": "wiki-chronica",
+    "tags": [
+      "javascript",
+      "html"
+    ]
+  },
+  {
+    "date": "2019-05-26",
+    "category": "code",
+    "time": 15,
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-26",
+    "category": "write",
+    "time": 10,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-05-26",
@@ -3740,24 +3741,18 @@ const LOGS =
   },
   {
     "date": "2019-05-26",
-    "category": "write",
-    "time": 10,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-05-26",
     "category": "code",
-    "time": 15,
+    "time": 25,
     "project": "webring-checker",
     "tags": [
       "javascript"
     ]
   },
   {
-    "date": "2019-05-25",
-    "category": "admin",
-    "time": 165,
-    "project": "workspace"
+    "date": "2019-05-26",
+    "category": "design",
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2019-05-25",
@@ -3766,7 +3761,22 @@ const LOGS =
     "project": "workspace"
   },
   {
+    "date": "2019-05-25",
+    "category": "admin",
+    "time": 165,
+    "project": "workspace"
+  },
+  {
     "date": "2019-05-24",
+    "category": "explore",
+    "time": 35,
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-23",
     "category": "explore",
     "time": 35,
     "project": "programming",
@@ -3781,7 +3791,7 @@ const LOGS =
     "project": "workspace"
   },
   {
-    "date": "2019-05-23",
+    "date": "2019-05-22",
     "category": "explore",
     "time": 35,
     "project": "programming",
@@ -3794,15 +3804,6 @@ const LOGS =
     "category": "code",
     "time": 90,
     "project": "webring-checker",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2019-05-22",
-    "category": "explore",
-    "time": 35,
-    "project": "programming",
     "tags": [
       "javascript"
     ]
@@ -3818,9 +3819,9 @@ const LOGS =
   },
   {
     "date": "2019-05-19",
-    "category": "admin",
-    "time": 25,
-    "project": "workspace"
+    "category": "explore",
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2019-05-19",
@@ -3830,15 +3831,9 @@ const LOGS =
   },
   {
     "date": "2019-05-19",
-    "category": "explore",
-    "time": 30,
-    "project": "programming"
-  },
-  {
-    "date": "2019-05-18",
-    "category": "explore",
-    "time": 45,
-    "project": "programming"
+    "category": "admin",
+    "time": 25,
+    "project": "workspace"
   },
   {
     "date": "2019-05-18",
@@ -3851,9 +3846,15 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-17",
+    "date": "2019-05-18",
     "category": "explore",
-    "time": 75,
+    "time": 45,
+    "project": "programming"
+  },
+  {
+    "date": "2019-05-17",
+    "category": "code",
+    "time": 25,
     "project": "webring-checker",
     "tags": [
       "javascript"
@@ -3867,9 +3868,18 @@ const LOGS =
   },
   {
     "date": "2019-05-17",
-    "category": "code",
-    "time": 25,
+    "category": "explore",
+    "time": 75,
     "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-05-16",
+    "category": "code",
+    "time": 30,
+    "project": "studio-syk",
     "tags": [
       "javascript"
     ]
@@ -3884,12 +3894,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-16",
+    "date": "2019-05-14",
     "category": "code",
-    "time": 30,
-    "project": "studiosyk",
+    "time": 90,
+    "project": "gyul",
     "tags": [
-      "javascript"
+      "javascript",
+      "wiki-chronica"
     ]
   },
   {
@@ -3902,13 +3913,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-14",
+    "date": "2019-05-08",
     "category": "code",
-    "time": 90,
+    "time": 50,
     "project": "gyul",
     "tags": [
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
@@ -3918,16 +3929,6 @@ const LOGS =
     "project": "webring-checker",
     "tags": [
       "javascript"
-    ]
-  },
-  {
-    "date": "2019-05-08",
-    "category": "code",
-    "time": 50,
-    "project": "gyul",
-    "tags": [
-      "javascript",
-      "wiki.chronica"
     ]
   },
   {
@@ -3943,20 +3944,10 @@ const LOGS =
     "date": "2019-05-06",
     "category": "code",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "gyul"
-    ]
-  },
-  {
-    "date": "2019-05-05",
-    "category": "explore",
-    "time": 45,
-    "project": "wiki.chronica",
-    "tags": [
-      "javascript",
-      "chronica"
     ]
   },
   {
@@ -3970,6 +3961,25 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-05-05",
+    "category": "explore",
+    "time": 45,
+    "project": "wiki-chronica",
+    "tags": [
+      "javascript",
+      "chronica"
+    ]
+  },
+  {
+    "date": "2019-05-04",
+    "category": "code",
+    "time": 20,
+    "project": "webring-checker",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-05-04",
     "category": "code",
     "time": 350,
@@ -3977,13 +3987,13 @@ const LOGS =
     "tags": [
       "gyul",
       "javascript",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
   },
   {
-    "date": "2019-05-04",
+    "date": "2019-05-03",
     "category": "code",
-    "time": 20,
+    "time": 35,
     "project": "webring-checker",
     "tags": [
       "javascript"
@@ -3999,22 +4009,20 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-05-03",
+    "date": "2019-05-02",
     "category": "code",
     "time": 35,
-    "project": "webring-checker",
+    "project": "seutaeg",
     "tags": [
-      "javascript"
+      "javascript",
+      "gyul"
     ]
   },
   {
     "date": "2019-05-02",
-    "category": "code",
-    "time": 35,
-    "project": "webring-checker",
-    "tags": [
-      "javascript"
-    ]
+    "category": "write",
+    "time": 10,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-05-02",
@@ -4027,29 +4035,18 @@ const LOGS =
   },
   {
     "date": "2019-05-02",
-    "category": "write",
-    "time": 10,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-05-02",
     "category": "code",
     "time": 35,
-    "project": "seutaeg",
+    "project": "webring-checker",
     "tags": [
-      "javascript",
-      "gyul"
+      "javascript"
     ]
   },
   {
     "date": "2019-05-01",
-    "category": "code",
-    "time": 30,
-    "project": "seutaeg",
-    "tags": [
-      "javascript",
-      "gyul"
-    ]
+    "category": "explore",
+    "time": 25,
+    "project": "seutaeg"
   },
   {
     "date": "2019-05-01",
@@ -4062,15 +4059,23 @@ const LOGS =
   },
   {
     "date": "2019-05-01",
-    "category": "explore",
-    "time": 25,
-    "project": "seutaeg"
+    "category": "code",
+    "time": 30,
+    "project": "seutaeg",
+    "tags": [
+      "javascript",
+      "gyul"
+    ]
   },
   {
     "date": "2019-04-30",
-    "category": "explore",
+    "category": "code",
     "time": 55,
-    "project": "seutaeg"
+    "project": "gyul",
+    "tags": [
+      "wiki-chronica",
+      "javascript"
+    ]
   },
   {
     "date": "2019-04-30",
@@ -4084,13 +4089,15 @@ const LOGS =
   },
   {
     "date": "2019-04-30",
-    "category": "code",
+    "category": "explore",
     "time": 55,
-    "project": "gyul",
-    "tags": [
-      "wiki.chronica",
-      "javascript"
-    ]
+    "project": "seutaeg"
+  },
+  {
+    "date": "2019-04-28",
+    "category": "write",
+    "time": 30,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-04-28",
@@ -4102,35 +4109,29 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-04-28",
-    "category": "write",
-    "time": 30,
-    "project": "wiki.chronica"
-  },
-  {
-    "date": "2019-04-26",
-    "category": "write",
-    "time": 15,
-    "project": "wiki.chronica",
-    "tags": [
-      "crate-builder"
-    ]
-  },
-  {
     "date": "2019-04-26",
     "category": "code",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "css"
     ]
   },
   {
+    "date": "2019-04-26",
+    "category": "write",
+    "time": 15,
+    "project": "wiki-chronica",
+    "tags": [
+      "crate-builder"
+    ]
+  },
+  {
     "date": "2019-04-24",
     "category": "code",
     "time": 40,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "javascript",
       "css"
@@ -4158,9 +4159,12 @@ const LOGS =
   },
   {
     "date": "2019-04-20",
-    "category": "explore",
-    "time": 35,
-    "project": "processing"
+    "category": "code",
+    "time": 45,
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
   },
   {
     "date": "2019-04-20",
@@ -4173,26 +4177,14 @@ const LOGS =
   },
   {
     "date": "2019-04-20",
-    "category": "code",
-    "time": 45,
-    "project": "gyul",
-    "tags": [
-      "javascript"
-    ]
+    "category": "explore",
+    "time": 35,
+    "project": "processing"
   },
   {
     "date": "2019-04-19",
     "category": "admin",
     "time": 45,
-    "project": "workspace",
-    "tags": [
-      "vim"
-    ]
-  },
-  {
-    "date": "2019-04-18",
-    "category": "admin",
-    "time": 35,
     "project": "workspace",
     "tags": [
       "vim"
@@ -4206,6 +4198,15 @@ const LOGS =
     "tags": [
       "javascript",
       "andaga"
+    ]
+  },
+  {
+    "date": "2019-04-18",
+    "category": "admin",
+    "time": 35,
+    "project": "workspace",
+    "tags": [
+      "vim"
     ]
   },
   {
@@ -4292,6 +4293,15 @@ const LOGS =
   },
   {
     "date": "2019-04-08",
+    "category": "code",
+    "time": 30,
+    "project": "gyul",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2019-04-08",
     "category": "study",
     "time": 30,
     "project": "programming",
@@ -4300,13 +4310,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-04-08",
-    "category": "code",
-    "time": 30,
-    "project": "gyul",
-    "tags": [
-      "javascript"
-    ]
+    "date": "2019-04-07",
+    "category": "write",
+    "time": 55,
+    "project": "wiki-chronica"
   },
   {
     "date": "2019-04-07",
@@ -4319,10 +4326,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-04-07",
-    "category": "write",
-    "time": 55,
-    "project": "wiki.chronica"
+    "date": "2019-04-06",
+    "category": "code",
+    "time": 30,
+    "project": "studio-syk",
+    "tags": [
+      "css"
+    ]
   },
   {
     "date": "2019-04-06",
@@ -4331,15 +4341,6 @@ const LOGS =
     "project": "workspace",
     "tags": [
       "nvim"
-    ]
-  },
-  {
-    "date": "2019-04-06",
-    "category": "code",
-    "time": 30,
-    "project": "studiosyk",
-    "tags": [
-      "css"
     ]
   },
   {
@@ -4352,7 +4353,7 @@ const LOGS =
     "date": "2019-04-02",
     "category": "code",
     "time": 45,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "css",
       "chronica",
@@ -4363,18 +4364,9 @@ const LOGS =
     "date": "2019-04-01",
     "category": "write",
     "time": 25,
-    "project": "wiki.chronica",
+    "project": "wiki-chronica",
     "tags": [
       "chronica"
-    ]
-  },
-  {
-    "date": "2019-03-31",
-    "category": "code",
-    "time": 30,
-    "project": "andaga-cli",
-    "tags": [
-      "javascript"
     ]
   },
   {
@@ -4385,6 +4377,15 @@ const LOGS =
     "tags": [
       "javascript",
       "functional programming"
+    ]
+  },
+  {
+    "date": "2019-03-31",
+    "category": "code",
+    "time": 30,
+    "project": "andaga-cli",
+    "tags": [
+      "javascript"
     ]
   },
   {
@@ -4409,12 +4410,6 @@ const LOGS =
   },
   {
     "date": "2019-03-28",
-    "category": "admin",
-    "time": 25,
-    "project": "andaga"
-  },
-  {
-    "date": "2019-03-28",
     "category": "explore",
     "time": 45,
     "project": "chronica",
@@ -4425,19 +4420,16 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-03-28",
+    "category": "admin",
+    "time": 25,
+    "project": "andaga"
+  },
+  {
     "date": "2019-03-27",
     "category": "research",
     "time": 40,
     "project": "andaga-cli"
-  },
-  {
-    "date": "2019-03-26",
-    "category": "code",
-    "time": 15,
-    "project": "andaga-cli",
-    "tags": [
-      "andaga"
-    ]
   },
   {
     "date": "2019-03-26",
@@ -4446,6 +4438,15 @@ const LOGS =
     "project": "workspace",
     "tags": [
       "linux"
+    ]
+  },
+  {
+    "date": "2019-03-26",
+    "category": "code",
+    "time": 15,
+    "project": "andaga-cli",
+    "tags": [
+      "andaga"
     ]
   },
   {
@@ -4460,6 +4461,15 @@ const LOGS =
   },
   {
     "date": "2019-03-24",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2019-03-24",
     "category": "code",
     "time": 25,
     "project": "chronica",
@@ -4468,13 +4478,16 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-03-24",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
+    "date": "2019-03-22",
+    "category": "research",
+    "time": 45,
+    "project": "chronica"
+  },
+  {
+    "date": "2019-03-22",
+    "category": "admin",
+    "time": 45,
+    "project": "chronica"
   },
   {
     "date": "2019-03-22",
@@ -4486,15 +4499,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-03-22",
+    "date": "2019-03-21",
     "category": "admin",
-    "time": 45,
-    "project": "chronica"
-  },
-  {
-    "date": "2019-03-22",
-    "category": "research",
-    "time": 45,
+    "time": 35,
     "project": "chronica"
   },
   {
@@ -4507,10 +4514,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-03-21",
+    "date": "2019-03-20",
     "category": "admin",
     "time": 35,
-    "project": "chronica"
+    "project": "andaga"
   },
   {
     "date": "2019-03-20",
@@ -4523,14 +4530,14 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-03-20",
-    "category": "admin",
-    "time": 35,
-    "project": "andaga"
-  },
-  {
     "date": "2019-03-18",
     "category": "study",
+    "time": 55,
+    "project": "programming"
+  },
+  {
+    "date": "2019-03-17",
+    "category": "research",
     "time": 55,
     "project": "programming"
   },
@@ -4541,15 +4548,9 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-03-17",
-    "category": "research",
-    "time": 55,
-    "project": "programming"
-  },
-  {
     "date": "2019-03-16",
     "category": "code",
-    "time": 45,
+    "time": 35,
     "project": "andaga-cli",
     "tags": [
       "andaga-core",
@@ -4569,7 +4570,7 @@ const LOGS =
   {
     "date": "2019-03-16",
     "category": "code",
-    "time": 35,
+    "time": 45,
     "project": "andaga-cli",
     "tags": [
       "andaga-core",
@@ -4589,15 +4590,15 @@ const LOGS =
   },
   {
     "date": "2019-03-14",
-    "category": "explore",
-    "time": 30,
-    "project": "workspace"
-  },
-  {
-    "date": "2019-03-14",
     "category": "research",
     "time": 30,
     "project": "programming"
+  },
+  {
+    "date": "2019-03-14",
+    "category": "explore",
+    "time": 30,
+    "project": "workspace"
   },
   {
     "date": "2019-03-13",
@@ -4610,12 +4611,6 @@ const LOGS =
   },
   {
     "date": "2019-03-11",
-    "category": "research",
-    "time": 35,
-    "project": "programming"
-  },
-  {
-    "date": "2019-03-11",
     "category": "code",
     "time": 50,
     "project": "andaga-core",
@@ -4624,14 +4619,26 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-03-11",
+    "category": "research",
+    "time": 35,
+    "project": "programming"
+  },
+  {
     "date": "2019-03-10",
     "category": "code",
     "time": 60,
     "project": "chronica",
     "tags": [
       "css",
-      "wiki.chronica"
+      "wiki-chronica"
     ]
+  },
+  {
+    "date": "2019-03-09",
+    "category": "admin",
+    "time": 45,
+    "project": "chronica"
   },
   {
     "date": "2019-03-09",
@@ -4642,12 +4649,6 @@ const LOGS =
       "javascript",
       "css"
     ]
-  },
-  {
-    "date": "2019-03-09",
-    "category": "admin",
-    "time": 45,
-    "project": "chronica"
   },
   {
     "date": "2019-03-07",
@@ -4709,26 +4710,21 @@ const LOGS =
   },
   {
     "date": "2019-02-24",
-    "category": "study",
-    "time": 30,
-    "project": "programming"
-  },
-  {
-    "date": "2019-02-24",
     "category": "admin",
     "time": 75,
     "project": "chronica"
   },
   {
+    "date": "2019-02-24",
+    "category": "study",
+    "time": 30,
+    "project": "programming"
+  },
+  {
     "date": "2019-02-23",
-    "category": "code",
-    "time": 55,
-    "project": "chronica",
-    "tags": [
-      "gyul",
-      "javascript",
-      "css"
-    ]
+    "category": "admin",
+    "time": 20,
+    "project": "chronica"
   },
   {
     "date": "2019-02-23",
@@ -4743,25 +4739,14 @@ const LOGS =
   },
   {
     "date": "2019-02-23",
-    "category": "admin",
-    "time": 20,
-    "project": "chronica"
-  },
-  {
-    "date": "2019-02-22",
     "category": "code",
-    "time": 45,
-    "project": "gyul",
+    "time": 55,
+    "project": "chronica",
     "tags": [
-      "chronica",
-      "javascript"
+      "gyul",
+      "javascript",
+      "css"
     ]
-  },
-  {
-    "date": "2019-02-22",
-    "category": "design",
-    "time": 25,
-    "project": "chronica"
   },
   {
     "date": "2019-02-22",
@@ -4774,13 +4759,19 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-02-21",
+    "date": "2019-02-22",
+    "category": "design",
+    "time": 25,
+    "project": "chronica"
+  },
+  {
+    "date": "2019-02-22",
     "category": "code",
-    "time": 65,
-    "project": "programming",
+    "time": 45,
+    "project": "gyul",
     "tags": [
-      "scala",
-      "functional programming"
+      "chronica",
+      "javascript"
     ]
   },
   {
@@ -4795,9 +4786,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-02-20",
-    "category": "study",
-    "time": 25,
+    "date": "2019-02-21",
+    "category": "code",
+    "time": 65,
     "project": "programming",
     "tags": [
       "scala",
@@ -4815,13 +4806,22 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-02-20",
+    "category": "study",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "scala",
+      "functional programming"
+    ]
+  },
+  {
     "date": "2019-02-19",
     "category": "code",
-    "time": 45,
-    "project": "chronica",
+    "time": 55,
+    "project": "gyul",
     "tags": [
-      "javascript",
-      "gyul"
+      "javascript"
     ]
   },
   {
@@ -4836,10 +4836,11 @@ const LOGS =
   {
     "date": "2019-02-19",
     "category": "code",
-    "time": 55,
-    "project": "gyul",
+    "time": 45,
+    "project": "chronica",
     "tags": [
-      "javascript"
+      "javascript",
+      "gyul"
     ]
   },
   {
@@ -4887,10 +4888,11 @@ const LOGS =
   {
     "date": "2019-02-13",
     "category": "code",
-    "time": 45,
+    "time": 60,
     "project": "gyul",
     "tags": [
-      "javascript"
+      "javascript",
+      "css"
     ]
   },
   {
@@ -4905,11 +4907,10 @@ const LOGS =
   {
     "date": "2019-02-13",
     "category": "code",
-    "time": 60,
+    "time": 45,
     "project": "gyul",
     "tags": [
-      "javascript",
-      "css"
+      "javascript"
     ]
   },
   {
@@ -4923,12 +4924,6 @@ const LOGS =
   },
   {
     "date": "2019-02-11",
-    "category": "design",
-    "time": 60,
-    "project": "chronica"
-  },
-  {
-    "date": "2019-02-11",
     "category": "study",
     "time": 30,
     "project": "language",
@@ -4937,13 +4932,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-02-10",
-    "category": "explore",
+    "date": "2019-02-11",
+    "category": "design",
     "time": 60,
-    "project": "gyul",
-    "tags": [
-      "javascript"
-    ]
+    "project": "chronica"
   },
   {
     "date": "2019-02-10",
@@ -4953,6 +4945,15 @@ const LOGS =
     "tags": [
       "javascript",
       "bash"
+    ]
+  },
+  {
+    "date": "2019-02-10",
+    "category": "explore",
+    "time": 60,
+    "project": "gyul",
+    "tags": [
+      "javascript"
     ]
   },
   {
@@ -4976,7 +4977,7 @@ const LOGS =
   },
   {
     "date": "2019-02-07",
-    "category": "code",
+    "category": "explore",
     "time": 45,
     "project": "gyul",
     "tags": [
@@ -4985,7 +4986,7 @@ const LOGS =
   },
   {
     "date": "2019-02-07",
-    "category": "explore",
+    "category": "code",
     "time": 45,
     "project": "gyul",
     "tags": [
@@ -5012,12 +5013,6 @@ const LOGS =
   },
   {
     "date": "2019-02-04",
-    "category": "admin",
-    "time": 45,
-    "project": "andaga"
-  },
-  {
-    "date": "2019-02-04",
     "category": "code",
     "time": 60,
     "project": "andaga-core",
@@ -5025,6 +5020,18 @@ const LOGS =
       "andaga",
       "javascript"
     ]
+  },
+  {
+    "date": "2019-02-04",
+    "category": "admin",
+    "time": 45,
+    "project": "andaga"
+  },
+  {
+    "date": "2019-02-02",
+    "category": "admin",
+    "time": 75,
+    "project": "andaga"
   },
   {
     "date": "2019-02-02",
@@ -5036,12 +5043,6 @@ const LOGS =
       "andaga"
     ],
     "project": "programming"
-  },
-  {
-    "date": "2019-02-02",
-    "category": "admin",
-    "time": 75,
-    "project": "andaga"
   },
   {
     "date": "2019-02-01",
@@ -5057,15 +5058,9 @@ const LOGS =
   },
   {
     "date": "2019-01-30",
-    "category": "admin",
-    "time": 30,
-    "project": "andaga"
-  },
-  {
-    "date": "2019-01-30",
-    "category": "admin",
-    "time": 60,
-    "project": "studiosyk",
+    "category": "code",
+    "time": 45,
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -5080,9 +5075,26 @@ const LOGS =
   },
   {
     "date": "2019-01-30",
+    "category": "admin",
+    "time": 60,
+    "project": "studio-syk",
+    "tags": [
+      "javascript",
+      "html",
+      "css"
+    ]
+  },
+  {
+    "date": "2019-01-30",
+    "category": "admin",
+    "time": 30,
+    "project": "andaga"
+  },
+  {
+    "date": "2019-01-29",
     "category": "code",
-    "time": 45,
-    "project": "studiosyk",
+    "time": 60,
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -5093,18 +5105,7 @@ const LOGS =
     "date": "2019-01-29",
     "category": "admin",
     "time": 100,
-    "project": "studiosyk",
-    "tags": [
-      "javascript",
-      "html",
-      "css"
-    ]
-  },
-  {
-    "date": "2019-01-29",
-    "category": "code",
-    "time": 60,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -5113,9 +5114,9 @@ const LOGS =
   },
   {
     "date": "2019-01-28",
-    "category": "admin",
-    "time": 90,
-    "project": "studiosyk",
+    "category": "code",
+    "time": 45,
+    "project": "studio-syk",
     "tags": [
       "javascript",
       "html",
@@ -5135,68 +5136,55 @@ const LOGS =
   },
   {
     "date": "2019-01-28",
-    "category": "code",
-    "time": 45,
-    "project": "studiosyk",
-    "tags": [
-      "javascript",
-      "html",
-      "css"
-    ]
-  },
-  {
-    "date": "2019-01-27",
-    "category": "code",
-    "time": 45,
-    "project": "studiosyk",
-    "tags": [
-      "javascript",
-      "html",
-      "css"
-    ]
-  },
-  {
-    "date": "2019-01-27",
-    "category": "code",
-    "time": 120,
-    "project": "studiosyk",
-    "tags": [
-      "javascript",
-      "html",
-      "css"
-    ]
-  },
-  {
-    "date": "2019-01-27",
-    "category": "code",
-    "time": 120,
-    "project": "studiosyk",
-    "tags": [
-      "javascript",
-      "html",
-      "css"
-    ]
-  },
-  {
-    "date": "2019-01-26",
-    "category": "code",
+    "category": "admin",
     "time": 90,
-    "project": "studiosyk",
+    "project": "studio-syk",
     "tags": [
       "javascript",
-      "css",
-      "html"
+      "html",
+      "css"
+    ]
+  },
+  {
+    "date": "2019-01-27",
+    "category": "code",
+    "time": 120,
+    "project": "studio-syk",
+    "tags": [
+      "javascript",
+      "html",
+      "css"
+    ]
+  },
+  {
+    "date": "2019-01-27",
+    "category": "code",
+    "time": 120,
+    "project": "studio-syk",
+    "tags": [
+      "javascript",
+      "html",
+      "css"
+    ]
+  },
+  {
+    "date": "2019-01-27",
+    "category": "code",
+    "time": 45,
+    "project": "studio-syk",
+    "tags": [
+      "javascript",
+      "html",
+      "css"
     ]
   },
   {
     "date": "2019-01-26",
-    "category": "code",
+    "category": "research",
     "time": 45,
-    "project": "studiosyk",
+    "project": "gyul",
     "tags": [
-      "javascript",
-      "css",
-      "html"
+      "javascript"
     ]
   },
   {
@@ -5211,11 +5199,24 @@ const LOGS =
   },
   {
     "date": "2019-01-26",
-    "category": "research",
+    "category": "code",
     "time": 45,
-    "project": "gyul",
+    "project": "studio-syk",
     "tags": [
-      "javascript"
+      "javascript",
+      "css",
+      "html"
+    ]
+  },
+  {
+    "date": "2019-01-26",
+    "category": "code",
+    "time": 90,
+    "project": "studio-syk",
+    "tags": [
+      "javascript",
+      "css",
+      "html"
     ]
   },
   {
@@ -5243,7 +5244,7 @@ const LOGS =
   {
     "date": "2019-01-21",
     "category": "code",
-    "time": 30,
+    "time": 60,
     "project": "andaga-core",
     "tags": [
       "andaga",
@@ -5253,7 +5254,7 @@ const LOGS =
   {
     "date": "2019-01-21",
     "category": "code",
-    "time": 60,
+    "time": 30,
     "project": "andaga-core",
     "tags": [
       "andaga",
@@ -5262,7 +5263,7 @@ const LOGS =
   },
   {
     "date": "2019-01-20",
-    "category": "code",
+    "category": "research",
     "time": 60,
     "project": "andaga-core",
     "tags": [
@@ -5282,18 +5283,8 @@ const LOGS =
   },
   {
     "date": "2019-01-20",
-    "category": "research",
-    "time": 60,
-    "project": "andaga-core",
-    "tags": [
-      "andaga",
-      "javascript"
-    ]
-  },
-  {
-    "date": "2019-01-19",
     "category": "code",
-    "time": 120,
+    "time": 60,
     "project": "andaga-core",
     "tags": [
       "andaga",
@@ -5311,10 +5302,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2019-01-18",
+    "date": "2019-01-19",
     "category": "code",
-    "time": 40,
-    "project": "andaga-cli",
+    "time": 120,
+    "project": "andaga-core",
     "tags": [
       "andaga",
       "javascript"
@@ -5330,6 +5321,16 @@ const LOGS =
     ]
   },
   {
+    "date": "2019-01-18",
+    "category": "code",
+    "time": 40,
+    "project": "andaga-cli",
+    "tags": [
+      "andaga",
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-01-17",
     "category": "code",
     "time": 60,
@@ -5341,6 +5342,12 @@ const LOGS =
   },
   {
     "date": "2019-01-16",
+    "category": "admin",
+    "time": 20,
+    "project": "waka-fetch"
+  },
+  {
+    "date": "2019-01-16",
     "category": "code",
     "time": 30,
     "project": "andaga-cli",
@@ -5348,12 +5355,6 @@ const LOGS =
       "andaga",
       "javascript"
     ]
-  },
-  {
-    "date": "2019-01-16",
-    "category": "admin",
-    "time": 20,
-    "project": "waka-fetch"
   },
   {
     "date": "2019-01-15",
@@ -5376,13 +5377,9 @@ const LOGS =
   },
   {
     "date": "2019-01-12",
-    "category": "code",
-    "time": 60,
-    "project": "andaga-core",
-    "tags": [
-      "andaga",
-      "javascript"
-    ]
+    "category": "admin",
+    "time": 45,
+    "project": "network"
   },
   {
     "date": "2019-01-12",
@@ -5395,15 +5392,9 @@ const LOGS =
   },
   {
     "date": "2019-01-12",
-    "category": "admin",
-    "time": 45,
-    "project": "network"
-  },
-  {
-    "date": "2019-01-11",
-    "category": "design",
-    "time": 30,
-    "project": "andaga-cli",
+    "category": "code",
+    "time": 60,
+    "project": "andaga-core",
     "tags": [
       "andaga",
       "javascript"
@@ -5416,6 +5407,16 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
+    "date": "2019-01-11",
+    "category": "design",
+    "time": 30,
+    "project": "andaga-cli",
+    "tags": [
+      "andaga",
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-01-10",
     "category": "code",
     "time": 45,
@@ -5423,6 +5424,12 @@ const LOGS =
     "tags": [
       "javascript"
     ]
+  },
+  {
+    "date": "2019-01-09",
+    "category": "admin",
+    "time": 45,
+    "project": "waka-fetch"
   },
   {
     "date": "2019-01-09",
@@ -5435,16 +5442,19 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2019-01-09",
-    "category": "admin",
-    "time": 45,
-    "project": "waka-fetch"
-  },
-  {
     "date": "2019-01-08",
     "category": "code",
     "time": 60,
     "project": "waka-fetch"
+  },
+  {
+    "date": "2019-01-07",
+    "category": "code",
+    "time": 60,
+    "project": "waka-fetch",
+    "tags": [
+      "javascript"
+    ]
   },
   {
     "date": "2019-01-07",
@@ -5457,24 +5467,6 @@ const LOGS =
     "project": "network"
   },
   {
-    "date": "2019-01-07",
-    "category": "code",
-    "time": 60,
-    "project": "waka-fetch",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2019-01-06",
-    "category": "code",
-    "time": 120,
-    "project": "waka-fetch",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
     "date": "2019-01-06",
     "category": "admin",
     "time": 45,
@@ -5484,9 +5476,9 @@ const LOGS =
     "project": "network"
   },
   {
-    "date": "2019-01-05",
+    "date": "2019-01-06",
     "category": "code",
-    "time": 90,
+    "time": 120,
     "project": "waka-fetch",
     "tags": [
       "javascript"
@@ -5503,6 +5495,15 @@ const LOGS =
     "project": "waka-fetch"
   },
   {
+    "date": "2019-01-05",
+    "category": "code",
+    "time": 90,
+    "project": "waka-fetch",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
     "date": "2019-01-04",
     "category": "admin",
     "time": 120,
@@ -5515,13 +5516,12 @@ const LOGS =
   },
   {
     "date": "2019-01-03",
-    "category": "code",
-    "time": 90,
-    "project": "andaga-core",
+    "category": "admin",
+    "time": 45,
     "tags": [
-      "andaga",
-      "javascript"
-    ]
+      "waka-fetch"
+    ],
+    "project": "network"
   },
   {
     "date": "2019-01-03",
@@ -5531,12 +5531,13 @@ const LOGS =
   },
   {
     "date": "2019-01-03",
-    "category": "admin",
-    "time": 45,
+    "category": "code",
+    "time": 90,
+    "project": "andaga-core",
     "tags": [
-      "waka-fetch"
-    ],
-    "project": "network"
+      "andaga",
+      "javascript"
+    ]
   },
   {
     "date": "2019-01-02",
@@ -5550,15 +5551,24 @@ const LOGS =
   },
   {
     "date": "2019-01-01",
+    "category": "admin",
+    "time": 25,
+    "project": "workspace"
+  },
+  {
+    "date": "2019-01-01",
     "category": "explore",
     "time": 120,
     "project": "chronica"
   },
   {
-    "date": "2019-01-01",
-    "category": "admin",
-    "time": 25,
-    "project": "workspace"
+    "date": "2018-12-31",
+    "category": "code",
+    "time": 30,
+    "project": "scripts",
+    "tags": [
+      "bash"
+    ]
   },
   {
     "date": "2018-12-31",
@@ -5568,15 +5578,6 @@ const LOGS =
     "tags": [
       "html",
       "css"
-    ]
-  },
-  {
-    "date": "2018-12-31",
-    "category": "code",
-    "time": 30,
-    "project": "scripts",
-    "tags": [
-      "bash"
     ]
   },
   {
@@ -5590,32 +5591,32 @@ const LOGS =
   },
   {
     "date": "2018-12-27",
+    "category": "admin",
+    "time": 120,
+    "project": "waka-fetch"
+  },
+  {
+    "date": "2018-12-27",
+    "category": "admin",
+    "time": 120,
+    "project": "waka-fetch"
+  },
+  {
+    "date": "2018-12-27",
     "category": "study",
     "time": 120,
     "project": "programming"
   },
   {
-    "date": "2018-12-27",
-    "category": "admin",
-    "time": 120,
-    "project": "waka-fetch"
-  },
-  {
-    "date": "2018-12-27",
-    "category": "admin",
-    "time": 120,
-    "project": "waka-fetch"
-  },
-  {
     "date": "2018-12-26",
     "category": "research",
-    "time": 45,
+    "time": 30,
     "project": "network"
   },
   {
     "date": "2018-12-26",
     "category": "research",
-    "time": 30,
+    "time": 45,
     "project": "network"
   },
   {
@@ -5626,13 +5627,13 @@ const LOGS =
   },
   {
     "date": "2018-12-24",
-    "category": "admin",
+    "category": "research",
     "time": 45,
     "project": "waka-fetch"
   },
   {
     "date": "2018-12-24",
-    "category": "research",
+    "category": "admin",
     "time": 45,
     "project": "waka-fetch"
   },
@@ -5647,18 +5648,18 @@ const LOGS =
   },
   {
     "date": "2018-12-21",
+    "category": "research",
+    "time": 25,
+    "project": "waka-fetch"
+  },
+  {
+    "date": "2018-12-21",
     "category": "code",
     "time": 45,
     "project": "waka-fetch",
     "tags": [
       "javascript"
     ]
-  },
-  {
-    "date": "2018-12-21",
-    "category": "research",
-    "time": 25,
-    "project": "waka-fetch"
   },
   {
     "date": "2018-12-19",
@@ -5689,20 +5690,20 @@ const LOGS =
   },
   {
     "date": "2018-12-15",
-    "category": "code",
-    "time": 45,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2018-12-15",
     "category": "explore",
     "time": 150,
     "project": "andaga-core",
     "tags": [
       "andaga",
+      "scala"
+    ]
+  },
+  {
+    "date": "2018-12-15",
+    "category": "code",
+    "time": 45,
+    "project": "programming",
+    "tags": [
       "scala"
     ]
   },
@@ -5726,18 +5727,18 @@ const LOGS =
   },
   {
     "date": "2018-12-12",
+    "category": "admin",
+    "time": 25,
+    "project": "programming"
+  },
+  {
+    "date": "2018-12-12",
     "category": "code",
     "time": 25,
     "project": "andaga",
     "tags": [
       "javascript"
     ]
-  },
-  {
-    "date": "2018-12-12",
-    "category": "admin",
-    "time": 25,
-    "project": "programming"
   },
   {
     "date": "2018-12-09",
@@ -5751,18 +5752,18 @@ const LOGS =
   },
   {
     "date": "2018-12-08",
-    "category": "admin",
-    "time": 65,
-    "project": "tooling"
-  },
-  {
-    "date": "2018-12-08",
     "category": "research",
     "time": 60,
     "project": "workspace",
     "tags": [
       "scala"
     ]
+  },
+  {
+    "date": "2018-12-08",
+    "category": "admin",
+    "time": 65,
+    "project": "tooling"
   },
   {
     "date": "2018-12-07",
@@ -5793,6 +5794,12 @@ const LOGS =
   },
   {
     "date": "2018-12-02",
+    "category": "admin",
+    "time": 120,
+    "project": "network"
+  },
+  {
+    "date": "2018-12-02",
     "category": "code",
     "time": 30,
     "project": "andaga-core",
@@ -5802,10 +5809,22 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-12-02",
-    "category": "admin",
-    "time": 120,
-    "project": "network"
+    "date": "2018-11-30",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2018-11-30",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
   },
   {
     "date": "2018-11-30",
@@ -5814,24 +5833,6 @@ const LOGS =
     "project": "workspace",
     "tags": [
       "php"
-    ]
-  },
-  {
-    "date": "2018-11-30",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2018-11-30",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
-    "tags": [
-      "scala"
     ]
   },
   {
@@ -5845,13 +5846,9 @@ const LOGS =
   },
   {
     "date": "2018-11-28",
-    "category": "code",
-    "time": 35,
-    "project": "chronica",
-    "tags": [
-      "html",
-      "css"
-    ]
+    "category": "explore",
+    "time": 60,
+    "project": "workspace"
   },
   {
     "date": "2018-11-28",
@@ -5866,21 +5863,25 @@ const LOGS =
   },
   {
     "date": "2018-11-28",
-    "category": "explore",
-    "time": 60,
-    "project": "workspace"
-  },
-  {
-    "date": "2018-11-25",
-    "category": "study",
-    "time": 30,
-    "project": "programming"
+    "category": "code",
+    "time": 35,
+    "project": "chronica",
+    "tags": [
+      "html",
+      "css"
+    ]
   },
   {
     "date": "2018-11-25",
     "category": "admin",
     "time": 160,
     "project": "network"
+  },
+  {
+    "date": "2018-11-25",
+    "category": "study",
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2018-11-24",
@@ -5896,29 +5897,29 @@ const LOGS =
   },
   {
     "date": "2018-11-18",
-    "category": "code",
-    "time": 45,
-    "project": "programming",
-    "tags": [
-      "elm"
-    ]
-  },
-  {
-    "date": "2018-11-18",
-    "category": "study",
-    "time": 45,
-    "project": "programming",
-    "tags": [
-      "elm"
-    ]
-  },
-  {
-    "date": "2018-11-18",
     "category": "study",
     "time": 25,
     "project": "programming",
     "tags": [
       "functional programming"
+    ]
+  },
+  {
+    "date": "2018-11-18",
+    "category": "study",
+    "time": 45,
+    "project": "programming",
+    "tags": [
+      "elm"
+    ]
+  },
+  {
+    "date": "2018-11-18",
+    "category": "code",
+    "time": 45,
+    "project": "programming",
+    "tags": [
+      "elm"
     ]
   },
   {
@@ -5933,6 +5934,15 @@ const LOGS =
   },
   {
     "date": "2018-11-12",
+    "category": "study",
+    "time": 45,
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
+    "date": "2018-11-12",
     "category": "research",
     "time": 60,
     "project": "programming",
@@ -5941,13 +5951,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-11-12",
+    "date": "2018-11-11",
     "category": "study",
-    "time": 45,
-    "project": "language",
+    "time": 65,
     "tags": [
-      "dutch"
-    ]
+      "linux"
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-11-11",
@@ -5959,9 +5969,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-11-11",
+    "date": "2018-11-08",
     "category": "study",
-    "time": 65,
+    "time": 15,
     "tags": [
       "linux"
     ],
@@ -5978,22 +5988,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-11-08",
+    "date": "2018-11-07",
     "category": "study",
-    "time": 15,
+    "time": 25,
     "tags": [
       "linux"
     ],
     "project": "programming"
-  },
-  {
-    "date": "2018-11-07",
-    "category": "study",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
   },
   {
     "date": "2018-11-07",
@@ -6008,10 +6009,10 @@ const LOGS =
     "date": "2018-11-07",
     "category": "study",
     "time": 25,
+    "project": "programming",
     "tags": [
-      "linux"
-    ],
-    "project": "programming"
+      "scala"
+    ]
   },
   {
     "date": "2018-11-06",
@@ -6053,30 +6054,21 @@ const LOGS =
   },
   {
     "date": "2018-10-25",
-    "category": "code",
-    "time": 45,
-    "project": "waka-machine",
+    "category": "study",
+    "time": 60,
     "tags": [
-      "javascript"
-    ]
+      "linux"
+    ],
+    "project": "network"
   },
   {
     "date": "2018-10-25",
-    "category": "study",
-    "time": 60,
+    "category": "code",
+    "time": 45,
+    "project": "waka-machine",
     "tags": [
-      "linux"
-    ],
-    "project": "network"
-  },
-  {
-    "date": "2018-10-24",
-    "category": "study",
-    "time": 60,
-    "tags": [
-      "linux"
-    ],
-    "project": "network"
+      "javascript"
+    ]
   },
   {
     "date": "2018-10-24",
@@ -6086,6 +6078,15 @@ const LOGS =
     "tags": [
       "javascript"
     ]
+  },
+  {
+    "date": "2018-10-24",
+    "category": "study",
+    "time": 60,
+    "tags": [
+      "linux"
+    ],
+    "project": "network"
   },
   {
     "date": "2018-10-22",
@@ -6143,15 +6144,6 @@ const LOGS =
   },
   {
     "date": "2018-09-24",
-    "category": "code",
-    "time": 60,
-    "project": "waka-machine",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2018-09-24",
     "category": "admin",
     "time": 35,
     "project": "language",
@@ -6160,10 +6152,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-09-18",
-    "category": "study",
-    "time": 45,
-    "project": "programming",
+    "date": "2018-09-24",
+    "category": "code",
+    "time": 60,
+    "project": "waka-machine",
     "tags": [
       "javascript"
     ]
@@ -6172,6 +6164,15 @@ const LOGS =
     "date": "2018-09-18",
     "category": "study",
     "time": 60,
+    "project": "programming",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2018-09-18",
+    "category": "study",
+    "time": 45,
     "project": "programming",
     "tags": [
       "javascript"
@@ -6206,11 +6207,11 @@ const LOGS =
   },
   {
     "date": "2018-09-13",
-    "category": "study",
-    "time": 35,
-    "project": "programming",
+    "category": "admin",
+    "time": 25,
+    "project": "language",
     "tags": [
-      "javascript"
+      "dutch"
     ]
   },
   {
@@ -6224,11 +6225,11 @@ const LOGS =
   },
   {
     "date": "2018-09-13",
-    "category": "admin",
-    "time": 25,
-    "project": "language",
+    "category": "study",
+    "time": 35,
+    "project": "programming",
     "tags": [
-      "dutch"
+      "javascript"
     ]
   },
   {
@@ -6242,20 +6243,20 @@ const LOGS =
   },
   {
     "date": "2018-09-11",
-    "category": "admin",
-    "time": 30,
-    "project": "workspace",
-    "tags": [
-      "vim"
-    ]
-  },
-  {
-    "date": "2018-09-11",
     "category": "study",
     "time": 30,
     "project": "programming",
     "tags": [
       "functional programming"
+    ]
+  },
+  {
+    "date": "2018-09-11",
+    "category": "admin",
+    "time": 30,
+    "project": "workspace",
+    "tags": [
+      "vim"
     ]
   },
   {
@@ -6269,30 +6270,9 @@ const LOGS =
   },
   {
     "date": "2018-09-09",
-    "category": "study",
-    "time": 60,
-    "project": "language",
-    "tags": [
-      "dutch"
-    ]
-  },
-  {
-    "date": "2018-09-09",
     "category": "code",
-    "time": 25,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2018-09-09",
-    "category": "code",
-    "time": 30,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
+    "time": 45,
+    "project": "andaga"
   },
   {
     "date": "2018-09-09",
@@ -6306,29 +6286,35 @@ const LOGS =
   {
     "date": "2018-09-09",
     "category": "code",
-    "time": 45,
-    "project": "andaga"
+    "time": 30,
+    "project": "andaga",
+    "tags": [
+      "javascript"
+    ]
   },
   {
-    "date": "2018-09-08",
+    "date": "2018-09-09",
     "category": "code",
     "time": 25,
-    "project": "andaga"
-  },
-  {
-    "date": "2018-09-08",
-    "category": "explore",
-    "time": 45,
-    "project": "chronica"
-  },
-  {
-    "date": "2018-09-08",
-    "category": "study",
-    "time": 25,
-    "project": "programming",
+    "project": "andaga",
     "tags": [
-      "xbrl"
+      "javascript"
     ]
+  },
+  {
+    "date": "2018-09-09",
+    "category": "study",
+    "time": 60,
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
+    "date": "2018-09-08",
+    "category": "admin",
+    "time": 20,
+    "project": "workspace"
   },
   {
     "date": "2018-09-08",
@@ -6341,9 +6327,24 @@ const LOGS =
   },
   {
     "date": "2018-09-08",
-    "category": "admin",
-    "time": 20,
-    "project": "workspace"
+    "category": "study",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "xbrl"
+    ]
+  },
+  {
+    "date": "2018-09-08",
+    "category": "explore",
+    "time": 45,
+    "project": "chronica"
+  },
+  {
+    "date": "2018-09-08",
+    "category": "code",
+    "time": 25,
+    "project": "andaga"
   },
   {
     "date": "2018-09-07",
@@ -6356,6 +6357,15 @@ const LOGS =
   },
   {
     "date": "2018-09-06",
+    "category": "study",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "xbrl"
+    ]
+  },
+  {
+    "date": "2018-09-06",
     "category": "code",
     "time": 20,
     "project": "scripts",
@@ -6364,13 +6374,10 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-09-06",
-    "category": "study",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "xbrl"
-    ]
+    "date": "2018-09-05",
+    "category": "admin",
+    "time": 30,
+    "project": "workspace"
   },
   {
     "date": "2018-09-05",
@@ -6381,12 +6388,6 @@ const LOGS =
       "scala",
       "functional programming"
     ]
-  },
-  {
-    "date": "2018-09-05",
-    "category": "admin",
-    "time": 30,
-    "project": "workspace"
   },
   {
     "date": "2018-09-04",
@@ -6408,18 +6409,18 @@ const LOGS =
   },
   {
     "date": "2018-07-31",
-    "category": "admin",
-    "time": 75,
-    "project": "workspace"
-  },
-  {
-    "date": "2018-07-31",
     "category": "study",
     "time": 75,
     "project": "programming",
     "tags": [
       "scala"
     ]
+  },
+  {
+    "date": "2018-07-31",
+    "category": "admin",
+    "time": 75,
+    "project": "workspace"
   },
   {
     "date": "2018-07-30",
@@ -6437,6 +6438,15 @@ const LOGS =
     "date": "2018-07-14",
     "category": "study",
     "time": 25,
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
+    "date": "2018-07-14",
+    "category": "study",
+    "time": 25,
     "project": "programming"
   },
   {
@@ -6455,55 +6465,37 @@ const LOGS =
     "project": "programming"
   },
   {
-    "date": "2018-07-14",
-    "category": "study",
-    "time": 25,
-    "project": "language",
-    "tags": [
-      "dutch"
-    ]
-  },
-  {
-    "date": "2018-07-12",
-    "category": "study",
-    "time": 25,
-    "project": "language",
-    "tags": [
-      "dutch"
-    ]
-  },
-  {
     "date": "2018-07-12",
     "category": "study",
     "time": 60,
     "project": "programming"
   },
   {
+    "date": "2018-07-12",
+    "category": "study",
+    "time": 25,
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
+    "date": "2018-07-09",
+    "category": "study",
+    "time": 25,
+    "project": "language",
+    "tags": [
+      "dutch"
+    ]
+  },
+  {
     "date": "2018-07-09",
     "category": "study",
     "time": 25,
     "project": "programming"
   },
   {
-    "date": "2018-07-09",
-    "category": "study",
-    "time": 25,
-    "project": "language",
-    "tags": [
-      "dutch"
-    ]
-  },
-  {
     "date": "2018-07-08",
-    "category": "study",
-    "time": 25,
-    "project": "language",
-    "tags": [
-      "dutch"
-    ]
-  },
-  {
-    "date": "2018-07-05",
     "category": "study",
     "time": 25,
     "project": "language",
@@ -6518,6 +6510,15 @@ const LOGS =
     "project": "programming",
     "tags": [
       "scala"
+    ]
+  },
+  {
+    "date": "2018-07-05",
+    "category": "study",
+    "time": 25,
+    "project": "language",
+    "tags": [
+      "dutch"
     ]
   },
   {
@@ -6532,19 +6533,19 @@ const LOGS =
   {
     "date": "2018-07-03",
     "category": "study",
-    "time": 30,
-    "project": "language",
+    "time": 90,
+    "project": "programming",
     "tags": [
-      "dutch"
+      "scala"
     ]
   },
   {
     "date": "2018-07-03",
     "category": "study",
-    "time": 90,
-    "project": "programming",
+    "time": 30,
+    "project": "language",
     "tags": [
-      "scala"
+      "dutch"
     ]
   },
   {
@@ -6582,18 +6583,18 @@ const LOGS =
   },
   {
     "date": "2018-06-10",
-    "category": "study",
-    "time": 20,
-    "project": "programming"
-  },
-  {
-    "date": "2018-06-10",
     "category": "code",
     "time": 90,
     "project": "scripts",
     "tags": [
       "bash"
     ]
+  },
+  {
+    "date": "2018-06-10",
+    "category": "study",
+    "time": 20,
+    "project": "programming"
   },
   {
     "date": "2018-06-09",
@@ -6612,9 +6613,12 @@ const LOGS =
   },
   {
     "date": "2018-06-07",
-    "category": "admin",
-    "time": 45,
-    "project": "programming"
+    "category": "code",
+    "time": 60,
+    "project": "andaga",
+    "tags": [
+      "javascript"
+    ]
   },
   {
     "date": "2018-06-07",
@@ -6627,12 +6631,9 @@ const LOGS =
   },
   {
     "date": "2018-06-07",
-    "category": "code",
-    "time": 60,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
+    "category": "admin",
+    "time": 45,
+    "project": "programming"
   },
   {
     "date": "2018-06-04",
@@ -6758,16 +6759,16 @@ const LOGS =
     "date": "2018-05-03",
     "category": "study",
     "time": 30,
-    "project": "programming"
+    "project": "programming",
+    "tags": [
+      "php"
+    ]
   },
   {
     "date": "2018-05-03",
     "category": "study",
     "time": 30,
-    "project": "programming",
-    "tags": [
-      "php"
-    ]
+    "project": "programming"
   },
   {
     "date": "2018-05-02",
@@ -6813,20 +6814,20 @@ const LOGS =
   },
   {
     "date": "2018-04-22",
-    "category": "code",
-    "time": 60,
-    "project": "scripts",
-    "tags": [
-      "bash"
-    ]
-  },
-  {
-    "date": "2018-04-22",
     "category": "admin",
     "time": 120,
     "project": "workspace",
     "tags": [
       "linux"
+    ]
+  },
+  {
+    "date": "2018-04-22",
+    "category": "code",
+    "time": 60,
+    "project": "scripts",
+    "tags": [
+      "bash"
     ]
   },
   {
@@ -6856,14 +6857,14 @@ const LOGS =
   {
     "date": "2018-04-16",
     "category": "admin",
-    "time": 210,
-    "project": "network"
+    "time": 30,
+    "project": "workspace"
   },
   {
     "date": "2018-04-16",
     "category": "admin",
-    "time": 30,
-    "project": "workspace"
+    "time": 210,
+    "project": "network"
   },
   {
     "date": "2018-04-09",
@@ -6873,20 +6874,20 @@ const LOGS =
   },
   {
     "date": "2018-04-08",
-    "category": "explore",
-    "time": 30,
-    "project": "network"
-  },
-  {
-    "date": "2018-04-08",
     "category": "research",
     "time": 65,
     "project": "network"
   },
   {
+    "date": "2018-04-08",
+    "category": "explore",
+    "time": 30,
+    "project": "network"
+  },
+  {
     "date": "2018-04-07",
     "category": "research",
-    "time": 35,
+    "time": 25,
     "project": "network"
   },
   {
@@ -6898,7 +6899,7 @@ const LOGS =
   {
     "date": "2018-04-07",
     "category": "research",
-    "time": 25,
+    "time": 35,
     "project": "network"
   },
   {
@@ -6912,12 +6913,6 @@ const LOGS =
   },
   {
     "date": "2018-04-03",
-    "category": "admin",
-    "time": 15,
-    "project": "workspace"
-  },
-  {
-    "date": "2018-04-03",
     "category": "study",
     "time": 50,
     "project": "programming",
@@ -6926,15 +6921,21 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-04-02",
+    "date": "2018-04-03",
     "category": "admin",
-    "time": 50,
-    "project": "network"
+    "time": 15,
+    "project": "workspace"
   },
   {
     "date": "2018-04-02",
     "category": "admin",
     "time": 25,
+    "project": "network"
+  },
+  {
+    "date": "2018-04-02",
+    "category": "admin",
+    "time": 50,
     "project": "network"
   },
   {
@@ -6963,14 +6964,14 @@ const LOGS =
   },
   {
     "date": "2018-03-21",
-    "category": "explore",
-    "time": 60,
+    "category": "admin",
+    "time": 50,
     "project": "workspace"
   },
   {
     "date": "2018-03-21",
-    "category": "admin",
-    "time": 50,
+    "category": "explore",
+    "time": 60,
     "project": "workspace"
   },
   {
@@ -6985,6 +6986,12 @@ const LOGS =
   {
     "date": "2018-03-18",
     "category": "admin",
+    "time": 135,
+    "project": "workspace"
+  },
+  {
+    "date": "2018-03-18",
+    "category": "admin",
     "time": 55,
     "project": "workspace",
     "tags": [
@@ -6992,31 +6999,19 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-03-18",
+    "date": "2018-03-17",
     "category": "admin",
     "time": 135,
-    "project": "workspace"
+    "project": "workspace",
+    "tags": [
+      "linux"
+    ]
   },
   {
     "date": "2018-03-17",
     "category": "research",
     "time": 75,
     "project": "workspace"
-  },
-  {
-    "date": "2018-03-17",
-    "category": "admin",
-    "time": 135,
-    "project": "workspace",
-    "tags": [
-      "linux"
-    ]
-  },
-  {
-    "date": "2018-03-15",
-    "category": "admin",
-    "time": 55,
-    "project": "andaga"
   },
   {
     "date": "2018-03-15",
@@ -7030,6 +7025,12 @@ const LOGS =
     ]
   },
   {
+    "date": "2018-03-15",
+    "category": "admin",
+    "time": 55,
+    "project": "andaga"
+  },
+  {
     "date": "2018-03-11",
     "category": "admin",
     "time": 50,
@@ -7040,21 +7041,15 @@ const LOGS =
   },
   {
     "date": "2018-03-10",
-    "category": "research",
-    "time": 25,
-    "project": "programming"
-  },
-  {
-    "date": "2018-03-10",
     "category": "admin",
     "time": 20,
     "project": "programming"
   },
   {
-    "date": "2018-03-09",
-    "category": "admin",
-    "time": 50,
-    "project": "workspace"
+    "date": "2018-03-10",
+    "category": "research",
+    "time": 25,
+    "project": "programming"
   },
   {
     "date": "2018-03-09",
@@ -7066,6 +7061,21 @@ const LOGS =
     ]
   },
   {
+    "date": "2018-03-09",
+    "category": "admin",
+    "time": 50,
+    "project": "workspace"
+  },
+  {
+    "date": "2018-03-08",
+    "category": "study",
+    "time": 120,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2018-03-08",
     "category": "study",
     "time": 25,
@@ -7075,9 +7085,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-03-08",
+    "date": "2018-03-07",
     "category": "study",
-    "time": 120,
+    "time": 25,
     "project": "programming",
     "tags": [
       "scala"
@@ -7093,18 +7103,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-03-07",
-    "category": "study",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
     "date": "2018-03-06",
     "category": "study",
-    "time": 25,
+    "time": 65,
     "project": "programming",
     "tags": [
       "scala"
@@ -7122,17 +7123,11 @@ const LOGS =
   {
     "date": "2018-03-06",
     "category": "study",
-    "time": 65,
+    "time": 25,
     "project": "programming",
     "tags": [
       "scala"
     ]
-  },
-  {
-    "date": "2018-03-05",
-    "category": "code",
-    "time": 35,
-    "project": "workspace"
   },
   {
     "date": "2018-03-05",
@@ -7141,23 +7136,10 @@ const LOGS =
     "project": "workspace"
   },
   {
-    "date": "2018-03-04",
-    "category": "study",
-    "time": 25,
-    "project": "programming",
-    "tags": [
-      "scala",
-      "xbrl"
-    ]
-  },
-  {
-    "date": "2018-03-04",
-    "category": "study",
+    "date": "2018-03-05",
+    "category": "code",
     "time": 35,
-    "project": "programming",
-    "tags": [
-      "xbrl"
-    ]
+    "project": "workspace"
   },
   {
     "date": "2018-03-04",
@@ -7170,11 +7152,21 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-03-03",
+    "date": "2018-03-04",
     "category": "study",
-    "time": 15,
+    "time": 35,
     "project": "programming",
     "tags": [
+      "xbrl"
+    ]
+  },
+  {
+    "date": "2018-03-04",
+    "category": "study",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "scala",
       "xbrl"
     ]
   },
@@ -7188,9 +7180,18 @@ const LOGS =
     ]
   },
   {
+    "date": "2018-03-03",
+    "category": "study",
+    "time": 15,
+    "project": "programming",
+    "tags": [
+      "xbrl"
+    ]
+  },
+  {
     "date": "2018-03-02",
-    "category": "code",
-    "time": 25,
+    "category": "study",
+    "time": 115,
     "project": "programming",
     "tags": [
       "scala"
@@ -7198,8 +7199,8 @@ const LOGS =
   },
   {
     "date": "2018-03-02",
-    "category": "study",
-    "time": 115,
+    "category": "code",
+    "time": 25,
     "project": "programming",
     "tags": [
       "scala"
@@ -7226,7 +7227,7 @@ const LOGS =
   {
     "date": "2018-02-26",
     "category": "study",
-    "time": 25,
+    "time": 75,
     "project": "programming",
     "tags": [
       "scala"
@@ -7235,16 +7236,7 @@ const LOGS =
   {
     "date": "2018-02-26",
     "category": "study",
-    "time": 75,
-    "project": "programming",
-    "tags": [
-      "scala"
-    ]
-  },
-  {
-    "date": "2018-02-25",
-    "category": "study",
-    "time": 35,
+    "time": 25,
     "project": "programming",
     "tags": [
       "scala"
@@ -7260,18 +7252,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-02-24",
-    "category": "admin",
-    "time": 35,
-    "project": "scripts",
-    "tags": [
-      "bash"
-    ]
-  },
-  {
-    "date": "2018-02-24",
+    "date": "2018-02-25",
     "category": "study",
-    "time": 25,
+    "time": 35,
     "project": "programming",
     "tags": [
       "scala"
@@ -7287,18 +7270,27 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-02-23",
+    "date": "2018-02-24",
     "category": "study",
-    "time": 40,
+    "time": 25,
     "project": "programming",
     "tags": [
       "scala"
     ]
   },
   {
-    "date": "2018-02-22",
+    "date": "2018-02-24",
+    "category": "admin",
+    "time": 35,
+    "project": "scripts",
+    "tags": [
+      "bash"
+    ]
+  },
+  {
+    "date": "2018-02-23",
     "category": "study",
-    "time": 85,
+    "time": 40,
     "project": "programming",
     "tags": [
       "scala"
@@ -7314,13 +7306,28 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-02-21",
+    "date": "2018-02-22",
     "category": "study",
-    "time": 35,
+    "time": 85,
     "project": "programming",
     "tags": [
       "scala"
     ]
+  },
+  {
+    "date": "2018-02-21",
+    "category": "research",
+    "time": 35,
+    "project": "programming",
+    "tags": [
+      "php"
+    ]
+  },
+  {
+    "date": "2018-02-21",
+    "category": "admin",
+    "time": 30,
+    "project": "programming"
   },
   {
     "date": "2018-02-21",
@@ -7334,36 +7341,18 @@ const LOGS =
   },
   {
     "date": "2018-02-21",
-    "category": "admin",
-    "time": 30,
+    "category": "study",
+    "time": 35,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2018-02-20",
+    "category": "study",
+    "time": 20,
     "project": "programming"
-  },
-  {
-    "date": "2018-02-21",
-    "category": "research",
-    "time": 35,
-    "project": "programming",
-    "tags": [
-      "php"
-    ]
-  },
-  {
-    "date": "2018-02-20",
-    "category": "code",
-    "time": 40,
-    "project": "programming",
-    "tags": [
-      "php"
-    ]
-  },
-  {
-    "date": "2018-02-20",
-    "category": "admin",
-    "time": 35,
-    "project": "programming",
-    "tags": [
-      "php"
-    ]
   },
   {
     "date": "2018-02-20",
@@ -7376,17 +7365,31 @@ const LOGS =
   },
   {
     "date": "2018-02-20",
-    "category": "study",
-    "time": 20,
-    "project": "programming"
+    "category": "admin",
+    "time": 35,
+    "project": "programming",
+    "tags": [
+      "php"
+    ]
+  },
+  {
+    "date": "2018-02-20",
+    "category": "code",
+    "time": 40,
+    "project": "programming",
+    "tags": [
+      "php"
+    ]
   },
   {
     "date": "2018-02-19",
     "category": "code",
-    "time": 25,
-    "project": "andaga",
+    "time": 40,
+    "project": "modernheirloomstudio",
     "tags": [
-      "javascript"
+      "javascript",
+      "html",
+      "css"
     ]
   },
   {
@@ -7398,12 +7401,10 @@ const LOGS =
   {
     "date": "2018-02-19",
     "category": "code",
-    "time": 40,
-    "project": "modernheirloomstudio",
+    "time": 25,
+    "project": "andaga",
     "tags": [
-      "javascript",
-      "html",
-      "css"
+      "javascript"
     ]
   },
   {
@@ -7417,6 +7418,12 @@ const LOGS =
   },
   {
     "date": "2018-02-15",
+    "category": "admin",
+    "time": 25,
+    "project": "modernheirloomstudio"
+  },
+  {
+    "date": "2018-02-15",
     "category": "code",
     "time": 90,
     "project": "modernheirloomstudio",
@@ -7427,18 +7434,6 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-02-15",
-    "category": "admin",
-    "time": 25,
-    "project": "modernheirloomstudio"
-  },
-  {
-    "date": "2018-02-14",
-    "category": "admin",
-    "time": 45,
-    "project": "modernheirloomstudio"
-  },
-  {
     "date": "2018-02-14",
     "category": "admin",
     "time": 25,
@@ -7446,6 +7441,12 @@ const LOGS =
     "tags": [
       "java"
     ]
+  },
+  {
+    "date": "2018-02-14",
+    "category": "admin",
+    "time": 45,
+    "project": "modernheirloomstudio"
   },
   {
     "date": "2018-02-13",
@@ -7464,18 +7465,18 @@ const LOGS =
   },
   {
     "date": "2018-02-11",
-    "category": "code",
-    "time": 100,
-    "project": "andaga",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
     "tags": [
       "javascript"
     ]
   },
   {
     "date": "2018-02-11",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
+    "category": "code",
+    "time": 100,
+    "project": "andaga",
     "tags": [
       "javascript"
     ]
@@ -7492,15 +7493,6 @@ const LOGS =
   {
     "date": "2018-02-09",
     "category": "code",
-    "time": 155,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2018-02-09",
-    "category": "code",
     "time": 45,
     "project": "scripts",
     "tags": [
@@ -7508,13 +7500,13 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-02-08",
-    "category": "study",
-    "time": 20,
+    "date": "2018-02-09",
+    "category": "code",
+    "time": 155,
+    "project": "andaga",
     "tags": [
-      "git"
-    ],
-    "project": "programming"
+      "javascript"
+    ]
   },
   {
     "date": "2018-02-08",
@@ -7526,6 +7518,15 @@ const LOGS =
       "html",
       "css"
     ]
+  },
+  {
+    "date": "2018-02-08",
+    "category": "study",
+    "time": 20,
+    "tags": [
+      "git"
+    ],
+    "project": "programming"
   },
   {
     "date": "2018-02-07",
@@ -7547,7 +7548,7 @@ const LOGS =
   {
     "date": "2018-02-03",
     "category": "code",
-    "time": 130,
+    "time": 65,
     "project": "modernheirloomstudio",
     "tags": [
       "javascript",
@@ -7567,7 +7568,7 @@ const LOGS =
   {
     "date": "2018-02-03",
     "category": "code",
-    "time": 65,
+    "time": 130,
     "project": "modernheirloomstudio",
     "tags": [
       "javascript",
@@ -7633,7 +7634,7 @@ const LOGS =
   {
     "date": "2018-01-24",
     "category": "code",
-    "time": 35,
+    "time": 45,
     "project": "modernheirloomstudio",
     "tags": [
       "javascript",
@@ -7644,7 +7645,7 @@ const LOGS =
   {
     "date": "2018-01-24",
     "category": "code",
-    "time": 45,
+    "time": 35,
     "project": "modernheirloomstudio",
     "tags": [
       "javascript",
@@ -7677,7 +7678,7 @@ const LOGS =
   {
     "date": "2018-01-20",
     "category": "code",
-    "time": 25,
+    "time": 60,
     "project": "andaga",
     "tags": [
       "javascript"
@@ -7686,16 +7687,7 @@ const LOGS =
   {
     "date": "2018-01-20",
     "category": "code",
-    "time": 60,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
-    "date": "2018-01-17",
-    "category": "code",
-    "time": 75,
+    "time": 25,
     "project": "andaga",
     "tags": [
       "javascript"
@@ -7711,9 +7703,9 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-01-16",
+    "date": "2018-01-17",
     "category": "code",
-    "time": 60,
+    "time": 75,
     "project": "andaga",
     "tags": [
       "javascript"
@@ -7723,6 +7715,15 @@ const LOGS =
     "date": "2018-01-16",
     "category": "code",
     "time": 140,
+    "project": "andaga",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2018-01-16",
+    "category": "code",
+    "time": 60,
     "project": "andaga",
     "tags": [
       "javascript"
@@ -7739,11 +7740,11 @@ const LOGS =
   },
   {
     "date": "2018-01-13",
-    "category": "study",
-    "time": 35,
-    "project": "programming",
+    "category": "code",
+    "time": 150,
+    "project": "andaga",
     "tags": [
-      "perl"
+      "javascript"
     ]
   },
   {
@@ -7758,17 +7759,26 @@ const LOGS =
   },
   {
     "date": "2018-01-13",
-    "category": "code",
-    "time": 150,
-    "project": "andaga",
+    "category": "study",
+    "time": 35,
+    "project": "programming",
     "tags": [
-      "javascript"
+      "perl"
     ]
   },
   {
     "date": "2018-01-12",
     "category": "code",
     "time": 65,
+    "project": "andaga",
+    "tags": [
+      "javascript"
+    ]
+  },
+  {
+    "date": "2018-01-11",
+    "category": "code",
+    "time": 50,
     "project": "andaga",
     "tags": [
       "javascript"
@@ -7784,15 +7794,6 @@ const LOGS =
     ]
   },
   {
-    "date": "2018-01-11",
-    "category": "code",
-    "time": 50,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
-  },
-  {
     "date": "2018-01-09",
     "category": "code",
     "time": 20,
@@ -7804,8 +7805,8 @@ const LOGS =
   {
     "date": "2018-01-07",
     "category": "admin",
-    "time": 30,
-    "project": "andaga"
+    "time": 75,
+    "project": "workspace"
   },
   {
     "date": "2018-01-07",
@@ -7819,17 +7820,8 @@ const LOGS =
   {
     "date": "2018-01-07",
     "category": "admin",
-    "time": 75,
-    "project": "workspace"
-  },
-  {
-    "date": "2018-01-06",
-    "category": "code",
-    "time": 150,
-    "project": "andaga",
-    "tags": [
-      "javascript"
-    ]
+    "time": 30,
+    "project": "andaga"
   },
   {
     "date": "2018-01-06",
@@ -7839,6 +7831,15 @@ const LOGS =
     "tags": [
       "javascript",
       "functional programming"
+    ]
+  },
+  {
+    "date": "2018-01-06",
+    "category": "code",
+    "time": 150,
+    "project": "andaga",
+    "tags": [
+      "javascript"
     ]
   },
   {
@@ -7861,12 +7862,11 @@ const LOGS =
   },
   {
     "date": "2018-01-03",
-    "category": "study",
-    "time": 30,
-    "project": "programming",
+    "category": "code",
+    "time": 105,
+    "project": "andaga",
     "tags": [
-      "php",
-      "object oriented programming"
+      "javascript"
     ]
   },
   {
@@ -7877,11 +7877,12 @@ const LOGS =
   },
   {
     "date": "2018-01-03",
-    "category": "code",
-    "time": 105,
-    "project": "andaga",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
     "tags": [
-      "javascript"
+      "php",
+      "object oriented programming"
     ]
   },
   {
@@ -7892,17 +7893,17 @@ const LOGS =
   },
   {
     "date": "2018-01-01",
+    "category": "admin",
+    "time": 15,
+    "project": "programming"
+  },
+  {
+    "date": "2018-01-01",
     "category": "explore",
     "time": 60,
     "project": "programming",
     "tags": [
       "bash"
     ]
-  },
-  {
-    "date": "2018-01-01",
-    "category": "admin",
-    "time": 15,
-    "project": "programming"
   }
 ]
