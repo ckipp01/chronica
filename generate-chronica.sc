@@ -1,4 +1,4 @@
-import $file.domain, domain.{ Log, Page }
+import $file.domain, domain.{Log, Page}
 import $file.modifiers, modifiers._
 import $file.utils, utils._
 

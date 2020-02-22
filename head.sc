@@ -103,7 +103,7 @@ implicit val style: String =
      |h1, h2, h5 {
      |  margin-bottom: 10px;
      |}
-     |p {
+     |p, main li {
      |  margin-bottom: 5px;
      |}
      |code, codeblock {

@@ -7,7 +7,7 @@ import java.io.PrintWriter
 
 import scala.io.Source
 
-// Taken in fron mdoc
+// Pulled in from mdoc
 import com.vladsch.flexmark.html.HtmlRenderer
 import com.vladsch.flexmark.parser.Parser
 
