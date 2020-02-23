@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Get ammonite
-        run: ./amm generate-wiki.sc
+        run: ./amm generate-chronica.sc
