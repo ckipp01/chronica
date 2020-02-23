@@ -3,7 +3,6 @@ name: Generate Chronica Site
 on:
   push:
     branches:
-      - master
 
 jobs:
   build:
