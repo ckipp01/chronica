@@ -64,8 +64,11 @@ def createList(
       if (totalTime > 0)
         s"- <em>${topicLogs.size} logs for ${totalTime} minutes</em>"
       else ""
+    val displayName =
+      if (topic == "blog") name.replace('-', ' ')
+      else name
 
-    acc + s"""<li><a href="${name}.html">${name.replace('-', ' ')}</a> $details</li>"""
+    acc + s"""<li><a href="${name}.html">$displayName</a> $details</li>"""
   }
 
   s"""|<h1>$topic</h1>
