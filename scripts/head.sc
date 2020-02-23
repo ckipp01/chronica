@@ -1,19 +1,19 @@
 def createHead(title: String)(implicit style: String): String =
   s"""|<head>
       |  <meta charset="utf-8">
-      |  <meta name="description" content="Wiki for the chronica ecosystem.">
+      |  <meta name="description" content="Personal wiki and blog for Chris Kipp">
       |  <meta name="viewport" content="width=device-width, initial-scale=1">
-      |  <meta name="keywords" content="Chris Kipp, ckipp01, ckipp, wiki.chronica, chronica">
-      |  <meta name="thumbnail" content="media/c.png">
+      |  <meta name="keywords" content="Chris Kipp, ckipp01, ckipp, chronica">
+      |  <meta name="thumbnail" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
       |  <meta name="twitter:card" content="summary">
       |  <meta name="twitter:site" content="@ckipp01">
-      |  <meta name="twitter:title" content="wiki.chronica">
-      |  <meta name="twitter:description" content="Wiki for the chronica ecosystem.">
+      |  <meta name="twitter:title" content="chronica">
+      |  <meta name="twitter:description" content="Personal wiki and blog for Chris Kipp">
       |  <meta name="twitter:creator" content="ckipp01">
-      |  <meta name="twitter:image" content="media/c.png">
+      |  <meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
       |  <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
       |  <style>${style}</style>
-      |  <title>wiki.chronica - ${title}</title>
+      |  <title>chronica - ${title}</title>
       |</head>
       |""".stripMargin
 
