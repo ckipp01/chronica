@@ -1,0 +1,15 @@
+name: Generate Chronica Site
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Chronica build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        user: actions/checkout@v1
