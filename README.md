@@ -7,7 +7,7 @@ It's written in markdown, and you can read the content in either the `/wiki` or
 
 The site is generated via those markdown files by an
 [Ammonite](https://ammonite.io/) script,
-[mdoc](https://scalameta.org/mdoc/) to embed statistics into my wiki
+[mdoc](https://scalameta.org/mdoc/) to embed statistics into my wiki,
 which are pulled from the `logs.json` file, and
 [Flexmark](https://github.com/vsch/flexmark-java) which translates all of the
 markdown into html.
