@@ -96,12 +96,13 @@ implicit val style: String =
      |}
      |h1 {
      |  font: 1.3em/1.3 sans-serif;
+     |  margin-bottom: 10px;
      |}
      |h2 {
      |  font: 1.2em/1.3 sans-serif;
      |}
-     |h1, h2, h5 {
-     |  margin-bottom: 10px;
+     |h2, h3, h5 {
+     |  margin: 10px 0;
      |}
      |p, main li {
      |  margin-bottom: 5px;
