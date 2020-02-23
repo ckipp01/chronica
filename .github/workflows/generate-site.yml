@@ -2,6 +2,8 @@ name: Generate Chronica Site
 
 on:
   push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -24,3 +26,4 @@ jobs:
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
           now-org-id: ${{ secrets.ORG_ID }}
           now-project-id: ${{ secrets.PROJECT_ID }}
+          now-args: '--prod'
