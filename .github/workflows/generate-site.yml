@@ -14,9 +14,12 @@ jobs:
 
       - name: Generate site with Ammonite
         run: ./amm generate-chronica.sc
-   
+
+      - name: Copy over media
+        run: mkdir out/media && cp -r media out/media
+
       - name: Zeit Now Deployment
-        uses: amondnet/now-deployment@v2.0.0 
+        uses: amondnet/now-deployment@v2.0.0
         with:
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
           now-org-id: ${{ secrets.ORG_ID }}
