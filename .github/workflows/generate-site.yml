@@ -14,11 +14,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Cache SBT ivy cache
+      - name: Cache Coursier
         uses: actions/cache@v1
         with:
           path: ~/.cache/coursier/v1
           key: ${{ runner.os }}-linux-coursier
+
+      - name: Cache Ammonite
+        uses: actions/cache@v1
+        with:
+          path: ~.ammonite/cache
+          key: ${{ runner.os }}-linux-ammonite
 
       - name: Generate site with Ammonite
         run: ./amm generate-chronica.sc
