@@ -53,6 +53,7 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
        |<div class="keys-container">
        |  $keys
        |</div>
+       |
        |""".stripMargin
   }
 }
