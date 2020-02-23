@@ -2,7 +2,7 @@ name: Generate Chronica Site
 
 on:
   push:
-    
+
 jobs:
   build:
     name: Chronica build and deploy
@@ -14,9 +14,10 @@ jobs:
 
       - name: Generate site with Ammonite
         run: ./amm generate-chronica.sc
-      
+   
       - name: Zeit Now Deployment
-        uses: amondnet/now-deployment@v2.0.0
-        with:
+        uses: amondnet/now-deployment@v2.0.0 with:
           zeit-token: ${{ secrets.ZEIT_TOKEN }}
+          now-org-id: ${{ secrets.ORG_ID }}
+          now-project-id: ${{ secrets.PROJECT_ID }}
           working-directory: "out"
