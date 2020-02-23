@@ -1,0 +1,93 @@
+==================================================================
+
+https://keybase.io/chriskipp
+
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chronica.xyz
+
+  * I am chriskipp (https://keybase.io/chriskipp) on keybase.
+
+  * I have a public key ASC2N3c0Y6PUmiJXiRlUQcEzMU5waJQ8UKo7Ap1OHJgrmgo
+
+To do so, I am signing this object:
+
+{
+
+  "body": {
+
+    "key": {
+
+      "eldest_kid": "0120b637773463a3d49a225789195441c133314e7068943c50aa3b029d4e1c982b9a0a",
+
+      "host": "keybase.io",
+
+      "kid": "0120b637773463a3d49a225789195441c133314e7068943c50aa3b029d4e1c982b9a0a",
+
+      "uid": "de1ad65f04036acd6a4328aa37c31519",
+
+      "username": "chriskipp"
+
+    },
+
+    "merkle_root": {
+
+      "ctime": 1552255317,
+
+      "hash": "11f4dcdd246231c75dedc4f742e8fdd143a6b82a2e62588c81c4be6bd667ec0ab58013f6c9393bf36fa1783cf1878b4150f743662f70c54d5dcba596cbed75bc",
+
+      "hash_meta": "9a1f0cefc3a45d4c25c847b7ebda10fa1d03b43af49907d14a4f020d18d9f47d",
+
+      "seqno": 4916852
+
+    },
+
+    "service": {
+
+      "entropy": "LjaiT/hY22MK/qqeUorZYcrU",
+
+      "hostname": "chronica.xyz",
+
+      "protocol": "https:"
+
+    },
+
+    "type": "web_service_binding",
+
+    "version": 2
+
+  },
+
+  "client": {
+
+    "name": "keybase.io go client",
+
+    "version": "3.1.0"
+
+  },
+
+  "ctime": 1552255345,
+
+  "expire_in": 504576000,
+
+  "prev": "8ebd4eb8e72142793bd044213ed6fd78f1a1d31f25bb0120a4b6d0f0ff9f542e",
+
+  "seqno": 82,
+
+  "tag": "signature"
+
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtjd3NGOj1JoiV4kZVEHBMzFOcGiUPFCqOwKdThyYK5oKp3BheWxvYWTESpcCUsQgjr1OuOchQnk70EQhPtb9ePGh0x8luwEgpLbQ8P+fVC7EIOeklxgZZ0sDQ+ldoOTqgkkXO+JpoqeYOoZPqbV0Q/51AgHCo3NpZ8RAFzP2Quv7LI/lMMn7x4UE8zXMcz7OQ5X9HiuUK04Kagiz4z7U6yJi/8qgDZv09puWggIprlorfdrPTANIlTqsBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJvZtc53Pvgb14kL/MQcoDfCVKOwsyWk4uow2MMMqopto3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chriskipp
+
+==================================================================

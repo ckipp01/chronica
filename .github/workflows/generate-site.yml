@@ -32,6 +32,9 @@ jobs:
       - name: Copy over media
         run: mkdir out/media && cp media/* out/media/
 
+      - name: Copy over keybase proof
+        run: cp keybase.txt out/
+
       - name: Zeit Now Deployment
         uses: amondnet/now-deployment@v2.0.0
         with:
