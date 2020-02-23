@@ -37,8 +37,10 @@ for (page <- (blogOverviewPage :: blogHtml))
   writeToOut(page)
 
 val extraMarkdown: List[String] = getListOfFiles("extras")
-val extraHtml: List[Page] = extraMarkdown.collect {
+val extraHtml: List[Page] = extraMarkdown.map {
   case about if about.contains("about") => createPage(about, "about")
+  case unknown => createPage(unknown, "uknown")
+
 }
 
 val homepageMarkdown: String = getFile("homepage/index.md")
