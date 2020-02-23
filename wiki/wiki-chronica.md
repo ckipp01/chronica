@@ -1,7 +1,9 @@
-# [wiki.chronica](https://github.com/ckipp01/wiki.chronica)
+# wiki.chronica
 
 ```scala mdoc:percentages:wiki.chronica
 ```
+
+Status: Archived (The old wiki portion of this current site)
 
 Hello, I'm [Chris](/me), and this is my digital playground of sorts. I wanted a
 place to display what I've been working on, and I wanted it to be a place fully

@@ -3,6 +3,8 @@
 ```scala mdoc:percentages:joh
 ```
 
+Status: Archived -- maybe some day I'll come back to this.
+
 joh is currently very much a work in progress. When completed, joh will take in
 a json schema file and produce a static html page of that schema in order to
 better visualize the json data structures that we often create in teams. In my

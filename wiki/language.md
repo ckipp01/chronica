@@ -11,7 +11,7 @@ of time when forced to speak it and focused. I also started studying Korean when
 I met my wife and regularly take trips there.
 
 In July of 2018 I moved to the Netherlands, so any current activity on language
-learning for the time being will probably be Dutch
+learning for the time being will probably be Dutch or Korean.
 
 ```scala mdoc:tags:language
 ```

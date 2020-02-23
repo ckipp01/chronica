@@ -3,14 +3,12 @@
 ```scala mdoc:percentages:webring-checker
 ```
 
-You may have noticed the middle icon in the footer of this site. It leads to a
-[webring](https://webring.xxiivv.com) full of wikis, portfolios, and the likes.
-The creativity and talent you'll find browsing around on the various sites is
-astounding. I'm grateful to be part of the community.
+Status: Archived
 
-webring-checker is a simple service and api the webring. The api is able to
-provide a list of sites in the webring, check the status of the webring, and
-also show an rss feed of the webring. The full options are below.
+webring-checker is a simple service and api for the [xxiivv
+webring](https://webring.xxiivv.com/). The api is able to provide a list of
+sites in the webring, check the status of the webring, and also show an rss feed
+of the webring. The full options are below.
 
   - `GET /` will return a description page
   - `GET /check?format=html` will return an html report of all sites, their

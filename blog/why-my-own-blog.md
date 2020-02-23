@@ -1,6 +1,7 @@
 # Why my own blog?
 
 Wrote: 2019-07-10
+
 Edited: 2020-02-22
 
 I've been meaning to start this for quite some time. Over the years I've had

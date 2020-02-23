@@ -5,11 +5,6 @@
 ```scala mdoc:percentages:webring-cli
 ```
 
-You may have noticed the middle icon in the footer of this site. It leads to a
-[webring](https://webring.xxiivv.com) full of wikis, portfolios, and the likes.
-The creativity and talent you'll find browsing around on the various sites is
-astounding. I'm grateful to be part of the community.
-
 webring-cli is an attempt to mimic the behavior of the webring through the cli.
 Eventually, I'd also like to merge all the functionality that the
 [webring-checker api](webring-checker.html) also provides.

@@ -1,11 +1,11 @@
 # javascript
 
 When I first started learning programming, JavaScript was my introduction into
-what was really possible with programming. It's the language I currently feel
-most comfortable with and have the most experience with. In the last year say my
-JS has changed to a more functional style favoring immutability, pure functions,
-and higher order functions. This came as a result of working with Scala in my
-day job.
+what was really possible with programming. I built a lot of small little
+projects with it that taught me a ton. The ability to get up and running
+quickly, and the ability to pretty much run anywhere is such a great thing for
+newcomers. I'll also enjoy tinkering around with JS even if I don't use it on a
+daily basis anymore.
 
 Below I've listed a few resources that have really helped me with JavaScript and
 that I'd recommend to anyone.

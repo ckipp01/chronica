@@ -5,6 +5,8 @@
 ```scala mdoc:percentages:vim-indental
 ```
 
+Status: Archived - since I don't use indental anymore
+
 Indental is a creation of [Devine's](https://wiki.xxiivv.com/site/oscean.html)
 that is used a space-senstive, human readable text database format. I was
 originally intrigued by it since the parser is a mere 50ish lines of code. It

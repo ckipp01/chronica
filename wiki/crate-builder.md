@@ -1,7 +1,6 @@
 # crate-builder
 
-```scala mdoc:percentages:create-builder
-```
+Status: Archived
 
 One of the things I actually dislike about [gyul](gyul.html) is that all of my data
 is stored as JS objects. While this makes it extremely easy to parse and deal

@@ -89,6 +89,7 @@ implicit val style: String =
      |}
      |a {
      |  text-decoration: underline dashed;
+     |  text-decoration-skip-ink: none;
      |}
      |a:hover, ::selection {
      |  background: var(--dark-color);
@@ -117,6 +118,7 @@ implicit val style: String =
      |}
      |blockquote {
      |  text-align: center;
+     |  font-style: italic;
      |}
      |li {
      |  list-style-type: circle;
@@ -183,6 +185,9 @@ implicit val style: String =
      |  display: flex;
      |  flex-wrap: wrap;
      |  justify-content: space-around;
+     |}
+     |.tags-container > p {
+     |  margin: 5px;
      |}
      |@media (min-width: 768px) {
      | body {

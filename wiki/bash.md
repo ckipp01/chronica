@@ -1,12 +1,14 @@
 # bash
 
-Bash is currently my go to shell. I've worked with zsh and tcsh (forcefully) in
-the past, and I've always come Back to bash. I plan to stay with bash until I
-hit a point where I'm frustrated with the limits of what it has to other verse
-other shells. I don't see that happening any time soon, so I'll probably be with
-bash for quite some time
+Bash was my go to shell for quite some time. Before Bash I worked with zsh and
+tcsh (forcefully) in the past, and I've always came Back to bash. I always
+mentioned that I planned on staying with Bash until I reached a point where I
+"hit the wall" per se and needed something else. I have actually switch off bash
+to [fish shell](https://fishshell.com/), not necessarily because  bash didn't
+give me what I needed, but because of the sheer amount of customization needed
+to achieve the same experience I get with fish.
 
-Below I've listed a few resources/libraries that I commonly use with bash and
+Below I've listed a few resources/libraries that I commonly used with bash and
 have had a good experience with.
 
   - [patetoy](https://github.com/loliee/patatetoy) is a minimal prompt that I

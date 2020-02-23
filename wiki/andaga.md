@@ -7,9 +7,11 @@
 
 ##### [Code for version 1](https://github.com/ckipp01/andaga-cli/tree/year-one)
 
-##### [Code for version 2 cli](https://github.com/ckipp01/andaga-cli)
+##### [Code for version 2 cli](https://github.com/ckipp01/andaga/tree/year-two)
 
 ##### [Code for version 2 core](https://github.com/ckipp01/andaga-core)
+
+##### [Code for version 3 cli](https://github.com/ckipp01/andaga)
 
 On January 1, 2018 I decided to make an effort to log all of my free time for a
 year. I was inspired and intrigued by multiple other time trackers such as
@@ -42,6 +44,8 @@ forward will continually change. That's where the flexibility comes into play.
 What exactly it tracks is also continually changing. Many of these factors were
 taken into account as I began work on version 2 of the project.
 
+## Version 2
+
 Starting in 2019, I split this project up into 2 parts
  - andaga-cli, which is a small command line app written in Node. Instead of
    storing the entries locally, they send them to ándaga-core to be stored.
@@ -58,6 +62,15 @@ language, or studying programming paradigms. Hopefully this will give me insight
 into when I'm productive, when I typically have more energy to study, and what I
 enjoy working on. My hope if to make this obvious as I build more data
 visualization into chronica.
+
+## Version 3
+
+Starting in 2020, I ported over the cli portion of the application to Scala. I
+quickly realized this is not what I wanted due to the slow startup time of the
+JVM. Plus it's a relatively small project that doesn't really deem a full
+application in my eyes unless it was way more verbose. Due to this, I've halted
+work on it a bit to try and understand what would be the best fit before
+expanding.
 
 ```scala mdoc:tags:andaga
 ```

@@ -5,3 +5,5 @@
 [blog](blog.html)
 
 [about](about.html)
+
+[webring](https://webring.xxiivv.com/)

@@ -3,6 +3,8 @@
 ```scala mdoc:percentages:gyul
 ```
 
+Status: Archived
+
 gyul is an attempt to make a small wiki engine that will seamlessly tie into my
 timetracker, [ándaga](andaga.html)
 
