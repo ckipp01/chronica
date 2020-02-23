@@ -18,5 +18,5 @@ jobs:
       - name: Zeit Now Deployment
         uses: amondnet/now-deployment@v2.0.0
         with:
-          zeit-token: ${{ ZEIT_TOKEN }}
+          zeit-token: ${{ secrets.ZEIT_TOKEN }}
           working-directory: "out"
