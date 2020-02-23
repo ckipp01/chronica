@@ -16,7 +16,7 @@ jobs:
         run: ./amm generate-chronica.sc
 
       - name: Copy over media
-        run: mkdir out/media && cp -r media out/media
+        run: mkdir out/media && cp media/* out/media/
 
       - name: Zeit Now Deployment
         uses: amondnet/now-deployment@v2.0.0
