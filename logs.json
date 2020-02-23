@@ -1,6 +1,18 @@
 [
   {
     "date": "2020-02-23",
+    "category": "adming",
+    "time": 120,
+    "project": "chronica"
+  },
+  {
+    "date": "2020-02-23",
+    "category": "write",
+    "time": 180,
+    "project": "chronica"
+  },
+  {
+    "date": "2020-02-23",
     "category": "admin",
     "time": 60,
     "project": "chronica"
