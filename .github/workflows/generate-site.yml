@@ -12,5 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Get ammonite
+      - name: Generate site with Ammonite
         run: ./amm generate-chronica.sc
+      
+      - name: Zeit Now Deployment
+        uses: amondnet/now-deployment@v2.0.0
+        with:
+          zeit-token: ${{ ZEIT_TOKEN }}
+          working-directory: "out"
