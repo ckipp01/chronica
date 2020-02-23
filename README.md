@@ -1,2 +1,2 @@
-# wiki.chronica
+# chronica
 
