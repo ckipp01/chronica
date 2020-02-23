@@ -7,18 +7,21 @@ fully JavaScript powered, and built from scratch. I even created a tiny
 micro-framework that I used to build it called [gyul](gyul.html). I had a lot of
 fun with that build, but it was a bit slow on initial load and wouldn't work for
 visitors that had JS disabled. As I got more into Scala, I wanted to simplify
-things and get rid of JS. This lead me to a collection of tools and process that
+things and get rid of JS. This lead me to a collection of tools and a process that
 I'll explain below.
 
 
 ## A quick overview of the full process from log to your eyes
 
-  1. Create a log via [ándaga-cli](andaga-cli.html) cli after working on a project
+  1. Create a log via [ándaga-cli](andaga-cli.html) after working on a project
   2. Log gets stored into [MongoDB](https://www.mongodb.com/) by
      [ándaga-core](andaga-core.hmtl)
   3. Nightly, I have a script that runs which dumps my DB into a JSON file. This
      JSON gets commited and pushed to the [chronica](chronica.html) repo.
-  4. The push triggers GitHub Actions to run. I use [Ammonite](https://ammonite.io), [mdoc](https://scalameta.org/mdoc/), and [flexmark](https://github.com/vsch/flexmark-java) to transform markdown into html.
+  4. The push triggers GitHub Actions to run. I use
+     [Ammonite](https://ammonite.io), [mdoc](https://scalameta.org/mdoc/), and
+     [flexmark](https://github.com/vsch/flexmark-java) to transform and enrich
+     markdown into html.
   5. After building the created html pages get uploaded and hosted on [Zeit
      Now](https://zeit.co/home)
   6. A similar process happens when I add a blog post and push it up manually.
@@ -64,9 +67,8 @@ by flexmark creating html before being written out.
     writeToOut(page)
 
   val extraMarkdown: List[String] = getListOfFiles("extras")
-  val extraHtml: List[Page] = extraMarkdown.map {
+  val extraHtml: List[Page] = extraMarkdown.collect {
     case about if about.contains("about") => createPage(about, "about")
-    case unknown                          => createPage(unknown, "unknown")
   }
 
   val homepageMarkdown: String = getFile("homepage/index.md")
@@ -79,10 +81,10 @@ by flexmark creating html before being written out.
 
 ## The future
 
-This site will continually change. I have a lot more stats than I'm showing
+This site will continually change. I have a lot more stats than I'm not showing
 currently for my wiki, so I'll slowly be thinking about ways to show them and
 incorporate them in a meaningful way. The style may also continually change and
-be fine-tuned. I'll also semi-regularly be added to my blog.
+be fine-tuned. I'll also semi-regularly be adding to my blog.
 
 Thanks for stopping by.
 
