@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-02-25",
+    "category": "code",
+    "time": 30,
+    "project": "coc-metals",
+    "tags": [
+      "typescript"
+    ]
+  },
+  {
     "date": "2020-02-24",
     "category": "code",
     "time": 120,
