@@ -1,5 +1,17 @@
 [
   {
+    "date": "2020-02-26",
+    "category": "admin",
+    "time": 45,
+    "project": "metals"
+  },
+  {
+    "date": "2020-02-26",
+    "category": "code",
+    "time": 120,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-02-25",
     "category": "code",
     "time": 30,
