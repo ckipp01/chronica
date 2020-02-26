@@ -110,11 +110,10 @@ implicit val style: String =
      |}
      |code, codeblock {
      |  font: 0.9em/1.3 monospace;
-     |  margin: 10px 0;
      |}
      |pre {
      |  overflow: auto;
-     |  margin: 5px 0;
+     |  margin: 10px 0;
      |}
      |blockquote {
      |  text-align: center;
