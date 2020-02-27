@@ -1,5 +1,15 @@
 [
   {
+    "date": "2020-02-27",
+    "category": "code",
+    "time": 90,
+    "project": "programming",
+    "tags": [
+      "vim",
+      "coc-metals"
+    ]
+  },
+  {
     "date": "2020-02-26",
     "category": "admin",
     "time": 45,
