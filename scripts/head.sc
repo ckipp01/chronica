@@ -183,7 +183,7 @@ implicit val style: String =
      |.tags-container {
      |  display: flex;
      |  flex-wrap: wrap;
-     |  justify-content: space-around;
+     |  justify-content: center;
      |}
      |.tags-container > p {
      |  margin: 5px;
