@@ -1,5 +1,17 @@
 [
   {
+    "date": "2020-02-28",
+    "category": "explore",
+    "time": 25,
+    "project": "chronica"
+  },
+  {
+    "date": "2020-02-28",
+    "category": "code",
+    "time": 30,
+    "project": "coc-metals"
+  },
+  {
     "date": "2020-02-27",
     "category": "code",
     "time": 90,
