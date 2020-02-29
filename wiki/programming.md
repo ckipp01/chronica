@@ -1,10 +1,10 @@
 # programming
 
-> Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.
-~John Carmack
-
 ```scala mdoc:percentages:programming
 ```
+
+> Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.
+~John Carmack
 
 I'm a self-taught programmer that started programming out of a curiosity. It
 didn't take long for me to completely fall in love with the idea of being able
