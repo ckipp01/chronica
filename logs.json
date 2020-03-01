@@ -1,5 +1,23 @@
 [
   {
+    "date": "2020-03-01",
+    "category": "research",
+    "time": 60,
+    "tags": [
+      "fish",
+      "scripts"
+    ]
+  },
+  {
+    "date": "2020-03-01",
+    "category": "code",
+    "time": 240,
+    "tags": [
+      "fish",
+      "scripts"
+    ]
+  },
+  {
     "date": "2020-02-28",
     "category": "explore",
     "time": 25,
