@@ -1,28 +1,52 @@
-# [ándaga-cli](https://github.com/ckipp01/andaga)
+# [ándaga-cli](https://github.com/ckipp01/andaga/blob/master/cli/andaga.fish)
 
 ```scala mdoc:percentages:andaga-cli
 ```
-ándaga-cli is a small command line application that has already been through
+ándaga-cli is a small command line script that has already been through
 multiple iterations. It's the command line portion of my [ándaga](andaga.html)
 project. Originally this was written in Node and was all done and stored
 locally. After splitting it up into a more client - server type application,
 this just because the small cli portion of the project. After getting more into
 Scala I started rewriting the application in Scala, but realized that the
-startup time of the JVM for this project is sort of a deal breaker. I'm
-currently in the process of figuring out what is next for this that makes the
-most sense. I use this daily, and these are the current existing commands:
+startup time of the JVM for this project is sort of a deal breaker. Following
+this, I went an entire different direction, and I just wrote it as a fish
+script. So far I've loved the change, simplicity, and speed. The available
+commands/options can be found below.
 
- - `andaga log` used for logging new entries
- - `andaga projects`  used to retrieve a list of all my projects
- - `andaga categories` used to retrieve a list of all categories that have been
-     used
- - `andaga tags` used to retrieve a list of all tags that have been used
- - `andaga recall` used for recall the last n amount of entries
+```fish
+❯ andaga -h
+Usage: andaga <command> [options]
+
+ Options:
+
+  -h/--help          Prints help
+
+ Commands:
+
+  log                Log a new entry
+
+   Options:
+    -c, --category   Category to store the log in
+    -n, --notes      Notes to be stored with the log
+    -d, --duration   Duraction of the action to be stored
+    -l, --location   Location of the action to be stored
+    -p, --project    Project that the log belongs to
+    -t, --tags       Tags that belong to the log
+
+  recall             Recall n amount of log entries
+
+   Options:
+    -a, --amount     Amount of entries to recall (defaults to 1 if none given)
+
+  tags               Get a list of all used tags
+  projects           Get a list of all projects logged so far
+  categories         Get a list of all categories used so far
+```
 
 An example of how to store a log can be found below:
 
 ```fish
-andaga log code "Worked on fixing a bug that broke coc-metals" 45 -l home -p coc-metals -t typescript,tooling,metals
+andaga log -c code -n "Worked on fixing a bug that broke coc-metals" -d 45 -l home -p coc-metals -t typescript,tooling,metals
 ```
 
 The aim for ándaga-cli is to keep the project lean and only have it do the
