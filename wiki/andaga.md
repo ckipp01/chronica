@@ -11,7 +11,7 @@
 
 ##### [Code for version 2 core](https://github.com/ckipp01/andaga-core)
 
-##### [Code for version 3 cli](https://github.com/ckipp01/andaga)
+##### [Code for version 3 cli](https://github.com/ckipp01/andaga/blob/master/cli/andaga.fish)
 
 On January 1, 2018 I decided to make an effort to log all of my free time for a
 year. I was inspired and intrigued by multiple other time trackers such as
@@ -68,9 +68,9 @@ visualization into chronica.
 Starting in 2020, I ported over the cli portion of the application to Scala. I
 quickly realized this is not what I wanted due to the slow startup time of the
 JVM. Plus it's a relatively small project that doesn't really deem a full
-application in my eyes unless it was way more verbose. Due to this, I've halted
-work on it a bit to try and understand what would be the best fit before
-expanding.
+application in my eyes unless it was way more verbose. This caused me to rewrite
+it yet again into a simple fish script. You can see more details about this in
+[ándaga-cli](andaga-cli.html).
 
 ```scala mdoc:tags:andaga
 ```
