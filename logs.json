@@ -1,5 +1,23 @@
 [
   {
+    "date": "2020-03-02",
+    "category": "explore",
+    "time": 90,
+    "project": "programming",
+    "tags": [
+      "fish"
+    ]
+  },
+  {
+    "date": "2020-03-02",
+    "category": "code",
+    "time": 25,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-03-01",
     "category": "research",
     "time": 60,
