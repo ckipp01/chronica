@@ -3,6 +3,7 @@
     "date": "2020-03-01",
     "category": "research",
     "time": 60,
+    "project": "chronica-cli",
     "tags": [
       "fish",
       "scripts"
@@ -12,6 +13,7 @@
     "date": "2020-03-01",
     "category": "code",
     "time": 240,
+    "project": "chronica-cli",
     "tags": [
       "fish",
       "scripts"
