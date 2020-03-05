@@ -1,5 +1,23 @@
 [
   {
+    "date": "2020-03-05",
+    "category": "explore",
+    "time": 60,
+    "project": "andaga-cli",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-03-04",
+    "category": "code",
+    "time": 45,
+    "project": "andaga-cli",
+    "tags": [
+      "fish"
+    ]
+  },
+  {
     "date": "2020-03-03",
     "category": "admin",
     "time": 30,
