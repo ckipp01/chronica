@@ -1,3 +1,4 @@
+import $ivy.`com.atlassian.commonmark:commonmark:0.14.0`
 import $file.domain, domain.{Log, Page}
 import $file.head, head._
 import $file.html, html._
@@ -7,9 +8,8 @@ import java.io.PrintWriter
 
 import scala.io.Source
 
-// Pulled in from mdoc
-import com.vladsch.flexmark.html.HtmlRenderer
-import com.vladsch.flexmark.parser.Parser
+import org.commonmark.parser.Parser
+import org.commonmark.renderer.html.HtmlRenderer
 
 implicit val parser = Parser.builder().build()
 implicit val renderer = HtmlRenderer.builder().build()
