@@ -1,5 +1,43 @@
 [
   {
+    "date": "2020-03-07",
+    "category": "research",
+    "time": 120,
+    "project": "talks",
+    "tags": [
+      "vim",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-03-07",
+    "category": "research",
+    "time": 120,
+    "project": "talks",
+    "tags": [
+      "vim",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-03-07",
+    "category": "code",
+    "time": 45,
+    "project": "chronica",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-03-06",
+    "category": "explore",
+    "time": 45,
+    "project": "chronica",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-03-05",
     "category": "explore",
     "time": 60,
