@@ -23,6 +23,9 @@ jobs:
       - name: Generate site with Ammonite
         run: ./amm generate-chronica.sc
 
+      - name: Copy over slides
+        run: cp presentations/* out/
+
       - name: Copy over media
         run: mkdir out/media && cp media/* out/media/
 
