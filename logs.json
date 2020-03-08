@@ -1,5 +1,33 @@
 [
   {
+    "date": "2020-03-08",
+    "category": "research",
+    "time": 60,
+    "project": "programming",
+    "tags": []
+  },
+  {
+    "date": "2020-03-08",
+    "category": "admin",
+    "time": 45,
+    "project": "workspace",
+    "tags": [
+      "stow"
+    ]
+  },
+  {
+    "date": "2020-03-08",
+    "category": "write",
+    "time": 120,
+    "project": "talks",
+    "tags": [
+      "scala",
+      "vim",
+      "metals",
+      "coc-metals"
+    ]
+  },
+  {
     "date": "2020-03-07",
     "category": "research",
     "time": 120,
