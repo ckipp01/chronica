@@ -1,18 +1,27 @@
 import $ivy.`com.atlassian.commonmark:commonmark:0.14.0`
-import $file.domain, domain.{Log, Page}
+import $ivy.`com.atlassian.commonmark:commonmark-ext-yaml-front-matter:0.14.0`
+import $file.domain, domain.{Metadata, Log, Page}
 import $file.head, head._
 import $file.html, html._
 
 import java.io.File
 import java.io.PrintWriter
 
+import scala.collection.JavaConverters._
 import scala.io.Source
 
+import org.commonmark.node.Node
+import org.commonmark.ext.front.matter.YamlFrontMatterExtension
+import org.commonmark.ext.front.matter.YamlFrontMatterVisitor
 import org.commonmark.parser.Parser
 import org.commonmark.renderer.html.HtmlRenderer
 
-implicit val parser = Parser.builder().build()
-implicit val renderer = HtmlRenderer.builder().build()
+private val extensions = Seq(
+  YamlFrontMatterExtension.create()
+).asJava
+
+implicit val parser = Parser.builder().extensions(extensions).build()
+implicit val renderer = HtmlRenderer.builder().extensions(extensions).build()
 
 def getListOfFiles(dir: String): List[String] = {
   val file = new File(dir)
@@ -36,38 +45,42 @@ def getLogs(fileLoc: String): List[Log] = {
   ujson
     .read(rawLogs)
     .arr
-    .map(Log.fromJson)
+    .map(Log(_))
     .toList
 }
 
 def createOverview(
     logs: List[Log],
-    fileList: List[String],
+    pageList: List[Page],
     topic: String
 ): Page = {
   val head = createHead(topic)
   val nav = createNav(topic)
-  val htmlBody = createList(fileList, topic, logs)
+  val htmlBody = createList(pageList, topic, logs)
   val fullHtml = putTogetherHtml(head, nav, htmlBody)
   val fileName = topic + ".html"
 
   println(s"---- created $fileName overview ----")
-  Page(fileName, fullHtml)
+  Page(fileName, fullHtml, None)
 }
 
 def createPage(
     fileLoc: String,
     fileType: String
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
-  val topic = retrieveFileName(fileLoc)
   val bufferedMarkdown = Source.fromFile(fileLoc)
-
   val markdown = bufferedMarkdown.getLines
     .mkString("\n")
 
   bufferedMarkdown.close
 
   val parsed = parser.parse(markdown)
+  val metaData = retrieveMetaData(parsed)
+  val topic = metaData.title
+    .getOrElse(retrieveFileName(fileLoc))
+    .replace(' ', '-')
+    .toLowerCase
+
   val head = createHead(topic)
   val nav = createNav(fileType)
   val htmlBody = renderer.render(parsed)
@@ -76,7 +89,18 @@ def createPage(
 
   println(s"---- created $fileName ----")
 
-  Page(fileName, fullHtml)
+  Page(fileName, fullHtml, Some(metaData))
+}
+
+def retrieveMetaData(node: Node): Metadata = {
+  val visitor = new YamlFrontMatterVisitor
+  node.accept(visitor)
+
+  val mapping: Map[String, String] = visitor.getData.asScala.toMap.collect {
+    case (k, v) if v.asScala.toList.nonEmpty => k -> v.asScala.toList.head
+  }
+
+  Metadata(mapping.get("title"), mapping.get("date"))
 }
 
 def createHomepage(
@@ -95,7 +119,7 @@ def createHomepage(
   val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, htmlBody)
 
-  Page("index.html", fullHtml)
+  Page("index.html", fullHtml, None)
 }
 
 def writeToOut(page: Page): Unit = {

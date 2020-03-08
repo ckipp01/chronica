@@ -1,8 +1,13 @@
+---
+title: Why my own blog
+date: 2019-07-10
+---
+
 # Why my own blog?
 
-Wrote: 2019-07-10
+_Wrote: 2019-07-10_
 
-Edited: 2020-02-22
+_Edited: 2020-02-22_
 
 I've been meaning to start this for quite some time. Over the years I've had
 various forms of blogs. I was on Tumblr for some time, I had a Medium page, and

@@ -1,3 +1,7 @@
+---
+title: network
+---
+
 # Network
 
 ```scala mdoc:percentages:network

@@ -1,3 +1,7 @@
+---
+title: andaga-cli
+---
+
 # [ándaga-cli](https://github.com/ckipp01/andaga/blob/master/cli/andaga.fish)
 
 ```scala mdoc:percentages:andaga-cli

@@ -1,3 +1,7 @@
+---
+title: tooling
+---
+
 # tooling
 
 ```scala mdoc:percentages:tooling

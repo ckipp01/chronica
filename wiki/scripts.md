@@ -1,3 +1,7 @@
+---
+title: scripts
+---
+
 # scripts
 
 ```scala mdoc:percentages:scripts

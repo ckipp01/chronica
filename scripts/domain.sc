@@ -7,7 +7,7 @@ case class Log(
 )
 
 object Log {
-  def fromJson(json: ujson.Value) =
+  def apply(json: ujson.Value): Log =
     Log(
       json.obj("date").str,
       json.obj("category").str,
@@ -19,7 +19,13 @@ object Log {
     )
 }
 
-case class Page(name: String, content: String)
+case class Metadata(title: Option[String], date: Option[String])
+
+case class Page(
+    name: String,
+    content: String,
+    metadata: Option[Metadata]
+)
 
 case class TopicDetail(
     topic: String,

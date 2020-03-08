@@ -1,3 +1,7 @@
+---
+title: chronica
+---
+
 # [chronica](https://github.com/ckipp01/chronica)
 
 ```scala mdoc:percentages:chronica

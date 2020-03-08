@@ -1,3 +1,7 @@
+---
+title: studio-syk
+---
+
 # studio syk
 
 ![Homepage of studio syk](media/studiosyk.png)

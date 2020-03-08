@@ -1,3 +1,7 @@
+---
+title: language
+---
+
 # language
 
 ```scala mdoc:percentages:language

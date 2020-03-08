@@ -1,3 +1,7 @@
+---
+title: coc-metals
+---
+
 # [coc-metals](https://github.com/scalameta/coc-metals)
 
 ![coc-metals](media/coc-metals.png)

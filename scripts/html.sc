@@ -52,23 +52,38 @@ def createNav(pageType: String) = {
 }
 
 def createList(
-    fileList: List[String],
+    pageList: List[Page],
     topic: String,
     logs: List[Log]
 ): String = {
-  val list = fileList.sorted.foldLeft("") { (acc, next) =>
-    val name = retrieveFileName(next)
+  val list = pageList.sortBy(_.name).foldLeft("") { (acc, next) =>
+    val name = (for {
+      metadata <- next.metadata
+      name <- metadata.title
+    } yield name).getOrElse(retrieveFileName(next.name))
+
     val topicLogs: List[Log] = logs.filter(_.project == name)
     val totalTime = topicLogs.foldLeft(0)(_ + _.time)
     val details =
-      if (totalTime > 0)
+      if (totalTime > 0 && topic == "wiki") {
         s"- <em>${topicLogs.size} logs for ${totalTime} minutes</em>"
-      else ""
+      } else if (topic == "blog") {
+        val date = for {
+          metadata <- next.metadata
+          date <- metadata.date
+        } yield date
+        date.fold("")(date => s"- <em>$date</em>")
+      } else {
+        ""
+      }
+
     val displayName =
       if (topic == "blog") name.replace('-', ' ')
       else name
 
-    acc + s"""<li><a href="${name}.html">$displayName</a> $details</li>"""
+    val linkName = name.replace(' ', '-').toLowerCase
+
+    acc + s"""<li><a href="${linkName}.html">$displayName</a> $details</li>"""
   }
 
   s"""|<h1>$topic</h1>

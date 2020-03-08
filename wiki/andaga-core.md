@@ -1,3 +1,7 @@
+---
+title: andaga-core
+---
+
 # [ándaga-core](https://github.com/ckipp01/andaga-core)
 
 ```scala mdoc:percentages:andaga-core

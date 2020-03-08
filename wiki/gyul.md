@@ -1,3 +1,7 @@
+---
+title: gyul
+---
+
 # [귤 gyul](https://github.com/ckipp01/gyul)
 
 ```scala mdoc:percentages:gyul

@@ -1,3 +1,7 @@
+---
+title: javascript
+---
+
 # javascript
 
 When I first started learning programming, JavaScript was my introduction into

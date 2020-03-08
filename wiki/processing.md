@@ -1,3 +1,7 @@
+---
+title: processing
+---
+
 # processing
 
 ```scala mdoc:percentages:processing

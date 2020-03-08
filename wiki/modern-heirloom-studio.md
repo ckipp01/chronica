@@ -1,3 +1,7 @@
+---
+title: modern-heirloom-studio
+---
+
 # modern heirloom studio
 
 [modern heirloom studio homepage](media/modern-heirloom-studio.png)

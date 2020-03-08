@@ -1,3 +1,7 @@
+---
+title: webring-checker
+---
+
 # [webring-checker](https://github.com/ckipp01/webring-checker)
 
 ```scala mdoc:percentages:webring-checker

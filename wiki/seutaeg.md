@@ -1,3 +1,7 @@
+---
+title: seutaeg
+---
+
 # 스택 seutaeg
 
 ```scala mdoc:percentages:seutaeg

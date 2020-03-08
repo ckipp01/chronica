@@ -1,3 +1,7 @@
+---
+title: andaga
+---
+
 # ándaga
 
 ![andaga](media/andaga.png)

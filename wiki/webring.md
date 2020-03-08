@@ -1,3 +1,7 @@
+---
+title: webring
+---
+
 # [xxiivv webring](https://github.com/XXIIVV/Webring)
 
 ##### Url: [https://webring.xxiivv.com](https://webring.xxiivv.com)

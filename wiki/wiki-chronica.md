@@ -1,3 +1,7 @@
+---
+title: wiki-chronica
+---
+
 # wiki.chronica
 
 ```scala mdoc:percentages:wiki.chronica

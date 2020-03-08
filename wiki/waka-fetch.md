@@ -1,3 +1,7 @@
+---
+title: waka-fetch
+---
+
 # [waka-fetch](https://github.com/ckipp01/waka-fetch)
 
 ![waka-fetch logo](media/waka-fetch.jpg)

@@ -1,3 +1,7 @@
+---
+title: joh
+---
+
 # [joh](https://github.com/ckipp01/joh)
 
 ```scala mdoc:percentages:joh

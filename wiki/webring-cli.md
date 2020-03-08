@@ -1,3 +1,7 @@
+---
+title: webring-cli
+---
+
 # [webring-cli](https://github.com/ckipp01/webring-cli)
 
 ##### To install: `yarn global add webring-cli`

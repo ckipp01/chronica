@@ -1,3 +1,7 @@
+---
+title: bash
+---
+
 # bash
 
 Bash was my go to shell for quite some time. Before Bash I worked with zsh and

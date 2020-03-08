@@ -23,17 +23,17 @@ val mdocSettings = mdoc
 mdoc.Main.process(mdocSettings)
 
 val wikiMarkdown: List[String] = getListOfFiles("out")
-val wikiOverviewPage: Page = createOverview(logs, wikiMarkdown, "wiki")
-val wikiHtml: List[Page] = wikiMarkdown.map(createPage(_, "wiki"))
+val wikiPages: List[Page] = wikiMarkdown.map(createPage(_, "wiki"))
+val wikiOverviewPage: Page = createOverview(logs, wikiPages, "wiki")
 
-for (page <- (wikiOverviewPage :: wikiHtml))
+for (page <- (wikiOverviewPage :: wikiPages))
   writeToOut(page)
 
 val blogMarkdown: List[String] = getListOfFiles("blog")
-val blogOverviewPage: Page = createOverview(logs, blogMarkdown, "blog")
-val blogHtml: List[Page] = blogMarkdown.map(createPage(_, "blog"))
+val blogPages: List[Page] = blogMarkdown.map(createPage(_, "blog"))
+val blogOverviewPage: Page = createOverview(logs, blogPages, "blog")
 
-for (page <- (blogOverviewPage :: blogHtml))
+for (page <- (blogOverviewPage :: blogPages))
   writeToOut(page)
 
 val extraMarkdown: List[String] = getListOfFiles("extras")

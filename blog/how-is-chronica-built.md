@@ -1,6 +1,11 @@
+---
+title: How is chronica built
+date: 2020-02-23
+---
+
 # How is this site built?
 
-Wrote: 2019-02-23
+_Wrote: 2020-02-23_
 
 The building of this site is quite simple. I originally had a site that was
 fully JavaScript powered, and built from scratch. I even created a tiny
