@@ -1,5 +1,32 @@
 [
   {
+    "date": "2020-03-20",
+    "category": "explore",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "kak"
+    ]
+  },
+  {
+    "date": "2020-03-20",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals",
+    "tags": [
+      "metals"
+    ]
+  },
+  {
+    "date": "2020-03-20",
+    "category": "explore",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "kak"
+    ]
+  },
+  {
     "date": "2020-03-18",
     "category": "code",
     "time": 45,
