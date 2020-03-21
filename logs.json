@@ -1,5 +1,25 @@
 [
   {
+    "date": "2020-03-21",
+    "category": "code",
+    "time": 45,
+    "project": "vim-scala",
+    "tags": [
+      "vimscript",
+      "scala",
+      "vim"
+    ]
+  },
+  {
+    "date": "2020-03-21",
+    "category": "code",
+    "time": 180,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-03-20",
     "category": "explore",
     "time": 60,
