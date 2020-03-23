@@ -1,5 +1,35 @@
 [
   {
+    "date": "2020-03-23",
+    "category": "admin",
+    "time": 30,
+    "project": "tooling",
+    "tags": []
+  },
+  {
+    "date": "2020-03-23",
+    "category": "admin",
+    "time": 30,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-03-23",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-03-22",
+    "category": "code",
+    "time": 180,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-03-21",
     "category": "code",
     "time": 45,
