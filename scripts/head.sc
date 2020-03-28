@@ -193,7 +193,8 @@ implicit val style: String =
      |  flex-direction: row;
      | }
      | nav {
-     |   margin: 30px 0;
+     |   margin: 30px 5px;
+     |   min-width: 125px;
      |   width: 100px;
      |   border: none;
      | }
