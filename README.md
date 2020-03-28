@@ -1,4 +1,4 @@
-# chronica
+# chris-kipp.io 
 
 This is the source scripts to generate my site
 [chris-kipp.io](https://chris-kipp.io).
