@@ -1,5 +1,5 @@
 ---
-title: How is chronica built
+title: How is this site built
 date: 2020-02-23
 ---
 

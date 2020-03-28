@@ -42,7 +42,7 @@ def createNav(pageType: String) = {
     else """<li><a href="about.html">about</a></li>"""
 
   s"""|<nav>
-      |  <h1 id="chronica"><a href="/">chronica</a></h1>
+      |  <h1 id="chronica"><a href="/">chris kipp</a></h1>
       |  <ul>
       |   $wiki
       |   $blog

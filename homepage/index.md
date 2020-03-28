@@ -1,4 +1,4 @@
-# chronica
+# chris kipp 
 
 [wiki](wiki.html)
 

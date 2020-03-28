@@ -49,7 +49,7 @@ you and your readings as possible, or Facebook that caters what you see further
 enforcing filter bubbles and essentially selling *you* as their product.
 
 You can read more about how this site is build and works
-[here](how-is-chronica-built.html).
+[here](how-is-this-site-built.html).
 
 Thanks for stopping by.
 
