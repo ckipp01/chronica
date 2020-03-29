@@ -1,4 +1,4 @@
-import $ivy.`org.scalameta::mdoc:2.1.1`
+import $ivy.`org.scalameta::mdoc:2.1.5`
 import $file.domain, domain._
 
 import mdoc.Reporter
