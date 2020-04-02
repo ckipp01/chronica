@@ -1,3 +1,4 @@
 .metals/
 out/
 .now/
+.ammonite/
