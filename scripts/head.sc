@@ -14,6 +14,7 @@ def createHead(title: String)(implicit style: String): String =
       |  <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
       |  <style>${style}</style>
       |  <title>${title}</title>
+      |  <script async src="https://ckipp01-ackee.herokuapp.com/tracker.js" data-ackee-server="https://ckipp01-ackee.herokuapp.com" data-ackee-domain-id="86b83090-f336-40e2-90e4-8211a8561093"></script>
       |</head>
       |""".stripMargin
 
