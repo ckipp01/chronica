@@ -11,9 +11,12 @@ def createHead(title: String)(implicit style: String): String =
       |  <meta name="twitter:description" content="Personal wiki and blog for Chris Kipp">
       |  <meta name="twitter:creator" content="ckipp01">
       |  <meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
+      |  <meta property="og:type" content="website">
+      |  <meta property="og:title" content="${title.replace("-", " ")}">
+      |  <meta property="og:image" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
       |  <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
       |  <style>${style}</style>
-      |  <title>${title}</title>
+      |  <title>${title.replace("-", " ")}</title>
       |  <script async src="https://ckipp01-ackee.herokuapp.com/tracker.js" data-ackee-server="https://ckipp01-ackee.herokuapp.com" data-ackee-domain-id="86b83090-f336-40e2-90e4-8211a8561093"></script>
       |</head>
       |""".stripMargin
