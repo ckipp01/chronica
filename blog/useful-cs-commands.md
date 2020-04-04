@@ -29,13 +29,13 @@ for Coursier. You can find information on how to install it
 [here](https://get-coursier.io/docs/cli-overview) along with a nice overview of
 the few commands I'll show in this post and some others I won't cover. Again,
 my goal for this isn't to do an in-depth dive into all the ways you can use
-`cs`, but give you some practical examples with a few commands that you should
+`cs` but to give you some practical examples with a few commands that you should
 be able to start using right away. The following examples are all real scenarios
 that I came across in the last couple weeks.
 
 ### `resolve`
 
-While at work I was in a conversation in a pull request about how my team didn't
+While at work, I was in a conversation in a pull request about how my team didn't
 love the Java Api of [Caffeine](https://github.com/ben-manes/caffeine), which we
 were using for some caching. We came across
 [Scaffeine](https://github.com/blemale/scaffeine), which is a thin Scala wrapper
@@ -44,7 +44,7 @@ dependencies we add, and the question came up of how many transitive
 dependencies we'd be bringing in by including this. So the question becomes:
 what is the easiest way to check this? Enter `cs resolve`. The `resolve` command
 is a quick way to print out transitive dependencies of one or more other
-dependencies. So, I did the following.
+dependencies. So, I did the following:
 
 
 ```sh
@@ -71,10 +71,10 @@ org.scala-lang:scala-library:2.12.8:default
 org.scala-lang.modules:scala-java8-compat_2.12:0.9.0:default
 ```
 
-As you can see, the full artifacts weren't fetched but just the metadata
-necessary to be able to list the transitive dependencies, which can be found at
-the bottom. You can also get a nice tree view of this by passing in the `--tree`
-or `-t` option.
+As you can see, the full artifacts weren't fetched, only the metadata necessary
+to be able to list the transitive dependencies, which can be found at the
+bottom. You can also get a nice tree view of this by passing in the `--tree` or
+`-t` option.
 
 ```sh
 ❯ cs resolve -t com.github.blemale:scaffeine_2.12:3.1.0
@@ -96,10 +96,10 @@ without adding it into your build or looking through build files.
 Another useful command is the `cs install` command which allows you to install a
 launcher for a JVM-based application. The
 [docs](https://get-coursier.io/docs/cli-install) do a great job at explaining
-how this all works -- but think of `cs install` as an `apt install` or `brew install`
+how this all works, but think of `cs install` as an `apt install` or `brew install`
 alternative for JVM-based apps. You can install, update, and uninstall apps that
-you want to use locally just like you would with <enter global package manager
-name here>. For my situation, I'm a big fan of the
+you want to use locally just like you would with `<enter global package manager
+name here>`. For my situation, I'm a big fan of the
 [mdoc](https://scalameta.org/mdoc/) tool, but I normally use it when
 it's included in a project already. For this situation I just wanted to test
 something locally without including it in the project. I was reviewing an
@@ -114,7 +114,7 @@ something locally without including it in the project. I was reviewing an
 Wrote mdoc
 ```
 
-This then allowed me full access the `mdoc` cli commands, which I could use
+This then allowed me full access to the `mdoc` cli commands, which I could use
 locally without having to include it in my project to test something out.
 
 ### `complete`
@@ -124,10 +124,9 @@ latest version was. I was actually using it in an
 [Ammonite](https://ammonite.io/) script (to create this website), so I didn't
 have access to the `sbt dependencyUpdates` command that I would typically use. I
 ended up looking on GitHub for the version, which lead me to the site, which
-lead me to the version. Ironically I sent in a pr to add in a badge to the
-readme to make the latest version more discoverable when in the pr the author of
-mdoc, [Ólafur Páll Geirsson](https://twitter.com/olafurpg), introduced me to
-this gem:
+lead me to the version. Ironically, I sent in a pr to add in a badge to the
+readme to make the latest version more discoverable when the author of mdoc,
+[Ólafur Páll Geirsson](https://twitter.com/olafurpg), introduced me to this gem:
 
 ```sh
 ❯ cs complete org.scalameta:mdoc_2.13:
@@ -157,7 +156,7 @@ available.
 ## Tell your friends
 
 I want re-iterate that I think there are a ton of great tools in the Scala
-ecosystem, but not everyone is aware of them. Hopefully the few real-life
+ecosystem, but not everyone is aware of them. Hopefully, the few real-life
 examples above illustrate this in a small way. Next time someone mentions
 Coursier, ask them if they've used any of the `cs` commands, and show them a
 couple tips. Let's spread the word about the great tools we have access to.
