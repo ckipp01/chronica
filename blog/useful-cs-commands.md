@@ -1,5 +1,5 @@
 ---
-title: Useful Coursier commands for every dev
+title: Useful cs commands
 date: 2020-04-04
 ---
 
