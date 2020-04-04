@@ -27,7 +27,7 @@ Over the past couple of weeks I've noticed my usage of Coursier CLI spike as I'v
 been either shown or come across new `cs` commands. `cs` is the native launcher
 for Coursier. You can find information on how to install it
 [here](https://get-coursier.io/docs/cli-overview) along with a nice overview of
-the few commands I'll show in this post, and some others I won't cover. Again,
+the few commands I'll show in this post and some others I won't cover. Again,
 my goal for this isn't to do an in-depth dive into all the ways you can use
 `cs`, but give you some practical examples with a few commands that you should
 be able to start using right away. The following examples are all real scenarios
