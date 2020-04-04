@@ -1,5 +1,23 @@
 [
   {
+    "date": "2020-04-04",
+    "category": "write",
+    "time": 60,
+    "project": "chronica",
+    "tags": [
+      "coursier"
+    ]
+  },
+  {
+    "date": "2020-04-04",
+    "category": "code",
+    "time": 30,
+    "project": "chronica",
+    "tags": [
+      "css"
+    ]
+  },
+  {
     "date": "2020-04-02",
     "category": "code",
     "time": 60,
