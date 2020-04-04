@@ -89,7 +89,8 @@ implicit val style: String =
      |  margin-top: 25vh;
      |}
      |a {
-     |  text-decoration: underline dashed;
+     |  text-decoration: underline;
+     |  text-decoration-style: dashed;
      |  text-decoration-skip-ink: none;
      |}
      |a:hover, ::selection {
@@ -97,14 +98,17 @@ implicit val style: String =
      |  color: var(--light-color);
      |}
      |h1 {
-     |  font: 1.3em/1.3 sans-serif;
-     |  margin-bottom: 10px;
+     |  font: 1.4em/1.3 sans-serif;
+     |  margin-bottom: 20px;
      |}
      |h2 {
-     |  font: 1.2em/1.3 sans-serif;
+     |  font: 1.3em/1.3 sans-serif;
      |}
+     |h3 {
+     |  font: 1.2em/1.3 sans-serif;
+     }
      |h2, h3, h5 {
-     |  margin: 10px 0;
+     |  margin: 20px 0;
      |}
      |p, main li {
      |  margin-bottom: 5px;
@@ -114,7 +118,7 @@ implicit val style: String =
      |}
      |pre {
      |  overflow: auto;
-     |  margin: 10px 0;
+     |  margin: 15px 0;
      |}
      |blockquote {
      |  text-align: center;
@@ -138,7 +142,8 @@ implicit val style: String =
      |  max-height: 300px;
      |}
      |#chronica {
-     |  text-decoration: underline double;
+     |  text-decoration: underline;
+     |  text-decoration-style: doubled;
      |  font-size: 1.2em;
      |}
      |#home {
