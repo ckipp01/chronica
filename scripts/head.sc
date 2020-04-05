@@ -120,8 +120,11 @@ implicit val style: String =
      |  font: 0.9em/1.3 monospace;
      |}
      |pre {
+     |  background: var(--dark-color);
+     |  color: var(--light-color);
      |  overflow: auto;
      |  margin: 15px 0;
+     |  padding: 15px;
      |}
      |blockquote {
      |  text-align: center;
