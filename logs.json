@@ -1,5 +1,25 @@
 [
   {
+    "date": "2020-04-05",
+    "category": "admin",
+    "time": 60,
+    "project": "workspace",
+    "tags": [
+      "nnn",
+      "vim"
+    ]
+  },
+  {
+    "date": "2020-04-05",
+    "category": "code",
+    "time": 120,
+    "project": "chronica",
+    "tags": [
+      "css",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-04-04",
     "category": "write",
     "time": 60,
