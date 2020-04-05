@@ -56,7 +56,11 @@ def createList(
     topic: String,
     logs: List[Log]
 ): String = {
-  val list = pageList.sortBy(_.name).foldLeft("") { (acc, next) =>
+  val sorted =
+    if (topic == "blog") pageList.sorted
+    else pageList.sortBy(_.name)
+
+  val list = sorted.foldLeft("") { (acc, next) =>
     val name = (for {
       metadata <- next.metadata
       name <- metadata.title

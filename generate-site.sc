@@ -6,7 +6,7 @@ import java.nio.file.Paths
 import scala.io.Source
 
 println("""|
-           |      generating chronica
+           |      generating site
            |===============================
            |""".stripMargin)
 
@@ -50,6 +50,6 @@ for (page <- extraHtml)
   writeToOut(page)
 
 println(s"""|
-            |         finished generating chronica
+            |         finished generating site
             |============================================
             |""".stripMargin)

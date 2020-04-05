@@ -21,7 +21,7 @@ jobs:
           key: ${{ runner.os }}-linux-coursier
 
       - name: Generate site with Ammonite
-        run: ./amm generate-chronica.sc
+        run: ./amm generate-site.sc
 
       - name: Copy over slides
         run: cp presentations/* out/

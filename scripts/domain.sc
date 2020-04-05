@@ -25,7 +25,24 @@ case class Page(
     name: String,
     content: String,
     metadata: Option[Metadata]
-)
+) extends Ordered[Page] {
+  /**
+    * Used to ensure that the blogs are ordered by
+    * newest first
+    */
+  def compare(that: Page): Int = {
+    for {
+      thisMeta <- this.metadata
+      thisDate <- thisMeta.date
+      thatMeta <- that.metadata
+      thatDate <- thatMeta.date
+    } yield {
+      if (thisDate == thatDate) 0
+      else if (thisDate < thatDate) 1
+      else -1
+    }
+  }.getOrElse(0)
+}
 
 case class TopicDetail(
     topic: String,
