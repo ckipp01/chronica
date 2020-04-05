@@ -5,12 +5,6 @@ def createHead(title: String)(implicit style: String): String =
       |  <meta name="viewport" content="width=device-width, initial-scale=1">
       |  <meta name="keywords" content="Chris Kipp, ckipp01, ckipp">
       |  <meta name="thumbnail" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
-      |  <meta name="twitter:card" content="summary">
-      |  <meta name="twitter:site" content="@ckipp01">
-      |  <meta name="twitter:title" content="chris kipp">
-      |  <meta name="twitter:description" content="Personal wiki and blog for Chris Kipp">
-      |  <meta name="twitter:creator" content="ckipp01">
-      |  <meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
       |  <meta property="og:type" content="website">
       |  <meta property="og:title" content="${title.replace("-", " ")}">
       |  <meta property="og:image" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
