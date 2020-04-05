@@ -7,7 +7,7 @@ import scala.io.Source
 
 println("""|
            |      generating site
-           |===============================
+           |============================
            |""".stripMargin)
 
 val logs: List[Log] = getLogs("./logs.json")
@@ -51,5 +51,5 @@ for (page <- extraHtml)
 
 println(s"""|
             |         finished generating site
-            |============================================
+            |==========================================
             |""".stripMargin)

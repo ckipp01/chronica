@@ -115,7 +115,7 @@ def createHomepage(
   bufferedMarkdown.close
 
   val parsed = parser.parse(markdown)
-  val head = createHead("chronica")
+  val head = createHead("chris-kipp.io")
   val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, htmlBody)
 
