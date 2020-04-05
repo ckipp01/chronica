@@ -1,16 +1,16 @@
-def createHead(title: String)(implicit style: String): String =
+def createHead(title: String, ogType: String)(implicit style: String): String =
   s"""|<head>
       |  <meta charset="utf-8">
       |  <meta name="description" content="Personal wiki and blog for Chris Kipp">
       |  <meta name="viewport" content="width=device-width, initial-scale=1">
       |  <meta name="keywords" content="Chris Kipp, ckipp01, ckipp">
       |  <meta name="thumbnail" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
-      |  <meta property="og:type" content="website">
-      |  <meta property="og:title" content="${title.replace("-", " ")}">
+      |  <meta property="og:type" content="${ogType}">
+      |  <meta property="og:title" content="${title}">
       |  <meta property="og:image" content="https://avatars3.githubusercontent.com/u/13974112?s=400&v=4">
       |  <link rel="icon" href="media/favicon.ico" type="image/x-icon" />
       |  <style>${style}</style>
-      |  <title>${title.replace("-", " ")}</title>
+      |  <title>${title}</title>
       |  <script async src="https://ckipp01-ackee.herokuapp.com/tracker.js" data-ackee-server="https://ckipp01-ackee.herokuapp.com" data-ackee-domain-id="86b83090-f336-40e2-90e4-8211a8561093"></script>
       |</head>
       |""".stripMargin

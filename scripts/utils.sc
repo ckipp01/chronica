@@ -54,7 +54,10 @@ def createOverview(
     pageList: List[Page],
     topic: String
 ): Page = {
-  val head = createHead(topic)
+  val ogType =
+    if (topic == "blog") "blog"
+    else "website"
+  val head = createHead(topic.replace("-", " ").capitalize, ogType)
   val nav = createNav(topic)
   val htmlBody = createList(pageList, topic, logs)
   val fullHtml = putTogetherHtml(head, nav, htmlBody)
@@ -80,8 +83,10 @@ def createPage(
     .getOrElse(retrieveFileName(fileLoc))
     .replace(' ', '-')
     .toLowerCase
-
-  val head = createHead(topic)
+  val ogType =
+    if (fileType == "blog") "blog"
+    else "website"
+  val head = createHead(topic.replace("-", " ").capitalize, ogType)
   val nav = createNav(fileType)
   val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, nav, htmlBody)
@@ -115,7 +120,7 @@ def createHomepage(
   bufferedMarkdown.close
 
   val parsed = parser.parse(markdown)
-  val head = createHead("chris-kipp.io")
+  val head = createHead("chris-kipp.io", "website")
   val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, htmlBody)
 
