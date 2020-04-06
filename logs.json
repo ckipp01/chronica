@@ -1,5 +1,15 @@
 [
   {
+    "date": "2020-04-06",
+    "category": "research",
+    "time": 90,
+    "project": "tooling",
+    "tags": [
+      "bloop",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-04-05",
     "category": "admin",
     "time": 60,
