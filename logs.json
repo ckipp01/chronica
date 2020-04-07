@@ -1,5 +1,21 @@
 [
   {
+    "date": "2020-04-07",
+    "category": "code",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "bloop"
+    ]
+  },
+  {
+    "date": "2020-04-07",
+    "category": "research",
+    "time": 60,
+    "project": "tooling",
+    "tags": []
+  },
+  {
     "date": "2020-04-06",
     "category": "research",
     "time": 90,
