@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-04-08",
+    "category": "research",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "coursier"
+    ]
+  },
+  {
     "date": "2020-04-07",
     "category": "code",
     "time": 30,
