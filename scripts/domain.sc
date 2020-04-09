@@ -26,6 +26,7 @@ case class Page(
     content: String,
     metadata: Option[Metadata]
 ) extends Ordered[Page] {
+
   /**
     * Used to ensure that the blogs are ordered by
     * newest first
