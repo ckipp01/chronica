@@ -1,5 +1,32 @@
 [
   {
+    "date": "2020-04-09",
+    "category": "code",
+    "time": 45,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-04-09",
+    "category": "explore",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "coursier"
+    ]
+  },
+  {
+    "date": "2020-04-09",
+    "category": "admin",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-04-08",
     "category": "research",
     "time": 30,
