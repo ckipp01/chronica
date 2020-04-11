@@ -1,5 +1,22 @@
 [
   {
+    "date": "2020-04-11",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-04-11",
+    "category": "code",
+    "time": 120,
+    "project": "tooling",
+    "tags": [
+      "coursier",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-04-10",
     "category": "code",
     "time": 60,
