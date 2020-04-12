@@ -36,28 +36,27 @@ def generateCore() = {
 
   mdoc.Main.process(mdocSettings)
 
-  val wikiMarkdown: List[String] = getListOfFiles("out")
+  val wikiMarkdown: List[String] = getAllMarkdown("out")
   val wikiPages: List[Page] = wikiMarkdown.map(createPage(_, "wiki"))
   val wikiOverviewPage: Page = createOverview(logs, wikiPages, "wiki")
 
   for (page <- (wikiOverviewPage :: wikiPages))
     writeToOut(page)
 
-  val blogMarkdown: List[String] = getListOfFiles("blog")
+  val blogMarkdown: List[String] = getAllMarkdown("blog")
   val blogPages: List[Page] = blogMarkdown.map(createPage(_, "blog"))
   val blogOverviewPage: Page = createOverview(logs, blogPages, "blog")
 
   for (page <- (blogOverviewPage :: blogPages))
     writeToOut(page)
 
-  val extraMarkdown: List[String] = getListOfFiles("extras")
+  val extraMarkdown: List[String] = getAllMarkdown("extras")
   val extraHtml: List[Page] = extraMarkdown.map {
     case about if about.contains("about") => createPage(about, "about")
     case unknown                          => createPage(unknown, "uknown")
   }
 
-  val homepageMarkdown: String = getFile("homepage/index.md")
-  val homepageHtml: Page = createHomepage(homepageMarkdown)
+  val homepageHtml: Page = createHomepage("homepage/index.md")
   writeToOut(homepageHtml)
 
   for (page <- extraHtml)

@@ -7,7 +7,6 @@ import $file.html, html._
 import java.io.File
 import java.io.PrintWriter
 import java.nio.file.Files
-import java.nio.file.Paths
 import java.nio.file.StandardCopyOption
 
 import scala.collection.JavaConverters._
@@ -26,18 +25,17 @@ private val extensions = Seq(
 implicit val parser = Parser.builder().extensions(extensions).build()
 implicit val renderer = HtmlRenderer.builder().extensions(extensions).build()
 
-def getListOfFiles(dir: String): List[String] = {
+def getAllFilesInDir(dir: String): List[File] = {
   val file = new File(dir)
   file.listFiles
     .filter(_.isFile)
-    .map(_.getPath)
-    .filter(_.endsWith(".md"))
     .toList
 }
 
-def getFile(target: String): String = {
-  val file = new File(target)
-  file.getPath
+def getAllMarkdown(dir: String): List[String] = {
+  getAllFilesInDir(dir)
+    .map(_.getPath)
+    .filter(_.endsWith(".md"))
 }
 
 def getLogs(fileLoc: String): List[Log] = {
@@ -140,14 +138,11 @@ def writeToOut(page: Page): Unit = {
 def copyToOut(copyFrom: String): Unit = {
   ensureExists("out")
   ensureExists(s"out/${copyFrom}")
-  Paths
-    .get(copyFrom)
-    .toFile
-    .listFiles
+  getAllFilesInDir(copyFrom)
     .foreach(f =>
       Files.copy(
         f.toPath,
-        new File("out/").toPath().resolve(f.toString),
+        new File(s"out/${f}").toPath,
         StandardCopyOption.REPLACE_EXISTING
       )
     )
