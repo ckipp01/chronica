@@ -6,6 +6,9 @@ import $file.html, html._
 
 import java.io.File
 import java.io.PrintWriter
+import java.nio.file.Files
+import java.nio.file.Paths
+import java.nio.file.StandardCopyOption
 
 import scala.collection.JavaConverters._
 import scala.io.Source
@@ -128,11 +131,30 @@ def createHomepage(
 }
 
 def writeToOut(page: Page): Unit = {
-  val out = new File("out")
-  if (!out.isDirectory) {
-    out.mkdir()
-  }
+  ensureExists("out")
   val pw = new PrintWriter(new File(s"out/${page.name}"))
   pw.write(page.content)
   pw.close
+}
+
+def copyToOut(copyFrom: String): Unit = {
+  ensureExists("out")
+  ensureExists(s"out/${copyFrom}")
+  Paths
+    .get(copyFrom)
+    .toFile
+    .listFiles
+    .foreach(f =>
+      Files.copy(
+        f.toPath,
+        new File("out/").toPath().resolve(f.toString),
+        StandardCopyOption.REPLACE_EXISTING
+      )
+    )
+}
+
+private def ensureExists(target: String): Unit = {
+  val out = new File(target)
+  if (!out.isDirectory)
+    out.mkdir()
 }

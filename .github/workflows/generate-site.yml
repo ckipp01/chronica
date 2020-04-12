@@ -26,13 +26,7 @@ jobs:
           key: ${{ runner.os }}-linux-coursier
 
       - name: Generate site with Ammonite
-        run: ./amm website.sc
-
-      - name: Copy over slides
-        run: cp presentations/* out/
-
-      - name: Copy over media
-        run: mkdir out/media && cp media/* out/media/
+        run: ./amm website.sc generate
 
       - name: Zeit Now Deployment
         uses: amondnet/now-deployment@v2.0.2
