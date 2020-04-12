@@ -13,11 +13,11 @@ I've been diving into. I've found that at times giving a talk on a subject is
 one of the best ways to dive into that subject. Below you can find a few talks
 that I've given.
 
-- [Scala Development with Vim in 2020](slides-vim-scala-2020.html)
-- [A Zero to Hero Vim + Metals setup for Scala](slides-zero-to-hero.html)
+- [Scala Development with Vim in 2020](presentations/slides-vim-scala-2020.html)
+- [A Zero to Hero Vim + Metals setup for Scala](presentations/slides-zero-to-hero.html)
 - [How Metals and LSP allow you to use your favorite editor for
-    Scala](slides-lsp-metals.html)
-- [Demystifying serverless functions with Zeit Now](slides-faas-zeit-now.html)
+    Scala](presentations/slides-lsp-metals.html)
+- [Demystifying serverless functions with Zeit Now](presentations/slides-faas-zeit-now.html)
 
 ```scala mdoc:tags:talks
 ```
