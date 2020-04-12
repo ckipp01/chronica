@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/(.+)(png|svg|css|ico|jpg|ttf)", "dest": "/$1$2" },
+    { "src": "/", "dest": "/index.html"},
+    { "src": "/index.html", "dest": "/index.html"},
+    { "src": "/(.*)", "dest": "/$1"},
+    { "src": "^/.+", "dest": "/404.html"}
+  ],
+  "regions": [ "all" ]
+}
