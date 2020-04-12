@@ -28,6 +28,9 @@ jobs:
       - name: Generate site with Ammonite
         run: ./amm website.sc generate
 
+      - name: Copy now file
+        run: mv now.json out/
+
       - name: Zeit Now Deployment
         uses: amondnet/now-deployment@v2.0.2
         with:
