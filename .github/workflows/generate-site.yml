@@ -21,9 +21,7 @@ jobs:
           key: ${{ runner.os }}-linux-coursier
 
       - name: Download Ammonite
-        run: |
-          curl -L https://github.com/lihaoyi/ammonite/releases/download/2.0.4/2.13-2.0.4-boostrap > amm
-          chmod +x amm
+        run: curl -L https://github.com/lihaoyi/ammonite/releases/download/2.0.4/2.13-2.0.4-boostrap > amm && chmod +x amm
 
       - name: Generate site with Ammonite
         run: ./amm website.sc
