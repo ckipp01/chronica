@@ -15,7 +15,9 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Download Ammonite
-        run: curl -L https://github.com/lihaoyi/ammonite/releases/download/2.0.4/2.13-2.0.4-boostrap > amm && chmod +x amm
+        run: |
+          curl -L https://github.com/lihaoyi/ammonite/releases/download/2.0.4/2.13-2.0.4-bootstrap > amm
+          chmod +x amm
 
       - name: Cache Coursier
         uses: actions/cache@v1
