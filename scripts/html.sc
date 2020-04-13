@@ -87,7 +87,7 @@ def createList(
 
     val linkName = name.replace(' ', '-').toLowerCase
 
-    acc + s"""<li><a href="${linkName}.html">$displayName</a> $details</li>"""
+    acc + s"""<li><a href="${topic}/${linkName}">$displayName</a> $details</li>"""
   }
 
   s"""|<h1>$topic</h1>

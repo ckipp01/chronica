@@ -1,9 +1,9 @@
 # chris kipp 
 
-[wiki](wiki.html)
+[wiki](wiki)
 
-[blog](blog.html)
+[blog](blog)
 
-[about](about.html)
+[about](about)
 
 [webring](https://webring.xxiivv.com/)
