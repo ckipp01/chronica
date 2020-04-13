@@ -41,14 +41,14 @@ def generateCore() = {
   val wikiOverviewPage: Page = createOverview(logs, wikiPages, "wiki")
 
   for (page <- (wikiOverviewPage :: wikiPages))
-    writeToOut(page)
+    writeToOut(page, "wiki")
 
   val blogMarkdown: List[String] = getAllMarkdown("blog")
   val blogPages: List[Page] = blogMarkdown.map(createPage(_, "blog"))
   val blogOverviewPage: Page = createOverview(logs, blogPages, "blog")
 
   for (page <- (blogOverviewPage :: blogPages))
-    writeToOut(page)
+    writeToOut(page, "blog")
 
   val extraMarkdown: List[String] = getAllMarkdown("extras")
   val extraHtml: List[Page] = extraMarkdown.map {
@@ -62,10 +62,10 @@ def generateCore() = {
   for (page <- extraHtml)
     writeToOut(page)
 
-  println(s"""|
-            |         finished generating site
-            |==========================================
-            |""".stripMargin)
+  println(s"""
+              |         finished generating site
+              |==========================================
+              |""".stripMargin)
 }
 
 @doc("Copies over extras from their directories to out/")

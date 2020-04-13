@@ -62,10 +62,9 @@ def createOverview(
   val nav = createNav(topic)
   val htmlBody = createList(pageList, topic, logs)
   val fullHtml = putTogetherHtml(head, nav, htmlBody)
-  val fileName = topic + ".html"
 
-  println(s"---- created $fileName overview ----")
-  Page(fileName, fullHtml, None)
+  println(s"---- created ${topic} overview ----")
+  Page("index.html", fullHtml, None)
 }
 
 def createPage(
@@ -131,6 +130,13 @@ def createHomepage(
 def writeToOut(page: Page): Unit = {
   ensureExists("out")
   val pw = new PrintWriter(new File(s"out/${page.name}"))
+  pw.write(page.content)
+  pw.close
+}
+
+def writeToOut(page: Page, directory: String): Unit = {
+  ensureExists(s"out/${directory}")
+  val pw = new PrintWriter(new File(s"out/${directory}/${page.name}"))
   pw.write(page.content)
   pw.close
 }
