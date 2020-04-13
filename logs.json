@@ -1,5 +1,22 @@
 [
   {
+    "date": "2020-04-13",
+    "category": "code",
+    "time": 60,
+    "project": "tooling",
+    "tags": [
+      "scalafix",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-04-13",
+    "category": "code",
+    "time": 60,
+    "project": "chronica",
+    "tags": []
+  },
+  {
     "date": "2020-04-12",
     "category": "code",
     "time": 120,
