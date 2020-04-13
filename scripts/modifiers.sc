@@ -74,7 +74,7 @@ class TagGenerator(logs: List[Log]) extends StringModifier {
       tags <- log.tags
     } yield tags).flatten.toSet
     val linkedTags = tags.foldLeft("") { (acc, next) =>
-      acc + s"""<p><em><a href="${next}.html">$next</a></em></p>"""
+      acc + s"""<p><em><a href="${next}">$next</a></em></p>"""
     }
 
     s"""

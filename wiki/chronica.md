@@ -9,14 +9,14 @@ title: chronica
 [chronica](https://chronica.xyz) is the name I've given this site that you're
 currently on. This is the third large iteration of the site. It holds a small
 blog, a wiki for things I'm interested in and work on, and an integration to my
-time tracking system [ándaga](andaga.html). The focus of this site has been and
+time tracking system [ándaga](/wiki/andaga). The focus of this site has been and
 will continue to be a focus on functional minimalism and tools. I hope that
 everything on this site is intentional. It will serve as a continually growing
 place both in how it is made and the content that is displayed here.
 
 ## How is it made
 
-I have a full [blog post](https://chronica.xyz/how-is-chronica-built.html) on
+I have a full [blog post](/blog/how-is-this-site-built) on
 how this site is generated, but in short, it's content is written in markdown,
 then enriched by [mdoc](https://scalameta.org/mdoc/), and then transformed into
 HTML using [flexmark](https://github.com/vsch/flexmark-java). This is all done

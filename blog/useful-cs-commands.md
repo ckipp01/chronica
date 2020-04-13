@@ -7,6 +7,8 @@ date: 2020-04-04
 
 _Wrote: 2020-04-04_
 
+_Updated: 2020-04-13_
+
 The Scala ecosystem has a lot of incredible tools, and for some reason I feel
 like the we do a poor job at highlighting them as well as showing examples of how
 useful they can be to us on a daily basis. One of these tools that I believe

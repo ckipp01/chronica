@@ -9,7 +9,7 @@ _Wrote: 2020-02-23_
 
 The building of this site is quite simple. I originally had a site that was
 fully JavaScript powered, and built from scratch. I even created a tiny
-micro-framework that I used to build it called [gyul](gyul.html). I had a lot of
+micro-framework that I used to build it called [gyul](/wiki/gyul). I had a lot of
 fun with that build, but it was a bit slow on initial load and wouldn't work for
 visitors that had JS disabled. As I got more into Scala, I wanted to simplify
 things and get rid of JS. This lead me to a collection of tools and a process that
@@ -18,11 +18,11 @@ I'll explain below.
 
 ## A quick overview of the full process from log to your eyes
 
-  1. Create a log via [ándaga-cli](andaga-cli.html) after working on a project
+  1. Create a log via [ándaga-cli](/wiki/andaga-cli) after working on a project
   2. Log gets stored into [MongoDB](https://www.mongodb.com/) by
-     [ándaga-core](andaga-core.hmtl)
+     [ándaga-core](/wiki/andaga-core)
   3. Nightly, I have a script that runs which dumps my DB into a JSON file. This
-     JSON gets commited and pushed to the [chronica](chronica.html) repo.
+     JSON gets commited and pushed to the [chronica](/wiki/chronica) repo.
   4. The push triggers GitHub Actions to run. I use
      [Ammonite](https://ammonite.io), [mdoc](https://scalameta.org/mdoc/), and
      [flexmark](https://github.com/vsch/flexmark-java) to transform and enrich

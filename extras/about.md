@@ -1,6 +1,6 @@
 # Hello
 
-![Picture of me](media/me.jpg)
+![Picture of me](/media/me.jpg)
 
 Hi, I'm Chris, and you've stumbled upon my wiki and blog. This is a place where
 I track my time worked on things, write articles abouts stuff I'm interested in,

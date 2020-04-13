@@ -4,7 +4,7 @@ title: workspace
 
 # workspace
 
-![desktop image](media/desktop4.png)
+![desktop image](/media/desktop4.png)
 
 ```scala mdoc:percentages:workspace
 ```

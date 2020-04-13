@@ -7,7 +7,7 @@ date: 2019-07-10
 
 _Wrote: 2019-07-10_
 
-_Edited: 2020-02-22_
+_Updated: 2020-04-13_
 
 I've been meaning to start this for quite some time. Over the years I've had
 various forms of blogs. I was on Tumblr for some time, I had a Medium page, and
@@ -39,7 +39,7 @@ more effort. However, in my experience you're left with a richer experience.
 Taking the time to research and to find a place a bit farther off the main
 street is indeed more labor intensive, but rewarding.
 
-My hope is the that my website, [chronica](chronica.html) is just that. A
+My hope is the that my website, [chronica](/wiki/chronica) is just that. A
 central place that I fully own and have control over where my projects,
 thoughts, and works can all be displayed. There is no overly invasive trackers,
 no advertisements, and no abstraction over what you are seeing. Everything is
@@ -49,7 +49,7 @@ you and your readings as possible, or Facebook that caters what you see further
 enforcing filter bubbles and essentially selling *you* as their product.
 
 You can read more about how this site is build and works
-[here](how-is-this-site-built.html).
+[here](/blog/how-is-this-site-built).
 
 Thanks for stopping by.
 

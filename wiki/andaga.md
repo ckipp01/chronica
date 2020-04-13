@@ -4,7 +4,7 @@ title: andaga
 
 # ándaga
 
-![andaga](media/andaga.png)
+![andaga](/media/andaga.png)
 
 ```scala mdoc:percentages:andaga
 ```
@@ -74,7 +74,7 @@ quickly realized this is not what I wanted due to the slow startup time of the
 JVM. Plus it's a relatively small project that doesn't really deem a full
 application in my eyes unless it was way more verbose. This caused me to rewrite
 it yet again into a simple fish script. You can see more details about this in
-[ándaga-cli](andaga-cli.html).
+[ándaga-cli](/wiki/andaga-cli).
 
 ```scala mdoc:tags:andaga
 ```

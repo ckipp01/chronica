@@ -9,7 +9,7 @@ title: wiki-chronica
 
 Status: Archived (The old wiki portion of this current site)
 
-Hello, I'm [Chris](/me), and this is my digital playground of sorts. I wanted a
+Hello, I'm [Chris](/about), and this is my digital playground of sorts. I wanted a
 place to display what I've been working on, and I wanted it to be a place fully
 built by me. No external tools, no build process, and no localhost. In some ways
 it's an experiment where I can learn, ignore the rules, and just create what I
@@ -17,15 +17,15 @@ want. A place for me to both work and display my work in a raw way that will
 hopefully provide a glimpse into where I'm at with the state of development and
 also what I'm currently working and focusing on.
 
-To provide a bit of context, wiki.chronica is built using [gyul](gyul.html). There
+To provide a bit of context, wiki.chronica is built using [gyul](/wiki/gyul). There
 is no build process apart from adding my data into a json file. wiki.chronica is
-also tied directly into my time tracking system, [ándaga](andaga.html). I use
-[ándaga-cli](andaga-cli.html) to log entries about what I'm working on. An example
+also tied directly into my time tracking system, [ándaga](/wiki/andaga). I use
+[ándaga-cli](/wiki/andaga-cli) to log entries about what I'm working on. An example
 of a log is located below:
 
 `andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga,javascript`
 
-This log is then sent to [ándaga-core](andaga-core.html) which is a serverless
+This log is then sent to [ándaga-core](/wiki/andaga-core) which is a serverless
 endpoint that is deployed with [Zeit Now](https://zeit.co). They are then stored
 in a MongoDB database and nightly a cron job runs on my server to run the script
 placed below:
@@ -66,7 +66,7 @@ On just about every page you'll see the following three tabs:
 
 There is already plenty I would change about the way I've done this and even
 more that I'd like to add. In the future I plan on basically doing all of the
-work [gyul](gyul.html) is doing on the server side and just serving up the html.
+work [gyul](/wiki/gyul) is doing on the server side and just serving up the html.
 This space will continually grow. There will also be a longer form blog portion
 of the chronica ecosystem that has not yet been created. Thanks for stopping by!
 

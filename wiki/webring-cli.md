@@ -11,7 +11,7 @@ title: webring-cli
 
 webring-cli is an attempt to mimic the behavior of the webring through the cli.
 Eventually, I'd also like to merge all the functionality that the
-[webring-checker api](webring-checker.html) also provides.
+[webring-checker api](/wiki/webring-checker) also provides.
 
 The project is built with node and minimal dependencies. The
 [commander](https://github.com/tj/commander.js) library is used as an easier way

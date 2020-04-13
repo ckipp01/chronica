@@ -14,7 +14,7 @@ I'm a regular contributor to this project and have written the official
 
 This project has been one of the first tooling projects that I've gotten
 involved with, and for many reasons it has caused me to be more and more
-interested in the world of [tooling](tooling.html). The entire [Scalameta
+interested in the world of [tooling](/wiki/tooling). The entire [Scalameta
 ](https://scalameta.org/) project is brilliant. The organization holds a ton of
 great libraries like [scalafmt](https://scalameta.org/scalafmt/),
 [mdoc](https://scalameta.org/mdoc/), [MUnit](https://scalameta.org/munit/), and

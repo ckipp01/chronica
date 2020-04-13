@@ -10,7 +10,7 @@ title: gyul
 Status: Archived
 
 gyul is an attempt to make a small wiki engine that will seamlessly tie into my
-timetracker, [ándaga](andaga.html)
+timetracker, [ándaga](/wiki/andaga)
 
 For a while I found myself reverting to large frameworks for simple tasks just
 because I knew the technology. There came a point where I realized the amount of

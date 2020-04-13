@@ -7,7 +7,7 @@ title: andaga-cli
 ```scala mdoc:percentages:andaga-cli
 ```
 ándaga-cli is a small command line script that has already been through
-multiple iterations. It's the command line portion of my [ándaga](andaga.html)
+multiple iterations. It's the command line portion of my [ándaga](/wiki/andaga)
 project. Originally this was written in Node and was all done and stored
 locally. After splitting it up into a more client - server type application,
 this just because the small cli portion of the project. After getting more into
@@ -32,7 +32,7 @@ Usage: andaga <command> [options]
    Options:
     -c, --category   Category to store the log in
     -n, --notes      Notes to be stored with the log
-    -d, --duration   Duraction of the action to be stored
+    -d, --duration   Duration of the action to be stored
     -l, --location   Location of the action to be stored
     -p, --project    Project that the log belongs to
     -t, --tags       Tags that belong to the log
@@ -55,7 +55,7 @@ andaga log -c code -n "Worked on fixing a bug that broke coc-metals" -d 45 -l ho
 
 The aim for ándaga-cli is to keep the project lean and only have it do the
 minimal necessary commands that I need from the command line. The bulk of the
-work will be done in [ándaga-core](andaga-core.html). In the future I'd
+work will be done in [ándaga-core](/wiki/andaga-core). In the future I'd
 possibly like to build a pomodoro like timer directly into the cli portion of
 the project. I'd also like to add a way to track meaningful output for the day
 to best see under what conditions I'm working at my best.

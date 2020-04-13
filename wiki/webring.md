@@ -20,7 +20,7 @@ decentralized [twtxt](https://github.com/buckket/twtxt) feeds to communicate.
 decentralized [Indental](https://wiki.xxiivv.com/site/oscean.html) feeds.
 
 I've also built multiple tools around the webring ecosystem such as the
-[webring-checker](webring-checker.html) and the [webring-cli](webring-cli.html)
+[webring-checker](/wiki/webring-checker) and the [webring-cli](/wiki/webring-cli)
 
 ```scala mdoc:tags:webring
 ```

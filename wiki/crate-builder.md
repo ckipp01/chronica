@@ -6,7 +6,7 @@ title: crate-builder
 
 Status: Archived
 
-One of the things I actually dislike about [gyul](gyul.html) is that all of my data
+One of the things I actually dislike about [gyul](/wiki/gyul) is that all of my data
 is stored as JS objects. While this makes it extremely easy to parse and deal
 with, it sort of makes it a nightmare to manage. Writing new pages and managing
 html layout with it is quite clunky.
