@@ -28,18 +28,18 @@ def putTogetherHtml(
 def createNav(pageType: String) = {
   val wiki =
     if (pageType == "wiki")
-      """<li><a href="wiki" class="active">wiki</a></li>"""
-    else """<li><a href="wiki">wiki</a></li>"""
+      """<li><a href="/wiki" class="active">wiki</a></li>"""
+    else """<li><a href="/wiki">wiki</a></li>"""
 
   val blog =
     if (pageType == "blog")
-      """<li><a href="blog" class="active">blog</a></li>"""
-    else """<li><a href="blog">blog</a></li>"""
+      """<li><a href="/blog" class="active">blog</a></li>"""
+    else """<li><a href="/blog">blog</a></li>"""
 
   val about =
     if (pageType == "about")
-      """<li><a href="about" class="active">about</a></li>"""
-    else """<li><a href="about">about</a></li>"""
+      """<li><a href="/about" class="active">about</a></li>"""
+    else """<li><a href="/about">about</a></li>"""
 
   s"""|<nav>
       |  <h1 id="chronica"><a href="/">chris kipp</a></h1>
