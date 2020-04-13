@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/useful-cs-commands.html", "destination": "/blog/useful-cs-commands" }
+  ]
 }
