@@ -135,17 +135,27 @@ def writeToOut(page: Page): Unit = {
   pw.close
 }
 
-def copyToOut(copyFrom: String): Unit = {
+def copyToOut(target: String): Unit = {
   ensureExists("out")
-  ensureExists(s"out/${copyFrom}")
-  getAllFilesInDir(copyFrom)
-    .foreach(f =>
+  if (target.contains(".")) {
+    val file: File = new File(target)
+    if (file.exists)
       Files.copy(
-        f.toPath,
-        new File(s"out/${f}").toPath,
+        file.toPath,
+        new File(s"out/${file}").toPath,
         StandardCopyOption.REPLACE_EXISTING
       )
-    )
+  } else {
+    ensureExists(s"out/${target}")
+    getAllFilesInDir(target)
+      .foreach(f =>
+        Files.copy(
+          f.toPath,
+          new File(s"out/${f}").toPath,
+          StandardCopyOption.REPLACE_EXISTING
+        )
+      )
+  }
 }
 
 private def ensureExists(target: String): Unit = {

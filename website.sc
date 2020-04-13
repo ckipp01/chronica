@@ -73,4 +73,5 @@ def generateCore() = {
 def copyExtras() = {
   copyToOut("presentations")
   copyToOut("media")
+  copyToOut("now.json")
 }
