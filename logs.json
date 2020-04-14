@@ -1,5 +1,30 @@
 [
   {
+    "date": "2020-04-14",
+    "category": "research",
+    "time": 60,
+    "project": "tooling",
+    "tags": [
+      "scalafix"
+    ]
+  },
+  {
+    "date": "2020-04-14",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-04-14",
+    "category": "code",
+    "time": 45,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
     "date": "2020-04-13",
     "category": "code",
     "time": 60,
