@@ -1,5 +1,21 @@
 [
   {
+    "date": "2020-04-16",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-04-16",
+    "category": "research",
+    "time": 60,
+    "project": "talks",
+    "tags": [
+      "coursier"
+    ]
+  },
+  {
     "date": "2020-04-15",
     "category": "explore",
     "time": 30,
