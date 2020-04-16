@@ -95,19 +95,19 @@ implicit val style: String =
      |  color: var(--light-color);
      |}
      |h1 {
-     |  font: 1.4em/1.3 sans-serif;
+     |  font: 1.5em/1.3 sans-serif;
      |  margin-bottom: 20px;
      |}
      |h2 {
-     |  font: 1.3em/1.3 sans-serif;
+     |  font: 1.4em/1.3 sans-serif;
      |}
      |h3 {
-     |  font: 1.2em/1.3 sans-serif;
+     |  font: 1.3em/1.3 sans-serif;
      }
-     |h2, h3, h5 {
+     |h2, h3 {
      |  margin: 20px 0;
      |}
-     |p, main li {
+     |p, main li, h5 {
      |  margin-bottom: 5px;
      |}
      |code, codeblock {
