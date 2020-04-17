@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-04-17",
+    "category": "research",
+    "time": 60,
+    "project": "programming",
+    "tags": [
+      "haskell"
+    ]
+  },
+  {
     "date": "2020-04-16",
     "category": "admin",
     "time": 60,
