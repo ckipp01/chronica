@@ -2,11 +2,7 @@ import $file.scripts.domain, domain.{Log, Page}
 import $file.scripts.modifiers, modifiers._
 import $file.scripts.utils, utils._
 
-import java.io.File
-import java.nio.file.Files
 import java.nio.file.Paths
-
-import scala.io.Source
 
 import ammonite.ops._
 
@@ -74,7 +70,7 @@ def generateCore() = {
 @doc("Copies over extras from their directories to out/")
 @main
 def copyExtras() = {
-  copyToOut("presentations")
-  copyToOut("media")
-  copyToOut("now.json")
+  cp.over(pwd/'presentations, pwd/'out/'presentations)
+  cp.over(pwd/'media, pwd/'out/'media)
+  cp.over(pwd/"now.json", pwd/'out/"now.json")
 }
