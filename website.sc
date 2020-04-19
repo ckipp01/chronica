@@ -1,11 +1,14 @@
-import java.io.File
-import java.nio.file.Files
 import $file.scripts.domain, domain.{Log, Page}
 import $file.scripts.modifiers, modifiers._
 import $file.scripts.utils, utils._
 
+import java.io.File
+import java.nio.file.Files
 import java.nio.file.Paths
+
 import scala.io.Source
+
+import ammonite.ops._
 
 @doc("Fully generate the website and copy over necessary extras")
 @main
@@ -24,7 +27,7 @@ def generateCore() = {
              |============================
              |""".stripMargin)
 
-  val logs: List[Log] = getLogs("./logs.json")
+  val logs: List[Log] = getLogs(pwd/"logs.json")
   val percentageGenerator = new PercentageGenerator(logs)
   val tagGenerator = new TagGenerator(logs)
 

@@ -17,6 +17,8 @@ import org.commonmark.ext.front.matter.YamlFrontMatterExtension
 import org.commonmark.ext.front.matter.YamlFrontMatterVisitor
 import org.commonmark.parser.Parser
 import org.commonmark.renderer.html.HtmlRenderer
+import os.Path
+import os.read
 
 private val extensions = Seq(
   YamlFrontMatterExtension.create()
@@ -38,10 +40,8 @@ def getAllMarkdown(dir: String): List[String] = {
     .filter(_.endsWith(".md"))
 }
 
-def getLogs(fileLoc: String): List[Log] = {
-  val bufferedLogs = Source.fromFile(fileLoc)
-  val rawLogs = bufferedLogs.getLines.mkString
-  bufferedLogs.close()
+def getLogs(fileLoc: Path): List[Log] = {
+  val rawLogs = read(fileLoc)
 
   ujson
     .read(rawLogs)
