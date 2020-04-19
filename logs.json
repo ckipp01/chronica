@@ -1,5 +1,30 @@
 [
   {
+    "date": "2020-04-19",
+    "category": "admin",
+    "time": 45,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-04-19",
+    "category": "code",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "mdoc"
+    ]
+  },
+  {
+    "date": "2020-04-19",
+    "category": "code",
+    "time": 180,
+    "project": "tooling",
+    "tags": [
+      "coursier"
+    ]
+  },
+  {
     "date": "2020-04-17",
     "category": "research",
     "time": 60,
