@@ -1,5 +1,26 @@
 [
   {
+    "date": "2020-04-23",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": []
+  },
+  {
+    "date": "2020-04-23",
+    "category": "admin",
+    "time": 30,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-04-23",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
     "date": "2020-04-21",
     "category": "code",
     "time": 120,
