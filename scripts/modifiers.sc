@@ -58,7 +58,8 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
   }
 }
 
-class TagGenerator(logs: List[Log]) extends StringModifier {
+class TagGenerator(logs: List[Log], topics: Seq[String])
+    extends StringModifier {
   override val name: String = "tags"
 
   override def process(
@@ -74,7 +75,9 @@ class TagGenerator(logs: List[Log]) extends StringModifier {
       tags <- log.tags
     } yield tags).flatten.toSet
     val linkedTags = tags.foldLeft("") { (acc, next) =>
-      acc + s"""<p><em><a href="${next}">$next</a></em></p>"""
+      if (topics.contains(next))
+        acc + s"""<p><em><a href="${next}">$next</a></em></p>"""
+      else acc + s"<p><em>$next</em></p>"
     }
 
     s"""

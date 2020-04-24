@@ -25,8 +25,9 @@ def generateCore() = {
              |""".stripMargin)
 
   val logs: List[Log] = getLogs(pwd/"logs.json")
+  val topics: Seq[String] = (ls! pwd/'wiki).map(_.baseName)
   val percentageGenerator = new PercentageGenerator(logs)
-  val tagGenerator = new TagGenerator(logs)
+  val tagGenerator = new TagGenerator(logs, topics)
 
   val mdocSettings = mdoc
     .MainSettings()
