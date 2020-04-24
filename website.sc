@@ -4,6 +4,7 @@ import $file.scripts.utils, utils._
 
 import java.nio.file.Paths
 
+import ammonite.main.Router._
 import ammonite.ops._
 
 @doc("Fully generate the website and copy over necessary extras")

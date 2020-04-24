@@ -1,3 +1,5 @@
+import $ivy.`com.lihaoyi::ujson:1.1.0`
+
 case class Log(
     date: String,
     category: String,
