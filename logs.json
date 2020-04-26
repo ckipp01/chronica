@@ -1,5 +1,38 @@
 [
   {
+    "date": "2020-04-26",
+    "category": "code",
+    "time": 120,
+    "project": "tooling",
+    "tags": [
+      "nvim",
+      "lua"
+    ]
+  },
+  {
+    "date": "2020-04-26",
+    "category": "research",
+    "time": 120,
+    "project": "nvim-metals",
+    "tags": [
+      "nvim",
+      "scala",
+      "lua",
+      "metals"
+    ]
+  },
+  {
+    "date": "2020-04-26",
+    "category": "code",
+    "time": 180,
+    "project": "nvim-metals",
+    "tags": [
+      "nvim",
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2020-04-25",
     "category": "code",
     "time": 180,
