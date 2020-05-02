@@ -1,5 +1,29 @@
 [
   {
+    "date": "2020-05-02",
+    "category": "admin",
+    "time": 120,
+    "project": "nvim-metals",
+    "tags": [
+      "lua",
+      "nvim",
+      "scala",
+      "metals"
+    ]
+  },
+  {
+    "date": "2020-05-02",
+    "category": "code",
+    "time": 180,
+    "project": "nvim-metals",
+    "tags": [
+      "lua",
+      "nvim",
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2020-05-01",
     "category": "study",
     "time": 30,
