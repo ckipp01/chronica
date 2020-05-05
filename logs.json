@@ -1,5 +1,19 @@
 [
   {
+    "date": "2020-05-05",
+    "category": "explore",
+    "time": 60,
+    "project": "workspace",
+    "tags": []
+  },
+  {
+    "date": "2020-05-05",
+    "category": "admin",
+    "time": 30,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
     "date": "2020-05-04",
     "category": "code",
     "time": 60,
