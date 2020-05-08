@@ -1,5 +1,27 @@
 [
   {
+    "date": "2020-05-08",
+    "category": "research",
+    "time": 30,
+    "project": "nvim-metals",
+    "tags": [
+      "lua",
+      "scala",
+      "metals"
+    ]
+  },
+  {
+    "date": "2020-05-08",
+    "category": "code",
+    "time": 45,
+    "project": "nvim-metals",
+    "tags": [
+      "lua",
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2020-05-07",
     "category": "research",
     "time": 45,
