@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-05-12",
+    "category": "research",
+    "time": 60,
+    "project": "nvim-metals",
+    "tags": [
+      "lua"
+    ]
+  },
+  {
     "date": "2020-05-11",
     "category": "admin",
     "time": 30,
