@@ -52,7 +52,7 @@ def createNav(pageType: String) = {
 }
 
 def createList(
-    pageList: List[Page],
+    pageList: Seq[Page],
     topic: String,
     logs: List[Log]
 ): String = {

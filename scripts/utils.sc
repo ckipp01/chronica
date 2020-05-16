@@ -17,6 +17,10 @@ import org.commonmark.parser.Parser
 import org.commonmark.renderer.html.HtmlRenderer
 import os.Path
 import os.read
+import os.write
+import os.pwd
+import os.makeDir
+import os.exists
 
 private val extensions = Seq(
   YamlFrontMatterExtension.create()
@@ -24,19 +28,6 @@ private val extensions = Seq(
 
 implicit val parser = Parser.builder().extensions(extensions).build()
 implicit val renderer = HtmlRenderer.builder().extensions(extensions).build()
-
-def getAllFilesInDir(dir: String): List[File] = {
-  val file = new File(dir)
-  file.listFiles
-    .filter(_.isFile)
-    .toList
-}
-
-def getAllMarkdown(dir: String): List[String] = {
-  getAllFilesInDir(dir)
-    .map(_.getPath)
-    .filter(_.endsWith(".md"))
-}
 
 def getLogs(fileLoc: Path): List[Log] = {
   val rawLogs = read(fileLoc)
@@ -50,7 +41,7 @@ def getLogs(fileLoc: Path): List[Log] = {
 
 def createOverview(
     logs: List[Log],
-    pageList: List[Page],
+    pageList: Seq[Page],
     topic: String
 ): Page = {
   val ogType =
@@ -66,29 +57,24 @@ def createOverview(
 }
 
 def createPage(
-    fileLoc: String,
+    fileLoc: Path,
     fileType: String
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
-  val bufferedMarkdown = Source.fromFile(fileLoc)
-  val markdown = bufferedMarkdown.getLines
-    .mkString("\n")
-
-  bufferedMarkdown.close
+  val markdown = read(fileLoc)
 
   val parsed = parser.parse(markdown)
   val metaData = retrieveMetaData(parsed)
   val topic = metaData.title
-    .getOrElse(retrieveFileName(fileLoc))
-    .replace(' ', '-')
+    .getOrElse(fileLoc.baseName)
     .toLowerCase
   val ogType =
     if (fileType == "blog") "blog"
     else "website"
-  val head = createHead(topic.replace("-", " ").capitalize, ogType)
+  val head = createHead(topic.capitalize, ogType)
   val nav = createNav(fileType)
   val htmlBody = renderer.render(parsed)
   val fullHtml = putTogetherHtml(head, nav, htmlBody)
-  val fileName = topic + ".html"
+  val fileName = topic.replace(" ", "-") + ".html"
 
   println(s"---- created $fileName ----")
 
@@ -107,15 +93,9 @@ def retrieveMetaData(node: Node): Metadata = {
 }
 
 def createHomepage(
-    fileLoc: String
+    fileLoc: Path
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
-  val bufferedMarkdown = Source.fromFile(fileLoc)
-
-  val markdown = bufferedMarkdown
-    .getLines()
-    .mkString("\n")
-
-  bufferedMarkdown.close
+  val markdown = read(fileLoc)
 
   val parsed = parser.parse(markdown)
   val head = createHead("chris-kipp.io", "website")
@@ -126,21 +106,10 @@ def createHomepage(
 }
 
 def writeToOut(page: Page): Unit = {
-  ensureExists("out")
-  val pw = new PrintWriter(new File(s"out/${page.name}"))
-  pw.write(page.content)
-  pw.close
+  write.over(pwd / 'out / page.name, page.content)
 }
 
 def writeToOut(page: Page, directory: String): Unit = {
-  ensureExists(s"out/${directory}")
-  val pw = new PrintWriter(new File(s"out/${directory}/${page.name}"))
-  pw.write(page.content)
-  pw.close
-}
-
-private def ensureExists(target: String): Unit = {
-  val out = new File(target)
-  if (!out.isDirectory)
-    out.mkdir()
+  if (!exists(pwd / 'out / directory)) makeDir(pwd / 'out / directory)
+  write.over(pwd / 'out / directory / page.name, page.content)
 }
