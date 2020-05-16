@@ -75,7 +75,7 @@ implicit val style: String =
      |  margin: 0 10px;
      |}
      |main {
-     |  max-width: 640px;
+     |  max-width: 675px;
      |  margin: 0 30px;
      |  flex: 1;
      |}
@@ -197,6 +197,7 @@ implicit val style: String =
      |@media (min-width: 768px) {
      | body {
      |  flex-direction: row;
+     |  height: 100vh;
      | }
      | nav {
      |   margin: 30px 5px;
@@ -206,6 +207,7 @@ implicit val style: String =
      | }
      | main {
      |   margin: 30px;
+     |   overflow-y: scroll;
      | }
      |}
      |""".stripMargin
