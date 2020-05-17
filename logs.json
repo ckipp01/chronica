@@ -1,5 +1,21 @@
 [
   {
+    "date": "2020-05-17",
+    "category": "code",
+    "time": 120,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-05-17",
+    "category": "code",
+    "time": 180,
+    "project": "chronica",
+    "tags": []
+  },
+  {
     "date": "2020-05-16",
     "category": "code",
     "time": 180,
