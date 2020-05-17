@@ -47,7 +47,7 @@ class PercentageGenerator(logs: List[Log]) extends StringModifier {
        |<div class="category-totals">
        |  <em>${topicLogs.size} logs for ${totalTime} minutes</em>
        |</div>
-       |<svg width="100%" height="20">
+       |<svg id="project-graph" width="100%" height="20">
        |  $recs
        |</svg>
        |<div class="keys-container">

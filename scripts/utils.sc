@@ -48,9 +48,10 @@ def createOverview(
     if (topic == "blog") "blog"
     else "website"
   val head = createHead(topic.replace("-", " ").capitalize, ogType)
+  val header = createHeader(logs)
   val nav = createNav(topic)
   val htmlBody = createList(pageList, topic, logs)
-  val fullHtml = putTogetherHtml(head, nav, htmlBody)
+  val fullHtml = putTogetherHtml(head, header, nav, htmlBody)
 
   println(s"---- created ${topic} overview ----")
   Page("index.html", fullHtml, None)
@@ -58,7 +59,8 @@ def createOverview(
 
 def createPage(
     fileLoc: Path,
-    fileType: String
+    fileType: String,
+    logs: List[Log]
 )(implicit parser: Parser, renderer: HtmlRenderer): Page = {
   val markdown = read(fileLoc)
 
@@ -71,9 +73,10 @@ def createPage(
     if (fileType == "blog") "blog"
     else "website"
   val head = createHead(topic.capitalize, ogType)
+  val header = createHeader(logs)
   val nav = createNav(fileType)
   val htmlBody = renderer.render(parsed)
-  val fullHtml = putTogetherHtml(head, nav, htmlBody)
+  val fullHtml = putTogetherHtml(head, header, nav, htmlBody)
   val fileName = topic.replace(" ", "-") + ".html"
 
   println(s"---- created $fileName ----")

@@ -38,14 +38,14 @@ def generateCore() = {
   mdoc.Main.process(mdocSettings)
 
   val wikiMarkdownPaths: Seq[Path] = (ls ! pwd / 'out).filter(_.ext == "md")
-  val wikiPages: Seq[Page] = wikiMarkdownPaths.map(createPage(_, "wiki"))
+  val wikiPages: Seq[Page] = wikiMarkdownPaths.map(createPage(_, "wiki", logs))
   val wikiOverviewPage: Page = createOverview(logs, wikiPages, "wiki")
 
   for (page <- (wikiPages :+ wikiOverviewPage))
     writeToOut(page, "wiki")
 
   val blogMarkdownPaths: Seq[Path] = (ls ! pwd / 'blog).filter(_.ext == "md")
-  val blogPages: Seq[Page] = blogMarkdownPaths.map(createPage(_, "blog"))
+  val blogPages: Seq[Page] = blogMarkdownPaths.map(createPage(_, "blog", logs))
   val blogOverviewPage: Page = createOverview(logs, blogPages, "blog")
 
   for (page <- (blogPages :+ blogOverviewPage))
@@ -53,8 +53,8 @@ def generateCore() = {
 
   val extraMarkdownPaths: Seq[Path] = (ls ! pwd / 'extras).filter(_.ext == "md")
   val extraHtml: Seq[Page] = extraMarkdownPaths.map {
-    case about if about.baseName == "about" => createPage(about, "about")
-    case unknown                            => createPage(unknown, "uknown")
+    case about if about.baseName == "about" => createPage(about, "about", logs)
+    case unknown                            => createPage(unknown, "uknown", logs)
   }
 
   val homepageHtml: Page = createHomepage(pwd / 'homepage / "index.md")

@@ -1,18 +1,23 @@
 import $file.domain, domain._
+import java.time.LocalDate
 
 def retrieveFileName(fileLoc: String) =
   fileLoc.split("/").last.dropRight(3)
 
 def putTogetherHtml(
     head: String,
+    header: String,
     nav: String,
     body: String
 ): String =
   s"""|<html lang="en">
       |  ${head}
       |  <body>
-      |  ${nav}
-      |  <main>${body}</main>
+      |  ${header}
+      |  <div id="main">
+      |    ${nav}
+      |    <main>${body}</main>
+      |  </div>
       |</html>""".stripMargin
 
 def putTogetherHtml(
@@ -24,6 +29,48 @@ def putTogetherHtml(
       |  <body id="home">
       |  <main>${body}</main>
       |</html>""".stripMargin
+
+def createHeader(logs: List[Log]) = {
+  val existingTotals = logs
+    .groupBy(_.date)
+    .mapValues(_.map(_.time).reduce(_ + _))
+
+  val filledWithMissing =
+    LocalDate
+      .of(2018, 1, 1)
+      .toEpochDay
+      .until(LocalDate.now().toEpochDay())
+      .map { date =>
+        val key = LocalDate.ofEpochDay(date).toString()
+        key -> existingTotals.getOrElse(key, 0)
+      }
+      .toSeq
+      .sortBy(_._1)
+
+  val totalLogged = existingTotals.map(_._2).sum
+  val highestDay = filledWithMissing.map(_._2).max
+
+  val points = filledWithMissing
+    .map {
+      case (_, total) => {
+        100 - (total.toFloat / highestDay * 100).round
+      }
+    }
+    .zipWithIndex
+    .map {
+      case (v, h) => s"${h.toString},${v.toString}"
+    }
+    .mkString("", " ", "")
+
+  s"""|<header>
+      |<div id="graph-bar">
+      |  <svg viewBox="0 0 ${filledWithMissing.size} 100" height=100% width=100% preserveAspectRatio="none">
+      |   <polyline points="${points}" style="fill:none;stroke:black;stroke-width:1"/>
+      |  </svg>
+      |</div>
+      |</header>
+      |""".stripMargin
+}
 
 def createNav(pageType: String) = {
   val wiki =

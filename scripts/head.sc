@@ -48,11 +48,13 @@ implicit val style: String =
      |  --write-color: rgb(135, 0, 88);
      |}
      |body {
+     |  background: var(--light-color);
+     |  font: 18px/1.6 sans-serif;
+     |}
+     |#main {
      |  display: flex;
      |  flex-direction: column;
      |  justify-content: center;
-     |  font: 18px/1.6 sans-serif;
-     |  background: var(--light-color)
      |}
      |nav {
      |  margin: 20px 30px;
@@ -128,8 +130,11 @@ implicit val style: String =
      |  list-style-type: circle;
      |  margin-left: 25px;
      |}
-     |svg {
+     |svg#project-graph {
      |  margin: 10px 0;
+     |}
+     |#graph-bar {
+     |  display: none;
      |}
      |em {
      |  font-size: 0.8em;
@@ -147,7 +152,8 @@ implicit val style: String =
      |  font-size: 1.2em;
      |}
      |#home {
-     |  height: 100vh;
+     |  display: flex;
+     |  justify-content: center;
      |}
      |#home h1 {
      |  text-decoration: underline double;
@@ -195,15 +201,24 @@ implicit val style: String =
      |  margin: 5px;
      |}
      |@media (min-width: 768px) {
-     | body {
+     | #main {
      |  flex-direction: row;
-     |  height: 100vh;
+     |  height: calc(100vh - 75px);
      | }
      | nav {
      |   margin: 30px 5px;
      |   min-width: 125px;
      |   width: 100px;
      |   border: none;
+     | }
+     | #graph-bar {
+     |   display: block;
+     |   height: 40px;
+     |   max-width: 870px;
+     |   margin: 5px auto;
+     |   padding: 5px;
+     |   border-bottom: double;
+     |   border-top: double;
      | }
      | main {
      |   margin: 30px;
