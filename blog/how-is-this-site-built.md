@@ -6,14 +6,15 @@ date: 2020-02-23
 # How is this site built?
 
 _Wrote: 2020-02-23_
+_Updated: 2020-05-18_
 
 The building of this site is quite simple. I originally had a site that was
 fully JavaScript powered, and built from scratch. I even created a tiny
-micro-framework that I used to build it called [gyul](/wiki/gyul). I had a lot of
-fun with that build, but it was a bit slow on initial load and wouldn't work for
-visitors that had JS disabled. As I got more into Scala, I wanted to simplify
-things and get rid of JS. This lead me to a collection of tools and a process that
-I'll explain below.
+micro-framework that I used to build it called [gyul](/wiki/gyul). I had a lot
+of fun with that build, but it was a bit slow on initial load and wouldn't work
+for visitors that had JS disabled. As I got more into Scala, I wanted to
+simplify things and get rid of JS. This lead me to a collection of tools and a
+process that I'll explain below.
 
 
 ## A quick overview of the full process from log to your eyes
@@ -25,10 +26,10 @@ I'll explain below.
      JSON gets commited and pushed to the [chronica](/wiki/chronica) repo.
   4. The push triggers GitHub Actions to run. I use
      [Ammonite](https://ammonite.io), [mdoc](https://scalameta.org/mdoc/), and
-     [flexmark](https://github.com/vsch/flexmark-java) to transform and enrich
-     markdown into html.
-  5. After building the created html pages get uploaded and hosted on [Zeit
-     Now](https://zeit.co/home)
+     [CommonMark](https://github.com/atlassian/commonmark-java) to transform and
+     enrich markdown into html.
+  5. After building the created html pages get uploaded and hosted on
+     [Vercel](https://vercel.com)
   6. A similar process happens when I add a blog post and push it up manually.
 
 ## The Generator
@@ -42,12 +43,13 @@ for a certain project (which are basically related topics or projects), and then
 lists them at the bottom of the page. I then process the markdown files which
 embed the newly created html by the modifiers producing a new markdown file.
 Following this process, all of the markdown files are read again, and processed
-by flexmark creating html before being written out.
+by CommonMark creating html before being written out.
 
 ```scala
-  val logs: List[Log] = getLogs("./logs.json")
+  val logs: List[Log] = getLogs(pwd / "logs.json")
+  val topics: Seq[String] = (ls ! pwd / 'wiki).map(_.baseName)
   val percentageGenerator = new PercentageGenerator(logs)
-  val tagGenerator = new TagGenerator(logs)
+  val tagGenerator = new TagGenerator(logs, topics)
 
   val mdocSettings = mdoc
     .MainSettings()
@@ -57,28 +59,27 @@ by flexmark creating html before being written out.
 
   mdoc.Main.process(mdocSettings)
 
-  val wikiMarkdown: List[String] = getListOfFiles("out")
-  val wikiOverviewPage: Page = createOverview(logs, wikiMarkdown, "wiki")
-  val wikiHtml: List[Page] = wikiMarkdown.map(createPage(_, "wiki"))
+  val wikiMarkdownPaths: Seq[Path] = (ls ! pwd / 'out).filter(_.ext == "md")
+  val wikiPages: Seq[Page] = wikiMarkdownPaths.map(createPage(_, "wiki", logs))
+  val wikiOverviewPage: Page = createOverview(logs, wikiPages, "wiki")
 
-  for (page <- (wikiOverviewPage :: wikiHtml))
-    writeToOut(page)
+  for (page <- (wikiPages :+ wikiOverviewPage))
+    writeToOut(page, "wiki")
 
-  val blogMarkdown: List[String] = getListOfFiles("blog")
-  val blogOverviewPage: Page = createOverview(logs, blogMarkdown, "blog")
-  val blogHtml: List[Page] = blogMarkdown.map(createPage(_, "blog"))
+  val blogMarkdownPaths: Seq[Path] = (ls ! pwd / 'blog).filter(_.ext == "md")
+  val blogPages: Seq[Page] = blogMarkdownPaths.map(createPage(_, "blog", logs))
+  val blogOverviewPage: Page = createOverview(logs, blogPages, "blog")
 
-  for (page <- (blogOverviewPage :: blogHtml))
-    writeToOut(page)
+  for (page <- (blogPages :+ blogOverviewPage))
+    writeToOut(page, "blog")
 
-  val extraMarkdown: List[String] = getListOfFiles("extras")
-  val extraHtml: List[Page] = extraMarkdown.map {
-    case about if about.contains("about") => createPage(about, "about")
-    case unknown                          => createPage(unknown, "unknown")
+  val extraMarkdownPaths: Seq[Path] = (ls ! pwd / 'extras).filter(_.ext == "md")
+  val extraHtml: Seq[Page] = extraMarkdownPaths.map {
+    case about if about.baseName == "about" => createPage(about, "about", logs)
+    case unknown                            => createPage(unknown, "uknown", logs)
   }
 
-  val homepageMarkdown: String = getFile("homepage/index.md")
-  val homepageHtml: Page = createHomepage(homepageMarkdown)
+  val homepageHtml: Page = createHomepage(pwd / 'homepage / "index.md")
   writeToOut(homepageHtml)
 
   for (page <- extraHtml)
@@ -87,10 +88,12 @@ by flexmark creating html before being written out.
 
 ## The future
 
-This site will continually change. I have a lot more stats than I'm not showing
+This site will continually change. I have a lot more stats that I'm not showing
 currently for my wiki, so I'll slowly be thinking about ways to show them and
-incorporate them in a meaningful way. The style may also continually change and
-be fine-tuned. I'll also semi-regularly be adding to my blog.
+incorporate them in a meaningful way. This is what you're already seeing at the
+top of the page, a graph showing my activity since I started
+[chronica](/wiki/chronica). The style may also continually change and be
+fine-tuned. I'll also semi-regularly be adding to the [blog](/blog).
 
 Thanks for stopping by.
 
