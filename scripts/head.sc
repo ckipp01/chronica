@@ -221,7 +221,8 @@ implicit val style: String =
      |   border-top: double;
      | }
      | main {
-     |   margin: 30px;
+     |   margin: 30px 20px;
+     |   padding: 0 10px;
      |   overflow-y: scroll;
      | }
      |}
