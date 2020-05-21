@@ -9,10 +9,9 @@ title: webring-checker
 
 Status: Archived
 
-webring-checker is a simple service and api for the [xxiivv
-webring](https://webring.xxiivv.com/). The api is able to provide a list of
-sites in the webring, check the status of the webring, and also show an rss feed
-of the webring. The full options are below.
+webring-checker is a simple service and api for the xxiivv . The api is able to
+provide a list of sites in the webring, check the status of the webring, and
+also show an rss feed of the webring. The full options are below.
 
   - `GET /` will return a description page
   - `GET /check?format=html` will return an html report of all sites, their

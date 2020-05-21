@@ -9,6 +9,8 @@ title: webring-cli
 ```scala mdoc:percentages:webring-cli
 ```
 
+Status: Archived
+
 webring-cli is an attempt to mimic the behavior of the webring through the cli.
 Eventually, I'd also like to merge all the functionality that the
 [webring-checker api](/wiki/webring-checker) also provides.
