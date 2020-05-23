@@ -26,7 +26,7 @@ of a log is located below:
 `andaga log code "Added in a new feature to andaga cli" 45 -l home -p andaga-cli -t andaga,javascript`
 
 This log is then sent to [ándaga-core](/wiki/andaga-core) which is a serverless
-endpoint that is deployed with [Zeit Now](https://zeit.co). They are then stored
+endpoint that is deployed with [Vercel](https://vercel.com). They are then stored
 in a MongoDB database and nightly a cron job runs on my server to run the script
 placed below:
 
@@ -52,11 +52,11 @@ notes, and place` fields since it won't be used in chronica, sort the logs by
 date, and then reverse them to have the newest logs first. I then save this new
 file. If that is successfully I then use sed to place `const LOGS =` on the
 first line turning the JSON array into a JS array. Following this I commit and
-use push this to my github repo. My github repo has the
-[Now for Github integration](https://zeit.co/docs/v2/integrations/now-for-github)
-that automatically deploys my site when something is pushed to master. Following
-the deployment it auto aliases my site to chronica.xzy. This ensures that daily
-my wiki is up to date with my newest logs from the day before.
+use push this to my github repo. My github repo has the [Now for Github
+integration](https://vercel.com) that automatically deploys my site when
+something is pushed to master. Following the deployment it auto aliases my site
+to chris-kipp.io. This ensures that daily my wiki is up to date with my newest
+logs from the day before.
 
 On just about every page you'll see the following three tabs:
 

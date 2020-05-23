@@ -16,7 +16,7 @@ jobs:
 
       - name: Download Ammonite
         run: |
-          curl -L https://github.com/lihaoyi/ammonite/releases/download/2.0.4/2.13-2.0.4-bootstrap > amm
+          curl -L https://github.com/lihaoyi/ammonite/releases/download/2.1.4/2.13-2.1.4-bootstrap > amm
           chmod +x amm
 
       - name: Cache Coursier
@@ -28,10 +28,10 @@ jobs:
       - name: Generate site with Ammonite
         run: ./amm website.sc generate
 
-      - name: Zeit Now Deployment
-        uses: amondnet/now-deployment@v2.0.2
+      - name: Vercel Deployment
+        uses: amondnet/vercel-action@v19
         with:
-          zeit-token: ${{ secrets.ZEIT_TOKEN }}
-          now-org-id: ${{ secrets.ORG_ID }}
-          now-project-id: ${{ secrets.PROJECT_ID }}
-          now-args: '--prod'
+          vercel-token: ${{ secrets.ZEIT_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+          vercel-args: '--prod'

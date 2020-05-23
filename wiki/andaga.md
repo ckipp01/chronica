@@ -54,8 +54,9 @@ Starting in 2019, I split this project up into 2 parts
  - andaga-cli, which is a small command line app written in Node. Instead of
    storing the entries locally, they send them to ándaga-core to be stored.
 
- - ándaga-core, which is a serverless Node app hosted on [Zeit](http://zeit.co),
-   which will store my entries in a MongoDB database.
+ - ándaga-core, which is a serverless Node app hosted on
+     [Vercel](http://vercel.com), which will store my entries in a MongoDB
+     database.
 
 The aim for version 2 is largely the same as version 1, but a few details have
 changed. I'm no longer tracking social and rest time. The whole idea of
