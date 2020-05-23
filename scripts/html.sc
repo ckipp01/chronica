@@ -103,16 +103,28 @@ def createList(
     topic: String,
     logs: List[Log]
 ): String = {
+  def getName(page: Page) =
+    (for {
+      metadata <- page.metadata
+      name <- metadata.title
+    } yield name).getOrElse(retrieveFileName(page.name))
+
   val sorted =
     if (topic == "blog") pageList.sorted
-    else pageList.sortBy(_.name)
+    else
+      pageList
+        .map { page =>
+          val mostRecentLog = logs
+            .find(log => log.project == getName(page))
+            .map(_.date)
+          page -> mostRecentLog
+        }
+        .sortBy(_._2)
+        .reverse
+        .map(_._1)
 
   val list = sorted.foldLeft("") { (acc, next) =>
-    val name = (for {
-      metadata <- next.metadata
-      name <- metadata.title
-    } yield name).getOrElse(retrieveFileName(next.name))
-
+    val name = getName(next)
     val topicLogs: List[Log] = logs.filter(_.project == name)
     val totalTime = topicLogs.foldLeft(0)(_ + _.time)
     val details =
