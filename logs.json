@@ -1,5 +1,28 @@
 [
   {
+    "date": "2020-05-23",
+    "category": "write",
+    "time": 120,
+    "project": "chronica",
+    "tags": [
+      "bloop"
+    ]
+  },
+  {
+    "date": "2020-05-23",
+    "category": "code",
+    "time": 47,
+    "project": "chronica",
+    "tags": []
+  },
+  {
+    "date": "2020-05-23",
+    "category": "code",
+    "time": 21,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-05-22",
     "category": "code",
     "time": 16,
