@@ -1,11 +1,11 @@
 ---
 title: A Bloop Tour for Metals users
-date: 2020-05-04
+date: 2020-05-24
 ---
 
 # A Bloop Tour for Metals users
 
-_Wrote: 2020-05-23_
+_Wrote: 2020-05-24_
 
 Many of the common questions I see around the Metals ecosystem have to do with
 Bloop. Questions like _What is Bloop?_, _What's Bloops role in Metals?_, and
