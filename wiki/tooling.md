@@ -7,15 +7,18 @@ title: tooling
 ```scala mdoc:percentages:tooling
 ```
 
-I have a sort of fascination with programming tooling. Partly because it's
-something as a developer I use so much, but also something that seemingly hasn't
-really made that many changes in the past years. I think this is an area ripe
-for improvements and innovation.
+In the last year, much of my free time has been spent on the topic of tooling. I
+regularly work on [Metals](https://scalameta.org/metals/), and various Vim LSP
+plugins for Metals, and am fascinated by the tooling world. As a developer
+tooling is something I rub up against daily, and it always seems that tooling
+leaves one of two impressions:
 
-Since I primarily work with JavaScript and Scala, my focus is in these two
-ecosystems. Recently I've been studying about the [Language Server
-Protocol](https://microsoft.github.io/language-server-protocol), and been
-working on [metals](https://scalameta.org/metals/).
+- I hate this
+- I love this
+
+I hope to be able to contribute to the _I love this_ side of that impression. I
+hope to continue to learn and dive further into the world of tooling. This topic
+is meant to track all research and general work in that area.
 
 ```scala mdoc:tags:tooling
 ```
