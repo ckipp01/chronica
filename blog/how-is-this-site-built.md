@@ -6,24 +6,27 @@ date: 2020-02-23
 # How is this site built?
 
 _Wrote: 2020-02-23_
-_Updated: 2020-05-18_
+
+_Updated: 2020-05-24_
 
 The building of this site is quite simple. I originally had a site that was
 fully JavaScript powered, and built from scratch. I even created a tiny
 micro-framework that I used to build it called [gyul](/wiki/gyul). I had a lot
 of fun with that build, but it was a bit slow on initial load and wouldn't work
-for visitors that had JS disabled. As I got more into Scala, I wanted to
-simplify things and get rid of JS. This lead me to a collection of tools and a
-process that I'll explain below.
+for visitors that had JS disabled. As I got more into Scala, I wanted to see if
+I could generate my site using it instead of JS. This lead me to a collection of
+tools and a process that I'll explain below.
 
 
-## A quick overview of the full process from log to your eyes
+## [A quick overview of the full process from log to your
+eyes](#a-quick-overview-of-the-full-process-from-log-to-your-eyes)
 
-  1. Create a log via [ándaga-cli](/wiki/andaga-cli) after working on a project
+  1. Create a log via [ándaga-cli](/wiki/andaga-cli) for a task that I'm working
+     on
   2. Log gets stored into [MongoDB](https://www.mongodb.com/) by
      [ándaga-core](/wiki/andaga-core)
   3. Nightly, I have a script that runs which dumps my DB into a JSON file. This
-     JSON gets commited and pushed to the [chronica](/wiki/chronica) repo.
+     JSON gets committed and pushed to the [chronica](/wiki/chronica) repo.
   4. The push triggers GitHub Actions to run. I use
      [Ammonite](https://ammonite.io), [mdoc](https://scalameta.org/mdoc/), and
      [CommonMark](https://github.com/atlassian/commonmark-java) to transform and
@@ -32,11 +35,11 @@ process that I'll explain below.
      [Vercel](https://vercel.com)
   6. A similar process happens when I add a blog post and push it up manually.
 
-## The Generator
+## [The Core](#the-core)
 
-Below is the meat of the script that is generating the site. I read in the logs,
-create a couple modifiers from mdoc. The `percentageGenerator` takes the logs
-and creates the graph that you see on the top of the wiki pages. That graph
+Below is the base of the script that is generating the site. First I read in the
+logs and create a couple modifiers for mdoc. The `percentageGenerator` takes the
+logs and creates the graph that you see on the top of the wiki pages. That graph
 shows the total amount of time I've spent on the project and percentages of each
 type of work such as coding or research. The `tagGenerator` gathers all the tags
 for a certain project (which are basically related topics or projects), and then
@@ -86,14 +89,17 @@ by CommonMark creating html before being written out.
     writeToOut(page)
 ```
 
-## The future
+## [The future](#the-future)
 
 This site will continually change. I have a lot more stats that I'm not showing
 currently for my wiki, so I'll slowly be thinking about ways to show them and
 incorporate them in a meaningful way. This is what you're already seeing at the
 top of the page, a graph showing my activity since I started
 [chronica](/wiki/chronica). The style may also continually change and be
-fine-tuned. I'll also semi-regularly be adding to the [blog](/blog).
+fine-tuned. I'll also semi-regularly be adding to the [blog](/blog). I'm a big
+advocate of maintaining your own blog. It's quite easy to get up and running
+with various tools, and you fully own and manage your own content. It's worth
+the extra effort in my opinion.
 
 Thanks for stopping by.
 

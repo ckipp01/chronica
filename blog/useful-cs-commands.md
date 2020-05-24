@@ -14,7 +14,7 @@ like the we do a poor job at highlighting them as well as showing examples of ho
 useful they can be to us on a daily basis. One of these tools that I believe
 deserves more attention than it does is [Coursier](https://get-coursier.io/).
 
-## Coursier
+## [Coursier](#coursier)
 
 I often hear people mention Coursier mainly when they're talking about
 [sbt](https://www.scala-sbt.org/), and how as of sbt 1.3, it ships with Coursier
@@ -23,7 +23,7 @@ knowledge of Coursier ends for some, I want to show a few use cases of Coursier
 that I think are both simple and extremely useful for daily things we do as
 Scala devs.
 
-### Coursier CLI
+### [Coursier CLI](#coursier-cli)
 
 Over the past couple of weeks I've noticed my usage of Coursier CLI spike as I've
 been either shown or come across new `cs` commands. `cs` is the native launcher
@@ -35,7 +35,7 @@ my goal for this isn't to do an in-depth dive into all the ways you can use
 be able to start using right away. The following examples are all real scenarios
 that I came across in the last couple weeks.
 
-### `resolve`
+### [`resolve`](#resolve)
 
 While at work, I was in a conversation in a pull request about how my team didn't
 love the Java Api of [Caffeine](https://github.com/ben-manes/caffeine), which we
@@ -93,7 +93,7 @@ bottom. You can also get a nice tree view of this by passing in the `--tree` or
 This is such a quick way to be able to see the dependency tree of a dependency
 without adding it into your build or looking through build files.
 
-### `install`
+### [`install`](#install)
 
 Another useful command is the `cs install` command which allows you to install a
 launcher for a JVM-based application. The
@@ -119,7 +119,7 @@ Wrote mdoc
 This then allowed me full access to the `mdoc` cli commands, which I could use
 locally without having to include it in my project to test something out.
 
-### `complete`
+### [`complete`](#complete)
 
 Speaking of mdoc, I was using it in another project, and I was curious what the
 latest version was. I was actually using it in an
@@ -155,7 +155,7 @@ you all the options to complete the artifact that you are looking for. This
 provides such a simple way to explore what versions are cross published and
 available.
 
-## Tell your friends
+## [Tell your friends](#tell-your-friends)
 
 I want re-iterate that I think there are a ton of great tools in the Scala
 ecosystem, but not everyone is aware of them. Hopefully, the few real-life
