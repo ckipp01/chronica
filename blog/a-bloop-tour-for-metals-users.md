@@ -7,6 +7,8 @@ date: 2020-05-24
 
 _Wrote: 2020-05-24_
 
+_Updated: 2020-05-25_
+
 Many of the common questions I see around the Metals ecosystem have to do with
 Bloop. Questions like _What is Bloop?_, _What's Bloops role in Metals?_, and
 _What's the Bloop CLI do?_ are somewhat commonplace. If we step outside of the
@@ -84,8 +86,8 @@ Bloop server is detected and running, which Metals connects to, or the launcher
 starts one.
 
 If you've ever used the debugging features in Metals, you're also utilizing the
-DAP (Debug Adaptor
-Protocol)[https://microsoft.github.io/debug-adapter-protocol/] support that
+DAP ([Debug Adaptor
+Protocol](https://microsoft.github.io/debug-adapter-protocol/)) support that
 Bloop offers. You can find the entire [debugging reference
 here](https://scalacenter.github.io/bloop/docs/debugging-reference).
 
