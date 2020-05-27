@@ -40,9 +40,6 @@ recommend and that have highly influenced chronica.
   - [macwright.org](https://macwright.org) Tom's site is a reminder that I don't
     have to settle for giant sites full of trackers and adds to find quality
     content.
-  - [lihaoyi.com](http://www.lihaoyi.com/) Haoyi's site originally gave me the
-      idea to just use Ammonite to generate this whole thing. Plus, I love all
-      of his tools, including Ammonite.
 
 ```scala mdoc:tags:chronica
 ```
