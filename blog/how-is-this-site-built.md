@@ -18,8 +18,7 @@ I could generate my site using it instead of JS. This lead me to a collection of
 tools and a process that I'll explain below.
 
 
-## [A quick overview of the full process from log to your
-eyes](#a-quick-overview-of-the-full-process-from-log-to-your-eyes)
+## [A quick overview of the full process from log to your eyes](#a-quick-overview-of-the-full-process-from-log-to-your-eyes)
 
   1. Create a log via [ándaga-cli](/wiki/andaga-cli) for a task that I'm working
      on
