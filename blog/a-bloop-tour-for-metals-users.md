@@ -7,23 +7,23 @@ date: 2020-05-24
 
 _Wrote: 2020-05-24_
 
-_Updated: 2020-05-25_
+_Updated: 2020-05-27_
 
 Many of the common questions I see around the Metals ecosystem have to do with
-Bloop. Questions like _What is Bloop?_, _What's Bloops role in Metals?_, and
-_What's the Bloop CLI do?_ are somewhat commonplace. If we step outside of the
-Metals world, the mystery is even more enhanced. I've talked to seasoned Scala
-devs before that didn't really know about Bloop. All this makes it a perfect
+Bloop. Questions like '_What is Bloop?_', '_What's Bloop's role in Metals?_',
+and '_What does the Bloop CLI do?_' are somewhat commonplace. If we step outside
+of the Metals world, the mystery is even more enhanced. I've talked to seasoned
+Scala devs before that weren't aware of Bloop. All this makes it a perfect
 candidate for this mini-series on under-appreciated Scala tools after my last
 [Coursier post](/blog/useful-cs-commands). I don't pretend to be an expert in
-Bloop at all, but I've been lucky enough to work closely with those that are,
-and I've hopefully been able to pick up enough to help spread the word,
-especially in relation to [Metals](https://scalameta.org/metals/).
+Bloop at all, but I've been lucky enough to work closely with those that are and
+have hopefully been able to pick up enough to help spread the word, especially
+in relation to [Metals](https://scalameta.org/metals/).
 
 ## [What is Bloop](#what-is-bloop)
 
-First things first, taken straight from the [Bloop
-website](https://scalacenter.github.io/bloop/docs/what-is-bloop), Bloop is a
+First things first, taken in part from the [Bloop
+website](https://scalacenter.github.io/bloop/docs/what-is-bloop): Bloop is a
 build server and CLI tool for the Scala programming language spearheaded by
 [Jorge Vicente Cantero](https://twitter.com/jvican) and [Martin
 Duhem](https://twitter.com/mnduhem) while at the [Scala
@@ -35,13 +35,13 @@ Center](https://scala.epfl.ch/). Bloop has two main goals:
 
 While those two points are quite clear, there are a couple other points worth
 noting to help with the general understanding of Bloop. Firstly, Bloop is a
-server, and like other servers, it responds to requests from _clients_, which
-can be something like Metals, which is communicating with Bloop via the [Build
+server, and like other servers, it responds to requests from _clients_. These
+clients can be something like Metals, communicating with Bloop via the [Build
 Server Protocol
 (BSP)](https://github.com/build-server-protocol/build-server-protocol), or Bloop
 CLI, which is communicating with Bloop via the [Nailgun server
 protocol](https://github.com/facebook/nailgun). They can be happening
-concurrently, they cache compilations across different clients, and offer client
+concurrently, caching compilations across different clients, and offering client
 isolation to avoid conflicts in a shared, stateful file system.
 
 The [_What is Bloop_](https://scalacenter.github.io/bloop/docs/what-is-bloop)
@@ -50,32 +50,32 @@ listed above, along with some of the design goals of the project.
 
 ## [Metals and Bloop](#metals-and-bloop)
 
-If you've seen any of the presentations done about Metals then you'll probably
-have seen a graphic similar to what I have below. However, the one below is a
-bit more simplified showing only one language client and one build tool.
+If you've seen any of the presentations done about Metals, then you've probably
+seen a graphic similar to what I have below. However, the one below is a bit
+more simplified showing only one language client and one build tool.
 
 ![BSP + LSP diagram](/media/diagram.png)
 
 This diagram is meant to show Bloop's part in the flow from build definition to
 your editor of choice. If you start on the left, you have your build definition
 in sbt for example. If you've used Metals before, you'll notice that when you
-first open up a project, you'll be prompted to _Import Your Build_. What does
+first open up a project you'll be prompted to _Import Your Build_. What does
 this mean? The first time this happens, it means that Metals detects that you
-have no `.bloop` directory, and therefore you need to import your build. When
+have no `.bloop` directory and therefore you need to import your build. When
 using sbt this means that Metals actually adds the `sbt-bloop` plugin to your
 build in `project/metals.sbt`. It then issues an `sbt bloopInstall` command
-which will dump out your build definition for all of your modules into JSON 
-files, which you can see if you open up your `.bloop` directory in your
+which will dump out your build definition for all of your modules into JSON
+files. You can see this if you open up your `.bloop` directory in your
 workspace. These files contain things like your directory information, what
 dependencies your module has on other modules, all your classpath information,
 and more. Go ahead and take a look at everything in there. Once this information
 is gathered, Metals tells Bloop to compile your project.
 
 At this point, if there are any errors during compilation, diagnostics are
-forwarded from Bloop to Metals, to your client for you to see. If you then fix
-the diagnostic, hit save, the save event is sent to Metals, which then forwards
-that to Bloop to compile what has been changed. You can start to imagine the
-flow from the diagram above.
+forwarded from Bloop to Metals and then to your client for you to see. If you
+fix the diagnostic, hit save, the save event is sent to Metals which then
+forwards that to Bloop to compile what has been changed. You can start to
+imagine the flow from the diagram above.
 
 At this point, one of the questions you may have is how does Bloop start? Does
 Metals start it? Does Metals install Bloop? There can only be one Bloop server
@@ -85,7 +85,7 @@ Launcher](https://scalacenter.github.io/bloop/docs/launcher-reference) either a
 Bloop server is detected and running, which Metals connects to, or the launcher
 starts one.
 
-If you've ever used the debugging features in Metals, you're also utilizing the
+If you've ever used the debugging features in Metals, you have also utilized the
 DAP ([Debug Adaptor
 Protocol](https://microsoft.github.io/debug-adapter-protocol/)) support that
 Bloop offers. You can find the entire [debugging reference
@@ -94,9 +94,9 @@ here](https://scalacenter.github.io/bloop/docs/debugging-reference).
 ## [Bloop CLI](#bloop-cli)
 
 Especially for Metals users, I highly recommend using Bloop CLI when you have a
-simple workflow of compiling, testing, compiling, etc. Up above we mentioned
+simple workflow of compiling, testing, compiling, etc. Up above I mentioned
 that compilations are cached for different clients. The power in this can be
-witnessed when you're in Metals, have you project compiled, and can run a
+witnessed when you're in Metals, have your project compiled, and can run a
 test via the Bloop CLI and see it start basically immediately without another
 compilation happening. Personally, I've fully moved from running tests through
 sbt to running them through Bloop CLI simply because of how much faster it is
@@ -106,7 +106,7 @@ time and also compilation that needs to happen.
 
 Many of the things that you would imagine using like, targeting a specific test
 suite, watching a test suite, passing in arguments, or testing upstream projects
-all exist. However, there are a few differences and things worth pointing out. 
+all exist. However, there are a few differences and nuances worth pointing out. 
 
 ### [Pointers](#pointers)
 
@@ -192,14 +192,14 @@ Deduplicating compilation of root from bsp client 'Metals 0.9.0+139-c169b4ce-SNA
     shut down the Bloop server. This is intentional. If you want to shut it
     down, you'll need to run a `bloop exit`.
 - Just to make the distinction, worksheets rely on
-    [mdoc](https://scalameta.org/mdoc/), and the recently merged in Ammonite
+    [mdoc](https://scalameta.org/mdoc/) and the recently merged in Ammonite
     support relies on [Ammonite](https://ammonite.io/). Neither of these use
-    Bloop, so for example if you have an issue with either of them, blowing away
-    your `.bloop` directory won't help.
+    Bloop. So if you have an issue with either of them, blowing away your
+    `.bloop` directory won't help.
 
-I use Bloop daily, and you may too without even realizing it. It's an incredible
-tool that has set the bar for how we run, compile, and test Scala code. If you
-haven't yet, take some time and head on over to the [Bloop
+I use Bloop daily, and you may be using it as well without even realizing it.
+It's an incredible tool that has set the bar for how we run, compile, and test
+Scala code. If you haven't yet, take some time and head on over to the [Bloop
 webiste](https://scalacenter.github.io/bloop/), give the Bloop CLI a try, and
 tell a friend or colleague about it.
 
