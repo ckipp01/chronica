@@ -1,5 +1,22 @@
 [
   {
+    "date": "2020-05-28",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-05-28",
+    "category": "code",
+    "time": 13,
+    "project": "coc-metals",
+    "tags": [
+      "typescript",
+      "metals"
+    ]
+  },
+  {
     "date": "2020-05-25",
     "category": "explore",
     "time": 60,
