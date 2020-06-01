@@ -1,5 +1,25 @@
 [
   {
+    "date": "2020-06-01",
+    "category": "admin",
+    "time": 56,
+    "project": "coc-metals",
+    "tags": [
+      "scala",
+      "typescript",
+      "lsp"
+    ]
+  },
+  {
+    "date": "2020-06-01",
+    "category": "admin",
+    "time": 39,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-05-30",
     "category": "study",
     "time": 44,
