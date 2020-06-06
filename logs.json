@@ -1,5 +1,35 @@
 [
   {
+    "date": "2020-06-06",
+    "category": "code",
+    "time": 92,
+    "project": "programming",
+    "tags": [
+      "firefox",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2020-06-06",
+    "category": "code",
+    "time": 20,
+    "project": "programming",
+    "tags": [
+      "firefox",
+      "javascript"
+    ]
+  },
+  {
+    "date": "2020-06-06",
+    "category": "code",
+    "time": 114,
+    "project": "programming",
+    "tags": [
+      "firefox",
+      "javascript"
+    ]
+  },
+  {
     "date": "2020-06-01",
     "category": "admin",
     "time": 56,
