@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-06-13",
+    "category": "explore",
+    "time": 30,
+    "project": "andaga-core",
+    "tags": [
+      "typescript"
+    ]
+  },
+  {
     "date": "2020-06-09",
     "category": "explore",
     "time": 22,
