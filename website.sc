@@ -7,11 +7,14 @@ import java.nio.file.Paths
 import ammonite.main.Router._
 import ammonite.ops._
 
-@doc("Fully generate the website and copy over necessary extras")
+@doc(
+  "Fully generate the website, copy over necessary extras, and cleanup markdown in /out"
+)
 @main
 def generate() = {
   generateCore()
   copyExtras()
+  cleanupMarkdown()
 }
 
 @doc(
@@ -82,3 +85,11 @@ def copyExtras() = {
 def clean() = {
   rm ! pwd / 'out
 }
+
+@doc("Cleanup markdown before deploying")
+@main
+def cleanupMarkdown() = {
+  val markdown: Seq[Path] = (ls ! pwd / 'out).filter(_.ext == "md")
+  markdown.foreach(rm)
+}
+
