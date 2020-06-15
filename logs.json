@@ -1,5 +1,15 @@
 [
   {
+    "date": "2020-06-15",
+    "category": "code",
+    "time": 36,
+    "project": "tooling",
+    "tags": [
+      "giter8",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-06-14",
     "category": "code",
     "time": 60,
