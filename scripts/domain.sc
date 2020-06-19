@@ -21,7 +21,11 @@ object Log {
     )
 }
 
-case class Metadata(title: Option[String], date: Option[String])
+case class Metadata(
+    title: Option[String],
+    date: Option[String],
+    description: Option[String]
+)
 
 case class Page(
     name: String,

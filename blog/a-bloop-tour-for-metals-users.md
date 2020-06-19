@@ -1,6 +1,7 @@
 ---
 title: A Bloop Tour for Metals users
 date: 2020-05-24
+description: An overview of Bloop, especially relevant for Metals users.
 ---
 
 # A Bloop Tour for Metals users

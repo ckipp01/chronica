@@ -1,6 +1,7 @@
 ---
 title: Why my own blog
 date: 2019-07-10
+description: This post gives some insight into why I have my own blog and I prefer to not use a site like Medium.
 ---
 
 # Why my own blog?

@@ -1,6 +1,7 @@
 ---
 title: Useful cs commands
 date: 2020-04-04
+description: An overview of some useful Coursier commands that every Scala developer can use in their day to day workflow.
 ---
 
 # Useful Coursier commands for every dev

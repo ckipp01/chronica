@@ -1,4 +1,5 @@
 import $file.scripts.domain, domain.{Log, Page}
+import $file.scripts.rss, rss.{generateRss}
 import $file.scripts.modifiers, modifiers._
 import $file.scripts.utils, utils._
 
@@ -48,11 +49,16 @@ def generateCore() = {
     writeToOut(page, "wiki")
 
   val blogMarkdownPaths: Seq[Path] = (ls ! pwd / 'blog).filter(_.ext == "md")
-  val blogPages: Seq[Page] = blogMarkdownPaths.map(createPage(_, "blog", logs))
+  val blogPages: Seq[Page] =
+    blogMarkdownPaths.map(createPage(_, "blog", logs)).sorted
   val blogOverviewPage: Page = createOverview(logs, blogPages, "blog")
 
   for (page <- (blogPages :+ blogOverviewPage))
     writeToOut(page, "blog")
+
+  val rawRss = generateRss(blogPages)
+  val rssFeed = Page("rss.xml", rawRss.toString, None)
+  writeToOut(rssFeed)
 
   val extraMarkdownPaths: Seq[Path] = (ls ! pwd / 'extras).filter(_.ext == "md")
   val extraHtml: Seq[Page] = extraMarkdownPaths.map {
@@ -92,4 +98,3 @@ def cleanupMarkdown() = {
   val markdown: Seq[Path] = (ls ! pwd / 'out).filter(_.ext == "md")
   markdown.foreach(rm)
 }
-

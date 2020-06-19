@@ -95,7 +95,11 @@ def retrieveMetaData(node: Node): Metadata = {
     case (k, v) if v.asScala.toList.nonEmpty => k -> v.asScala.toList.head
   }
 
-  Metadata(mapping.get("title"), mapping.get("date"))
+  Metadata(
+    mapping.get("title"),
+    mapping.get("date"),
+    mapping.get("description")
+  )
 }
 
 def createHomepage(

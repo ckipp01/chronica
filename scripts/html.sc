@@ -110,8 +110,7 @@ def createList(
     } yield name).getOrElse(retrieveFileName(page.name))
 
   val sorted =
-    if (topic == "blog") pageList.sorted
-    else
+    if (topic != "blog")
       pageList
         .map { page =>
           val mostRecentLog = logs
@@ -122,6 +121,8 @@ def createList(
         .sortBy(_._2)
         .reverse
         .map(_._1)
+    else
+      pageList
 
   val list = sorted.foldLeft("") { (acc, next) =>
     val name = getName(next)
