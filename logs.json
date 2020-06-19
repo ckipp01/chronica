@@ -1,5 +1,55 @@
 [
   {
+    "date": "2020-06-18",
+    "category": "research",
+    "time": 25,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-06-18",
+    "category": "explore",
+    "time": 9,
+    "project": "programming",
+    "tags": [
+      "akka"
+    ]
+  },
+  {
+    "date": "2020-06-18",
+    "category": "code",
+    "time": 19,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-06-17",
+    "category": "explore",
+    "time": 67,
+    "project": "nvim-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-06-16",
+    "category": "admin",
+    "time": 30,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-06-16",
+    "category": "code",
+    "time": 60,
+    "project": "nvim-metals",
+    "tags": [
+      "lua",
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2020-06-15",
     "category": "code",
     "time": 36,
