@@ -41,4 +41,3 @@ def generateRss(pages: Seq[Page]) = {
    </rss>
 
 }
-
