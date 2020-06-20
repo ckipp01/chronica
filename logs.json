@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-06-20",
+    "category": "explore",
+    "time": 60,
+    "project": "metlals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-06-19",
     "category": "code",
     "time": 60,
