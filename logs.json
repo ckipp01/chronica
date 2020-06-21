@@ -1,5 +1,21 @@
 [
   {
+    "date": "2020-06-21",
+    "category": "study",
+    "time": 9,
+    "project": "language",
+    "tags": [
+      "korean"
+    ]
+  },
+  {
+    "date": "2020-06-21",
+    "category": "admin",
+    "time": 6,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-06-20",
     "category": "explore",
     "time": 60,
