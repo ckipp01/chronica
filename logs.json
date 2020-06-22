@@ -1,5 +1,23 @@
 [
   {
+    "date": "2020-06-22",
+    "category": "study",
+    "time": 20,
+    "project": "language",
+    "tags": [
+      "korean"
+    ]
+  },
+  {
+    "date": "2020-06-22",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-06-21",
     "category": "study",
     "time": 9,
