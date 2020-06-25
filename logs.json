@@ -1,5 +1,19 @@
 [
   {
+    "date": "2020-06-25",
+    "category": "explore",
+    "time": 30,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-06-25",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-06-24",
     "category": "admin",
     "time": 60,
