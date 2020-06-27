@@ -1,5 +1,26 @@
 [
   {
+    "date": "2020-06-27",
+    "category": "research",
+    "time": 60,
+    "project": "tooling",
+    "tags": []
+  },
+  {
+    "date": "2020-06-27",
+    "category": "admin",
+    "time": 60,
+    "project": "workspace",
+    "tags": []
+  },
+  {
+    "date": "2020-06-27",
+    "category": "admin",
+    "time": 60,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-06-25",
     "category": "explore",
     "time": 30,
