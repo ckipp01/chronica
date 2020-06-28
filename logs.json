@@ -1,5 +1,36 @@
 [
   {
+    "date": "2020-06-28",
+    "category": "research",
+    "time": 60,
+    "project": "programming",
+    "tags": [
+      "tooling",
+      "tree-sitter"
+    ]
+  },
+  {
+    "date": "2020-06-28",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-06-28",
+    "category": "research",
+    "time": 60,
+    "project": "programming",
+    "tags": []
+  },
+  {
+    "date": "2020-06-28",
+    "category": "research",
+    "time": 60,
+    "project": "programming",
+    "tags": []
+  },
+  {
     "date": "2020-06-27",
     "category": "research",
     "time": 60,
