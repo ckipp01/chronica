@@ -22,6 +22,7 @@ def generateRss(pages: Seq[Page]) = {
         <language>en-us</language>
         <category>Blog</category>
         <lastBuildDate>{convertToRFC822(newest)}</lastBuildDate>
+        <atom:link href="http:s//chris-kipp.io/rss.xml" rel="self" type="application/rss+xml" />
        {
          pages.flatMap { page =>
            val title = page.metadata.flatMap(_.title)
@@ -38,7 +39,7 @@ def generateRss(pages: Seq[Page]) = {
                }
                </description>
                <link>{link}</link>
-               <author>Chris Kipp</author>
+               <author>ckipp@pm.me</author>
                <category>Blog</category>
                <guid isPermaLink="true">{link}</guid>
                <pubDate>
