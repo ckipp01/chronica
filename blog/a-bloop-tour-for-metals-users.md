@@ -25,10 +25,10 @@ in relation to [Metals](https://scalameta.org/metals/).
 
 First things first, taken in part from the [Bloop
 website](https://scalacenter.github.io/bloop/docs/what-is-bloop): Bloop is a
-build server and CLI tool for the Scala programming language spearheaded by
-[Jorge Vicente Cantero](https://twitter.com/jvican) and [Martin
-Duhem](https://twitter.com/mnduhem) while at the [Scala
-Center](https://scala.epfl.ch/). Bloop has two main goals:
+build server and CLI tool for the Scala programming language built by the [Scala
+Center](https://scala.epfl.ch/) and spearheaded by [Jorge Vicente
+Cantero](https://twitter.com/jvican) and [Martin
+Duhem](https://twitter.com/mnduhem). Bloop has two main goals:
 
 1. Compile, test, and run Scala code as fast as possible
 2. Integrate easily with build tools, command-line applications, editors, and
