@@ -1,5 +1,8 @@
 import $file.domain, domain.{Page}
 import java.time.Instant
+import java.time.LocalDate
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
 
 def generateRss(pages: Seq[Page]) = {
 
@@ -12,32 +15,53 @@ def generateRss(pages: Seq[Page]) = {
     .getOrElse(Instant.now().toString())
 
   <rss version="2.0">
-     <channel>
-       <title>chris-kipp.io Blog</title>
-       <link>https://chris-kipp.io/blog</link>
-       <description>A blog about tech. Mostly Scala, tooling, Vim, and other things.</description>
-       <language>en-us</language>
-       <category>Blog</category>
-       <lastBuildDate>{newest}</lastBuildDate>
+      <channel>
+        <title>chris-kipp.io Blog</title>
+        <link>https://chris-kipp.io/blog</link>
+        <description>A blog about tech. Mostly Scala, tooling, Vim, and other things.</description>
+        <language>en-us</language>
+        <category>Blog</category>
+        <lastBuildDate>{convertToRFC822(newest)}</lastBuildDate>
        {
-    pages.flatMap { page =>
-      val title = page.metadata.flatMap(_.title)
-      title.map { title =>
-        val link =
-          s"https://chris-kipp.io/blog/${title.toLowerCase.replace(" ", "-")}"
-        <item>
+         pages.flatMap { page =>
+           val title = page.metadata.flatMap(_.title)
+           title.map { title =>
+             val link =
+               s"https://chris-kipp.io/blog/${title.toLowerCase.replace(" ", "-")}"
+             <item>
                <title>{title}</title>
-               <description>{page.metadata.flatMap(_.description).getOrElse("")}</description>
+               <description>
+               {
+                 page.metadata
+                   .flatMap(_.description)
+                   .getOrElse(LocalDate.now().toString)
+               }
+               </description>
                <link>{link}</link>
-          <author>Chris Kipp</author>
-          <category>Blog</category>
-          <guid isPermaLink="true">{link}</guid>
-          <pubDate>{page.metadata.flatMap(_.date).getOrElse("")}</pubDate>
+               <author>Chris Kipp</author>
+               <category>Blog</category>
+               <guid isPermaLink="true">{link}</guid>
+               <pubDate>
+               {
+                 convertToRFC822(
+                   page.metadata
+                     .flatMap(_.date)
+                     .getOrElse(LocalDate.now().toString())
+                 )
+               }
+               </pubDate>
              </item>
-      }
-    }
-  }
+           }
+         }
+       }
      </channel>
    </rss>
 
+}
+
+def convertToRFC822(date: String) = {
+  val localDate = LocalDate.parse(date)
+  val zonedDate = localDate.atStartOfDay(ZoneId.of("Europe/Amsterdam"))
+  val targetFormat = DateTimeFormatter.RFC_1123_DATE_TIME
+  zonedDate.format(targetFormat)
 }
