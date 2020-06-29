@@ -223,7 +223,7 @@ implicit val style: String =
      | main {
      |   margin: 30px 20px;
      |   padding: 0 10px;
-     |   overflow-y: scroll;
+     |   overflow-y: auto;
      | }
      |}
      |""".stripMargin
