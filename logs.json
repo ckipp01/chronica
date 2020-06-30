@@ -1,5 +1,27 @@
 [
   {
+    "date": "2020-06-30",
+    "category": "research",
+    "time": 30,
+    "project": "tooling",
+    "tags": [
+      "tree-sitter",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-06-30",
+    "category": "write",
+    "time": 45,
+    "project": "chronica",
+    "tags": [
+      "vim",
+      "coc-metals",
+      "scala",
+      "metals"
+    ]
+  },
+  {
     "date": "2020-06-29",
     "category": "code",
     "time": 60,
