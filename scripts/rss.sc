@@ -31,7 +31,11 @@ def generateRss(pages: Seq[Page]) = {
              <item>
                <title>{title}</title>
                <description>
-               {page.content}
+               {
+                 page.metadata
+                   .flatMap(_.description)
+                   .getOrElse("")
+               }
                </description>
                <link>{link}</link>
                <author>ckipp@pm.me</author>
