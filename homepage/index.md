@@ -5,3 +5,5 @@
 [blog](blog)
 
 [about](about)
+
+[rss](rss.xml)
