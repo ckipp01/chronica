@@ -6,7 +6,7 @@ description: This post gives some insight into why I have my own blog and I pref
 
 # Why my own blog?
 
-_Wrote: 2019-07-10_
+_Published: 2019-07-10_
 
 _Updated: 2020-04-13_
 
