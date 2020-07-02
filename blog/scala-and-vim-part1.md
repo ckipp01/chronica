@@ -30,7 +30,7 @@ working. While there was definitely room for improvement, this initial small win
 for me was enough to start getting more interested in the tooling around Scala
 and Vim, and it's when I first started slowly contributing to Metals.
 
-![Scalameta logo](media/scalameta.png)
+![Scalameta logo](/media/scalameta.png)
 
 ## The Birth of coc-metals
 
@@ -67,7 +67,7 @@ port over extensions. As things were coming together, I kept getting more
 excited, and I really wanted the experience for Vim Metals users to be both
 smooth and feature rich. I even made it a "resolution" for the new years, ha.
 
-![tweet about Vim](media/vim-tweet.png)
+![tweet about Vim](/media/vim-tweet.png)
 
 ## The current state of coc-metals
 
@@ -84,7 +84,7 @@ use the Metals Tree View to explore the API of your dependencies, that's doable.
 It's great to see the full feature set of Metals supported in Vim if you choose
 to go the coc-metals route.
 
-![Metals and Vim](media/glamour-shot.png)
+![Metals and Vim](/media/glamour-shot.png)
 
 ## The double edged sword
 
@@ -121,7 +121,7 @@ of the year.
 
 ##  nvim-metals
 
-![nvim-metals](media/nvim-metals.png)
+![nvim-metals](/media/nvim-metals.png)
 
 I'm a happy [neovim](https://neovim.io/) user, and I encourage anyone to take a
 look at the [Vision and Goals](https://neovim.io/charter/) of the project. Even
