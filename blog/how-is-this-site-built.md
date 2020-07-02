@@ -6,7 +6,7 @@ description: A short overview of how this site is built.
 
 # How is this site built?
 
-_Wrote: 2020-02-23_
+_Published: 2020-02-23_
 
 _Updated: 2020-05-24_
 

@@ -6,7 +6,7 @@ description: An overview of Bloop, especially relevant for Metals users.
 
 # A Bloop Tour for Metals users
 
-_Wrote: 2020-05-24_
+_Published: 2020-05-24_
 
 _Updated: 2020-05-27_
 

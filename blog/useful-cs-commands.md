@@ -6,7 +6,7 @@ description: An overview of some useful Coursier commands that every Scala devel
 
 # Useful Coursier commands for every dev
 
-_Wrote: 2020-04-04_
+_Published: 2020-04-04_
 
 _Updated: 2020-04-13_
 
