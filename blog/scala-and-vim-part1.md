@@ -32,7 +32,7 @@ and Vim, and it's when I first started slowly contributing to Metals.
 
 ![Scalameta logo](/media/scalameta.png)
 
-## The Birth of coc-metals
+## [The Birth of coc-metals](#the-birth-of-coc-metals)
 
 Pretty soon after starting to contribute it was pretty evident that things like
 a simple automated installation process, an easy way to change configuration, or
@@ -69,7 +69,7 @@ smooth and feature rich. I even made it a "resolution" for the new years, ha.
 
 ![tweet about Vim](/media/vim-tweet.png)
 
-## The current state of coc-metals
+## [The current state of coc-metals](#the-current-state-of-coc-metals)
 
 In the past 6 months there has been a ton of work done on coc-metals that I'm
 really proud of. With the help of multiple contributors every Metals [LSP
@@ -86,7 +86,7 @@ to go the coc-metals route.
 
 ![Metals and Vim](/media/glamour-shot.png)
 
-## The double edged sword
+## [The double edged sword](#the-double-edged-sword)
 
 Looking back at the past 6 months, usage of coc.nvim has also skyrocketed. When
 I first started looking to making a coc plugin, the project had around 6k stars.
@@ -119,7 +119,7 @@ anyone to use Metals with Vim. However, there are some more recent things that
 get me excited and that I'll be shifting my focus and effort to this second half
 of the year.
 
-##  nvim-metals
+##  [nvim-metals](#nvim-metals)
 
 ![nvim-metals](/media/nvim-metals.png)
 
@@ -153,7 +153,7 @@ nvim-metals in the next 6 months. It will take more work to set up, especially
 in its current state, but eventually I believe it will provide a faster, more
 stable, and more extensible Metals + Nvim experience.
 
-## An Ode to Metals
+## [An Ode to Metals](#an-ode-to-metals)
 
 I'd be amiss in this not to mention that Metals does a fantastic job of allowing
 editors of all kinds and all levels of support to have a solid editing
@@ -176,7 +176,7 @@ provide a great experience with Metals -- how well configuring the server works
 and also how open the team is to making necessary changes to ensure all editors
 are having a good experience. I couldn't be more proud to be part of the team.
 
-## The _Ecosystem_
+## [The rest of the _Ecosystem_](#the-rest-of-the-ecosystem)
 
 I'd also like to touch a bit on the Vim and Scala ecosystem outside of Metals. I
 mentioned the [vim-scala](https://github.com/derekwyatt/vim-scala) plugin
