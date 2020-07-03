@@ -1,0 +1,10 @@
+title = Glossary
+
+[Programming]
+  AST = Abstract Syntax Trees are simplified syntactic representations of
+        source code, and they are most often expressed by the data structures of the
+        language used for implementation.
+  CST = Concrete Syntax Trees (Parse Trees) are a representation of grammars in a tree-like form.
+  S-expressions = A notation for nested list (tree-structured) data invented for and popularized for Lisp.
+
+

@@ -1,0 +1,20 @@
+title = Links
+
+["Language Parsing"]
+  [["Language Parsing".Videos]]
+    title   = Tree-sitter - a new parsing system for programming tools
+    author  = Max Brunsfeld
+    link    = https://www.youtube.com/watch?v=Jes3bD6P0To
+
+  [["Language Parsing".Articles]]
+    title   = Abstract vs. Concrete Syntax Trees 
+    author  = Eli Bendersky
+    link    = https://eli.thegreenplace.net/2009/02/16/abstract-vs-concrete-syntax-trees
+    type    = Blog
+
+[Editing]
+  [[Editing.Articles]]
+    title   = xi-editor retrospective
+    author  = Raph Levien
+    link    = https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html
+    type    = Blog
