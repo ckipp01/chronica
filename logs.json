@@ -1,5 +1,17 @@
 [
   {
+    "date": "2020-07-02",
+    "category": "write",
+    "time": 90,
+    "project": "chronica",
+    "tags": [
+      "blog",
+      "scala",
+      "vim",
+      "tooling"
+    ]
+  },
+  {
     "date": "2020-07-01",
     "category": "write",
     "time": 90,
