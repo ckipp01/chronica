@@ -1,5 +1,24 @@
 [
   {
+    "date": "2020-07-03",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "akka",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-07-03",
+    "category": "research",
+    "time": 90,
+    "project": "tooling",
+    "tags": [
+      "tree-sitter"
+    ]
+  },
+  {
     "date": "2020-07-02",
     "category": "write",
     "time": 90,
