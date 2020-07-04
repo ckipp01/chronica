@@ -1,5 +1,19 @@
 [
   {
+    "date": "2020-07-04",
+    "category": "admin",
+    "time": 14,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-07-04",
+    "category": "code",
+    "time": 111,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-07-03",
     "category": "study",
     "time": 30,
@@ -360,7 +374,7 @@
     "project": "programming",
     "tags": [
       "scala",
-      "functional-programming"
+      "functional programming"
     ]
   },
   {
@@ -2133,7 +2147,7 @@
     "time": 120,
     "tags": [
       "scala",
-      "open source",
+      "open-source",
       "metals"
     ],
     "project": "talks"
@@ -2641,7 +2655,7 @@
     "project": "coc-metals",
     "tags": [
       "nvim",
-      "typesript",
+      "typescript",
       "metals"
     ]
   },
@@ -2745,7 +2759,7 @@
     "tags": [
       "metals",
       "typescript",
-      "open source"
+      "open-source"
     ]
   },
   {
@@ -2762,7 +2776,7 @@
     "tags": [
       "typescript",
       "metals",
-      "open source"
+      "open-source"
     ]
   },
   {
@@ -2773,7 +2787,7 @@
     "tags": [
       "typescript",
       "nvim",
-      "open source",
+      "open-source",
       "metals"
     ]
   },
@@ -2830,7 +2844,7 @@
     "tags": [
       "scala",
       "tooling",
-      "open source"
+      "open-source"
     ]
   },
   {
@@ -5067,7 +5081,7 @@
     "project": "webring-checker",
     "tags": [
       "javascript",
-      "Mervielles"
+      "mervielles"
     ]
   },
   {
@@ -5107,7 +5121,7 @@
     "project": "webring-checker",
     "tags": [
       "javascript",
-      "Mervielles"
+      "mervielles"
     ]
   },
   {
@@ -5117,7 +5131,7 @@
     "project": "webring-checker",
     "tags": [
       "javascript",
-      "Mervielles"
+      "mervielles"
     ]
   },
   {
@@ -5135,7 +5149,7 @@
     "time": 30,
     "project": "language",
     "tags": [
-      "Korean"
+      "korean"
     ]
   },
   {
@@ -5199,7 +5213,7 @@
     "time": 25,
     "project": "language",
     "tags": [
-      "Korean"
+      "korean"
     ]
   },
   {
@@ -5208,7 +5222,7 @@
     "time": 25,
     "project": "language",
     "tags": [
-      "Korean"
+      "korean"
     ]
   },
   {
