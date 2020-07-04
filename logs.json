@@ -1,6 +1,40 @@
 [
   {
     "date": "2020-07-04",
+    "category": "research",
+    "time": 54,
+    "project": "tree-sitter/scala",
+    "tags": [
+      "tree-sitter",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-07-04",
+    "category": "research",
+    "time": 17,
+    "project": "tree-sitter/scala",
+    "tags": [
+      "tree-sitter",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-07-04",
+    "category": "admin",
+    "time": 14,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-07-04",
+    "category": "admin",
+    "time": 44,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-07-04",
     "category": "admin",
     "time": 14,
     "project": "coc-metals",
