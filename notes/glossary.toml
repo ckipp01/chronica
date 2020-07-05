@@ -1,10 +1,33 @@
 title = Glossary
 
 [Programming]
-  AST = Abstract Syntax Trees are simplified syntactic representations of
-        source code, and they are most often expressed by the data structures of the
-        language used for implementation.
-  CST = Concrete Syntax Trees (Parse Trees) are a representation of grammars in a tree-like form.
-  S-expressions = A notation for nested list (tree-structured) data invented for and popularized for Lisp.
+  AST = """
+    Abstract Syntax Trees are simplified syntactic representations of source
+    code, and they are most often expressed by the data structures of the
+    language used for implementation.
+    """
 
+  "Context-free grammar" = """
+    In formal language theory, a context-free grammar (CFG) is a formal
+    grammar in which every production rule is of the form:
 
+    A   →   α
+
+    where A is a single nonterminal symbol, and α is a string of terminals
+    and/or nonterminals.
+    """
+
+  CST = """
+    Concrete Syntax Trees (Parse Trees) are a representation of grammars in a
+    tree-like form.
+    """
+
+  EBNF = """
+    Extended Backus-Naur form is a family of metasyntax notations, any of which
+    can be used to express context-free grammar.
+    """
+
+  S-expressions = """
+    A notation for nested list (tree-structured) data invented
+    for and popularized for Lisp.
+    """
