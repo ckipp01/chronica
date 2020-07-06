@@ -18,3 +18,9 @@ title = Links
     author  = "Raph Levien"
     link    = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
     type    = "Blog"
+
+[Programming]
+  [[Scala.Videos]]
+    title   = "Folding algebraic data types - Scala tutorial"
+    author  = "Jakub Kozłowski"
+    link    = "https://www.youtube.com/watch?v=cS4MOUsuWYc&feature=emb_title"
