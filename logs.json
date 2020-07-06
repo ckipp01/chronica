@@ -1,5 +1,23 @@
 [
   {
+    "date": "2020-07-05",
+    "category": "study",
+    "time": 120,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-07-05",
+    "category": "research",
+    "time": 120,
+    "project": "tree-sitter/scala",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-07-04",
     "category": "research",
     "time": 54,
