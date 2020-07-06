@@ -1,5 +1,28 @@
 [
   {
+    "date": "2020-07-06",
+    "category": "admin",
+    "time": 30,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
+    "date": "2020-07-06",
+    "category": "admin",
+    "time": 31,
+    "project": "metals",
+    "tags": []
+  },
+  {
+    "date": "2020-07-06",
+    "category": "study",
+    "time": 31,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-07-05",
     "category": "study",
     "time": 120,
