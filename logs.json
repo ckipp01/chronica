@@ -1,5 +1,19 @@
 [
   {
+    "date": "2020-07-07",
+    "category": "code",
+    "time": 60,
+    "project": "programming",
+    "tags": []
+  },
+  {
+    "date": "2020-07-07",
+    "category": "admin",
+    "time": 45,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-07-06",
     "category": "admin",
     "time": 30,
