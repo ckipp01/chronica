@@ -12,6 +12,13 @@ title = Links
     link    = "https://eli.thegreenplace.net/2009/02/16/abstract-vs-concrete-syntax-trees"
     type    = "Blog"
 
+  [["Language Parsing".Articles]]
+    title  = "LL and LR Parsing Demystified"
+    author = "Josh Haberman"
+    link   = "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
+    type   = "Blog"
+
+
 [Editing]
   [[Editing.Articles]]
     title   = "xi-editor retrospective"
