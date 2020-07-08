@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-07-08",
+    "category": "admin",
+    "time": 30,
+    "project": "nvim-metals",
+    "tags": []
+  },
+  {
     "date": "2020-07-07",
     "category": "code",
     "time": 60,
