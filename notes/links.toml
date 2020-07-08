@@ -10,13 +10,11 @@ title = Links
     title   = "Abstract vs. Concrete Syntax Trees"
     author  = "Eli Bendersky"
     link    = "https://eli.thegreenplace.net/2009/02/16/abstract-vs-concrete-syntax-trees"
-    type    = "Blog"
 
   [["Language Parsing".Articles]]
     title  = "LL and LR Parsing Demystified"
     author = "Josh Haberman"
     link   = "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
-    type   = "Blog"
 
 
 [Editing]
@@ -24,10 +22,14 @@ title = Links
     title   = "xi-editor retrospective"
     author  = "Raph Levien"
     link    = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
-    type    = "Blog"
 
 [Programming]
   [[Scala.Videos]]
     title   = "Folding algebraic data types - Scala tutorial"
     author  = "Jakub Kozłowski"
     link    = "https://www.youtube.com/watch?v=cS4MOUsuWYc&feature=emb_title"
+
+  [[Scala.Articles]]
+    title  = "Make ADTs subtypes of Product and Serializable"
+    author = "Nicolas Rinaudo"
+    link   = "https://nrinaudo.github.io/scala-best-practices/adts/product_with_serializable.html"
