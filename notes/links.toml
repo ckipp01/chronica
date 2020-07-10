@@ -33,3 +33,17 @@ title = Links
     title  = "Make ADTs subtypes of Product and Serializable"
     author = "Nicolas Rinaudo"
     link   = "https://nrinaudo.github.io/scala-best-practices/adts/product_with_serializable.html"
+
+[Vim]
+  [[Vim.Articles]]
+    title  = "Oil and vinegar - split windows and the project drawer"
+    author = "Drew Neil"
+    link   = "http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer"
+  [[Vim.Articles]]
+    title  = "Vim: you don't need NERDtree or (maybe) netrw"
+    author = "George Ornbo"
+    link   = "https://shapeshed.com/vim-netrw/"
+  [[Vim.Articles]]
+    title  = "Build your own Vim statusline"
+    author = "George Ornbo"
+    link   = "https://shapeshed.com/vim-statuslines/"
