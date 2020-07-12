@@ -1,5 +1,39 @@
 [
   {
+    "date": "2020-07-12",
+    "category": "research",
+    "time": 77,
+    "project": "andaga-core",
+    "tags": []
+  },
+  {
+    "date": "2020-07-12",
+    "category": "research",
+    "time": 171,
+    "project": "tree-sitter/scala",
+    "tags": [
+      "scala",
+      "tree-sitter"
+    ]
+  },
+  {
+    "date": "2020-07-12",
+    "category": "research",
+    "time": 11,
+    "project": "programming",
+    "tags": []
+  },
+  {
+    "date": "2020-07-12",
+    "category": "write",
+    "time": 75,
+    "project": "metals",
+    "tags": [
+      "docs",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-07-11",
     "category": "code",
     "time": 240,
