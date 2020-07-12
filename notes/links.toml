@@ -1,10 +1,14 @@
 title = Links
 
+[Editing]
+
+  [[Editing.Articles]]
+    title   = "xi-editor retrospective"
+    author  = "Raph Levien"
+    link    = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
+
+
 ["Language Parsing"]
-  [["Language Parsing".Videos]]
-    title   = "Tree-sitter - a new parsing system for programming tools"
-    author  = "Max Brunsfeld"
-    link    = "https://www.youtube.com/watch?v=Jes3bD6P0To"
 
   [["Language Parsing".Articles]]
     title   = "Abstract vs. Concrete Syntax Trees"
@@ -16,33 +20,43 @@ title = Links
     author = "Josh Haberman"
     link   = "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
 
+  [["Language Parsing".Videos]]
+    title   = "Tree-sitter - a new parsing system for programming tools"
+    author  = "Max Brunsfeld"
+    link    = "https://www.youtube.com/watch?v=Jes3bD6P0To"
 
-[Editing]
-  [[Editing.Articles]]
-    title   = "xi-editor retrospective"
-    author  = "Raph Levien"
-    link    = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
 
 [Programming]
-  [[Scala.Videos]]
-    title   = "Folding algebraic data types - Scala tutorial"
-    author  = "Jakub Kozłowski"
-    link    = "https://www.youtube.com/watch?v=cS4MOUsuWYc&feature=emb_title"
 
   [[Scala.Articles]]
     title  = "Make ADTs subtypes of Product and Serializable"
     author = "Nicolas Rinaudo"
     link   = "https://nrinaudo.github.io/scala-best-practices/adts/product_with_serializable.html"
 
+  [[Scala.Videos]]
+    title   = "Folding algebraic data types - Scala tutorial"
+    author  = "Jakub Kozłowski"
+    link    = "https://www.youtube.com/watch?v=cS4MOUsuWYc&feature=emb_title"
+
+["Software Development"]
+
+  [["Software Development".Articles]]
+    title  = "Principles of Design"
+    author = "Tim Berners-Lee"
+    link   = "https://www.w3.org/DesignIssues/Principles.html"
+
 [Vim]
+
   [[Vim.Articles]]
     title  = "Oil and vinegar - split windows and the project drawer"
     author = "Drew Neil"
     link   = "http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer"
+
   [[Vim.Articles]]
     title  = "Vim: you don't need NERDtree or (maybe) netrw"
     author = "George Ornbo"
     link   = "https://shapeshed.com/vim-netrw/"
+
   [[Vim.Articles]]
     title  = "Build your own Vim statusline"
     author = "George Ornbo"
