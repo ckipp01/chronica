@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-07-13",
+    "category": "admin",
+    "time": 60,
+    "project": "coc-metals",
+    "tags": []
+  },
+  {
     "date": "2020-07-12",
     "category": "research",
     "time": 77,
