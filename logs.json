@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-07-14",
+    "category": "study",
+    "time": 45,
+    "project": "programming",
+    "tags": []
+  },
+  {
     "date": "2020-07-13",
     "category": "admin",
     "time": 60,
