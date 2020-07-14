@@ -45,6 +45,11 @@ title = Links
     author = "Tim Berners-Lee"
     link   = "https://www.w3.org/DesignIssues/Principles.html"
 
+  [["Software Development".Articles]]
+    title  = "It's probably time to stop recommending Clean Code"
+    author = "qntm"
+    link   = "https://qntm.org/clean"
+
 [Vim]
 
   [[Vim.Articles]]
