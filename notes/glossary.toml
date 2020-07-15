@@ -1,8 +1,8 @@
 title = Glossary
 
 [Programming]
-  AST = """
-    Abstract Syntax Trees are simplified syntactic representations of source
+  "Abstract Syntax Trees" = """
+    ASTs are simplified syntactic representations of source
     code, and they are most often expressed by the data structures of the
     language used for implementation.
     """
@@ -17,17 +17,43 @@ title = Glossary
     and/or nonterminals.
     """
 
-  CST = """
-    Concrete Syntax Trees (Parse Trees) are a representation of grammars in a
+  "Concrete Syntax Trees" = """
+    (CST) or also know as (Parse Trees) are a representation of grammars in a
     tree-like form.
     """
 
-  EBNF = """
-    Extended Backus-Naur form is a family of metasyntax notations, any of which
-    can be used to express context-free grammar.
+  "Extended Backus-Naur Formt" = """
+    EBNF is a family of metasyntax notations, any of which can be used to
+    express context-free grammar.
+    """
+
+  "Higher Order Functions" =  """
+    HOF are functions that do one of two things:
+
+    1. Takes one or more functions are arguments
+    2. Returns a function as a result
     """
 
   S-expressions = """
     A notation for nested list (tree-structured) data invented
     for and popularized for Lisp.
+    """
+
+  "Single Abstract Method" = """
+    (SAM) - These are interfaces which have exactly one
+    abstract method. These are also known as functional interfaces.
+    
+    For example, in Scala this allows you do have a trait like so:
+
+    ```scala
+    trait MyTrait {
+      def a(m: String): Unit
+    }
+    ```
+    
+    And instead of using the standard syntax you can use the SAM syntax:
+
+    ```scala
+    val x: MyTrait = (m: String) => println(m)
+    ```
     """
