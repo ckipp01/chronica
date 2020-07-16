@@ -1,5 +1,15 @@
 [
   {
+    "date": "2020-07-16",
+    "category": "study",
+    "time": 30,
+    "project": "programming",
+    "tags": [
+      "scala",
+      "functional programming"
+    ]
+  },
+  {
     "date": "2020-07-15",
     "category": "study",
     "time": 45,
