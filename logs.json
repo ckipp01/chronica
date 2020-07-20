@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-07-20",
+    "category": "write",
+    "time": 120,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-07-16",
     "category": "study",
     "time": 30,
