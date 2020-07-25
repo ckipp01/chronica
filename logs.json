@@ -1,5 +1,27 @@
 [
   {
+    "date": "2020-07-25",
+    "category": "admin",
+    "time": 60,
+    "project": "tooling",
+    "tags": [
+      "bloop",
+      "mill",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-07-25",
+    "category": "explore",
+    "time": 60,
+    "project": "andaga",
+    "tags": [
+      "andaga-core",
+      "scala",
+      "mill"
+    ]
+  },
+  {
     "date": "2020-07-21",
     "category": "code",
     "time": 120,
