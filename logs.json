@@ -1,5 +1,16 @@
 [
   {
+    "date": "2020-07-26",
+    "category": "code",
+    "time": 290,
+    "project": "andaga",
+    "tags": [
+      "andaga-core",
+      "mill",
+      "scala"
+    ]
+  },
+  {
     "date": "2020-07-25",
     "category": "admin",
     "time": 60,
