@@ -50,6 +50,11 @@ title = Links
     author = "qntm"
     link   = "https://qntm.org/clean"
 
+  [["Software Development".Articles]]
+    title  = "The golden rule of software quality"
+    author = "Gabriel Gonzalez"
+    link   = "http://www.haskellforall.com/2020/07/the-golden-rule-of-software-quality.html"
+
 [Vim]
 
   [[Vim.Articles]]
