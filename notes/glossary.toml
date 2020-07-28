@@ -33,6 +33,12 @@ title = Glossary
     express context-free grammar.
     """
 
+  "Greenspun's tenth rule" = """
+    Any sufficiently complicated C or Fortran program contains an ad hoc,
+    informally-specified, bug-ridden, slow implementation of half of Common
+    Lisp.
+    """
+
   "Higher Order Functions" =  """
     HOF are functions that do one of two things:
 
