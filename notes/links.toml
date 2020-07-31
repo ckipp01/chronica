@@ -55,6 +55,11 @@ title = Links
     author = "Gabriel Gonzalez"
     link   = "http://www.haskellforall.com/2020/07/the-golden-rule-of-software-quality.html"
 
+  [["Software Development".Articles]]
+    title  = "Towards Faster Iteration in Industrial Haskell"
+    author = "Patrick Thomson"
+    link   = "https://blog.sumtypeofway.com/posts/fast-iteration-with-haskell.html"
+
 [Vim]
 
   [[Vim.Articles]]
