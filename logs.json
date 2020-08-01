@@ -1,5 +1,32 @@
 [
   {
+    "date": "2020-08-01",
+    "category": "code",
+    "time": 180,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-08-01",
+    "category": "code",
+    "time": 60,
+    "project": "andaga-core",
+    "tags": [
+      "scala",
+      "chronica",
+      "andaga"
+    ]
+  },
+  {
+    "date": "2020-08-01",
+    "category": "admin",
+    "time": 76,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-07-30",
     "category": "code",
     "time": 120,
