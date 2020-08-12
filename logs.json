@@ -1,5 +1,16 @@
 [
   {
+    "date": "2020-08-11",
+    "category": "research",
+    "time": 180,
+    "project": "talks",
+    "tags": [
+      "vim",
+      "scala",
+      "metala"
+    ]
+  },
+  {
     "date": "2020-08-10",
     "category": "code",
     "time": 180,
