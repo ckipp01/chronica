@@ -1,6 +1,6 @@
-import $ivy.`com.atlassian.commonmark:commonmark:0.15.0`
-import $ivy.`com.atlassian.commonmark:commonmark-ext-heading-anchor:0.15.0`
-import $ivy.`com.atlassian.commonmark:commonmark-ext-yaml-front-matter:0.15.0`
+import $ivy.`com.atlassian.commonmark:commonmark:0.15.2`
+import $ivy.`com.atlassian.commonmark:commonmark-ext-heading-anchor:0.15.2`
+import $ivy.`com.atlassian.commonmark:commonmark-ext-yaml-front-matter:0.15.2`
 import $file.domain, domain.{Metadata, Log, Page}
 import $file.head, head._
 import $file.html, html._

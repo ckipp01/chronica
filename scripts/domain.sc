@@ -1,4 +1,4 @@
-import $ivy.`com.lihaoyi::ujson:1.1.0`
+import $ivy.`com.lihaoyi::ujson:1.2.0`
 
 case class Log(
     date: String,
