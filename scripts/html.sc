@@ -88,7 +88,7 @@ def createNav(pageType: String) = {
       """<li><a href="/about" class="active">about</a></li>"""
     else """<li><a href="/about">about</a></li>"""
 
-    val rss = """<li><a href="/rss.xml">rss</a></li>"""
+  val rss = """<li><a href="/rss.xml">rss</a></li>"""
 
   s"""|<nav>
       |  <h1 id="chronica"><a href="/">chris kipp</a></h1>

@@ -35,6 +35,11 @@ title = Links
 
 [Programming]
 
+  [[TypeScript.Articles]]
+    title  = "The Disposable Pattern in TypeScript"
+    author = "Henning Dieterichs"
+    link   = "https://blog.hediet.de/post/the_disposable_pattern_in_typescript"
+
   [[Scala.Articles]]
     title  = "Make ADTs subtypes of Product and Serializable"
     author = "Nicolas Rinaudo"
