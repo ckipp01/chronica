@@ -72,6 +72,11 @@ title = Links
     author = "Patrick Thomson"
     link   = "https://blog.sumtypeofway.com/posts/fast-iteration-with-haskell.html"
 
+  [["Software Development".Articles]]
+    title  = "Constructive vs Predicative Data"
+    author = "Hillel Wayne"
+    link   = "https://www.hillelwayne.com/post/constructive/#fn:language"
+
 [Vim]
 
   [[Vim.Articles]]
