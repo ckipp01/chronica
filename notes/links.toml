@@ -45,6 +45,11 @@ title = Links
     author = "Nicolas Rinaudo"
     link   = "https://nrinaudo.github.io/scala-best-practices/adts/product_with_serializable.html"
 
+  [[Scala.Articles]]
+    title  = "Understanding Type classes in Scala: extending types you don't own"
+    author = "Guillaume Bogard"
+    link   = "https://guillaumebogard.dev/posts/typeclasses/"
+
   [[Scala.Videos]]
     title   = "Folding algebraic data types - Scala tutorial"
     author  = "Jakub Kozłowski"
