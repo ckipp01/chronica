@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-08-16",
+    "category": "research",
+    "time": 190,
+    "project": "andaga-core",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-08-15",
     "category": "explore",
     "time": 120,
