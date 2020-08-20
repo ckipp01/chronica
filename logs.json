@@ -1,9 +1,18 @@
 [
   {
+    "date": "2020-08-20",
+    "category": "research",
+    "time": 90,
+    "project": "license-reporter",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-08-19",
     "category": "code",
     "time": 60,
-    "project": "license-reporting",
+    "project": "license-reporter",
     "tags": [
       "scala",
       "coursier"
