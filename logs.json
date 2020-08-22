@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-08-22",
+    "category": "research",
+    "time": 60,
+    "project": "license-reporter",
+    "tags": []
+  },
+  {
     "date": "2020-08-20",
     "category": "research",
     "time": 90,
