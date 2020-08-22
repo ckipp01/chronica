@@ -46,6 +46,12 @@ title = Glossary
     2. Returns a function as a result
     """
 
+  "Memoization" = """
+    In Computering this is an optimization technique used to primarily speed
+    up programs by storing the results of expensive function calls and returning
+    the cached result when the same inputs occur again.
+    """
+
   S-expressions = """
     A notation for nested list (tree-structured) data invented
     for and popularized for Lisp.
