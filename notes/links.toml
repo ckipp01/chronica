@@ -7,6 +7,12 @@ title = Links
     author  = "Raph Levien"
     link    = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
 
+[IDE]
+  [[IDE.Articles]]
+    title   = "Three Architectures for a Responsive IDE"
+    author  = "rust.analyzer"
+    link    = "https://rust-analyzer.github.io//blog/2020/07/20/three-architectures-for-responsive-ide.html"
+
 
 ["Community"]
   [["Community.Artiles"]]
