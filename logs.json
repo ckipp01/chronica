@@ -1,5 +1,15 @@
 [
   {
+    "date": "2020-08-23",
+    "category": "explore",
+    "time": 240,
+    "project": "license-reporter",
+    "tags": [
+      "scala",
+      "coursier"
+    ]
+  },
+  {
     "date": "2020-08-22",
     "category": "research",
     "time": 60,
