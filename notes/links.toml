@@ -46,6 +46,11 @@ title = Links
 
 [Programming]
 
+  [[Logic.Articles]]
+    title  = "Functions That Go Backwards"
+    author = "Jordan Scalaes"
+    link   = "https://thatjdanisso.cool/functions-that-go-backwards"
+
   [[TypeScript.Articles]]
     title  = "The Disposable Pattern in TypeScript"
     author = "Henning Dieterichs"
