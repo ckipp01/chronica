@@ -13,6 +13,11 @@ title = Links
     author  = "rust.analyzer"
     link    = "https://rust-analyzer.github.io//blog/2020/07/20/three-architectures-for-responsive-ide.html"
 
+  [[IDE.Articles]]
+    title   = "Turning the IDE Inside Out with Datalog"
+    author  = "Pete Vilter"
+    link    = "https://petevilter.me/post/datalog-typechecking/"
+
 
 ["Community"]
   [["Community.Artiles"]]
