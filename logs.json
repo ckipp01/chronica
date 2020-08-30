@@ -1,5 +1,21 @@
 [
   {
+    "date": "2020-08-30",
+    "category": "code",
+    "time": 205,
+    "project": "license-reporter",
+    "tags": []
+  },
+  {
+    "date": "2020-08-29",
+    "category": "code",
+    "time": 86,
+    "project": "license-reporter",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-08-29",
     "category": "code",
     "time": 160,
