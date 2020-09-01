@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-09-01",
+    "category": "code",
+    "time": 30,
+    "project": "metals",
+    "tags": []
+  },
+  {
     "date": "2020-08-31",
     "category": "code",
     "time": 64,
