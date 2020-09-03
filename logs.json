@@ -1,5 +1,24 @@
 [
   {
+    "date": "2020-09-03",
+    "category": "explore",
+    "time": 60,
+    "project": "tooling",
+    "tags": [
+      "jenkins",
+      "scala"
+    ]
+  },
+  {
+    "date": "2020-09-03",
+    "category": "admin",
+    "time": 30,
+    "project": "metals",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-09-02",
     "category": "code",
     "time": 120,
