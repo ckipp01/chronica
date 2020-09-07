@@ -1,5 +1,15 @@
 [
   {
+    "date": "2020-09-07",
+    "category": "explore",
+    "time": 30,
+    "project": "nvim-metals",
+    "tags": [
+      "scala",
+      "nvim"
+    ]
+  },
+  {
     "date": "2020-09-06",
     "category": "code",
     "time": 480,
