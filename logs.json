@@ -1,5 +1,14 @@
 [
   {
+    "date": "2020-09-10",
+    "category": "code",
+    "time": 120,
+    "project": "programming",
+    "tags": [
+      "scala"
+    ]
+  },
+  {
     "date": "2020-09-07",
     "category": "explore",
     "time": 30,
