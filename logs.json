@@ -1,5 +1,12 @@
 [
   {
+    "date": "2020-09-12",
+    "category": "admin",
+    "time": 240,
+    "project": "network",
+    "tags": []
+  },
+  {
     "date": "2020-09-10",
     "category": "code",
     "time": 120,
