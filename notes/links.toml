@@ -18,6 +18,11 @@ title = Links
     author  = "Pete Vilter"
     link    = "https://petevilter.me/post/datalog-typechecking/"
 
+  [[IDE.Articles]]
+    title   = "Building an IDE with the Scala Presentation Compiler: A Field Report"
+    author  = "Aemon Cannon"
+    link    = "https://ensime.blogspot.com/2010/08/building-ide-with-scala-presentation.html"
+
 
 ["Community"]
   [["Community.Artiles"]]
