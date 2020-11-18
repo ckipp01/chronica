@@ -51,6 +51,11 @@ title = Links
 
 [Programming]
 
+  [["Functional Programming".articles]]
+    title  = "Parse, don't validate"
+    author = "Alexis King"
+    link   = "https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/#2019-11-05-parse-don-t-validate-footnote-1-definition"
+
   [[Logic.Articles]]
     title  = "Functions That Go Backwards"
     author = "Jordan Scalaes"
