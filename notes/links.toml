@@ -1,5 +1,16 @@
 title = Links
 
+["Build Tools"]
+  ["Build Tools".Articles]
+    title  = "So, what's wrong with SBT?"
+    author = "Li Haoyi"
+    link   = "https://www.lihaoyi.com/post/SowhatswrongwithSBT.html"
+
+  ["Build Tools".Articles]
+    title  = "semantics of dependency resolvers"
+    author = "Eugene Yokota"
+    link   = "https://eed3si9n.com/dependency-resolver-semantics"
+
 [Editing]
 
   [[Editing.Articles]]
