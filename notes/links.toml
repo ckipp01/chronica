@@ -11,12 +11,23 @@ title = Links
     author = "Eugene Yokota"
     link   = "https://eed3si9n.com/dependency-resolver-semantics"
 
+[Community]
+  [[Community.Articles]]
+    title   = "The Impact of Toxic Influencers on Communities"
+    author  = "Erin Casali"
+    link    = "https://intenseminimalism.com/2020/the-impact-of-toxic-influencers-on-communities/"
+
 [Editing]
 
   [[Editing.Articles]]
     title   = "xi-editor retrospective"
     author  = "Raph Levien"
     link    = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
+
+  [[Editoring.Articles]]
+    title   = "The values of Emacs, the Neovim revolution, and the VSCode gorilla"
+    author  = "Murilo Pereira "
+    link    = "https://www.murilopereira.com/the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla/"
 
 [IDE]
   [[IDE.Articles]]
@@ -35,15 +46,7 @@ title = Links
     link    = "https://ensime.blogspot.com/2010/08/building-ide-with-scala-presentation.html"
 
 
-["Community"]
-  [["Community.Artiles"]]
-    title   = "The Impact of Toxic Influencers on Communities"
-    author  = "Erin Casali"
-    link    = "https://intenseminimalism.com/2020/the-impact-of-toxic-influencers-on-communities/"
-
-
 ["Language Parsing"]
-
   [["Language Parsing".Articles]]
     title   = "Abstract vs. Concrete Syntax Trees"
     author  = "Eli Bendersky"
@@ -59,9 +62,13 @@ title = Links
     author  = "Max Brunsfeld"
     link    = "https://www.youtube.com/watch?v=Jes3bD6P0To"
 
+["Open Source"]
+  [["Open Source".articles]]
+    title   = "Scratching Someone Else's Itch (Why Open Source can't do Usability)"
+    author  = "Steven Pemberton"
+    link    = "https://homepages.cwi.nl/~steven/vandf/2004.1-itch.html"
 
 [Programming]
-
   [["Functional Programming".articles]]
     title  = "Parse, don't validate"
     author = "Alexis King"
@@ -98,7 +105,6 @@ title = Links
     link    = "https://www.youtube.com/watch?v=cS4MOUsuWYc&feature=emb_title"
 
 ["Software Development"]
-
   [["Software Development".Articles]]
     title  = "Principles of Design"
     author = "Tim Berners-Lee"
@@ -125,7 +131,6 @@ title = Links
     link   = "https://www.hillelwayne.com/post/constructive/#fn:language"
 
 [Vim]
-
   [[Vim.Articles]]
     title  = "Oil and vinegar - split windows and the project drawer"
     author = "Drew Neil"
