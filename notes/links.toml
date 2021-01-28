@@ -130,6 +130,11 @@ title = Links
     author = "Hillel Wayne"
     link   = "https://www.hillelwayne.com/post/constructive/#fn:language"
 
+  [["Software Development".Articles]]
+    title  = "encoding file path as URI reference"
+    author = "Eugene Yokota"
+    link   = "https://eed3si9n.com/encoding-file-path-as-URI-reference"
+
 [Vim]
   [[Vim.Articles]]
     title  = "Oil and vinegar - split windows and the project drawer"
